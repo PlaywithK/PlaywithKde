@@ -1,11 +1,6 @@
 "use client";
 import { useState } from "react";
 
-export const metadata = {
-  title: "FAQ – PlaywithK",
-  description: "FAQ",
-};
-
 const faqItems = [
   {
     question: "Was ist Lorem Ipsum?",

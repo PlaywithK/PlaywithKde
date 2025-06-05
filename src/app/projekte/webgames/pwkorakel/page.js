@@ -1,11 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 
-export const metadata = {
-  title: "PWK-Orakel – PlaywithK",
-  description: "PWK-Orakel",
-};
-
 const responses = ["Ja!", "Nein.", "Vielleicht.", "Frag später!", "Auf keinen Fall!", "Natürlich!", "Unklar..."];
 const chibiTalkLines = [
     "Hey, lass das!",

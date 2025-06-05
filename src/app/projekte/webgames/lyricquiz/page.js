@@ -1,11 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-export const metadata = {
-  title: "YKKE Lyric Quiz – PlaywithK",
-  description: "Yung Kafa & Kücük Efendi Lyric Quiz",
-};
-
 const lyrics = [
   { line: 'Aber was er hinterlässt, nicht wenig', song: 'Baum im Wald' },
   { line: 'Ich bin wach mit den Eulen', song: 'Wach' },

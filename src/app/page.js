@@ -1,12 +1,10 @@
-import Head from 'next/head';
+export const metadata = {
+  title: "Startseite – PlaywithK",
+  description: "Startseite",
+};
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Startseite – PlaywithK.de</title>
-      </Head>
-
       <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8">
 
         {/* Hero */}
@@ -252,6 +250,5 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </>
   );
 }

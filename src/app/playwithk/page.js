@@ -1,14 +1,13 @@
-import Head from 'next/head';
 import SteamRecentGamesXML from '../components/steamrecentgames';
 import AniListProfile from '../components/anilistprofile';
 
+export const metadata = {
+  title: "PlaywithK – PlaywithK",
+  description: "PlaywithK",
+};
+
 export default function PlaywithK() {
     return (
-        <>
-            <Head>
-                <title>PlaywithK – Persönliche Seite</title>
-            </Head>
-
             <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8">
                 <section className="text-center py-16 max-w-4xl mx-auto">
                     <h1 className="text-4xl sm:text-5xl font-extrabold text-teal-400 mb-4">PlaywithK im Web</h1>
@@ -66,6 +65,5 @@ export default function PlaywithK() {
                     </div>
                 </section>
             </main>
-        </>
     );
 }

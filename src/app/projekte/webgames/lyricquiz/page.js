@@ -1,6 +1,10 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
+
+export const metadata = {
+  title: "YKKE Lyric Quiz – PlaywithK",
+  description: "Yung Kafa & Kücük Efendi Lyric Quiz",
+};
 
 const lyrics = [
   { line: 'Aber was er hinterlässt, nicht wenig', song: 'Baum im Wald' },
@@ -47,11 +51,6 @@ export default function LyricQuiz() {
   }, []);
 
   return (
-    <>
-      <Head>
-        <title>Lyrics-Quiz – PlaywithK.de</title>
-      </Head>
-
       <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center justify-center">
         <section className="max-w-xl w-full bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-20 p-8 space-y-6 text-center">
           <h1 className="text-3xl sm:text-4xl font-bold text-teal-400">🎤 YKKE Lyrics-Quiz</h1>
@@ -103,6 +102,5 @@ export default function LyricQuiz() {
           </a>
         </div>
       </main>
-    </>
   );
 }

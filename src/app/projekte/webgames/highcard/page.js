@@ -1,6 +1,10 @@
 'use client';
-import Head from 'next/head';
 import { useEffect, useState } from 'react';
+
+export const metadata = {
+  title: "High Card – PlaywithK",
+  description: "High Card",
+};
 
 const suits = ['♥', '♦', '♣', '♠'];
 const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
@@ -113,11 +117,6 @@ export default function HighStakesPage() {
   );
 
   return (
-    <>
-      <Head>
-        <title>High Stakes – PlaywithK.de</title>
-      </Head>
-
       <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8 py-16">
         <section className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">High Stakes</h1>
@@ -160,6 +159,5 @@ export default function HighStakesPage() {
           </div>
         </section>
       </main>
-    </>
   );
 }

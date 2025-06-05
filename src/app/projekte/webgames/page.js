@@ -1,13 +1,13 @@
-import Head from 'next/head';
 import Link from 'next/link';
+
+export const metadata = {
+  title: "Web-Spiele – PlaywithK",
+  description: "Web-Spiele",
+};
+
 
 export default function WebgamesOverview() {
   return (
-    <>
-      <Head>
-        <title>Web-Spiele – PlaywithK.de</title>
-      </Head>
-
       <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
         <section className="max-w-6xl mx-auto">
           <h1 className="text-3xl sm:text-4xl font-bold mb-12 text-teal-400 text-center">Web-Spiele</h1>
@@ -64,6 +64,5 @@ export default function WebgamesOverview() {
           </div>
         </section>
       </main>
-    </>
   );
 }

@@ -1,6 +1,10 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import Head from 'next/head';
+
+export const metadata = {
+  title: "PWK-Orakel – PlaywithK",
+  description: "PWK-Orakel",
+};
 
 const responses = ["Ja!", "Nein.", "Vielleicht.", "Frag später!", "Auf keinen Fall!", "Natürlich!", "Unklar..."];
 const chibiTalkLines = [
@@ -90,11 +94,6 @@ export default function MagicChibi() {
     }, [chibiSrc]);
 
     return (
-        <>
-            <Head>
-                <title>PWK Orakel – PlaywithK.de</title>
-            </Head>
-
             <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-6 py-20 flex flex-col items-center justify-center">
                 <section className="max-w-xl w-full bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-20 p-8 text-center relative">
                     <h1 className="text-3xl sm:text-4xl font-bold text-teal-400 mb-8">✨ PWK Orakel ✨</h1>
@@ -152,6 +151,5 @@ export default function MagicChibi() {
                     </a>
                 </div>
             </main>
-        </>
     );
 }

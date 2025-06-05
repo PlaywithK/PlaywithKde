@@ -1,13 +1,12 @@
-import Head from 'next/head';
 import Link from 'next/link';
+
+export const metadata = {
+  title: "Projekte – PlaywithK",
+  description: "Projekte",
+};
 
 export default function Projekte() {
   return (
-    <>
-      <Head>
-        <title>Projekte – PlaywithK.de</title>
-      </Head>
-
       <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
         <section className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-teal-400">Meine Projekte</h1>
@@ -152,6 +151,5 @@ export default function Projekte() {
           </Link>
         </div>
       </main>
-    </>
   );
 }

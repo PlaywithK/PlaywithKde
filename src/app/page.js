@@ -146,7 +146,7 @@ export default function Home() {
                 date: "01.02.2024",
                 title: "1-monatiger Subathon",
                 description:
-                  "Der Anfangs auf ein paar Tage geschätzte Subathon begann zu eskalieren, als einige Zuschauer über 200€ da ließen. Fast genau einen Monat waren wir dauerhaft live und haben einiges erlebt! Vielen Dank an jeden der gespendet hat und beim Stream dabei war! Das war eine Hammer Zeit!",
+                  "Der Anfangs auf ein paar Tage geschätzte Subathon begann zu eskalieren, als einige Zuschauer über 300€ da ließen. Fast genau einen Monat waren wir dauerhaft live und haben einiges erlebt! Vielen Dank an jeden der gespendet hat und beim Stream dabei war! Das war eine Hammer Zeit!",
               },
               {
                 date: "01.06.2024",

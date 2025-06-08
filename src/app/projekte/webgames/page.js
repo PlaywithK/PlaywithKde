@@ -8,61 +8,81 @@ export const metadata = {
 
 export default function WebgamesOverview() {
   return (
-      <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
-        <section className="max-w-6xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-12 text-teal-400 text-center">Web-Spiele</h1>
+    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
 
-          <p className="text-gray-300 mb-12 max-w-2xl mx-auto text-center">
-            Hier findest du eine kleine Sammlung an HTML-Spielen, die ich aus Spaß und zum Lernen entwickelt habe. Klick dich durch und probier sie aus!
+      <section className="relative text-center py-24 px-6 sm:px-12 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden rounded-xl shadow-inner">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-[-100px] left-[-100px] w-72 h-72 bg-teal-500 opacity-20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-[-100px] right-[-100px] w-72 h-72 bg-teal-500 opacity-20 rounded-full blur-3xl animate-pulse" />
+        </div>
+
+        <div className="relative z-10 max-w-3xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-teal-400 mb-6 drop-shadow">
+            🎮 Willkommen bei den Webgames!
+          </h1>
+          <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
+            Lust auf ein Mini-Game? Hier findest du <span className="text-teal-300 font-medium">kleine, kreative Browser-Spiele</span>,
+            die du direkt online spielen kannst – zum Spaß, Ausprobieren oder einfach zwischendurch.
           </p>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "PWK Orakel",
-                description: "Stelle dem PWK Orakel eine Frage und erhalte die ultimative Antwort!",
-                link: "/projekte/webgames/pwkorakel",
-              },
-              {
-                title: "High Card",
-                description: "High Stakes ist ein Kartenspiel in dem es das Ziel ist, so nah wie möglich an die Zahl 21 heranzukommen, ohne diese zu überschreiten.",
-                link: "/projekte/webgames/highcard",
-              },
-              {
-                title: "Lyric Quiz",
-                description: "Das YKKE Lyric-Quiz ist ein Spiel in dem du eine zufällige Line aus einem Song von Yung Kafa & Kücük Efendi angezeigt bekommst und du kannst versuchen zu erraten, aus welchem Lied diese stammt! Viel Erfolg!",
-                link: "/projekte/webgames/lyricquiz",
-              },
-            ].map(({ title, description, link }, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col justify-between bg-gray-800 rounded-xl shadow-lg border border-white border-opacity-20 p-6 hover:shadow-xl transition-all"
-              >
-                <h3 className="text-xl font-semibold mb-4 text-teal-400 text-center">{title}</h3>
-                <div className="flex-1 flex items-center justify-center text-center">
-                  <p className="text-gray-300 text-sm">{description}</p>
-                </div>
-                <div className="mt-6 text-center">
-                  <Link
-                    href={link}
-                    className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
-                  >
-                    Jetzt spielen
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
+      <section className="max-w-6xl mx-auto mt-24"></section>
 
-          <div className="mt-16 text-center">
-            <Link
-              href="/projekte"
-              className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
+      <section className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {[
+            {
+              title: "PWK Orakel",
+              description: "Stelle dem PWK Orakel eine Frage und erhalte die ultimative Antwort!",
+              link: "/projekte/webgames/pwkorakel",
+              color: "from-teal-500 to-purple-500",
+            },
+            {
+              title: "High Stakes",
+              description: "High Stakes ist ein Kartenspiel mit dem Ziel, so nah wie möglich an 21 zu kommen.",
+              link: "/projekte/webgames/highcard",
+              color: "from-pink-500 to-yellow-500",
+            },
+            {
+              title: "Lyric Quiz",
+              description: "Errate, aus welchem Song eine Line stammt. Teste dein YKKE-Wissen!",
+              link: "/projekte/webgames/lyricquiz",
+              color: "from-indigo-500 to-cyan-500",
+            },
+          ].map(({ title, description, link, color }, idx) => (
+            <div
+              key={idx}
+              className={`
+        transform hover:-translate-y-1 rotate-[-2deg] hover:rotate-[-1deg]
+        bg-gradient-to-br ${color} rounded-3xl p-6 text-white shadow-lg
+        transition-all duration-300 ease-out
+      `}
             >
-              Zurück zu allen Projekten
-            </Link>
-          </div>
-        </section>
-      </main>
+              <h3 className="text-2xl font-bold mb-3 text-center drop-shadow-sm">{title}</h3>
+              <p className="text-sm text-center opacity-90 mb-6">{description}</p>
+              <div className="text-center">
+                <Link
+                  href={link}
+                  className="inline-block bg-white text-gray-900 font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition"
+                >
+                  Jetzt spielen
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+
+
+        <div className="mt-16 text-center">
+          <Link
+            href="/projekte"
+            className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
+          >
+            Zurück zu allen Projekten
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }

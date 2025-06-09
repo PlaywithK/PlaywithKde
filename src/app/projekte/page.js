@@ -94,8 +94,6 @@ export default function Projekte() {
           </div>
         </section>
 
-
-
         {/* Spieleentwicklung */}
         <section className="grid md:grid-cols-2 gap-10 items-center">
           <img
@@ -113,41 +111,56 @@ export default function Projekte() {
             </Link>
           </div>
         </section>
-      </div>
 
-      {/* Minecraft Projekte */}
-      <section className="max-w-6xl mx-auto mt-32 px-4 sm:px-8">
-        <h2 className="text-4xl font-bold text-teal-400 mb-10 text-center">Minecraft Projekte</h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {[
-            { href: "/minecraft/winterprojekt.html", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt" },
-            { href: "/minecraft/newrp.html", src: "/NewRP_Front.png", alt: "NewRP Bild", title: "NewRP" },
-            { href: "/minecraft/gimmelcraft.html", src: "/Gimmelcraft_Front.png", alt: "Gimmelcraft Bild", title: "Gimmelcraft" },
-            { href: "/minecraft/oneblock.html", src: "/OneBlock_Front.png", alt: "OneBlock Bild", title: "OneBlock" },
-            { href: "/minecraft/outlaw.html", src: "/Outlaw_Front.png", alt: "Outlaw Bild", title: "Outlaw" },
-            { href: "/minecraft/pwkde.html", src: "/PWKDE_Front.png", alt: "PlaywithK.de Bild", title: "PlaywithK.de" },
-          ].map(({ href, src, alt, title }) => (
-            <Link
-              key={title}
-              href={href}
-              className="relative block overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group"
-            >
-              <img
-                src={src}
-                alt={alt}
-                loading="lazy"
-                className="w-full h-full object-cover filter blur-sm transition-filter transition-transform duration-500 ease-in-out group-hover:blur-none group-hover:scale-110"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white text-3xl sm:text-4xl font-semibold text-center drop-shadow-lg pointer-events-none">
-                  {title}
-                </span>
-              </div>
+        {/* Web-Entwicklung */}
+        <section className="grid md:grid-cols-2 gap-10 items-center">
+          <img
+            src="/unity_dev_placeholder.png"
+            alt="Unity Editor"
+            className="rounded-xl shadow-lg border border-white border-opacity-10 transform object-cover object-center"
+          />
+          <div>
+            <h2 className="text-2xl font-bold text-teal-400 mb-4">Web-Entwicklung</h2>
+            <p className="text-gray-300 mb-6">
+              Diese Sektion ist noch WIP!
+            </p>
+            <Link href="/projekte/spieleentwicklung" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all">
+              Zur Web-Entwicklung
             </Link>
-          ))}
-        </div>
-      </section>
+          </div>
+        </section>
+
+        {/* Minecraft Projekte */}
+        <section className="max-w-6xl mx-auto mt-32 px-4 sm:px-8">
+          <h2 className="text-4xl font-bold text-teal-400 mb-10 text-center">Minecraft Projekte</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {[
+              { href: "/minecraft/winterprojekt.html", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt" },
+              { href: "/minecraft/outlaw.html", src: "/Outlaw_Front.png", alt: "Outlaw Bild", title: "Outlaw" },
+              { href: "/minecraft/pwkde.html", src: "/PWKDE_Front.png", alt: "PlaywithK.de Bild", title: "PlaywithK.de" },
+            ].map(({ href, src, alt, title }) => (
+              <Link
+                key={title}
+                href={href}
+                className="relative block overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group"
+              >
+                <img
+                  src={src}
+                  alt={alt}
+                  loading="lazy"
+                  className="w-full h-full object-cover filter blur-sm transition-filter transition-transform duration-500 ease-in-out group-hover:blur-none group-hover:scale-110"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-white text-3xl sm:text-4xl font-semibold text-center drop-shadow-lg pointer-events-none">
+                    {title}
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </div>
     </main>
   );
 }

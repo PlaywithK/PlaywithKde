@@ -21,13 +21,33 @@ export default function Winterprojekt() {
           className="rounded-xl shadow-lg border border-white border-opacity-10 mb-8"
         />
 
-        <h2 className="text-2xl font-bold text-teal-400 mb-4">Features & Highlights</h2>
-        <ul className="list-disc list-inside text-gray-300 mb-8">
-          <li>Detailreiche Schneelandschaften und Eishöhlen.</li>
-          <li>Gemütliche Holzhäuser mit Kamin und Dekorationen.</li>
-          <li>Ein kleiner Weihnachtsmarkt mit Ständen und Lichtern.</li>
-          <li>Komplette Beleuchtung und Atmosphäre mit Redstone-Mechanismen.</li>
-        </ul>
+        <section className="max-w-6xl mx-auto mt-32 px-4 sm:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {[
+              { href: "/projekte/minecraft//winterprojekt", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2024" },
+              { href: "/projekte/minecraft//winterprojekt", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2020" },
+              { href: "/projekte/minecraft//winterprojekt", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2017" },
+            ].map(({ href, src, alt, title }) => (
+              <Link
+                key={title}
+                href={href}
+                className="relative block overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group"
+              >
+                <img
+                  src={src}
+                  alt={alt}
+                  loading="lazy"
+                  className="w-full h-full object-cover filter blur-sm transition-filter transition-transform duration-500 ease-in-out group-hover:blur-none group-hover:scale-110"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-white text-3xl sm:text-4xl font-semibold text-center drop-shadow-lg pointer-events-none">
+                    {title}
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
 
         <Link href="/projekte" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all">
           Zurück zur Projektübersicht

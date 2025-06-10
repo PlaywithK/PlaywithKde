@@ -5,11 +5,11 @@ export const metadata = {
   description: "Details zum Winterprojekt Minecraft Bau.",
 };
 
-export default function Minecraft() {
+export default function PWKde() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
       <section className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-teal-400 mb-6">Winterprojekt</h1>
+        <h1 className="text-4xl font-bold text-teal-400 mb-6">PlaywithK.de Netzwerk</h1>
         <p className="text-gray-300 mb-8">
           Das Winterprojekt ist eines meiner liebsten Minecraft-Projekte, bei dem ich eine verschneite Landschaft mit detailreichen Bauten erschaffen habe.
           Ziel war es, eine gemütliche Winterwelt mit vielen kleinen Details zu gestalten.

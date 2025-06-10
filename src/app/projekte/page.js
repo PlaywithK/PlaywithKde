@@ -136,9 +136,9 @@ export default function Projekte() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              { href: "/minecraft/winterprojekt.html", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt" },
-              { href: "/minecraft/outlaw.html", src: "/Outlaw_Front.png", alt: "Outlaw Bild", title: "Outlaw" },
-              { href: "/minecraft/pwkde.html", src: "/PWKDE_Front.png", alt: "PlaywithK.de Bild", title: "PlaywithK.de" },
+              { href: "/projekte/minecraft//winterprojekt", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt" },
+              { href: "/projekte/minecraft/outlaw", src: "/Outlaw_Front.png", alt: "Outlaw Bild", title: "Outlaw" },
+              { href: "/projekte/minecraft/pwkde", src: "/PWKDE_Front.png", alt: "PlaywithK.de Bild", title: "PlaywithK.de" },
             ].map(({ href, src, alt, title }) => (
               <Link
                 key={title}

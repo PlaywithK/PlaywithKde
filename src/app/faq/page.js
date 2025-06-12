@@ -3,29 +3,34 @@ import { useState } from "react";
 
 const faqItems = [
   {
-    question: "Was ist Lorem Ipsum?",
-    answer: "Lorem Ipsum ist ein Platzhaltertext in der Druck- und Satzindustrie.",
+    question: "Wer betreibt diese Webseite?",
+    answer: "Diese Webseite wird ausschließich von PlaywithK betrieben. Bei weiteren Fragen zu diesem Thema, schauen sie im Tab  'Webentwicklung' vorbei.",
   },
   {
-    question: "Warum wird es verwendet?",
-    answer: "Es wird verwendet, um eine visuelle Vorschau eines Designs zu ermöglichen.",
+    question: "Was ist der Zweck der Webseite?",
+    answer: "PlaywithK.de dient dazu, über Projekte von und mit PlaywithK zu informieren, sowie zu erkunden und neues zu entdecken!",
   },
   {
-    question: "Woher kommt es?",
-    answer: "Es stammt aus einem lateinischen Text von Cicero.",
+    question: "Ist diese Seite privat oder kommerziell?",
+    answer: "Die Wwebseite wird ausschließlich privat verwendet und hat keinerlei kommerziellen Nutzen.",
+  },
+  {
+    question: "Darf ich Inhalte von der Webseite weiterverwenden?",
+    answer: "Alle Inhalte von PlaywithK.de dürfen, mit einer Verlinkung auf die Webseite, frei verwendet werden.",
+  },
+  {
+    question: "Wie oft werden Inhalte aktualisiert?",
+    answer: "Die Informationen der Webseite können veraltet sein, da diese in meiner Freizeit entsteht. Das genau letzte Bearbeitungsdatum kann auf der jeweiligen Seite ganz unten angesehen werden.",
   },
 ];
 
 export default function FAQ() {
-  // Zustand: Array mit Indizes der geöffneten Fragen
   const [openIndexes, setOpenIndexes] = useState([]);
 
   const toggleIndex = (index) => {
     if (openIndexes.includes(index)) {
-      // Wenn schon offen: schließen
       setOpenIndexes(openIndexes.filter((i) => i !== index));
     } else {
-      // Wenn zu, dann öffnen
       setOpenIndexes([...openIndexes, index]);
     }
   };
@@ -49,9 +54,8 @@ export default function FAQ() {
               >
                 <span className="text-lg sm:text-xl font-semibold">{question}</span>
                 <svg
-                  className={`w-6 h-6 text-teal-400 transform transition-transform duration-300 ${
-                    isOpen ? "rotate-180" : ""
-                  }`}
+                  className={`w-6 h-6 text-teal-400 transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                    }`}
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -67,13 +71,12 @@ export default function FAQ() {
                 id={`faq-panel-${index}`}
                 role="region"
                 aria-labelledby={`faq-button-${index}`}
-                className={`px-6 pb-6 text-gray-300 text-base sm:text-lg overflow-hidden transition-[max-height] duration-300 ease-in-out ${
-                  isOpen ? "max-h-screen" : "max-h-0"
-                }`}
-                style={{ transitionProperty: "max-height" }}
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"
+                  } px-6 pt-4 pb-6 bg-gray-700 text-gray-100 text-base sm:text-lg leading-relaxed rounded-b-lg`}
               >
-                {isOpen && <p>{answer}</p>}
+                <p>{answer}</p>
               </div>
+
             </div>
           );
         })}

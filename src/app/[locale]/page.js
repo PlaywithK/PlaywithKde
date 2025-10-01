@@ -2,10 +2,10 @@
 
 import { useTranslations } from "next-intl";
 
-export const metadata = {
+/*export const metadata = {
   title: "Startseite – PlaywithK",
   description: "Startseite",
-};
+}; */
 
 export default function Home() {
   const text = useTranslations("Home");

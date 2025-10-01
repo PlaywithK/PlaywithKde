@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import Link from "next/link";
 
 const responses = ["Ja!", "Nein.", "Vielleicht.", "Frag später!", "Auf keinen Fall!", "Natürlich!", "Unklar..."];
 const chibiTalkLines = [

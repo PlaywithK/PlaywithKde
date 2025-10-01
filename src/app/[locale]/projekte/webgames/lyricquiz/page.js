@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Link from "next/link";
 
 const lyrics = [
   { line: 'Aber was er hinterlässt, nicht wenig', song: 'Baum im Wald' },

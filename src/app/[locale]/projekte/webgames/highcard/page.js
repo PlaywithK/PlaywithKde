@@ -48,11 +48,11 @@ export default function HighStakesPage() {
     return card;
   };
 
-  const startGame = () => {
+  const startGame = useCallback(() => {
     const newDeck = createDeck();
     const playerStart = [newDeck.pop(), newDeck.pop()];
     const dealerStart = [newDeck.pop()];
-    
+
     setDeck(newDeck);
     setPlayerHand(playerStart);
     setDealerHand(dealerStart);
@@ -60,7 +60,7 @@ export default function HighStakesPage() {
     setDealerScore(calculateScore(dealerStart));
     setGameOver(false);
     setResult('');
-  };
+  }, []);
 
   const handleHit = () => {
     const card = drawCard(playerHand, setPlayerHand);
@@ -98,9 +98,9 @@ export default function HighStakesPage() {
     setGameOver(true);
   };
 
-useEffect(() => {
-  startGame();
-}, [startGame]);
+  useEffect(() => {
+    startGame();
+  }, [startGame]);
 
   const renderCard = (card, index) => (
     <div key={index} className={`card ${['♥', '♦'].includes(card.suit) ? 'text-red-500' : ''} bg-white text-black rounded-lg shadow-md p-2 w-20 h-32 inline-block mx-1 relative`}>
@@ -113,47 +113,47 @@ useEffect(() => {
   );
 
   return (
-      <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8 py-16">
-        <section className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">High Stakes</h1>
-<p className="text-gray-300 mb-10 max-w-xl mx-auto">
-  Ziehe Karten, besiege den Dealer – wie viel Risiko gehst du ein? Ziel ist es, mit deinen Karten so nah wie möglich an 21 Punkte zu kommen, ohne darüber zu liegen. Der Dealer zieht automatisch, wenn du passt. Wer näher an 21 ist, gewinnt!
-</p>
+    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8 py-16">
+      <section className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">High Stakes</h1>
+        <p className="text-gray-300 mb-10 max-w-xl mx-auto">
+          Ziehe Karten, besiege den Dealer – wie viel Risiko gehst du ein? Ziel ist es, mit deinen Karten so nah wie möglich an 21 Punkte zu kommen, ohne darüber zu liegen. Der Dealer zieht automatisch, wenn du passt. Wer näher an 21 ist, gewinnt!
+        </p>
 
-          <div className="bg-gray-800 rounded-lg p-6 border border-white border-opacity-20 shadow-lg">
-            <div className="mb-6">
-              <h2 className="text-2xl font-semibold">Spieler</h2>
-              <div>{playerHand.map(renderCard)}</div>
-              <p className="mt-2">Punkte: {playerScore}</p>
-            </div>
-
-            <div className="mb-6">
-              <h2 className="text-2xl font-semibold">Dealer</h2>
-              <div>{dealerHand.map(renderCard)}</div>
-              <p className="mt-2">Punkte: {dealerScore}</p>
-            </div>
-
-            {!gameOver && (
-              <div className="space-x-4">
-                <button onClick={handleHit} className="bg-teal-500 px-4 py-2 rounded hover:bg-teal-400 transition">Karte ziehen</button>
-                <button onClick={handleStand} className="bg-red-500 px-4 py-2 rounded hover:bg-red-400 transition">Passen</button>
-              </div>
-            )}
-
-            {gameOver && (
-              <div className="mt-6">
-                <p className="text-2xl font-bold mb-4">{result}</p>
-                <button onClick={startGame} className="bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md">Nochmal spielen</button>
-              </div>
-            )}
+        <div className="bg-gray-800 rounded-lg p-6 border border-white border-opacity-20 shadow-lg">
+          <div className="mb-6">
+            <h2 className="text-2xl font-semibold">Spieler</h2>
+            <div>{playerHand.map(renderCard)}</div>
+            <p className="mt-2">Punkte: {playerScore}</p>
           </div>
 
-          <div className="mt-10">
-            <Link href="/projekte/webgames" className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md">
-              Zurück zur Übersicht
-            </Link>
+          <div className="mb-6">
+            <h2 className="text-2xl font-semibold">Dealer</h2>
+            <div>{dealerHand.map(renderCard)}</div>
+            <p className="mt-2">Punkte: {dealerScore}</p>
           </div>
-        </section>
-      </main>
+
+          {!gameOver && (
+            <div className="space-x-4">
+              <button onClick={handleHit} className="bg-teal-500 px-4 py-2 rounded hover:bg-teal-400 transition">Karte ziehen</button>
+              <button onClick={handleStand} className="bg-red-500 px-4 py-2 rounded hover:bg-red-400 transition">Passen</button>
+            </div>
+          )}
+
+          {gameOver && (
+            <div className="mt-6">
+              <p className="text-2xl font-bold mb-4">{result}</p>
+              <button onClick={startGame} className="bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md">Nochmal spielen</button>
+            </div>
+          )}
+        </div>
+
+        <div className="mt-10">
+          <Link href="/projekte/webgames" className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md">
+            Zurück zur Übersicht
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }

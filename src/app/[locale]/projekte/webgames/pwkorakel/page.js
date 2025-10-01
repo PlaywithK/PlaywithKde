@@ -138,12 +138,12 @@ export default function MagicChibi() {
                     </div>
                 </section>
                 <div className="mt-6">
-                    <a
+                    <Link
                         href="/projekte/webgames"
                         className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
                     >
                         Zurück zur Übersicht
-                    </a>
+                    </Link>
                 </div>
             </main>
     );

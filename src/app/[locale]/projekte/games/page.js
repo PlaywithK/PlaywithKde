@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Game-Entwicklung – PlaywithK",
   description: "Meine Reise durch die Game-Entwicklung",

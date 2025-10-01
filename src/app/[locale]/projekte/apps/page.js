@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "App-Entwicklung – PlaywithK.de",
   description: "Meine Reise durch die App-Entwicklung",

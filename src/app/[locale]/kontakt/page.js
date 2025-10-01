@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Kontakt – PlaywithK",
   description: "Kontakt",

@@ -91,11 +91,11 @@ export default function PlaywithK() {
             dieser Webseite. Schau dich gerne um!
           </p>
           <div className="mt-6">
-            <a
+            <Link
               href="/playwithk"
               className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all">
               Mehr von PlaywithK entdecken
-            </a>
+            </Link>
           </div>
 
         </div>

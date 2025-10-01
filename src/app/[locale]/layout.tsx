@@ -1,3 +1,6 @@
+// src/app/[locale]/layout.tsx
+"use client";
+
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
@@ -21,24 +24,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Props-Typ für Layout
+interface LocaleLayoutProps {
+  children: ReactNode;
+  params: { locale: string };
+}
+
 // Globale Metadata
 export const metadata = {
   title: "PlaywithK.de",
   description: "Offizielle Website von PlaywithK. Projekte, Community und mehr.",
 };
 
-// Props-Typ definieren
-type LocaleLayoutProps = {
-  children: ReactNode;
-  params: {
-    locale: string;
-  };
-};
-
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = params;
 
-  let messages: Record<string, any>;
+  // Nachrichten für die aktuelle Locale laden
+  let messages: Record<string, string>;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch (error) {
@@ -51,9 +53,16 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
+          {/* Navigation */}
           <Navbar />
+
+          {/* Seiteninhalt */}
           {children}
+
+          {/* Footer */}
           <Footer />
+
+          {/* Vercel Analytics + Speed Insights */}
           <Analytics />
           <SpeedInsights />
         </NextIntlClientProvider>

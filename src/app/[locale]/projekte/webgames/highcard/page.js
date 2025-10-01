@@ -98,9 +98,9 @@ export default function HighStakesPage() {
     setGameOver(true);
   };
 
-  useEffect(() => {
-    startGame();
-  }, []);
+useEffect(() => {
+  startGame();
+}, [startGame]);
 
   const renderCard = (card, index) => (
     <div key={index} className={`card ${['♥', '♦'].includes(card.suit) ? 'text-red-500' : ''} bg-white text-black rounded-lg shadow-md p-2 w-20 h-32 inline-block mx-1 relative`}>

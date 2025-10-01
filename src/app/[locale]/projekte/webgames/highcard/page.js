@@ -30,7 +30,7 @@ export default function HighStakesPage() {
     return parseInt(card.value);
   };
 
-  const calculateScore = (hand) => {
+  const calculateScore = useCallback((hand) => {
     let score = hand.reduce((sum, card) => sum + getCardValue(card), 0);
     let aces = hand.filter(card => card.value === 'A').length;
     while (score > 21 && aces > 0) {
@@ -38,7 +38,7 @@ export default function HighStakesPage() {
       aces--;
     }
     return score;
-  };
+  }, []);
 
   const drawCard = (hand, setHand) => {
     const newDeck = [...deck];
@@ -60,7 +60,7 @@ export default function HighStakesPage() {
     setDealerScore(calculateScore(dealerStart));
     setGameOver(false);
     setResult('');
-  }, [calculateScore]);
+  }, []);
 
   const handleHit = () => {
     const card = drawCard(playerHand, setPlayerHand);

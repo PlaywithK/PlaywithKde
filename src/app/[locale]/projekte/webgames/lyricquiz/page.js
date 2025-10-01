@@ -21,12 +21,15 @@ export default function LyricQuiz() {
   };
 
 const startQuiz = useCallback(() => {
-  const lyric = getRandomLyric();
+  const randomIndex = Math.floor(Math.random() * lyrics.length);
+  const lyric = lyrics[randomIndex];
+
   setCurrentLyric(lyric);
   setUserInput('');
   setResult('');
   setAnswered(false);
-}, [getRandomLyric]);
+}, []);
+
 
   const checkAnswer = () => {
     if (!currentLyric) return;

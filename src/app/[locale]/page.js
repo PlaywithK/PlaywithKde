@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 /*export const metadata = {
   title: "Startseite – PlaywithK",
@@ -59,24 +60,24 @@ export default function Home() {
               </div>
 
               <div className="mt-6 text-center">
-                <a
+                <Link
                   href={link}
                   className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
                 >
                   Mehr erfahren
-                </a>
+                </Link>
               </div>
             </div>
           ))}
         </div>
 
         <div className="mt-12 flex justify-center">
-          <a
+          <Link
             href="/projekte"
             className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
           >
             Zu allen Projekten
-          </a>
+          </Link>
         </div>
       </section>
     </main>

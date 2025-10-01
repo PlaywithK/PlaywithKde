@@ -20,13 +20,13 @@ export default function LyricQuiz() {
     return lyrics[randomIndex];
   };
 
-  const startQuiz = () => {
-    const lyric = getRandomLyric();
-    setCurrentLyric(lyric);
-    setUserInput('');
-    setResult('');
-    setAnswered(false);
-  };
+const startQuiz = useCallback(() => {
+  const lyric = getRandomLyric();
+  setCurrentLyric(lyric);
+  setUserInput('');
+  setResult('');
+  setAnswered(false);
+}, [getRandomLyric]);
 
   const checkAnswer = () => {
     if (!currentLyric) return;
@@ -44,7 +44,7 @@ export default function LyricQuiz() {
 
   useEffect(() => {
     startQuiz();
-  }, []);
+  }, [startQuiz]);
 
   return (
       <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center justify-center">

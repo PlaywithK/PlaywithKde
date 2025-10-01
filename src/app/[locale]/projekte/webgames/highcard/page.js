@@ -60,7 +60,7 @@ export default function HighStakesPage() {
     setDealerScore(calculateScore(dealerStart));
     setGameOver(false);
     setResult('');
-  }, []);
+  }, [calculateScore]);
 
   const handleHit = () => {
     const card = drawCard(playerHand, setPlayerHand);

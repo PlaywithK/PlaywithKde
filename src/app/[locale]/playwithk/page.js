@@ -1,5 +1,6 @@
 import SteamRecentGamesXML from '../components/steamrecentgames';
 import AniListProfile from '../components/anilistprofile';
+import Link from "next/link";
 
 export const metadata = {
   title: "PlaywithK – PlaywithK",

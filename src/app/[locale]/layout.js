@@ -26,7 +26,9 @@ export const metadata = {
   description: "Offizielle Website von PlaywithK. Projekte, Community und mehr.",
 };
 
-export default async function LocaleLayout({ children, params: { locale } }) {
+export default async function LocaleLayout({ children, params }) {
+  const { locale } = params;
+
   let messages;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
@@ -40,16 +42,9 @@ export default async function LocaleLayout({ children, params: { locale } }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {/* Navigation */}
           <Navbar />
-
-          {/* Seiteninhalt */}
           {children}
-
-          {/* Footer */}
           <Footer />
-
-          {/* Vercel Analytics + Speed Insights */}
           <Analytics />
           <SpeedInsights />
         </NextIntlClientProvider>

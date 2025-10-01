@@ -1,0 +1,29 @@
+{
+  "Home": {
+    "meta": {
+      "title": "Homepage – PlaywithK",
+      "description": "Homepage"
+    },
+    "hero": {
+      "title": "Welcome to PlaywithK.de",
+      "subtitle": "Video Creator · Gamer · Developer"
+    },
+    "projects": {
+      "heading": "My Projects",
+      "webgames": {
+        "title": "Web Games",
+        "description": "Here you’ll find some small web games I created as a test with HTML, CSS, and JavaScript. Have fun playing!"
+      },
+      "apps": {
+        "title": "App Development",
+        "description": "I was always annoyed having 20 apps for every single function on my phone. So I decided to create my own app where all functions are bundled in one place. That’s how Chorez was born."
+      },
+      "games": {
+        "title": "Game Development",
+        "description": "For years I’ve wanted to develop my own games and the ideas in my head are overflowing. Here you can learn all about my dev journey and my current game projects."
+      },
+      "more": "Learn more",
+      "all": "View all projects"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "Home": {
+    "meta": {
+      "title": "Startseite – PlaywithK",
+      "description": "Startseite"
+    },
+    "hero": {
+      "title": "Willkommen auf PlaywithK.de",
+      "subtitle": "Programmierer · Gamer · Video Creator"
+    },
+    "projects": {
+      "heading": "Meine Projekte",
+      "webgames": {
+        "title": "Web-Spiele",
+        "description": "Hier findest du einige kleine Web-Spiele, welche ich als kleinen Test mit HTML, CSS und Javascript erstellt habe. Viel Spaß beim Spielen!"
+      },
+      "apps": {
+        "title": "App-Entwicklung",
+        "description": "Es hat mich schon immer gestört 20 Apps für jede einzelne Funktion auf meinem Handy zu haben. Also entschloss ich mich irgendwann meine eigene App zu kreieren, bei der alle Funktionen an einem Ort gebündelt sind. Chorez war geboren."
+      },
+      "games": {
+        "title": "Spieleentwicklung",
+        "description": "Schon seit Jahren wollte ich eigene Spiele entwickeln und die Ideen in meinem Kopf sprudeln quasi über. Hier erfährst du alles zu meiner Dev-Journey und meinen momentanen Spiele-Projekten."
+      },
+      "more": "Mehr erfahren",
+      "all": "Zu allen Projekten"
+    }
+  }
+}

@@ -1,14 +1,19 @@
-import Link from 'next/link';
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
   const linkClasses = `
     relative text-gray-100 hover:text-teal-400 transition-colors duration-300
     group
   `;
 
   const links = [
-    { href: '/kontakt', label: 'Kontakt' },
-    { href: '/impressum', label: 'Impressum' },
+    { href: "/kontakt", label: "Kontakt" },
+    { href: "/impressum", label: "Impressum" },
   ];
 
   return (
@@ -17,6 +22,7 @@ export default function Footer() {
         © {new Date().getFullYear()} PlaywithK.de - Alle Rechte vorbehalten.
       </div>
 
+      {/* Navigation-Links */}
       <div className="flex items-center gap-2 text-gray-100">
         {links.map(({ href, label }, index) => (
           <span key={label} className="flex items-center">
@@ -27,6 +33,16 @@ export default function Footer() {
             {index === 0 && <span className="mx-2 select-none text-xl">·</span>}
           </span>
         ))}
+      </div>
+
+      {/* Sprachumschalter */}
+      <div className="flex gap-4 mt-2">
+        <Link href={pathname} locale="de" className="hover:text-teal-400">
+          🇩🇪 DE
+        </Link>
+        <Link href={pathname} locale="en" className="hover:text-teal-400">
+          🇬🇧 EN
+        </Link>
       </div>
     </footer>
   );

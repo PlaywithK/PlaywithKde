@@ -1,19 +1,25 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export const metadata = {
   title: "Startseite – PlaywithK",
   description: "Startseite",
 };
 
 export default function Home() {
+  const text = useTranslations("Home");
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8">
 
       {/* Hero */}
       <section className="flex flex-col items-center justify-center h-[60vh] text-center max-w-3xl mx-auto">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-teal-400 leading-tight">
-          Willkommen auf PlaywithK.de
+          {text("hero.title")}
         </h1>
         <p className="text-gray-300 text-base sm:text-lg max-w-xl mx-auto">
-          Video Creator · Gamer · Developer
+          {text("hero.subtitle")}
         </p>
       </section>
 

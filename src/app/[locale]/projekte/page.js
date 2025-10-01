@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from "next/image";
 
 export const metadata = {
   title: "Projekte – PlaywithK",
@@ -48,7 +49,7 @@ export default function Projekte() {
 
         {/* App-Entwicklung */}
         <section className="grid md:grid-cols-2 gap-10 items-center md:flex-row-reverse">
-          <img src="/canva_coding.jpg" alt="Laptop mit Code" className="rounded-xl shadow-lg border border-white border-opacity-10" />
+          <Image src="/canva_coding.jpg" alt="Laptop mit Code" className="rounded-xl shadow-lg border border-white border-opacity-10" />
           <div>
             <h2 className="text-2xl font-bold text-teal-400 mb-4">App-Entwicklung</h2>
             <p className="text-gray-300 mb-6">
@@ -66,7 +67,7 @@ export default function Projekte() {
 
         {/* Chorez-App */}
         <section className="grid md:grid-cols-2 gap-10 items-center bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-10 p-6">
-          <img
+          <Image
             src="/chorez_placeholder.png"
             alt="Chorez App"
             className="h-[500px] w-auto mx-auto md:mx-0 rounded-xl shadow border border-white/10"
@@ -96,7 +97,7 @@ export default function Projekte() {
 
         {/* Spieleentwicklung */}
         <section className="grid md:grid-cols-2 gap-10 items-center">
-          <img
+          <Image
             src="/unity_dev_placeholder.png"
             alt="Unity Editor"
             className="rounded-xl shadow-lg border border-white border-opacity-10 transform object-cover object-center"
@@ -114,7 +115,7 @@ export default function Projekte() {
 
         {/* Web-Entwicklung */}
         <section className="grid md:grid-cols-2 gap-10 items-center">
-          <img
+          <Image
             src="/unity_dev_placeholder.png"
             alt="Unity Editor"
             className="rounded-xl shadow-lg border border-white border-opacity-10 transform object-cover object-center"
@@ -145,7 +146,7 @@ export default function Projekte() {
                 href={href}
                 className="relative block overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group"
               >
-                <img
+                <Image
                   src={src}
                   alt={alt}
                   loading="lazy"

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "PWK Entertainment – PlaywithK",
@@ -91,7 +92,7 @@ export default function PWKEntertainment() {
                 rel="noopener noreferrer"
                 className="group bg-gray-800 rounded-xl p-4 shadow-lg border border-white border-opacity-30 flex flex-col items-center hover:border-teal-400 transition"
               >
-                <img
+                <Image
                   src={image}
                   alt={title}
                   className="rounded-lg mb-4 w-full h-48 object-cover group-hover:scale-105 transition-transform"

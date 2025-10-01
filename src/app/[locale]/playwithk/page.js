@@ -1,6 +1,7 @@
 import SteamRecentGamesXML from '../components/steamrecentgames';
 import AniListProfile from '../components/anilistprofile';
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "PlaywithK – PlaywithK",
@@ -23,7 +24,7 @@ export default function PlaywithK() {
         className="max-w-5xl mx-auto px-6 sm:px-8 py-12 sm:py-16 flex flex-col md:flex-row items-center gap-12 md:gap-16 bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-30"
       >
         <div className="flex flex-col items-center md:items-start md:w-1/3">
-          <img
+          <Image
             src="/PWK_Profilbild_round.png"
             alt="Profilbild Kev"
             className="rounded-full w-40 h-40 sm:w-52 sm:h-52 object-cover mb-6 sm:mb-8 shadow-lg transition-transform duration-300 hover:scale-105"
@@ -54,7 +55,7 @@ export default function PlaywithK() {
                 aria-label={label}
                 className="rounded-full bg-teal-600 p-2.5 sm:p-3 shadow-md hover:bg-teal-400 hover:shadow-lg transition-all duration-300 flex items-center justify-center"
               >
-                <img
+                <Image
                   src={iconSrc}
                   alt={label}
                   className="w-6 h-6 sm:w-7 sm:h-7"
@@ -233,7 +234,7 @@ export default function PlaywithK() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img
+                            <Image
                                 src="https://data-card-for-spotify.herokuapp.com/api/card?user_id=y7nfn3levk4tlppfjwj9lofi0"
                                 alt="Spotify Profil Card"
                                 className="rounded-lg shadow-lg"

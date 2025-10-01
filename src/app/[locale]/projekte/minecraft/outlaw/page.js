@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Minecraft Outlaw – Western-Projekt – PlaywithK",
@@ -18,7 +19,7 @@ export default function Outlaw() {
       <section className="relative z-10 max-w-4xl mx-auto bg-yellow-900/70 border border-yellow-700 rounded-xl shadow-xl px-6 py-12 mt-16 backdrop-blur-sm">
         {/* Logo und Titel */}
         <div className="flex items-center gap-4 mb-6">
-          <img
+          <Image
             src="/minecraft/outlaw/NewOutlawLogo.png"
             alt="Minecraft Outlaw Logo"
             className="w-20 h-20 object-contain"
@@ -34,7 +35,7 @@ export default function Outlaw() {
           staubigen Wegen und stilechten Gebäuden erschaffen – perfekt für Outlaws, Sheriffs und Cowboys.
         </p>
 
-        <img
+        <Image
           src="/minecraft/outlaw/Outlaw_Front.png"
           alt="Minecraft Outlaw Bild"
           className="rounded-lg shadow-lg border-2 border-yellow-600 mb-8"
@@ -65,7 +66,7 @@ export default function Outlaw() {
             </ul>
           </div>
 
-          <img
+          <Image
             src="/minecraft/outlaw/Outlaw_Remaster_01.png"
             alt="Remaster Vorschau"
             className="rounded-lg border-2 border-yellow-600 shadow-lg"
@@ -74,7 +75,7 @@ export default function Outlaw() {
 
         {/* Weitere Info-Sektion */}
         <div className="mb-12 grid md:grid-cols-2 gap-8 items-center">
-          <img
+          <Image
             src="/minecraft/outlaw/Outlaw_Remaster_02.png"
             alt="Remaster Innenstadt"
             className="rounded-lg border-2 border-yellow-600 shadow-lg"

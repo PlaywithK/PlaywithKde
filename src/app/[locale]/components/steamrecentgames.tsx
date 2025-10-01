@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from "next/image";
 
 type RecentGame = {
   appID: string;
@@ -62,7 +63,7 @@ export default function SteamRecentGamesXML() {
           className="bg-gray-700 p-2 rounded-lg shadow hover:shadow-lg transition cursor-pointer"
           title={`${name}\nSpielzeit letzte 2 Wochen: ${Math.round(parseFloat(playtimeTwoWeeks))}h`}
         >
-          <img src={logo} alt={name} className="w-full rounded" />
+          <Image src={logo} alt={name} className="w-full rounded" />
           <p className="text-xs mt-1 text-center truncate">{name}</p>
           <p className="text-xs text-gray-400 text-center">{Math.round(parseFloat(playtimeTwoWeeks))}h gespielt</p>
         </div>

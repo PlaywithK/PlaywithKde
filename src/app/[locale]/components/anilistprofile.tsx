@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import { useEffect, useState } from 'react';
 
 type AniListUser = {
@@ -139,7 +140,7 @@ export default function AniListProfile() {
 
             {/* Profil */}
             <div className="flex items-center justify-center mb-6 gap-4">
-                <img
+                <Image
                     src={user.avatar.large}
                     alt={user.name}
                     className="w-20 h-20 rounded-full"
@@ -177,7 +178,7 @@ export default function AniListProfile() {
                     <div key={idx} className="flex bg-gray-700 rounded-lg shadow p-4 gap-4">
                         {/* Cover-Bild */}
                         {activity.media?.coverImage?.medium && (
-                            <img
+                            <Image
                                 src={activity.media.coverImage.medium}
                                 alt={activity.media.title.romaji}
                                 className="w-16 h-24 object-cover rounded-md"

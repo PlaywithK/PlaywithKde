@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from "next/image";
 
 export const metadata = {
   title: "Winterprojekt – Minecraft Projekte – PlaywithK",
@@ -15,7 +16,7 @@ export default function PWKde() {
           Ziel war es, eine gemütliche Winterwelt mit vielen kleinen Details zu gestalten.
         </p>
 
-        <img
+        <Image
           src="/Winterprojekt_Front.png"
           alt="Winterprojekt Minecraft Bild"
           className="rounded-xl shadow-lg border border-white border-opacity-10 mb-8"

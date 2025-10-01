@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import Link from "next/link";
+import Image from "next/image";
 
 const responses = ["Ja!", "Nein.", "Vielleicht.", "Frag später!", "Auf keinen Fall!", "Natürlich!", "Unklar..."];
 const chibiTalkLines = [
@@ -95,7 +96,7 @@ export default function MagicChibi() {
                     <h1 className="text-3xl sm:text-4xl font-bold text-teal-400 mb-8">✨ PWK Orakel ✨</h1>
 
                     <div className="relative inline-block">
-                        <img
+                        <Image
                             src={chibiSrc}
                             alt="Magischer PlaywithK Chibi"
                             width={300}

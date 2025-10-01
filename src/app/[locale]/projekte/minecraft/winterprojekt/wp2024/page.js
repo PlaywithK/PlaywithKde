@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { updates, galleryImages } from "../../../../components/winterprojekt24Data";
 
 export default function Winterprojekt2024() {
@@ -58,7 +59,7 @@ export default function Winterprojekt2024() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         {galleryImages.map(({ src, alt, caption }, i) => (
                             <div key={i}>
-                                <img src={src} alt={alt} className="w-full h-48 object-cover" />
+                                <Image src={src} alt={alt} className="w-full h-48 object-cover" />
                                 <div className="bg-gray-700 p-3 text-sm text-gray-300">{caption}</div>
                             </div>
                         ))}

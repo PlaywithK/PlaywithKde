@@ -28,11 +28,10 @@ export default async function LocaleLayout({ children, params }: Props) {
 
         {/* Page Content */}
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
-
-        {/* Footer */}
-        <Footer />
       </body>
     </html>
   );

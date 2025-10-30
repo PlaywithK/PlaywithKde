@@ -1,5 +1,5 @@
 {
-  "Home": {
+  "HomePage": {
     "meta": {
       "title": "Startseite – PlaywithK",
       "description": "Startseite"
@@ -9,7 +9,7 @@
       "subtitle": "Programmierer · Gamer · Video Creator"
     },
     "projects": {
-      "heading": "Meine Projekte",
+      "title": "Meine Projekte",
       "webgames": {
         "title": "Web-Spiele",
         "description": "Hier findest du einige kleine Web-Spiele, welche ich als kleinen Test mit HTML, CSS und Javascript erstellt habe. Viel Spaß beim Spielen!"

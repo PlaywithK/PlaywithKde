@@ -1,19 +1,20 @@
-import Link from 'next/link';
-import Image from "next/image";
+"use client";
 
-export const metadata = {
-  title: "Projekte – PlaywithK",
-  description: "Projekte",
-};
+import Link from "next/link";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 
 export default function Projekte() {
+  const t = useTranslations("Projekte");
+  const params = useParams();
+  const locale = params.locale;
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
       <section className="max-w-6xl mx-auto text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-teal-400">Meine Projekte</h1>
-        <p className="text-gray-300 max-w-2xl mx-auto mb-12">
-          Hier findest du eine Sammlung meiner bisherigen Projekte – von kleinen Web-Spielen über App-Experimente bis hin zu größeren Game-Dev-Ideen.
-        </p>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-teal-400">{t("title")}</h1>
+        <p className="text-gray-300 max-w-2xl mx-auto mb-12">{t("description")}</p>
       </section>
 
       <div className="space-y-20 max-w-5xl mx-auto">
@@ -22,139 +23,147 @@ export default function Projekte() {
           <div className="text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
               <span className="text-3xl">🎮</span>
-              <h2 className="text-2xl font-bold text-teal-400">Web-Spiele</h2>
+              <h2 className="text-2xl font-bold text-teal-400">{t("webGames.title")}</h2>
             </div>
-            <p className="text-gray-300 mb-4 max-w-2xl mx-auto">
-              Um HTML, CSS und JavaScript besser zu lernen, habe ich kleine Spiele entwickelt, wie das <strong>PWK Orakel</strong>, <strong>Kartenspiele</strong> oder ein <strong>Lyric-Quiz</strong>.
-              Sie sind simpel, machen aber Spaß – perfekt für zwischendurch!
-            </p>
+            <p className="text-gray-300 mb-4 max-w-2xl mx-auto">{t("webGames.description")}</p>
 
             <div className="flex flex-wrap gap-2 mb-4 justify-center">
-              <span className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">PWK Orakel</span>
-              <span className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">Lyric-Quiz</span>
-              <span className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">HighCard</span>
-              <span className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">Mini Games</span>
-              <span className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">HTML/CSS/JS</span>
+              {["tag1", "tag2", "tag3", "tag4", "tag5"].map((key) => (
+                <span key={key} className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">
+                  {t(`webGames.${key}`)}
+                </span>
+              ))}
             </div>
 
             <Link
-              href="/projekte/webgames"
+              href={`/${locale}/projekte/webgames`}
               className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
             >
-              Zu den Web-Spielen
+              {t("webGames.linkText")}
             </Link>
           </div>
         </section>
 
-
         {/* App-Entwicklung */}
         <section className="grid md:grid-cols-2 gap-10 items-center md:flex-row-reverse">
-          <Image src="/canva_coding.jpg" alt="Laptop mit Code" className="rounded-xl shadow-lg border border-white border-opacity-10" />
+          <div className="relative w-full h-64 md:h-80">
+            <Image
+              src="/canva_coding.jpg"
+              alt={t("appDevelopment.imageAlt")}
+              fill
+              className="rounded-xl shadow-lg border border-white border-opacity-10 object-cover"
+            />
+          </div>
           <div>
-            <h2 className="text-2xl font-bold text-teal-400 mb-4">App-Entwicklung</h2>
-            <p className="text-gray-300 mb-6">
-              Mit <strong>Chorez</strong> wollte ich eine All-in-One-App schaffen, die Aufgaben, Notizen, Timer und mehr in einem Tool vereint.
-              Warum zehn Apps, wenn es auch eine gut durchdachte geben kann?
-            </p>
+            <h2 className="text-2xl font-bold text-teal-400 mb-4">{t("appDevelopment.title")}</h2>
+            <p className="text-gray-300 mb-6">{t("appDevelopment.description")}</p>
             <Link
-              href="/projekte/app-entwicklung"
+              href={`/${locale}/projekte/app-entwicklung`}
               className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
             >
-              Mehr zur App-Entwicklung
+              {t("appDevelopment.linkText")}
             </Link>
           </div>
         </section>
 
         {/* Chorez-App */}
         <section className="grid md:grid-cols-2 gap-10 items-center bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-10 p-6">
-          <Image
-            src="/chorez_placeholder.png"
-            alt="Chorez App"
-            className="h-[500px] w-auto mx-auto md:mx-0 rounded-xl shadow border border-white/10"
-          />
+          <div className="relative w-full h-64 md:h-[500px]">
+            <Image
+              src="/chorez_placeholder.png"
+              alt={t("chorez.imageAlt")}
+              fill
+              className="rounded-xl shadow border border-white/10 object-cover"
+            />
+          </div>
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
               <span className="text-3xl">📱</span>
-              <h2 className="text-2xl font-bold text-teal-400">Chorez App</h2>
+              <h2 className="text-2xl font-bold text-teal-400">{t("chorez.title")}</h2>
             </div>
-            <p className="text-gray-300 mb-4">
-              Eine App, die verschiedene Alltagsfunktionen bündelt. Entwickelt mit dem Ziel, Klarheit und Einfachheit in deinen Alltag zu bringen.
-            </p>
+            <p className="text-gray-300 mb-4">{t("chorez.description")}</p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">All-in-One</span>
-              <span className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">To-Dos</span>
-              <span className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">Einkaufslisten</span>
-              <span className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">Termine</span>
+              {["tag1", "tag2", "tag3", "tag4"].map((key) => (
+                <span key={key} className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">
+                  {t(`chorez.${key}`)}
+                </span>
+              ))}
             </div>
             <Link
               href="/projekte/app-entwicklung"
               className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
             >
-              Mehr zu Chorez
+              {t("chorez.linkText")}
             </Link>
           </div>
         </section>
 
         {/* Spieleentwicklung */}
         <section className="grid md:grid-cols-2 gap-10 items-center">
-          <Image
-            src="/unity_dev_placeholder.png"
-            alt="Unity Editor"
-            className="rounded-xl shadow-lg border border-white border-opacity-10 transform object-cover object-center"
-          />
+          <div className="relative w-full h-64 md:h-80">
+            <Image
+              src="/unity_dev_placeholder.png"
+              alt={t("gameDev.imageAlt")}
+              fill
+              className="rounded-xl shadow-lg border border-white border-opacity-10 object-cover"
+            />
+          </div>
           <div>
-            <h2 className="text-2xl font-bold text-teal-400 mb-4">Spieleentwicklung</h2>
-            <p className="text-gray-300 mb-6">
-              Von RPG-Ideen über Game-Design-Skizzen bis zu realen Prototypen: Die Spieleentwicklung ist meine kreative Spielwiese. Hier erfährst du alles über meine Journey und aktuelle Projekte.
-            </p>
-            <Link href="/projekte/spieleentwicklung" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all">
-              Zur Spieleentwicklung
+            <h2 className="text-2xl font-bold text-teal-400 mb-4">{t("gameDev.title")}</h2>
+            <p className="text-gray-300 mb-6">{t("gameDev.description")}</p>
+            <Link
+              href={`/${locale}/projekte/spieleentwicklung`}
+              className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
+            >
+              {t("gameDev.linkText")}
             </Link>
           </div>
         </section>
 
         {/* Web-Entwicklung */}
         <section className="grid md:grid-cols-2 gap-10 items-center">
-          <Image
-            src="/unity_dev_placeholder.png"
-            alt="Unity Editor"
-            className="rounded-xl shadow-lg border border-white border-opacity-10 transform object-cover object-center"
-          />
+          <div className="relative w-full h-64 md:h-80">
+            <Image
+              src="/unity_dev_placeholder.png"
+              alt={t("webDev.imageAlt")}
+              fill
+              className="rounded-xl shadow-lg border border-white border-opacity-10 object-cover"
+            />
+          </div>
           <div>
-            <h2 className="text-2xl font-bold text-teal-400 mb-4">Web-Entwicklung</h2>
-            <p className="text-gray-300 mb-6">
-              Diese Sektion ist noch WIP!
-            </p>
-            <Link href="/projekte/spieleentwicklung" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all">
-              Zur Web-Entwicklung
+            <h2 className="text-2xl font-bold text-teal-400 mb-4">{t("webDev.title")}</h2>
+            <p className="text-gray-300 mb-6">{t("webDev.description")}</p>
+            <Link
+              href="/projekte/spieleentwicklung"
+              className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
+            >
+              {t("webDev.linkText")}
             </Link>
           </div>
         </section>
 
         {/* Minecraft Projekte */}
         <section className="max-w-6xl mx-auto mt-32 px-4 sm:px-8">
-          <h2 className="text-4xl font-bold text-teal-400 mb-10 text-center">Minecraft Projekte</h2>
+          <h2 className="text-4xl font-bold text-teal-400 mb-10 text-center">{t("minecraftProjects.title")}</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {[
-              { href: "/projekte/minecraft//winterprojekt", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt" },
-              { href: "/projekte/minecraft/outlaw", src: "/Outlaw_Front.png", alt: "Outlaw Bild", title: "Outlaw" },
-              { href: "/projekte/minecraft/pwkde", src: "/PWKDE_Front.png", alt: "PlaywithK.de Bild", title: "PlaywithK.de" },
-            ].map(({ href, src, alt, title }) => (
+            {["item1", "item2", "item3"].map((key) => (
               <Link
-                key={title}
-                href={href}
+                key={key}
+                href={`/${locale}${t(`minecraftProjects.${key}.href`)}`}
                 className="relative block overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group"
               >
-                <Image
-                  src={src}
-                  alt={alt}
-                  loading="lazy"
-                  className="w-full h-full object-cover filter blur-sm transition-filter transition-transform duration-500 ease-in-out group-hover:blur-none group-hover:scale-110"
-                />
+                <div className="relative w-full h-64 sm:h-72 md:h-80">
+                  <Image
+                    src={t(`minecraftProjects.${key}.src`)}
+                    alt={t(`minecraftProjects.${key}.alt`)}
+                    fill
+                    className="object-cover filter blur-sm transition-filter transition-transform duration-500 ease-in-out group-hover:blur-none group-hover:scale-110"
+                  />
+                </div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-white text-3xl sm:text-4xl font-semibold text-center drop-shadow-lg pointer-events-none">
-                    {title}
+                    {t(`minecraftProjects.${key}.title`)}
                   </span>
                 </div>
               </Link>

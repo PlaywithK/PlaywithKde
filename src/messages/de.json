@@ -26,7 +26,77 @@
       "all": "Zu allen Projekten"
     }
   },
-    "FAQ": {
+  "Projekte": {
+    "meta": {
+      "title": "Projekte – PlaywithK",
+      "description": "Projekte"
+    },
+    "title": "Projekte",
+    "description": "Alle Projekte von PlaywithK",
+    "webGames": {
+      "title": "Web-Spiele",
+      "description": "Hier findest du einige kleine Web-Spiele, welche ich als kleinen Test mit HTML, CSS und Javascript erstellt habe. Viel Spaß beim Spielen!",
+      "tag1": "PWK Orakel",
+      "tag2": "Lyric-Quiz",
+      "tag3": "HighCard",
+      "tag4": "Mini Games",
+      "tag5": "HTML/CSS/JS",
+      "linkText": "Zu den Web-Spielen",
+      "imageAlt": "Web-Spiele"
+    },
+    "appDevelopment": {
+      "title": "App-Entwicklung",
+      "description": "Es hat mich schon immer gestört 20 Apps für jede einzelne Funktion auf meinem Handy zu haben. Also entschloss ich mich irgendwann meine eigene App zu kreieren, bei der alle Funktionen an einem Ort gebündelt sind. Chorez war geboren.",
+      "linkText": "Mehr zur App-Entwicklung",
+      "imageAlt": "Laptop mit Code"
+    },
+    "chorez": {
+      "title": "Chorez App",
+      "description": "Eine App, die verschiedene Alltagsfunktionen bündelt und dir hilft, Klarheit und Einfachheit in deinen Alltag zu bringen.",
+      "tag1": "All-in-One",
+      "tag2": "To-Dos",
+      "tag3": "Einkaufslisten",
+      "tag4": "Termine",
+      "linkText": "Mehr zu Chorez",
+      "imageAlt": "Chorez App"
+    },
+    "gameDev": {
+      "title": "Spieleentwicklung",
+      "description": "Schon seit Jahren wollte ich eigene Spiele entwickeln und die Ideen in meinem Kopf sprudeln quasi über. Hier erfährst du alles zu meiner Dev-Journey und meinen momentanen Spiele-Projekten.",
+      "linkText": "Zur Spieleentwicklung",
+      "imageAlt": "Unity Editor"
+    },
+    "webDev": {
+      "title": "Web-Entwicklung",
+      "description": "Diese Sektion ist noch WIP!",
+      "linkText": "Zur Web-Entwicklung",
+      "imageAlt": "Unity Editor"
+    },
+    "minecraftProjects": {
+      "title": "Minecraft Projekte",
+      "item1": {
+        "href": "/projekte/minecraft/winterprojekt",
+        "src": "/Winterprojekt_Front.png",
+        "alt": "Winterprojekt Titelbild",
+        "title": "Winterprojekt"
+      },
+      "item2": {
+        "href": "/projekte/minecraft/pwkde",
+        "src": "/PWKDE_Front.png",
+        "alt": "PlaywithK.de Bild",
+        "title": "PlaywithK.de"
+      },
+      "item3": {
+        "href": "/projekte/minecraft/outlaw",
+        "src": "/Outlaw_Front.png",
+        "alt": "Outlaw Bild",
+        "title": "Outlaw"
+      }
+    },
+    "more": "Mehr erfahren",
+    "all": "Zu allen Projekten"
+  },
+  "FAQ": {
     "title": "FAQ",
     "question1": "Wer betreibt diese Webseite?",
     "answer1": "Diese Webseite wird ausschließlich von PlaywithK betrieben. Bei weiteren Fragen zu diesem Thema, schauen Sie im Tab 'Webentwicklung' vorbei.",

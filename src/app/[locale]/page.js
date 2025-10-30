@@ -5,9 +5,9 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 
 export default function Home() {
-  const t = useTranslations("HomePage"); // Server Side Version geht auch, falls HomePage async ist
+  const t = useTranslations("HomePage");
   const params = useParams();
-  const locale = params.locale; // aktuelles Locale aus der URL, z.B. "de" oder "en"
+  const locale = params.locale;
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8">

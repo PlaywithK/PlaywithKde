@@ -26,10 +26,15 @@
       "all": "Zu allen Projekten"
     }
   },
-    "Footer": {
+  "Navbar": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "entertainment": "PWK Entertainment",
+    "faq": "FAQ"
+  },
+  "Footer": {
     "kontakt": "Kontakt",
     "impressum": "Impressum",
     "copyright": "© {year} PlaywithK.de - Alle Rechte vorbehalten."
   }
 }
-

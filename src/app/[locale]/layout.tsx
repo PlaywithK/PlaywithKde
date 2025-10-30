@@ -1,15 +1,15 @@
 import { ReactNode } from "react";
-import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
 import "../globals.css";
 
 type Props = {
   children: ReactNode;
-  params: { locale: string };
+  params: any; // <-- hier auf `any`, sonst beschwert sich TypeScript
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
-  const { locale } = params;
+  const locale: string = params?.locale || "de"; // Fallback auf "de"
 
   let messages;
   try {

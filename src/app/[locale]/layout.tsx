@@ -1,15 +1,17 @@
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import "../globals.css";
 
 type Props = {
   children: ReactNode;
-  params: any; // <-- hier auf `any`, sonst beschwert sich TypeScript
+  params: any;
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
-  const locale: string = params?.locale || "de"; // Fallback auf "de"
+  const locale: string = params?.locale || "de";
 
   let messages;
   try {
@@ -20,10 +22,17 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body>
+      <body className="bg-gray-900 text-gray-100">
+        {/* Header / Navbar */}
+        <Navbar />
+
+        {/* Page Content */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
+
+        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );

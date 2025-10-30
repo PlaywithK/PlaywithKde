@@ -25,5 +25,10 @@
       "more": "Learn more",
       "all": "View all projects"
     }
+  },
+    "Footer": {
+    "kontakt": "Contact",
+    "impressum": "Impressum",
+    "copyright": "© {year} PlaywithK.de - All rights reserved."
   }
 }

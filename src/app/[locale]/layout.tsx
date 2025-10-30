@@ -31,7 +31,7 @@ interface LocaleLayoutProps {
 }
 
 // Globale Metadata
-/* export const metadata = {
+export const metadata = {
   title: "PlaywithK.de",
   description: "Offizielle Website von PlaywithK. Projekte, Community und mehr.",
 }; */

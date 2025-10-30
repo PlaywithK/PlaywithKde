@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Props-Typ für Layout
+/*
 interface LocaleLayoutProps {
   children: ReactNode;
   params: { locale: string };

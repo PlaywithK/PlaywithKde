@@ -1,32 +1,33 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
-
-const faqItems = [
-  {
-    question: "Wer betreibt diese Webseite?",
-    answer: "Diese Webseite wird ausschließich von PlaywithK betrieben. Bei weiteren Fragen zu diesem Thema, schauen sie im Tab  'Webentwicklung' vorbei.",
-  },
-  {
-    question: "Was ist der Zweck der Webseite?",
-    answer: "PlaywithK.de dient dazu, über Projekte von und mit PlaywithK zu informieren, sowie zu erkunden und neues zu entdecken!",
-  },
-  {
-    question: "Ist diese Seite privat oder kommerziell?",
-    answer: "Die Wwebseite wird ausschließlich privat verwendet und hat keinerlei kommerziellen Nutzen.",
-  },
-  {
-    question: "Darf ich Inhalte von der Webseite weiterverwenden?",
-    answer: "Alle Inhalte von PlaywithK.de dürfen, mit einer Verlinkung auf die Webseite, frei verwendet werden.",
-  },
-  {
-    question: "Wie oft werden Inhalte aktualisiert?",
-    answer: "Die Informationen der Webseite können veraltet sein, da diese in meiner Freizeit entsteht. Das genau letzte Bearbeitungsdatum kann auf der jeweiligen Seite ganz unten angesehen werden.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function FAQ() {
+  const t = useTranslations("FAQ");
   const [openIndexes, setOpenIndexes] = useState([]);
+
+    const faqItems = [
+    {
+      question: t("question1"),
+      answer: t("answer1"),
+    },
+    {
+      question: t("question2"),
+      answer: t("answer2"),
+    },
+    {
+      question: t("question3"),
+      answer: t("answer3"),
+    },
+    {
+      question: t("question4"),
+      answer: t("answer4"),
+    },
+    {
+      question: t("question5"),
+      answer: t("answer5"),
+    },
+  ];
 
   const toggleIndex = (index) => {
     if (openIndexes.includes(index)) {

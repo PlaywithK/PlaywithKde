@@ -26,6 +26,19 @@
       "all": "Zu allen Projekten"
     }
   },
+    "FAQ": {
+    "title": "FAQ",
+    "question1": "Wer betreibt diese Webseite?",
+    "answer1": "Diese Webseite wird ausschließlich von PlaywithK betrieben. Bei weiteren Fragen zu diesem Thema, schauen Sie im Tab 'Webentwicklung' vorbei.",
+    "question2": "Was ist der Zweck der Webseite?",
+    "answer2": "PlaywithK.de dient dazu, über Projekte von und mit PlaywithK zu informieren, sowie Neues zu entdecken!",
+    "question3": "Ist diese Seite privat oder kommerziell?",
+    "answer3": "Die Webseite wird ausschließlich privat verwendet und hat keinerlei kommerziellen Nutzen.",
+    "question4": "Darf ich Inhalte von der Webseite weiterverwenden?",
+    "answer4": "Alle Inhalte von PlaywithK.de dürfen, mit einer Verlinkung auf die Webseite, frei verwendet werden.",
+    "question5": "Wie oft werden Inhalte aktualisiert?",
+    "answer5": "Die Informationen der Webseite können veraltet sein, da diese in meiner Freizeit entsteht. Das genaue letzte Bearbeitungsdatum kann auf der jeweiligen Seite ganz unten angesehen werden."
+  },
   "Navbar": {
     "home": "Startseite",
     "projects": "Projekte",

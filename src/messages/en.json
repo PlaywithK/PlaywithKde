@@ -26,6 +26,19 @@
       "all": "View all projects"
     }
   },
+    "FAQ": {
+    "title": "FAQ",
+    "question1": "Who operates this website?",
+    "answer1": "This website is operated exclusively by PlaywithK. For further questions, check the 'Web Development' tab.",
+    "question2": "What is the purpose of the website?",
+    "answer2": "PlaywithK.de is designed to inform about projects by and with PlaywithK, and to explore and discover new things!",
+    "question3": "Is this website private or commercial?",
+    "answer3": "The website is used solely for private purposes and has no commercial benefit.",
+    "question4": "May I reuse content from the website?",
+    "answer4": "All content from PlaywithK.de may be freely used with a link back to the website.",
+    "question5": "How often is the content updated?",
+    "answer5": "The information on the website may be outdated as it is created in my free time. The exact last edit date can be seen at the bottom of each page."
+  },
   "Navbar": {
     "home": "Home",
     "projects": "Projects",

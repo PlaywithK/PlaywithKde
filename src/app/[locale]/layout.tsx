@@ -23,10 +23,6 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale}>
       <body className="bg-gray-900 text-gray-100">
-        {/* Header / Navbar */}
-        <Navbar />
-
-        {/* Page Content */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           {children}

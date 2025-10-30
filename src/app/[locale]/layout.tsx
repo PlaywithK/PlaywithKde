@@ -22,14 +22,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ✅ Kein eigenes Interface, einfach destructuren
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: ReactNode;
-  params: { locale: string };
-}) {
+export default async function LocaleLayout({ children, params }: any) {
   const { locale } = params;
 
   let messages;

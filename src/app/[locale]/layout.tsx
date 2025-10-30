@@ -1,5 +1,5 @@
 // src/app/[locale]/layout.tsx
-"use client";
+//"use client";
 
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";

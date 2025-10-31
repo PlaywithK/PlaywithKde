@@ -1,12 +1,21 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import { useEffect } from "react";
 import Link from 'next/link';
 
-export const metadata = {
-  title: "Web-Spiele – PlaywithK",
-  description: "Web-Spiele",
-};
-
-
 export default function WebgamesOverview() {
+    const t = useTranslations("Webgames");
+  const params = useParams();
+  const locale = params.locale;
+
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "Webgames - PlaywithK.de"
+      : "Webgames - PlaywithK.de";
+  }, [locale]);
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
 
@@ -18,11 +27,10 @@ export default function WebgamesOverview() {
 
         <div className="relative z-10 max-w-3xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-teal-400 mb-6 drop-shadow">
-            🎮 Willkommen bei den Webgames!
+            {t("hero.title")}
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
-            Lust auf ein Mini-Game? Hier findest du <span className="text-teal-300 font-medium">kleine, kreative Browser-Spiele</span>,
-            die du direkt online spielen kannst – zum Spaß, Ausprobieren oder einfach zwischendurch.
+            {t("hero.descStart")} <span className="text-teal-300 font-medium">{t("hero.descHighlight")}</span>{t("hero.descEnd")}
           </p>
         </div>
       </section>
@@ -33,20 +41,20 @@ export default function WebgamesOverview() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {[
             {
-              title: "PWK Orakel",
-              description: "Stelle dem PWK Orakel eine Frage und erhalte die ultimative Antwort!",
+              title: t("games.oracle.title"),
+              description: t("games.oracle.desc"),
               link: "/projekte/webgames/pwkorakel",
               color: "from-teal-500 to-purple-500",
             },
             {
-              title: "High Stakes",
-              description: "High Stakes ist ein Kartenspiel mit dem Ziel, so nah wie möglich an 21 zu kommen.",
+              title: t("games.highstakes.title"),
+              description: t("games.highstakes.desc"),
               link: "/projekte/webgames/highcard",
               color: "from-pink-500 to-yellow-500",
             },
             {
-              title: "Lyric Quiz",
-              description: "Errate, aus welchem Song eine Line stammt. Teste dein YKKE-Wissen!",
+              title: t("games.lyricquiz.title"),
+              description: t("games.lyricquiz.desc"),
               link: "/projekte/webgames/lyricquiz",
               color: "from-indigo-500 to-cyan-500",
             },
@@ -66,7 +74,7 @@ export default function WebgamesOverview() {
                   href={link}
                   className="inline-block bg-white text-gray-900 font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition"
                 >
-                  Jetzt spielen
+                  {t("buttonPlay")}
                 </Link>
               </div>
             </div>
@@ -79,7 +87,7 @@ export default function WebgamesOverview() {
             href="/projekte"
             className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
           >
-            Zurück zu allen Projekten
+            {t("buttonBack")}
           </Link>
         </div>
       </section>

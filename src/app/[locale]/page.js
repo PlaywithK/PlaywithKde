@@ -1,9 +1,9 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -39,17 +39,17 @@ export default function Home() {
           {[
             {
               title: t("projects.webgames.title"),
-              description: t("projects.webgames.description"),
+              description: t("projects.webgames.desc"),
               link: "projekte/webgames",
             },
             {
               title: t("projects.apps.title"),
-              description: t("projects.apps.description"),
+              description: t("projects.apps.desc"),
               link: "projekte/apps",
             },
             {
               title: t("projects.games.title"),
-              description: t("projects.games.description"),
+              description: t("projects.games.desc"),
               link: "projekte/games",
             },
           ].map(({ title, description, link }, idx) => (

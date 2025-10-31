@@ -96,6 +96,29 @@
     "more": "Mehr erfahren",
     "all": "Zu allen Projekten"
   },
+  "Kontakt": {
+    "title": "Kontakt",
+    "contact": {
+      "name": "Name",
+      "mail": "E-Mail",
+      "message": "Nachricht",
+      "send": "Absenden"
+    }
+  },
+  "Impressum": {
+    "title": "Impressum",
+    "description": "Diese Webseite ist ein rein privates, nicht kommerzielles Angebot und dient keinerlei geschäftsmäßigen oder journalistisch-redaktionellen Zwecken. Gemäß §5 Telemediengesetz (TMG) besteht daher keine Impressumspflicht.",
+    "contact": {
+      "title": "Kontakt"
+    },
+    "nutzungsrecht": {
+      "title": "Nutzungsrecht der Website-Inhalte",
+      "description": "Alle Inhalte dieser Webseite, einschließlich Texte, Bilder und Designs, sind urheberrechtlich geschützt. Eine Nutzung, Vervielfältigung oder Verbreitung ohne vorherige schriftliche Genehmigung ist nicht gestattet. Private, nicht-kommerzielle Nutzung ist unter Angabe der Quelle erlaubt."
+    },
+    "quellen": {
+      "title": "Externe Quellen"
+    }
+  },
   "FAQ": {
     "title": "FAQ",
     "question1": "Wer betreibt diese Webseite?",

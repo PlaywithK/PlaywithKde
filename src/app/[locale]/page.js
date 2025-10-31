@@ -3,11 +3,18 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Home() {
   const t = useTranslations("HomePage");
   const params = useParams();
   const locale = params.locale;
+
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "Startseite - PlaywithK.de"
+      : "Home - PlaywithK.de";
+  }, [locale]);
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8">
@@ -61,7 +68,7 @@ export default function Home() {
                   href={`/${locale}/${link}`}
                   className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
                 >
-                  Mehr erfahren
+                  {t("projects.more")}
                 </Link>
               </div>
             </div>

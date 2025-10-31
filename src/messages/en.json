@@ -6,7 +6,7 @@
     },
     "hero": {
       "title": "Welcome to PlaywithK.de",
-      "subtitle": "Video Creator · Gamer · Developer"
+      "subtitle": "Developer · Gamer · Video Creator"
     },
     "projects": {
       "title": "My Projects",
@@ -109,6 +109,29 @@
     "question5": "How often is the content updated?",
     "answer5": "The information on the website may be outdated as it is created in my free time. The exact last edit date can be seen at the bottom of each page."
   },
+  "Kontakt": {
+    "title": "Contact",
+    "contact": {
+      "name": "Name",
+      "mail": "Mail",
+      "message": "Message",
+      "send": "Send"
+    }
+  },
+  "Impressum": {
+    "title": "Imprint",
+    "description": "This website is a purely private, non-commercial project and does not serve any business-related or journalistic-editorial purposes. Therefore, according to Section 5 of the German Telemedia Act (TMG), there is no legal obligation to provide an imprint.",
+    "contact": {
+      "title": "Contact"
+    },
+    "nutzungsrecht": {
+      "title": "Usage Rights for Website Content",
+      "description": "All content on this website, including texts, images, and designs, is protected by copyright law. Any use, reproduction, or distribution without prior written permission is not allowed. Private, non-commercial use is permitted if the source is clearly stated."
+    },
+    "quellen": {
+      "title": "External Resources"
+    }
+  },
   "Navbar": {
     "home": "Home",
     "projects": "Projects",
@@ -117,7 +140,7 @@
   },
   "Footer": {
     "kontakt": "Contact",
-    "impressum": "Impressum",
+    "impressum": "Imprint",
     "copyright": "© {year} PlaywithK.de - All rights reserved."
   }
 }

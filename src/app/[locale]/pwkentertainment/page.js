@@ -1,10 +1,9 @@
-import Link from "next/link";
-import Image from "next/image";
+"use client";
 
-export const metadata = {
-  title: "PWK Entertainment – PlaywithK",
-  description: "PWK Entertainment – Videoschnitt & Grafikdesign",
-};
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import { useEffect } from "react";
+import Image from "next/image";
 
 const customers = [
   { name: "Anakin Klassen", feedback: "Ich hab mir ein Design für Twitch mit ein paar Panels, einem Offlinescreen und einem Banner bestellt und die Bestellung wurde sehr schnell und genau nach meinen Wünschen bearbeitet!" },
@@ -48,6 +47,16 @@ function StarIcon() {
 }
 
 export default function PWKEntertainment() {
+  const t = useTranslations("HomePage");
+  const params = useParams();
+  const locale = params.locale;
+
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "Startseite - PlaywithK.de"
+      : "Home - PlaywithK.de";
+  }, [locale]);
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 flex flex-col items-center px-8 py-16">
       <div className="w-full max-w-5xl p-10 flex flex-col gap-12">
@@ -92,12 +101,15 @@ export default function PWKEntertainment() {
                 rel="noopener noreferrer"
                 className="group bg-gray-800 rounded-xl p-4 shadow-lg border border-white border-opacity-30 flex flex-col items-center hover:border-teal-400 transition"
               >
-                <Image
-                  src={image}
-                  alt={title}
-                  className="rounded-lg mb-4 w-full h-48 object-cover group-hover:scale-105 transition-transform"
-                  loading="lazy"
-                />
+                <div className="relative w-full h-48 mb-4">
+                  <Image
+                    src={image}
+                    alt={title}
+                    fill
+                    className="object-cover rounded-lg group-hover:scale-105 transition-transform"
+                    loading="lazy"
+                  />
+                </div>
                 <h3 className="text-teal-400 text-xl font-semibold mb-2 text-center">{title}</h3>
                 <p className="text-gray-300 text-center">{description}</p>
               </a>

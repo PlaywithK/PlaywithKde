@@ -7,11 +7,11 @@ import "../globals.css";
 
 interface LocaleLayoutProps {
   children: ReactNode;
-  params: { locale: string };
+  params: Record<string, string>;
 }
 
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
-  const locale = params?.locale ?? "de";
+  const locale = params.locale ?? "de";
 
   let messages;
   try {

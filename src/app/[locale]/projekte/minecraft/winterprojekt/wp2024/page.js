@@ -30,7 +30,7 @@ export default function Winterprojekt2024() {
                         Lade dir die Winterprojekt 2024 Minecraft-Map als ZIP herunter und entdecke die Welt selbst!
                     </p>
                     <a
-                        href="/downloads/Winterprojekt2024_Map.zip"
+                        href="https://github.com/PlaywithK/PlaywithKde/releases/download/Test/Winterprojekt2024_Map.zip"
                         download
                         className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-6 py-3 rounded-full shadow-lg transition-all"
                     >

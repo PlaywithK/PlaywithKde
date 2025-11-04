@@ -71,19 +71,16 @@
     "minecraftProjects": {
       "title": "Minecraft Projekte",
       "item1": {
-        "href": "/projekte/minecraft/winterprojekt",
         "src": "/Winterprojekt_Front.png",
         "alt": "Winterprojekt Titelbild",
         "title": "Winterprojekt"
       },
       "item2": {
-        "href": "/projekte/minecraft/pwkde",
         "src": "/PWKDE_Front.png",
         "alt": "PlaywithK.de Bild",
         "title": "PlaywithK.de"
       },
       "item3": {
-        "href": "/projekte/minecraft/outlaw",
         "src": "/Outlaw_Front.png",
         "alt": "Outlaw Bild",
         "title": "Outlaw"

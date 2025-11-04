@@ -1,12 +1,22 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import { useEffect } from "react";
 import Link from 'next/link';
 import Image from "next/image";
 
-export const metadata = {
-  title: "Winterprojekt – Minecraft Projekte – PlaywithK",
-  description: "Details zum Winterprojekt Minecraft Bau.",
-};
-
 export default function PWKde() {
+  const t = useTranslations("Projekte");
+  const params = useParams();
+  const locale = params.locale;
+
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "PlaywithK.de Minecraft Netzwerk  - PlaywithK.de"
+      : "PlaywithK.de Minecraft Network - PlaywithK.de";
+  }, [locale]);
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
       <section className="max-w-4xl mx-auto">
@@ -16,11 +26,14 @@ export default function PWKde() {
           Ziel war es, eine gemütliche Winterwelt mit vielen kleinen Details zu gestalten.
         </p>
 
-        <Image
-          src="/Winterprojekt_Front.png"
-          alt="Winterprojekt Minecraft Bild"
-          className="rounded-xl shadow-lg border border-white border-opacity-10 mb-8"
-        />
+        <div className="relative w-full h-64 sm:h-80 md:h-96 mb-8 rounded-xl shadow-lg border border-white border-opacity-10 overflow-hidden">
+          <Image
+            src="/Winterprojekt_Front.png"
+            alt="Winterprojekt Minecraft Bild"
+            fill
+            className="object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+          />
+        </div>
 
         <h2 className="text-2xl font-bold text-teal-400 mb-4">Features & Highlights</h2>
         <ul className="list-disc list-inside text-gray-300 mb-8">

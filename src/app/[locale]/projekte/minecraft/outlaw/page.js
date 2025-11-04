@@ -1,12 +1,22 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Minecraft Outlaw – Western-Projekt – PlaywithK",
-  description: "Minecraft-Projekt im Westernstil mit Atmosphäre und Details.",
-};
-
 export default function Outlaw() {
+  const t = useTranslations("Projekte");
+  const params = useParams();
+  const locale = params.locale;
+
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "Minecraft Outlaw - PlaywithK.de"
+      : "Minecraft Outlaw - PlaywithK.de";
+  }, [locale]);
+
   return (
     <main className="relative min-h-screen text-yellow-100 font-western">
       {/* Hintergrundbild */}
@@ -18,11 +28,12 @@ export default function Outlaw() {
       {/* Hauptinhalt */}
       <section className="relative z-10 max-w-4xl mx-auto bg-yellow-900/70 border border-yellow-700 rounded-xl shadow-xl px-6 py-12 mt-16 backdrop-blur-sm">
         {/* Logo und Titel */}
-        <div className="flex items-center gap-4 mb-6">
+        <div className="flex items-center gap-4 mb-6 relative w-20 h-20">
           <Image
             src="/minecraft/outlaw/NewOutlawLogo.png"
             alt="Minecraft Outlaw Logo"
-            className="w-20 h-20 object-contain"
+            fill
+            className="object-contain"
           />
           <h1 className="text-5xl font-bold text-yellow-200 drop-shadow">
             Minecraft Outlaw
@@ -35,11 +46,14 @@ export default function Outlaw() {
           staubigen Wegen und stilechten Gebäuden erschaffen – perfekt für Outlaws, Sheriffs und Cowboys.
         </p>
 
-        <Image
-          src="/minecraft/outlaw/Outlaw_Front.png"
-          alt="Minecraft Outlaw Bild"
-          className="rounded-lg shadow-lg border-2 border-yellow-600 mb-8"
-        />
+        <div className="relative w-full h-96 mb-8 rounded-lg shadow-lg border-2 border-yellow-600">
+          <Image
+            src="/minecraft/outlaw/Outlaw_Front.png"
+            alt="Minecraft Outlaw Bild"
+            fill
+            className="rounded-lg object-cover"
+          />
+        </div>
 
         {/* Highlights */}
         <h2 className="text-2xl font-bold mb-4 text-yellow-200">Highlights & Features</h2>
@@ -66,20 +80,26 @@ export default function Outlaw() {
             </ul>
           </div>
 
-          <Image
-            src="/minecraft/outlaw/Outlaw_Remaster_01.png"
-            alt="Remaster Vorschau"
-            className="rounded-lg border-2 border-yellow-600 shadow-lg"
-          />
+          <div className="relative w-full h-80 rounded-lg border-2 border-yellow-600 shadow-lg">
+            <Image
+              src="/minecraft/outlaw/Outlaw_Remaster_01.png"
+              alt="Remaster Vorschau"
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
         </div>
 
         {/* Weitere Info-Sektion */}
         <div className="mb-12 grid md:grid-cols-2 gap-8 items-center">
-          <Image
-            src="/minecraft/outlaw/Outlaw_Remaster_02.png"
-            alt="Remaster Innenstadt"
-            className="rounded-lg border-2 border-yellow-600 shadow-lg"
-          />
+          <div className="relative w-full h-80 rounded-lg border-2 border-yellow-600 shadow-lg">
+            <Image
+              src="/minecraft/outlaw/Outlaw_Remaster_02.png"
+              alt="Remaster Innenstadt"
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
 
           <div>
             <h3 className="text-xl font-bold text-yellow-200 mb-2">Atmosphäre & Sounddesign</h3>

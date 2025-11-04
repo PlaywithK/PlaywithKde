@@ -5,6 +5,12 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 
+const germanPaths = {
+  item1: "/projekte/minecraft/winterprojekt",
+  item2: "/projekte/minecraft/pwkde",
+  item3: "/projekte/minecraft/outlaw",
+};
+
 export default function Projekte() {
   const t = useTranslations("Projekte");
   const params = useParams();
@@ -14,7 +20,7 @@ export default function Projekte() {
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
       <section className="max-w-6xl mx-auto text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-teal-400">{t("title")}</h1>
-        <p className="text-gray-300 max-w-2xl mx-auto mb-12">{t("description")}</p>
+        <p className="text-gray-300 max-w-2xl mx-auto mb-12">{t("desc")}</p>
       </section>
 
       <div className="space-y-20 max-w-5xl mx-auto">
@@ -25,7 +31,7 @@ export default function Projekte() {
               <span className="text-3xl">🎮</span>
               <h2 className="text-2xl font-bold text-teal-400">{t("webGames.title")}</h2>
             </div>
-            <p className="text-gray-300 mb-4 max-w-2xl mx-auto">{t("webGames.description")}</p>
+            <p className="text-gray-300 mb-4 max-w-2xl mx-auto">{t("webGames.desc")}</p>
 
             <div className="flex flex-wrap gap-2 mb-4 justify-center">
               {["tag1", "tag2", "tag3", "tag4", "tag5"].map((key) => (
@@ -56,7 +62,7 @@ export default function Projekte() {
           </div>
           <div>
             <h2 className="text-2xl font-bold text-teal-400 mb-4">{t("appDevelopment.title")}</h2>
-            <p className="text-gray-300 mb-6">{t("appDevelopment.description")}</p>
+            <p className="text-gray-300 mb-6">{t("appDevelopment.desc")}</p>
             <Link
               href={`/${locale}/projekte/app-entwicklung`}
               className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
@@ -81,7 +87,7 @@ export default function Projekte() {
               <span className="text-3xl">📱</span>
               <h2 className="text-2xl font-bold text-teal-400">{t("chorez.title")}</h2>
             </div>
-            <p className="text-gray-300 mb-4">{t("chorez.description")}</p>
+            <p className="text-gray-300 mb-4">{t("chorez.desc")}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {["tag1", "tag2", "tag3", "tag4"].map((key) => (
                 <span key={key} className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">
@@ -110,7 +116,7 @@ export default function Projekte() {
           </div>
           <div>
             <h2 className="text-2xl font-bold text-teal-400 mb-4">{t("gameDev.title")}</h2>
-            <p className="text-gray-300 mb-6">{t("gameDev.description")}</p>
+            <p className="text-gray-300 mb-6">{t("gameDev.desc")}</p>
             <Link
               href={`/${locale}/projekte/spieleentwicklung`}
               className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
@@ -132,7 +138,7 @@ export default function Projekte() {
           </div>
           <div>
             <h2 className="text-2xl font-bold text-teal-400 mb-4">{t("webDev.title")}</h2>
-            <p className="text-gray-300 mb-6">{t("webDev.description")}</p>
+            <p className="text-gray-300 mb-6">{t("webDev.desc")}</p>
             <Link
               href="/projekte/spieleentwicklung"
               className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
@@ -150,7 +156,7 @@ export default function Projekte() {
             {["item1", "item2", "item3"].map((key) => (
               <Link
                 key={key}
-                href={`/${locale}${t(`minecraftProjects.${key}.href`)}`}
+                href={`/de${germanPaths[key]}`}
                 className="relative block overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group"
               >
                 <div className="relative w-full h-64 sm:h-72 md:h-80">

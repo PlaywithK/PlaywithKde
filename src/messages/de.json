@@ -1,0 +1,189 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Willkommen auf PlaywithK.de",
+      "subtitle": "Programmierer · Gamer · Video Creator"
+    },
+    "projects": {
+      "title": "Meine Projekte",
+      "webgames": {
+        "title": "Web-Spiele",
+        "desc": "Hier findest du einige kleine Web-Spiele, welche ich als kleinen Test mit HTML, CSS und Javascript erstellt habe. Viel Spaß beim Spielen!"
+      },
+      "apps": {
+        "title": "App-Entwicklung",
+        "desc": "Es hat mich schon immer gestört 20 Apps für jede einzelne Funktion auf meinem Handy zu haben. Also entschloss ich mich irgendwann meine eigene App zu kreieren, bei der alle Funktionen an einem Ort gebündelt sind. Chorez war geboren."
+      },
+      "games": {
+        "title": "Spieleentwicklung",
+        "desc": "Schon seit Jahren wollte ich eigene Spiele entwickeln und die Ideen in meinem Kopf sprudeln quasi über. Hier erfährst du alles zu meiner Dev-Journey und meinen momentanen Spiele-Projekten."
+      },
+      "more": "Mehr erfahren",
+      "all": "Zu allen Projekten"
+    }
+  },
+  "Projekte": {
+    "meta": {
+      "title": "Projekte – PlaywithK",
+      "desc": "Projekte"
+    },
+    "title": "Projekte",
+    "desc": "Alle Projekte von PlaywithK",
+    "webGames": {
+      "title": "Web-Spiele",
+      "desc": "Hier findest du einige kleine Web-Spiele, welche ich als kleinen Test mit HTML, CSS und Javascript erstellt habe. Viel Spaß beim Spielen!",
+      "tag1": "PWK Orakel",
+      "tag2": "Lyric-Quiz",
+      "tag3": "HighCard",
+      "tag4": "Mini Games",
+      "tag5": "HTML/CSS/JS",
+      "linkText": "Zu den Web-Spielen",
+      "imageAlt": "Web-Spiele"
+    },
+    "appDevelopment": {
+      "title": "App-Entwicklung",
+      "desc": "Es hat mich schon immer gestört 20 Apps für jede einzelne Funktion auf meinem Handy zu haben. Also entschloss ich mich irgendwann meine eigene App zu kreieren, bei der alle Funktionen an einem Ort gebündelt sind. Chorez war geboren.",
+      "linkText": "Mehr zur App-Entwicklung",
+      "imageAlt": "Laptop mit Code"
+    },
+    "chorez": {
+      "title": "Chorez App",
+      "desc": "Eine App, die verschiedene Alltagsfunktionen bündelt und dir hilft, Klarheit und Einfachheit in deinen Alltag zu bringen.",
+      "tag1": "All-in-One",
+      "tag2": "To-Dos",
+      "tag3": "Einkaufslisten",
+      "tag4": "Termine",
+      "linkText": "Mehr zu Chorez",
+      "imageAlt": "Chorez App"
+    },
+    "gameDev": {
+      "title": "Spieleentwicklung",
+      "desc": "Schon seit Jahren wollte ich eigene Spiele entwickeln und die Ideen in meinem Kopf sprudeln quasi über. Hier erfährst du alles zu meiner Dev-Journey und meinen momentanen Spiele-Projekten.",
+      "linkText": "Zur Spieleentwicklung",
+      "imageAlt": "Unity Editor"
+    },
+    "webDev": {
+      "title": "Web-Entwicklung",
+      "desc": "Diese Sektion ist noch WIP!",
+      "linkText": "Zur Web-Entwicklung",
+      "imageAlt": "Unity Editor"
+    },
+    "minecraftProjects": {
+      "title": "Minecraft Projekte",
+      "item1": {
+        "src": "/Winterprojekt_Front.png",
+        "alt": "Winterprojekt Titelbild",
+        "title": "Winterprojekt"
+      },
+      "item2": {
+        "src": "/PWKDE_Front.png",
+        "alt": "PlaywithK.de Bild",
+        "title": "PlaywithK.de"
+      },
+      "item3": {
+        "src": "/Outlaw_Front.png",
+        "alt": "Outlaw Bild",
+        "title": "Outlaw"
+      }
+    },
+    "more": "Mehr erfahren",
+    "all": "Zu allen Projekten"
+  },
+  "Webgames": {
+    "hero": {
+      "title": "Willkommen bei den Webgames!",
+      "descStart": "Lust auf ein Mini-Game? Hier findest du",
+      "descHighlight": "kleine, kreative Browser-Spiele",
+      "descEnd": ", die du direkt online spielen kannst – zum Spaß, zum Ausprobieren oder einfach zwischendurch."
+    },
+    "games": {
+      "oracle": {
+        "title": "PWK Orakel",
+        "desc": "Stelle dem PWK Orakel eine Frage und erhalte die ultimative Antwort!"
+      },
+      "highstakes": {
+        "title": "High Stakes",
+        "desc": "High Stakes ist ein Kartenspiel mit dem Ziel, so nah wie möglich an 21 zu kommen."
+      },
+      "lyricquiz": {
+        "title": "Lyric Quiz",
+        "desc": "Errate, aus welchem Song eine Line stammt. Teste dein YKKE-Wissen!"
+      }
+    },
+    "buttonPlay": "Jetzt spielen",
+    "buttonBack": "Zurück zu allen Projekten"
+  },
+  "AppDev": {
+    "title": "App-Entwicklung",
+    "subtitle": "Hier dokumentiere ich meine persönliche Reise in der App-Entwicklung – von der ersten Idee bis hin zur fertigen App.",
+    "chorez": {
+      "desc-p1": "Chorez ist mein erstes App-Projekt. Ich habe damit angefangen, weil ich eine App wollte, die alles vereint: To-Do-Liste, Einkaufslisten, Termine und mehr. Statt fünf verschiedene Apps zu nutzen, wollte ich meine eigene zentrale Lösung bauen.",
+      "desc-p2": {
+        "p1": "Entwickelt wird Chorez mit",
+        "p2": ". Ich arbeite hauptsächlich mit",
+        "p3": "aber auch mit",
+        "p4": "– je nachdem, was gerade besser passt."
+      },
+      "desc-p3": "Das Ziel: eine schöne, intuitive App für den Alltag, mit Fokus auf Übersichtlichkeit und Nützlichkeit."
+    },
+    "makingof": {
+      "intro": "Die Entwicklung von Chorez war (und ist) für mich ein spannender Lernprozess. Hier dokumentiere ich die Tools, Frameworks und Erfahrungen, die mich begleitet haben.",
+      "flutter": "Cross-Plattform Framework, das mir erlaubt, eine App für Android und iOS gleichzeitig zu bauen.",
+      "vscode": "Mein bevorzugter Editor für schnelle Iterationen, vor allem wegen der Flutter-Extensions und Performance.",
+      "androidstudio": "Nutze ich für UI-Previews, Emulatoren und manchmal fürs Debugging.",
+      "testing": "Erste Gehversuche mit Widget- und Integration-Tests.",
+      "deployment": "Ziel ist es, die App irgendwann im Play Store und später vielleicht auch im App Store zu veröffentlichen.",
+      "ending": "Ich lerne mit jedem Commit etwas Neues – sei es im UI-Design, bei der Architektur oder im Umgang mit Nutzer-Feedback. Die Reise geht weiter!"
+    }
+  },
+  "PlaywithK": {
+    "title": "Kontakt"
+  },
+  "Kontakt": {
+    "title": "Kontakt",
+    "contact": {
+      "name": "Name",
+      "mail": "E-Mail",
+      "message": "Nachricht",
+      "send": "Absenden"
+    }
+  },
+  "Impressum": {
+    "title": "Impressum",
+    "desc": "Diese Webseite ist ein rein privates, nicht kommerzielles Angebot und dient keinerlei geschäftsmäßigen oder journalistisch-redaktionellen Zwecken. Gemäß §5 Telemediengesetz (TMG) besteht daher keine Impressumspflicht.",
+    "contact": {
+      "title": "Kontakt"
+    },
+    "nutzungsrecht": {
+      "title": "Nutzungsrecht der Website-Inhalte",
+      "desc": "Alle Inhalte dieser Webseite, einschließlich Texte, Bilder und Designs, sind urheberrechtlich geschützt. Eine Nutzung, Vervielfältigung oder Verbreitung ohne vorherige schriftliche Genehmigung ist nicht gestattet. Private, nicht-kommerzielle Nutzung ist unter Angabe der Quelle erlaubt."
+    },
+    "quellen": {
+      "title": "Externe Quellen"
+    }
+  },
+  "FAQ": {
+    "title": "FAQ",
+    "question1": "Wer betreibt diese Webseite?",
+    "answer1": "Diese Webseite wird ausschließlich von PlaywithK betrieben. Bei weiteren Fragen zu diesem Thema, schauen Sie im Tab 'Webentwicklung' vorbei.",
+    "question2": "Was ist der Zweck der Webseite?",
+    "answer2": "PlaywithK.de dient dazu, über Projekte von und mit PlaywithK zu informieren, sowie Neues zu entdecken!",
+    "question3": "Ist diese Seite privat oder kommerziell?",
+    "answer3": "Die Webseite wird ausschließlich privat verwendet und hat keinerlei kommerziellen Nutzen.",
+    "question4": "Darf ich Inhalte von der Webseite weiterverwenden?",
+    "answer4": "Alle Inhalte von PlaywithK.de dürfen, mit einer Verlinkung auf die Webseite, frei verwendet werden.",
+    "question5": "Wie oft werden Inhalte aktualisiert?",
+    "answer5": "Die Informationen der Webseite können veraltet sein, da diese in meiner Freizeit entsteht. Das genaue letzte Bearbeitungsdatum kann auf der jeweiligen Seite ganz unten angesehen werden."
+  },
+  "Navbar": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "entertainment": "PWK Entertainment",
+    "faq": "FAQ"
+  },
+  "Footer": {
+    "kontakt": "Kontakt",
+    "impressum": "Impressum",
+    "copyright": "© {year} PlaywithK.de - Alle Rechte vorbehalten."
+  }
+}

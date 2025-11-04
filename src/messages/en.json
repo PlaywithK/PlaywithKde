@@ -1,0 +1,189 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Welcome to PlaywithK.de",
+      "subtitle": "Developer · Gamer · Video Creator"
+    },
+    "projects": {
+      "title": "My Projects",
+      "webgames": {
+        "title": "Web Games",
+        "desc": "Here you’ll find some small web games I created as a test with HTML, CSS, and JavaScript. Have fun playing!"
+      },
+      "apps": {
+        "title": "App Development",
+        "desc": "I was always annoyed having 20 apps for every single function on my phone. So I decided to create my own app where all functions are bundled in one place. That’s how Chorez was born."
+      },
+      "games": {
+        "title": "Game Development",
+        "desc": "For years I’ve wanted to develop my own games and the ideas in my head are overflowing. Here you can learn all about my dev journey and my current game projects."
+      },
+      "more": "Learn more",
+      "all": "View all projects"
+    }
+  },
+  "Projekte": {
+    "meta": {
+      "title": "Projects – PlaywithK",
+      "desc": "Projects"
+    },
+    "title": "Projects",
+    "desc": "All projects by PlaywithK",
+    "webGames": {
+      "title": "Web Games",
+      "desc": "Here you can find some small web games I created as a test using HTML, CSS, and JavaScript. Have fun playing!",
+      "tag1": "PWK Oracle",
+      "tag2": "Lyric Quiz",
+      "tag3": "HighCard",
+      "tag4": "Mini Games",
+      "tag5": "HTML/CSS/JS",
+      "linkText": "To the Web Games",
+      "imageAlt": "Web Games"
+    },
+    "appDevelopment": {
+      "title": "App Development",
+      "desc": "It always bothered me to have 20 apps for every single function on my phone. So I decided to create my own app, combining all functions in one place. Chorez was born.",
+      "linkText": "More about App Development",
+      "imageAlt": "Laptop with Code"
+    },
+    "chorez": {
+      "title": "Chorez App",
+      "desc": "An app that bundles various everyday functions and helps you bring clarity and simplicity to your daily life.",
+      "tag1": "All-in-One",
+      "tag2": "To-Dos",
+      "tag3": "Shopping Lists",
+      "tag4": "Appointments",
+      "linkText": "More about Chorez",
+      "imageAlt": "Chorez App"
+    },
+    "gameDev": {
+      "title": "Game Development",
+      "desc": "For years, I wanted to develop my own games, and ideas constantly overflow in my mind. Here you can learn everything about my dev journey and current game projects.",
+      "linkText": "To Game Development",
+      "imageAlt": "Unity Editor"
+    },
+    "webDev": {
+      "title": "Web Development",
+      "desc": "This section is still WIP!",
+      "linkText": "To Web Development",
+      "imageAlt": "Unity Editor"
+    },
+    "minecraftProjects": {
+      "title": "Minecraft Projects",
+      "item1": {
+        "src": "/Winterprojekt_Front.png",
+        "alt": "Winter Project Cover",
+        "title": "Winterproject"
+      },
+      "item2": {
+        "src": "/PWKDE_Front.png",
+        "alt": "PlaywithK.de Image",
+        "title": "PlaywithK.de"
+      },
+      "item3": {
+        "src": "/Outlaw_Front.png",
+        "alt": "Outlaw Image",
+        "title": "Outlaw"
+      }
+    },
+    "more": "Learn More",
+    "all": "To All Projects"
+  },
+  "Webgames": {
+    "hero": {
+      "title": "Welcome to Webgames!",
+      "descStart": "In the mood for a mini game? Here you’ll find",
+      "descHighlight": "small, creative browser games",
+      "descEnd": ", that you can play directly online – for fun, testing, or just in between."
+    },
+    "games": {
+      "oracle": {
+        "title": "PWK Oracle",
+        "desc": "Ask the PWK Oracle a question and receive the ultimate answer!"
+      },
+      "highstakes": {
+        "title": "High Stakes",
+        "desc": "High Stakes is a card game where the goal is to get as close to 21 as possible."
+      },
+      "lyricquiz": {
+        "title": "Lyric Quiz",
+        "desc": "Guess which song the lyric are from. Test your YKKE knowledge! (only german)"
+      }
+    },
+    "buttonPlay": "Play now",
+    "buttonBack": "Back to all projects"
+  },
+  "AppDev": {
+    "title": "App Development",
+    "subtitle": "Here I document my personal journey in app development – from the first idea to the finished app.",
+    "chorez": {
+      "desc-p1": "Chorez is my first app project. I started it because I wanted an app that combines everything: to-do lists, shopping lists, appointments, and more. Instead of using five different apps, I wanted to build my own central solution.",
+      "desc-p2": {
+        "p1": "Chorez is developed with",
+        "p2": ". I mainly work with",
+        "p3": "but also with",
+        "p4": "– depending on what fits best at the moment."
+      },
+      "desc-p3": "The goal: a beautiful, intuitive app for everyday use, focused on clarity and practicality."
+    },
+    "makingof": {
+      "intro": "The development of Chorez has been (and still is) an exciting learning journey for me. Here, I document the tools, frameworks, and experiences that have accompanied me along the way.",
+      "flutter": "A cross-platform framework that allows me to build one app for both Android and iOS simultaneously.",
+      "vscode": "My preferred editor for quick iterations — especially because of its Flutter extensions and overall performance.",
+      "androidstudio": "I use it for UI previews, emulators, and occasionally for debugging.",
+      "testing": "My first steps with widget and integration testing.",
+      "deployment": "The goal is to eventually publish the app on the Play Store, and maybe later on the App Store as well.",
+      "ending": "With every commit, I learn something new — whether it’s in UI design, app architecture, or handling user feedback. The journey continues!"
+    }
+  },
+  "PlaywithK": {
+    "title": "Kontakt"
+  },
+  "FAQ": {
+    "title": "FAQ",
+    "question1": "Who operates this website?",
+    "answer1": "This website is operated exclusively by PlaywithK. For further questions, check the 'Web Development' tab.",
+    "question2": "What is the purpose of the website?",
+    "answer2": "PlaywithK.de is designed to inform about projects by and with PlaywithK, and to explore and discover new things!",
+    "question3": "Is this website private or commercial?",
+    "answer3": "The website is used solely for private purposes and has no commercial benefit.",
+    "question4": "May I reuse content from the website?",
+    "answer4": "All content from PlaywithK.de may be freely used with a link back to the website.",
+    "question5": "How often is the content updated?",
+    "answer5": "The information on the website may be outdated as it is created in my free time. The exact last edit date can be seen at the bottom of each page."
+  },
+  "Kontakt": {
+    "title": "Contact",
+    "contact": {
+      "name": "Name",
+      "mail": "Mail",
+      "message": "Message",
+      "send": "Send"
+    }
+  },
+  "Impressum": {
+    "title": "Imprint",
+    "desc": "This website is a purely private, non-commercial project and does not serve any business-related or journalistic-editorial purposes. Therefore, according to Section 5 of the German Telemedia Act (TMG), there is no legal obligation to provide an imprint.",
+    "contact": {
+      "title": "Contact"
+    },
+    "nutzungsrecht": {
+      "title": "Usage Rights for Website Content",
+      "desc": "All content on this website, including texts, images, and designs, is protected by copyright law. Any use, reproduction, or distribution without prior written permission is not allowed. Private, non-commercial use is permitted if the source is clearly stated."
+    },
+    "quellen": {
+      "title": "External Resources"
+    }
+  },
+  "Navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "entertainment": "PWK Entertainment",
+    "faq": "FAQ"
+  },
+  "Footer": {
+    "kontakt": "Contact",
+    "impressum": "Imprint",
+    "copyright": "© {year} PlaywithK.de - All rights reserved."
+  }
+}

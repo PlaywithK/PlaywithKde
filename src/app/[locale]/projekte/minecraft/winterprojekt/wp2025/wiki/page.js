@@ -45,7 +45,7 @@ export default function Winterprojekt2025Wiki() {
                             <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Snowy Spirit</Link></li>
                             <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Winterly</Link></li>
                             <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Snow! Real Magic!</Link></li>
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Macaw's Decoration Mods</Link></li>
+                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Macaws Decoration Mods</Link></li>
                             <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Chimes</Link></li>
                         </ul>
                     </div>
@@ -91,7 +91,7 @@ export default function Winterprojekt2025Wiki() {
                             <ul className="list-disc list-inside text-gray-300 space-y-1">
                                 <li>Tectonic (Biome Gen)</li>
                                 <li>WilliamWithers Overhauled Overworld</li>
-                                <li>ChoiceTheorem's Overhauled Village</li>
+                                <li>ChoiceTheorems Overhauled Village</li>
                                 <li>Structory</li>
                                 <li>YUNG’s Better Desert Temples, Nether Fortresses, Ocean Monuments & Witch Huts</li>
                             </ul>

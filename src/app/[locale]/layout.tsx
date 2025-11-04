@@ -7,7 +7,7 @@ import "../globals.css";
 
 type LayoutProps = {
   children: ReactNode;
-  params: { locale: string };
+  params: Record<string, string>;
 };
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {

@@ -14,8 +14,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  // Validierung: wenn locale ungültig, zeige 404
-  if (!["de", "en" /* etc. */].includes(locale)) {
+  if (!["de", "en"].includes(locale)) {
     notFound();
   }
 

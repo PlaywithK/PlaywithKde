@@ -5,14 +5,13 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import "../globals.css";
 
-type LocaleLayoutProps = {
+type Props = {
   children: ReactNode;
-  params: { [key: string]: string };
+  params: { locale: string };
 };
 
-
-export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
-  const locale = params?.locale ?? "de";
+export default async function LocaleLayout({ children, params }: Props) {
+  const locale = params.locale ?? "de";
 
   let messages;
   try {

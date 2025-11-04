@@ -7,11 +7,11 @@ import "../globals.css";
 
 type Props = {
   children: ReactNode;
-  params: any;
+  params: { locale: string };
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
-  const locale: string = params?.locale || "de";
+  const locale = params?.locale || "de";
 
   let messages;
   try {
@@ -21,14 +21,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   }
 
   return (
-    <html lang={locale}>
-      <body className="bg-gray-900 text-gray-100">
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navbar />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Navbar />
+      {children}
+      <Footer />
+    </NextIntlClientProvider>
   );
 }

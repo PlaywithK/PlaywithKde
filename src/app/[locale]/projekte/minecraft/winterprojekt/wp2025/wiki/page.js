@@ -1211,7 +1211,7 @@ export default function Winterprojekt2025Wiki() {
                 <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
                     <h2 className="text-3xl font-semibold mb-4 text-teal-400">Snowy Spirit</h2>
                     <p className="text-gray-300 mb-8">
-                        Snowy Spirit fügt einige winterliche Items hinzu, darunter eine neue Music Disc "A Carol", einige Deko-Elemente und Schlitten!
+                        Snowy Spirit fügt einige winterliche Items hinzu, darunter eine neue Music Disc, einige Deko-Elemente und Schlitten!
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">

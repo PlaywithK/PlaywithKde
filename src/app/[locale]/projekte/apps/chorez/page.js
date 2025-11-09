@@ -1,6 +1,6 @@
 "use client";
 
-import Hero from "./../../components/hero";
+import Hero from "./../../../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";

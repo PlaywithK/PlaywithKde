@@ -164,6 +164,7 @@
   },
   "FAQ": {
     "title": "FAQ",
+    "desc": "Übliche Fragen und Antworten.",
     "question1": "Wer betreibt diese Webseite?",
     "answer1": "Diese Webseite wird ausschließlich von PlaywithK betrieben. Bei weiteren Fragen zu diesem Thema, schauen Sie im Tab 'Webentwicklung' vorbei.",
     "question2": "Was ist der Zweck der Webseite?",

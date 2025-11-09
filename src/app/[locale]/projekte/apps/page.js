@@ -1,11 +1,12 @@
 "use client";
 
+import Hero from "./../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
 
 export default function AppEntwicklung() {
-    const t = useTranslations("AppDev");
+  const t = useTranslations("AppDev");
   const params = useParams();
   const locale = params.locale;
 
@@ -16,16 +17,11 @@ export default function AppEntwicklung() {
   }, [locale]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
-      <section className="max-w-6xl mx-auto text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-teal-400">{t("title")}</h1>
-        <p className="text-gray-300 max-w-2xl mx-auto mb-12">
-          {t("subtitle")}
-        </p>
-      </section>
+    <>
+      <Hero title={t("title")} subtitle={t("subtitle")} />
 
+      {/* Projekt: Chorez */}
       <section className="max-w-3xl mx-auto space-y-16">
-        {/* Projekt: Chorez */}
         <div className="bg-gray-800 rounded-2xl shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl font-semibold text-teal-300 mb-4">Chorez</h2>
           <p className="text-gray-200 mb-4">
@@ -75,8 +71,7 @@ export default function AppEntwicklung() {
             {t("makingof.ending")}
           </p>
         </div>
-
       </section>
-    </main>
+    </>
   );
 }

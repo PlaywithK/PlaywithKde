@@ -1,5 +1,6 @@
 "use client";
 
+import Hero from "./../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
@@ -16,14 +17,10 @@ export default function Impressum() {
   }, [locale]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-6 py-12">
+    <>
+      <Hero title={t("title")} subtitle={t("desc")} />
+
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8 text-teal-400">{t("title")}</h1>
-
-        <section className="mb-8 space-y-4 text-gray-300">
-          <p>{t("description")}</p>
-        </section>
-
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-2 text-teal-400">{t("contact.title")}</h2>
           <p className="text-gray-300">E-Mail: <a href="mailto:info@playwithk.de" className="underline hover:text-teal-400">info@playwithk.de</a></p>
@@ -42,6 +39,6 @@ export default function Impressum() {
           </p>
         </section>
       </div>
-    </main>
+    </>
   );
 }

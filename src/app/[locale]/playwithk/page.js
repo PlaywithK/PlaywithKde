@@ -1,5 +1,6 @@
 "use client";
 
+import Hero from "./../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
@@ -20,13 +21,8 @@ export default function PlaywithK() {
   }, [locale]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8">
-      <section className="text-center py-16 max-w-4xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-teal-400 mb-4">PlaywithK im Web</h1>
-        <p className="text-gray-300 text-lg sm:text-xl">
-          Hier findest du alles, was mich auch abseits von Projekten begeistert – Games, Anime & Musik.
-        </p>
-      </section>
+    <>
+    <Hero title="PlaywithK im Web" subtitle="Hier findest du alles, was mich auch abseits von Projekten begeistert – Games, Anime & Musik." />
 
       {/* About */}
       <section
@@ -252,6 +248,6 @@ export default function PlaywithK() {
           </a>
         </div>
       </section>
-    </main>
+    </>
   );
 }

@@ -1,4 +1,6 @@
 "use client";
+
+import Hero from "./../components/hero";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -6,7 +8,7 @@ export default function FAQ() {
   const t = useTranslations("FAQ");
   const [openIndexes, setOpenIndexes] = useState([]);
 
-    const faqItems = [
+  const faqItems = [
     {
       question: t("question1"),
       answer: t("answer1"),
@@ -38,8 +40,8 @@ export default function FAQ() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-6 sm:px-8 lg:px-12 py-12">
-      <h1 className="text-5xl font-extrabold mb-12 text-teal-400 text-center">FAQ</h1>
+    <>
+      <Hero title={t("title")} subtitle={t("desc")} />
 
       <div className="max-w-3xl mx-auto space-y-4">
         {faqItems.map(({ question, answer }, index) => {
@@ -83,6 +85,6 @@ export default function FAQ() {
           );
         })}
       </div>
-    </main>
+    </>
   );
 }

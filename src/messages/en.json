@@ -141,6 +141,7 @@
   },
   "FAQ": {
     "title": "FAQ",
+    "desc": "Common questions and answers!",
     "question1": "Who operates this website?",
     "answer1": "This website is operated exclusively by PlaywithK. For further questions, check the 'Web Development' tab.",
     "question2": "What is the purpose of the website?",

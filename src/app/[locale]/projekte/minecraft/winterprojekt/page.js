@@ -1,5 +1,6 @@
 "use client";
 
+import Hero from "./../../../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
@@ -7,7 +8,7 @@ import Link from 'next/link';
 import Image from "next/image";
 
 export default function Winterprojekt() {
-  const t = useTranslations("Projekte");
+  const t = useTranslations("winterprojekt");
   const params = useParams();
   const locale = params.locale;
 
@@ -18,21 +19,24 @@ export default function Winterprojekt() {
   }, [locale]);
 
   const winterProjects = [
-    { href: "/projekte/minecraft/winterprojekt/wp2024", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2024" },
-    { href: "/projekte/minecraft/winterprojekt/wp2020", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2020" },
-    { href: "/projekte/minecraft/winterprojekt/wp2017", src: "/Winterprojekt_Front.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2017" },
+    { href: "/projekte/minecraft/winterprojekt/wp2024", src: "/minecraft/winterprojekt/wp2021_Title.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2024" },
+    { href: "/projekte/minecraft/winterprojekt/wp2020", src: "/minecraft/winterprojekt/wp2020_Title.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2020" },
+    { href: "/projekte/minecraft/winterprojekt/wp2017", src: "/minecraft/winterprojekt/wp2017_Title.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2017" },
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
-      <section className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-teal-400 mb-6">Winterprojekt</h1>
+    <>
+      <Hero title={t("title")} subtitle={t("subtitle")} />
+
+      {/*
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-teal-400 mb-6 drop-shadow">Das Winterprojekt</h1>
         <p className="text-gray-300 mb-8">
           Das Winterprojekt ist eines meiner liebsten Minecraft-Projekte, bei dem ich eine verschneite Landschaft mit detailreichen Bauten erschaffen habe.
           Ziel war es, eine gemütliche Winterwelt mit vielen kleinen Details zu gestalten.
-        </p>
+        </p>*/}
 
-        {/* Hauptbild im Stil der Projekte-Seite, anklickbar */}
+      {/* Hauptbild */}
+      <section className="max-w-4xl mx-auto text-center">
         <Link href={`/${locale}/projekte/minecraft/winterprojekt/wp2025`}>
           <div className="relative w-full h-64 sm:h-80 md:h-96 mb-8 rounded-xl shadow-lg border border-white border-opacity-10 overflow-hidden cursor-pointer">
             <Image
@@ -42,10 +46,16 @@ export default function Winterprojekt() {
               className="object-cover transition-transform duration-500 ease-in-out hover:scale-105"
             />
           </div>
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <span className="text-white text-6xl sm:text-6xl font-semibold text-center drop-shadow-lg pointer-events-none">
+              2025
+            </span>
+          </div>
         </Link>
 
         {/* Jahresgrid */}
-        <section className="max-w-6xl mx-auto mt-32 px-4 sm:px-8">
+        <section className="max-w-full mx-auto mt-16">
+          <h2 className="text-3xl font-semibold mb-6 text-teal-400">Vergangene Projekte</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {winterProjects.map(({ href, src, alt, title }) => (
               <Link
@@ -62,7 +72,7 @@ export default function Winterprojekt() {
                   />
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-white text-3xl sm:text-4xl font-semibold text-center drop-shadow-lg pointer-events-none">
+                  <span className="text-white text-4xl sm:text-4xl font-semibold text-center drop-shadow-lg pointer-events-none">
                     {title}
                   </span>
                 </div>
@@ -71,10 +81,10 @@ export default function Winterprojekt() {
           </div>
         </section>
 
-        <Link href="/projekte" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all mt-12">
+        <Link href="./../../projekte" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all mt-12">
           Zurück zur Projektübersicht
         </Link>
       </section>
-    </main>
+    </>
   );
 }

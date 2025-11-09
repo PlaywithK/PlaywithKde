@@ -1,5 +1,6 @@
 "use client";
 
+import Hero from "./../components/hero";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -17,11 +18,8 @@ export default function Projekte() {
   const locale = params.locale;
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
-      <section className="max-w-6xl mx-auto text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-teal-400">{t("title")}</h1>
-        <p className="text-gray-300 max-w-2xl mx-auto mb-12">{t("desc")}</p>
-      </section>
+    <>
+      <Hero title={t("title")} subtitle={t("desc")} />
 
       <div className="space-y-20 max-w-5xl mx-auto">
         {/* Web-Spiele */}
@@ -149,7 +147,7 @@ export default function Projekte() {
         </section>
 
         {/* Minecraft Projekte */}
-        <section className="max-w-6xl mx-auto mt-32 px-4 sm:px-8">
+        <section className="max-w-6xl mx-auto mt-32 px-4 sm:px-8 sm:pb-8">
           <h2 className="text-4xl font-bold text-teal-400 mb-10 text-center">{t("minecraftProjects.title")}</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -177,6 +175,6 @@ export default function Projekte() {
           </div>
         </section>
       </div>
-    </main>
+    </>
   );
 }

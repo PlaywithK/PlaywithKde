@@ -1,5 +1,6 @@
 "use client";
 
+import Hero from "./../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
@@ -16,9 +17,10 @@ export default function Kontakt() {
   }, [locale]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 flex items-center justify-center px-6 py-12">
-      <div className="max-w-3xl w-full">
-        <h1 className="text-4xl font-bold mb-8 text-teal-400 text-center">{t("title")}</h1>
+    <>
+     <Hero title={t("title")} subtitle={t("desc")} />
+
+      <div className="max-w-3xl w-full mx-auto">
         <form className="flex flex-col gap-6 bg-gray-800 p-8 rounded-lg shadow-lg">
           <label className="flex flex-col text-gray-300">
             {t("contact.name")}
@@ -55,6 +57,6 @@ export default function Kontakt() {
           </button>
         </form>
       </div>
-    </main>
+    </>
   );
 }

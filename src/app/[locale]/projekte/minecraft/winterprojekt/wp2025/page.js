@@ -18,26 +18,24 @@ export default function Winterprojekt2024() {
                 {/* Projektbeschreibung */}
                 <section className="max-w-6xl mx-auto text-center">
                     <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-teal-400">Winterprojekt 2025</h1>
-                    <p className="text-gray-300 max-w-2xl mx-auto mb-12">
+                    <p className="text-gray-300 max-w-2xl mx-auto mb-6">
                         Das Winterprojekt 2025 wird zum zweiten Mal mit einem Modpack gespielt.
                     </p>
-                </section>
 
-                {/* Download */}
-                <section className="text-center bg-gray-800/60 backdrop-blur-md rounded-2xl p-10 shadow-xl border border-white border-opacity-10 mb-16">
-                    <h2 className="text-3xl font-semibold mb-3 text-teal-400">Modpack-Download</h2>
-                    <p className="text-gray-300 mb-6 max-w-md mx-auto">
-                        Lade dir das offizielle Winterprojekt-Modpack für <span className="font-semibold">Modrinth</span> herunter!
-                    </p>
+                    {/* Download */}
                     <a
-                        href="/downloads/Winterprojekt2024_Map.zip"
-                        download
-                        className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all"
+                        href="https://modrinth.com/modpack/winterprojekt2025"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block"
                     >
-                        <span>Modpack herunterladen</span> <span>🡇</span>
+                        <img
+                            src="https://raw.githubusercontent.com/krystejj/anothersimpleelevator/1.21/assets/available-on-modrinth.png"
+                            alt="Available on Modrinth"
+                            className="mx-auto mb-4 hover:scale-105 transition-transform duration-200"
+                        />
                     </a>
                 </section>
-
 
                 {/* Gallery */}
                 {/*<section>
@@ -78,6 +76,6 @@ export default function Winterprojekt2024() {
                 </section>
 
             </div>
-        </main>
+        </main >
     );
 }

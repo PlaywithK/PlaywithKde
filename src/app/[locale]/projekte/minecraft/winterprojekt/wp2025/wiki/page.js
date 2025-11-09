@@ -12,7 +12,7 @@ export default function Winterprojekt2025Wiki() {
                 <section className="max-w-6xl mx-auto text-center mb-16">
                     <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-teal-400">Winterprojekt 2025 Wiki</h1>
                     <p className="text-gray-300 max-w-2xl mx-auto">
-                        Hier findest du alle Informationen zum Winterprojekt 2025, Tutorials und Infos zu allen Mods.
+                        Hier findest du alle Infos zum diesjährigen Projekt, sowie Einführungen in die meisten Mods.
                     </p>
                 </section>
 
@@ -23,43 +23,47 @@ export default function Winterprojekt2025Wiki() {
                     <div className="mb-6">
                         <h3 className="text-2xl font-semibold mb-2 text-teal-400">Technisches</h3>
                         <ul className="list-decimal list-inside text-gray-300 space-y-2">
-                            <li><Link href="#installation" className="text-teal-400 hover:underline">Installation & Setup</Link></li>
-                            <li><Link href="#modlist" className="text-teal-400 hover:underline">Modliste</Link></li>
+                            <li><Link href="#installation" className="hover:underline">Installation & Setup</Link></li>
+                            <li><Link href="#modlist" className="hover:underline">Modliste</Link></li>
+                            <li><Link href="#rei" className="hover:underline">Roughly Enough Items</Link></li>
                         </ul>
                     </div>
 
                     <div className="mb-6">
                         <h3 className="text-2xl font-semibold mb-2 text-teal-400">Mods</h3>
                         <ul className="list-disc list-inside text-gray-300 space-y-1">
-                            <li><Link href="#mod-ae2" className="text-teal-400 hover:underline">Applied Energistics 2 (AE2)</Link></li>
-                            <li><Link href="#mod-backpacks" className="text-teal-400 hover:underline">Sophisticated Backpacks</Link></li>
-                            <li><Link href="#mod-amendments" className="text-teal-400 hover:underline">Amendments</Link></li>
-                            <li><Link href="#mod-supplementaries" className="text-teal-400 hover:underline">Supplementaries</Link></li>
-                            <li><Link href="#mod-elevator" className="text-teal-400 hover:underline">Another Simple Elevator</Link></li>
-                            <li><Link href="#mod-fishing-crates" className="text-teal-400 hover:underline">Fishing Crates</Link></li>
-                            <li><Link href="#mod-buidling-wands" className="text-teal-400 hover:underline">Wand of Better Building</Link></li>
-                            <li><Link href="#mods-drawers" className="text-teal-400 hover:underline">Storage Drawers</Link></li>
-                            <li><Link href="#mods-waystones" className="text-teal-400 hover:underline">Waystones</Link></li>
+                            <li><Link href="#mod-ae2" className="hover:underline">Applied Energistics 2 (AE2)</Link></li>
+                            <li><Link href="#mod-amendments" className="hover:underline">Amendments</Link></li>
+                            <li><Link href="#mod-elevator" className="hover:underline">Another Simple Elevator</Link></li>
+                            <li><Link href="#mods-chimes" className="hover:underline">Chimes</Link></li>
+                            <li><Link href="#mods-generators" className="hover:underline">Extra Generators</Link></li>
+                            <li><Link href="#mod-fishing-crates" className="hover:underline">Fishing Crates</Link></li>
+                            <li><Link href="#mods-graves" className="hover:underline">Gravestones</Link></li>
+                            <li><Link href="#mods-macaw" className="hover:underline">Macaws Lights & Lamps</Link></li>
+                            <li><Link href="#mods-netherchest" className="hover:underline">Nether Chest</Link></li>
+                            <li><Link href="#mods-plushies" className="hover:underline">Plushie Mod</Link></li>
+                            <li><Link href="#mods-realmagic" className="hover:underline">Snow! Real Magic!</Link></li>
+                            <li><Link href="#mods-snowyspirit" className="hover:underline">Snowy Spirit</Link></li>
+                            <li><Link href="#mod-backpacks" className="hover:underline">Sophisticated Backpacks</Link></li>
+                            <li><Link href="#mods-drawers" className="hover:underline">Storage Drawers</Link></li>
+                            <li><Link href="#mod-supplementaries" className="hover:underline">Supplementaries</Link></li>
+                            <li><Link href="#mod-tinkers" className="hover:underline">Tinkers Construct</Link></li>
+                            <li><Link href="#mods-waystones" className="hover:underline">Waystones</Link></li>
+                            <li><Link href="#mod-buidling-wands" className="hover:underline">Wand of Better Building</Link></li>
+                            <li><Link href="#mods-winterly" className="hover:underline">Winterly</Link></li>
+                        </ul>
 
-                            <li><Link href="#mod-ae2" className="text-teal-400 hover:underline">Tinkers Construct</Link></li>
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Extra Generators</Link></li>
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Lets Do-Reihe</Link></li>
-
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Gravestones</Link></li>
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Nether Chest</Link></li>
-
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Plushie Mod</Link></li>
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Snowy Spirit</Link></li>
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Winterly</Link></li>
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Snow! Real Magic!</Link></li>
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Macaws Lights & Lamps</Link></li>
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Chimes</Link></li>
-
-                            <li><Link href="#mods-hammers" className="text-teal-400 hover:underline">Roughly Enough Items</Link></li>
+                        <h3 className="text-xl font-semibold mb-2 text-teal-400">[Let's Do]-Reihe</h3>
+                        <ul className="list-disc list-inside text-gray-300 space-y-1">
+                            <li><Link href="#mods-do-farm" className="hover:underline">[Let's Do] Farm & Charm</Link></li>
+                            <li><Link href="#mods-do-bakery" className="hover:underline">[Let's Do] Bakery</Link></li>
+                            <li><Link href="#mods-do-candle" className="hover:underline">[Let's Do] Candlelight</Link></li>
+                            <li><Link href="#mods-do-herbal" className="hover:underline">[Let's Do] Herbal Brews</Link></li>
+                            <li><Link href="#mods-do-vinery" className="hover:underline">[Let's Do] Vinery</Link></li>
+                            <li><Link href="#mods-do-beach" className="hover:underline">[Let's Do] Beachparty</Link></li>
                         </ul>
                     </div>
                 </section>
-
 
                 {/* Installation */}
                 <section id="installation" className="max-w-6xl mx-auto mb-16">
@@ -144,6 +148,23 @@ export default function Winterprojekt2025Wiki() {
                     </div>
                 </section>
 
+                {/* REI */}
+                <section id="rei" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Roughly Enough Items</h2>
+                    <p className="text-gray-300 mb-4">
+                        Dies ist eine kurze Einführung und Erklärung für <strong>Roughly Enough Items</strong>, ab hier immer <strong>REI</strong> genannt.
+                        REI ist eine Mod, die Spielern ermöglicht, sämtliche Rezepte und Verwendungszwecke von Items einzusehen – egal ob aus Vanilla oder Mods.
+                    </p>
+                    <p className="text-gray-300 mb-4">
+                        Auf der rechten Seite deines Inventars findest du eine Liste aller verfügbaren Items. Du kannst mit der Suchleiste unten gezielt nach einem Item suchen oder mit dem Mausrad durch die Liste scrollen. Du kannst auch mit @ nach allen Items einer bestimmten Mod suchen, zum Beispiel @Applied für alle Applied Energistics Items.
+                    </p>
+                    <p className="text-gray-300 mb-4">
+                        Wenn du wissen möchtest, <strong>wie man ein Item herstellt</strong>, bewege den Mauszeiger darüber und drücke <strong>R</strong> (für „Recipe“).
+                        Um herauszufinden, <strong>wo ein Item verwendet wird</strong>, drücke <strong>U</strong> (für „Uses“).
+                        REI zeigt dir dann übersichtlich alle passenden Herstellungs- oder Verwendungsrezepte an.
+                    </p>
+                </section>
+
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods */}
@@ -153,12 +174,12 @@ export default function Winterprojekt2025Wiki() {
 
                     {/* Einleitung */}
                     <p className="text-gray-300 mb-6">
-                        Applied Energistics 2 ist eine der umfangreichsten Lager- und Logistikmods überhaupt.
+                        <strong>Applied Energistics 2</strong> ist eine umfangreichsten Lager- und Logistikmod.
                         Sie erlaubt es dir, dein eigenes digitales Lagersystem zu bauen – mit Autocrafting,
-                        kabelloser Verbindung und vielem mehr. Klingt kompliziert, ist aber gar nicht so schlimm,
-                        wenn man Schritt für Schritt vorgeht.
+                        kabelloser Verbindung und vielem mehr. Klingt kompliziert, ist aber gar nicht so schlimm wie man denkt.
                     </p>
 
+                    <h3 className="text-3xl font-semibold mb-4 text-teal-400">Grundfunktionen</h3>
                     <h3 className="text-2xl font-semibold mb-4 text-teal-400">Lager</h3>
                     <p className="text-gray-300 mb-6">
                         Das sogenannte Matter Energy System – kurz <strong>ME-System</strong> – ist das Herzstück von AE2.
@@ -181,7 +202,7 @@ export default function Winterprojekt2025Wiki() {
                     </p>
 
                     {/* Beginning */}
-                    <h3 className="text-2xl font-semibold mb-4 text-teal-400">Materialien besorgen</h3>
+                    <h3 className="text-2xl font-semibold mb-4 text-teal-400">Mit AE2 beginnen</h3>
 
                     <div className="relative w-full h-64 md:h-80 mb-6 rounded-xl overflow-hidden">
                         <Image
@@ -254,7 +275,7 @@ export default function Winterprojekt2025Wiki() {
                         oder auch in der Welt als Erze. Er ist ein zentrales Material für fast alle AE2-Rezepte.
                     </p>
 
-                    <h3 className="text-2xl font-semibold mb-4 text-teal-400">Mit AE2 anfangen</h3>
+                    <h3 className="text-2xl font-semibold mb-4 text-teal-400">Komponenten herstellen</h3>
                     <p className="text-gray-300 mb-6">
                         Nun, da du alle wichtigen Materialien hast, kannst du mit dem Bau deiner ersten Maschine beginnen:
                         dem <strong>Inscriber</strong>. Damit stellst du die Schaltkreise her, aus denen später Prozessoren werden.
@@ -317,7 +338,6 @@ export default function Winterprojekt2025Wiki() {
                         Charged Certus Quartz erhältst du, indem du normalen Certus Quartz im Charger – wie zuvor beim Kompass – auflädst.
                     </p>
 
-                    <h3 className="text-2xl font-semibold mb-4 text-teal-400">Das erste ME-System</h3>
                     <h3 className="text-2xl font-semibold mb-4 text-teal-400">Das erste ME-System</h3>
 
                     <p className="text-gray-300 mb-6">
@@ -1051,6 +1071,754 @@ export default function Winterprojekt2025Wiki() {
                             </div>
                         ))}
                     </div>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - Plushie Mod */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Plushie Mod</h2>
+                    <p className="text-gray-300 mb-8">
+                        Die <span className="text-teal-300 font-semibold">Plushie Mod</span> bringt eine
+                        Extraportion Gemütlichkeit in dein Zuhause! Von Creepern über Axolotl bis hin zu Endermen – von nahezu jedem bekannten
+                        Minecraft-Mob gibt es jetzt ein passendes Plushie.
+                        Du kannst sie auf Regale, Betten oder in gemütliche Ecken stellen – perfekt,
+                        um deiner Basis ein bisschen Leben und Persönlichkeit zu verleihen.
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_sword.png", title: "Rucksack", desc: "Ein Schwert aus Smaragd" },
+                            { src: "emeraldTools_pickaxe.png", title: "Farbiger Rucksack", desc: "Eine Spitzhacke aus Smaragd" },
+                            { src: "emeraldTools_axe.png", title: "Kupfer Rucksack", desc: "Eine Axt aus Smaragd" },
+                            { src: "emeraldTools_shovel.png", title: "Eisen Rucksack", desc: "Eine Schaufel aus Smaragd" },
+                            { src: "emeraldTools_hoe.png", title: "Gold Rucksack", desc: "Eine Hoe aus Smaragd" },
+                            { src: "emeraldTools_hoe.png", title: "Diamant Rucksack", desc: "Eine Hoe aus Smaragd" },
+                            { src: "emeraldTools_hoe.png", title: "Netherite Rucksack", desc: "Eine Hoe aus Smaragd" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - Chimes */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Chimes</h2>
+                    <p className="text-gray-300 mb-8">
+                        Mit dieser Mod erhalten wir 4 verschiedene Windspiele, welche passende ruhige Töne abspielen.
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_sword.png", title: "Chime 1", desc: "Ein Schwert aus Smaragd" },
+                            { src: "emeraldTools_pickaxe.png", title: "Chime 1", desc: "Eine Spitzhacke aus Smaragd" },
+                            { src: "emeraldTools_axe.png", title: "Chime 1", desc: "Eine Axt aus Smaragd" },
+                            { src: "emeraldTools_shovel.png", title: "Chime 1", desc: "Eine Schaufel aus Smaragd" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - Gravestones */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Gravestones</h2>
+                    <p className="text-gray-300 mb-8">
+                        Wer hat es nicht schonmal erlebt, beim farmen von Zombies in die Ecke gedrängt, in eine Schlucht gefallen, den Sprung falsch eingeschätzt und BAMM, alle Items weg!
+                        Mit Gravestone hast du die Chance deine Items wieder zu bekommen, egal wann und wo du stirbst. An deinem Todespunkt erscheint ein Grab welches nur von dir mit einem Rechtsklick wieder aufgehoben werden kann.
+                        Du kannst die verschiedenen Grabsteine auch für Dekorationszwecke craften:
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_sword.png", title: "Chime 1", desc: "Ein Schwert aus Smaragd" },
+                            { src: "emeraldTools_pickaxe.png", title: "Chime 1", desc: "Eine Spitzhacke aus Smaragd" },
+                            { src: "emeraldTools_axe.png", title: "Chime 1", desc: "Eine Axt aus Smaragd" },
+                            { src: "emeraldTools_shovel.png", title: "Chime 1", desc: "Eine Schaufel aus Smaragd" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - Snow! Real Magic! */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Snow! Real Magic! ⛄</h2>
+                    <div className="relative w-full h-64 md:h-80 mb-6 rounded-xl overflow-hidden">
+                        <Image
+                            src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_banner.png"
+                            alt="Real Magic Schnee-Blöcke"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
+                    <p className="text-gray-300 mb-8">
+                        Snow! Real Magic! fügt einige kleine Tweaks bezüglich Schnee hinzu.
+                        Zum einen kann Schnee jetzt auf verschiedene Blöcke platziert werden, um diese in eine Schneevariante zu ändern.
+                        Zum anderen ist Schnee jetzt immer durch andere Blöcke ersetzbar, was das bauen in Schneebiomen sehr verbessert.
+                    </p>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - Snowy Spirit */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Snowy Spirit</h2>
+                    <p className="text-gray-300 mb-8">
+                        Snowy Spirit fügt einige winterliche Items hinzu, darunter eine neue Music Disc "A Carol", einige Deko-Elemente und Schlitten!
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_sword.png", title: "Schlitten", desc: "Es gibt Schlitten in allen Holzvarianten!" },
+                            { src: "emeraldTools_pickaxe.png", title: "Candy Canes", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Candy Cane Block", desc: "-" },
+                            { src: "emeraldTools_shovel.png", title: "Lichterketten", desc: "Lichterketten können in allen Farben gecraftet werden" },
+                            { src: "emeraldTools_shovel.png", title: "Prismatic Lichterketten", desc: "Eine Lichterkette, die in allen Farben leuchtet" },
+                            { src: "emeraldTools_shovel.png", title: "Wreath", desc: "-" },
+                            { src: "emeraldTools_shovel.png", title: "Snow Globe", desc: "-" },
+                            { src: "emeraldTools_shovel.png", title: "Eierlikör", desc: "-" },
+                            { src: "emeraldTools_shovel.png", title: "Gumdrop(s)", desc: "-" },
+                            { src: "emeraldTools_shovel.png", title: "Lebkuchen-Block", desc: "Aus dem Block können auch Treppen, Slabs, Türen und Trapdoors gebaut werden." },
+                            { src: "emeraldTools_shovel.png", title: "Lebkuchen-Block mit Zuckerguss", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <p className="text-gray-300 mb-8">
+                        Tipp: Um Ginger zu erhalten musst du zuerst Wild Ginger in der Welt finden. Baust du diesen ab erhälst du eine Ginger Flower welche ganz normal auf Farmland angepflanzt werden kann.
+                    </p>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - Winterly */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Winterly</h2>
+                    <p className="text-gray-300 mb-8">
+                        Mit dieser Mod erhalten wir Zuckerstangen, neue winterliche Mützen und Schals, ein komplett neues Material mit dem Wekzeuge gecraftet werden können, sowie Geschenke und einige neue Blöcke!
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Candy Canes", desc: "Tausche einfach den Dye um Rote, grüne oder Blaue Stangen zu bekommen." },
+                            { src: "emeraldTools_axe.png", title: "Garland Lights", desc: "-" },
+                            { src: "emeraldTools_shovel.png", title: "Rainy Garland Lights", desc: "-" },
+                            { src: "emeraldTools_shovel.png", title: "Schneemann", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - Macaws Lights and Lamps */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Macaws Lights & Lamps</h2>
+                    <p className="text-gray-300 mb-8">
+                        Wolltest du schon immer mehr Optionen für Licht in Minecraft haben? Dann ist diese Mod perfekt für dich!
+                        Wir erhalten viele verschiedene Lampen, Laternen und sogar Ventilatoren mit denen wir unsere Builds ausleuchten können.
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Lamp", desc: "Kann in allen Farben gecraftet werden." },
+                            { src: "emeraldTools_axe.png", title: "Ceiling Light", desc: "Kann in allen Farben gecraftet werden." },
+                            { src: "emeraldTools_axe.png", title: "Wall Lamp", desc: "Kann nach dem platzieren mit dye gefärbt werden." },
+                            { src: "emeraldTools_axe.png", title: "Square Wall Lamp", desc: "Kann nach dem platzieren mit dye gefärbt werden." },
+                            { src: "emeraldTools_axe.png", title: "Paper Lamp", desc: "Kann in allen Farben gecraftet werden." },
+                            { src: "emeraldTools_shovel.png", title: "Tiki Torch", desc: "Kann in allen Holzvarianten, sowie mit Soul-Fackeln gecraftet werden." },
+                            { src: "emeraldTools_shovel.png", title: "Street Lamp Post", desc: "Kann auch mit Soul-Laternen hergestellt werden." },
+                            { src: "emeraldTools_shovel.png", title: "Double Street Lamp Post", desc: "Kann auch mit Soul-Laternen hergestellt werden." },
+                            { src: "emeraldTools_shovel.png", title: "Lavalampe", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - Nether Chest */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Nether Chest</h2>
+                    <p className="text-gray-300 mb-8">
+                        Diese Mod ist basically ein Briefkasten.
+                    </p>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - Tinkers Construct */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Tinkers Construct</h2>
+                    <p className="text-gray-300 mb-8">
+                        Bitte wenden Sie sich für weitere Informationen bei irwa_. Vielen Dank!
+                    </p>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - Extra Generators */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Extra Generators</h2>
+                    <p className="text-gray-300 mb-8">
+                        Extra Generators fügt 18 neue Generatoren hinzu, welche Strom für Applied Energistics 2 generieren können.
+                        Es gibt viele verschiedene Varianten von Generatoren.
+                    </p>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold mb-4 text-teal-400">Gen1</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "emeraldTools_pickaxe.png", title: "Crafting", desc: "-" },
+                            { src: "emeraldTools_axe.png", title: "Usage", desc: "-" },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                {/* Mods - [Let's Do]-Reihe */}
+                <h2 className="text-3xl font-semibold mb-4 text-teal-400">[Let's Do]-Reihe</h2>
+
+                {/* Mods - Farm & Charm */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Farm & Charm</h2>
+                    <p className="text-gray-300 mb-8">
+                        Mod-Beschreibung.
+                    </p>
+                </section>
+
+                {/* Mods - Bakery */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Bakery</h2>
+                    <p className="text-gray-300 mb-8">
+                        Mod-Beschreibung.
+                    </p>
+                </section>
+
+                {/* Mods - Candlelight */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Candlelight</h2>
+                    <p className="text-gray-300 mb-8">
+                        Mod-Beschreibung.
+                    </p>
+                </section>
+
+                {/* Mods - Herbal Brews */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Herbal Brews</h2>
+                    <p className="text-gray-300 mb-8">
+                        Mod-Beschreibung.
+                    </p>
+                </section>
+
+                {/* Mods - Vinery */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Vinery</h2>
+                    <p className="text-gray-300 mb-8">
+                        Mod-Beschreibung.
+                    </p>
+                </section>
+
+                {/* Mods - Beachparty */}
+                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
+                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Beachparty</h2>
+                    <p className="text-gray-300 mb-8">
+                        Mod-Beschreibung.
+                    </p>
                 </section>
 
             </div>

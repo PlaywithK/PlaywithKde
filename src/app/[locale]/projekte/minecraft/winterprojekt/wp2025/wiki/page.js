@@ -53,14 +53,14 @@ export default function Winterprojekt2025Wiki() {
                             <li><Link href="#mods-winterly" className="hover:underline">Winterly</Link></li>
                         </ul>
 
-                        <h3 className="text-xl font-semibold mb-2 text-teal-400">[Let's Do]-Reihe</h3>
+                        <h3 className="text-xl font-semibold mb-2 text-teal-400">[Lets Do]-Reihe</h3>
                         <ul className="list-disc list-inside text-gray-300 space-y-1">
-                            <li><Link href="#mods-do-farm" className="hover:underline">[Let's Do] Farm & Charm</Link></li>
-                            <li><Link href="#mods-do-bakery" className="hover:underline">[Let's Do] Bakery</Link></li>
-                            <li><Link href="#mods-do-candle" className="hover:underline">[Let's Do] Candlelight</Link></li>
-                            <li><Link href="#mods-do-herbal" className="hover:underline">[Let's Do] Herbal Brews</Link></li>
-                            <li><Link href="#mods-do-vinery" className="hover:underline">[Let's Do] Vinery</Link></li>
-                            <li><Link href="#mods-do-beach" className="hover:underline">[Let's Do] Beachparty</Link></li>
+                            <li><Link href="#mods-do-farm" className="hover:underline">[Lets Do] Farm & Charm</Link></li>
+                            <li><Link href="#mods-do-bakery" className="hover:underline">[Lets Do] Bakery</Link></li>
+                            <li><Link href="#mods-do-candle" className="hover:underline">[Lets Do] Candlelight</Link></li>
+                            <li><Link href="#mods-do-herbal" className="hover:underline">[Lets Do] Herbal Brews</Link></li>
+                            <li><Link href="#mods-do-vinery" className="hover:underline">[Lets Do] Vinery</Link></li>
+                            <li><Link href="#mods-do-beach" className="hover:underline">[Lets Do] Beachparty</Link></li>
                         </ul>
                     </div>
                 </section>
@@ -1770,8 +1770,8 @@ export default function Winterprojekt2025Wiki() {
 
                 <hr className="border-t border-gray-700 my-12" />
 
-                {/* Mods - [Let's Do]-Reihe */}
-                <h2 className="text-3xl font-semibold mb-4 text-teal-400">[Let's Do]-Reihe</h2>
+                {/* Mods - [Lets Do]-Reihe */}
+                <h2 className="text-3xl font-semibold mb-4 text-teal-400">[Lets Do]-Reihe</h2>
 
                 {/* Mods - Farm & Charm */}
                 <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">

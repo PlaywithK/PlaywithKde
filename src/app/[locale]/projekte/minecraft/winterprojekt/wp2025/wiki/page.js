@@ -30,26 +30,26 @@ export default function Winterprojekt2025Wiki() {
                     </div>
 
                     <div className="mb-6">
-                        <h3 className="text-2xl font-semibold mb-2 text-teal-400">Mods</h3>
+                        <h3 className="text-2xl font-semibold mb-2 text-teal-400">Einleitungen in Mods</h3>
                         <ul className="list-disc list-inside text-gray-300 space-y-1">
-                            <li><Link href="#mod-ae2" className="hover:underline">Applied Energistics 2 (AE2)</Link></li>
-                            <li><Link href="#mod-amendments" className="hover:underline">Amendments</Link></li>
-                            <li><Link href="#mod-elevator" className="hover:underline">Another Simple Elevator</Link></li>
+                            <li><Link href="#mods-ae2" className="hover:underline">Applied Energistics 2 (AE2)</Link></li>
+                            <li><Link href="#mods-amendments" className="hover:underline">Amendments</Link></li>
+                            <li><Link href="#mods-elevator" className="hover:underline">Another Simple Elevator</Link></li>
                             <li><Link href="#mods-chimes" className="hover:underline">Chimes</Link></li>
                             <li><Link href="#mods-generators" className="hover:underline">Extra Generators</Link></li>
-                            <li><Link href="#mod-fishing-crates" className="hover:underline">Fishing Crates</Link></li>
+                            <li><Link href="#mods-fishing-crates" className="hover:underline">Fishing Crates</Link></li>
                             <li><Link href="#mods-graves" className="hover:underline">Gravestones</Link></li>
                             <li><Link href="#mods-macaw" className="hover:underline">Macaws Lights & Lamps</Link></li>
                             <li><Link href="#mods-netherchest" className="hover:underline">Nether Chest</Link></li>
                             <li><Link href="#mods-plushies" className="hover:underline">Plushie Mod</Link></li>
                             <li><Link href="#mods-realmagic" className="hover:underline">Snow! Real Magic!</Link></li>
                             <li><Link href="#mods-snowyspirit" className="hover:underline">Snowy Spirit</Link></li>
-                            <li><Link href="#mod-backpacks" className="hover:underline">Sophisticated Backpacks</Link></li>
+                            <li><Link href="#mods-backpacks" className="hover:underline">Sophisticated Backpacks</Link></li>
                             <li><Link href="#mods-drawers" className="hover:underline">Storage Drawers</Link></li>
-                            <li><Link href="#mod-supplementaries" className="hover:underline">Supplementaries</Link></li>
-                            <li><Link href="#mod-tinkers" className="hover:underline">Tinkers Construct</Link></li>
+                            <li><Link href="#mods-supplementaries" className="hover:underline">Supplementaries</Link></li>
+                            <li><Link href="#mods-tinkers" className="hover:underline">Tinkers Construct</Link></li>
                             <li><Link href="#mods-waystones" className="hover:underline">Waystones</Link></li>
-                            <li><Link href="#mod-buidling-wands" className="hover:underline">Wand of Better Building</Link></li>
+                            <li><Link href="#mods-buidling-wands" className="hover:underline">Wand of Better Building</Link></li>
                             <li><Link href="#mods-winterly" className="hover:underline">Winterly</Link></li>
                         </ul>
 
@@ -66,18 +66,113 @@ export default function Winterprojekt2025Wiki() {
                 </section>
 
                 {/* Installation */}
-                <section id="installation" className="max-w-6xl mx-auto mb-16">
+                <section id="installation" className="scroll-mt-24 max-w-6xl mx-auto mb-16">
                     <h2 className="text-3xl font-semibold mb-4 text-teal-400">Installation & Setup</h2>
                     <p className="text-gray-300 mb-4">
-                        Hier erklären wir Schritt für Schritt, wie man die Map installiert und das Winterprojekt korrekt startet.
+                        Unser diesjähriges Modprojekt ist nun offiziell auf Modrinth erhältlich!
                     </p>
+                    <p className="text-gray-300 mb-4">
+                        Dieses gibt es in 2 Versionen: Die normale und die Enhanced Version.
+                    </p>
+                    <p className="text-gray-300 mb-4">
+                        Während die Ennhanced Version ein Komplettpaket mit einigen Performance und Quality of Life Mods sowie Shadern bietet, beinhaltet die Normale Version nur die benötigten Mods. Somit steht es euch völlig frei auch eigene clientside Mods hinzuzufügen oder ganz eigene Packs zu erstellen.
+                    </p>
+                    <p className="text-gray-300 mb-4">
+                        Wenn du kein Modrinth nutzt und die Mods mit einem anderen Launcher verwenden möchtest, kannst du dir hier die ZIP mit allen Mods herunterladen. Bei einigen Launchern kannst du auch die .mrpack-Datei von Modrinth direkt importieren.
+                    </p>
+
+                    <div className="my-6 p-4 rounded-xl border border-teal-500/50 bg-gradient-to-r from-gray-800/70 via-gray-900/70 to-gray-800/70 shadow-lg flex items-start gap-3 animate-fade-in">
+                        <div className="flex-shrink-0 text-teal-400 mt-0.5">
+                            💡
+                        </div>
+                        <div>
+                            <p className="text-teal-300 font-semibold">Tipp:</p>
+                            <p className="text-gray-300">
+                                Wenn du Hilfe bei der Installation brauchst, melde dich gerne bei einem der Teilnehmer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 className="text-xl font-semibold mb-4 text-teal-400">PWK's Winterprojekt 2025</h2>
+
+                    <div className="flex gap-4 mb-8">
+                        {/* Modrinth Button */}
+                        <a
+                            href="https://modrinth.com/modpack/pwks-winterprojekt2025"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block"
+                        >
+                            <img
+                                src="https://raw.githubusercontent.com/krystejj/anothersimpleelevator/1.21/assets/available-on-modrinth.png"
+                                alt="Available on Modrinth"
+                                className="h-12 hover:scale-105 transition-transform duration-200"
+                            />
+                        </a>
+
+                        {/* ZIP Download Button */}
+                        <a
+                            href="/downloads/PWKs-Winterprojekt-2025.zip"
+                            download
+                            className="inline-flex items-center justify-center h-12 px-6 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-400 hover:scale-105 transition-all duration-200"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="w-5 h-5 mr-2"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                            </svg>
+                            Download ZIP
+                        </a>
+                    </div>
+
+                    <h2 className="text-xl font-semibold mb-4 text-teal-400">PWK's Enhanced Winterprojekt 2025</h2>
+
+                    <div className="flex gap-4 mb-8">
+                        {/* Modrinth Button */}
+                        <a
+                            href="https://modrinth.com/modpack/pwks-enhanced-winterprojekt2025"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block"
+                        >
+                            <img
+                                src="https://raw.githubusercontent.com/krystejj/anothersimpleelevator/1.21/assets/available-on-modrinth.png"
+                                alt="Available on Modrinth"
+                                className="h-12 hover:scale-105 transition-transform duration-200"
+                            />
+                        </a>
+
+                        {/* ZIP Download Button */}
+                        <a
+                            href="/downloads/PWKs-Winterprojekt-2025.zip"
+                            download
+                            className="inline-flex items-center justify-center h-12 px-6 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-400 hover:scale-105 transition-all duration-200"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="w-5 h-5 mr-2"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                            </svg>
+                            Download ZIP
+                        </a>
+                    </div>
                 </section>
 
                 {/* Modliste */}
-                <section id="modlist" className="max-w-6xl mx-auto mb-16">
+                <section id="modlist" className="scroll-mt-24 max-w-6xl mx-auto mb-16">
                     <h2 className="text-3xl font-semibold mb-4 text-teal-400">Modliste</h2>
                     <p className="text-gray-300 mb-6">
-                        In dieser Sektion findest du alle Mods aufgelistet.
+                        In diesem Abschnitt findest du eine vollständige Liste aller enthaltenen Mods, ausgenommen von Libaries und Dependencies.
                     </p>
 
                     {/* Kategorien */}
@@ -149,28 +244,215 @@ export default function Winterprojekt2025Wiki() {
                 </section>
 
                 {/* REI */}
-                <section id="rei" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Roughly Enough Items</h2>
-                    <p className="text-gray-300 mb-4">
+                {/* REI */}
+                <section
+                    id="mods-emerald"
+                    className="max-w-6xl mx-auto mb-16 p-8 bg-emerald-500/30 rounded-2xl border border-emerald-700 hover:border-emerald-500 transition-all duration-300"
+                >
+                    {/* Header */}
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/rei/rei_logo.webp"
+                                    alt="REI Logo"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Roughly Enough Items</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Rezepte</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
+
+                    {/* Einführung */}
+                    <p className="text-gray-300 mb-8">
                         Dies ist eine kurze Einführung und Erklärung für <strong>Roughly Enough Items</strong>, ab hier immer <strong>REI</strong> genannt.
                         REI ist eine Mod, die Spielern ermöglicht, sämtliche Rezepte und Verwendungszwecke von Items einzusehen – egal ob aus Vanilla oder Mods.
                     </p>
-                    <p className="text-gray-300 mb-4">
-                        Auf der rechten Seite deines Inventars findest du eine Liste aller verfügbaren Items. Du kannst mit der Suchleiste unten gezielt nach einem Item suchen oder mit dem Mausrad durch die Liste scrollen. Du kannst auch mit @ nach allen Items einer bestimmten Mod suchen, zum Beispiel @Applied für alle Applied Energistics Items.
+
+                    {/* Visuelle Einstellungen */}
+                    <h3 className="text-2xl font-semibold mb-4 text-teal-400">Visuelle Einstellungen</h3>
+
+                    <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+                        <div className="md:w-1/2 text-gray-300 leading-relaxed">
+                            <p className="mb-4">
+                                Bevor wir uns mit den Funktionen von REI vertraut machen, kümmern wir uns erst um das Aussehen der Mod.
+                                Sobald du dein Inventar oder einen Block wie Werkbank oder Ofen öffnest, hast du an der rechten Seite ein neues Interface mit vielen Items.
+                                Dort befindet sich auch die Suchleiste, über die du Items suchen und Einstellungen vornehmen kannst.
+                            </p>
+                            <p className="mb-4">
+                                Um die Größe des REI-Menüs anzupassen, klicke auf das <strong>Zahnrad</strong>, dann auf <em>Mehr Optionen → Layout → Boundaries</em>.
+                                Hier kannst du einstellen, wie viel Platz des Bildschirms das Menü einnehmen soll und wie viele Items pro Zeile angezeigt werden.
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col md:w-1/2 gap-4">
+                            <div className="relative w-full h-64 rounded-xl overflow-hidden">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/rei/rei_config.png"
+                                    alt="REI Config Menü"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <div className="relative w-full h-64 rounded-xl overflow-hidden">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/rei/rei_changesize.png"
+                                    alt="REI Menügröße ändern"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Suchleisten-Position */}
+                    <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+                        <div className="md:w-1/2 text-gray-300 leading-relaxed">
+                            <p className="mb-4">
+                                Um die Position deiner Suchleiste zu ändern, kannst du über das Werkbank-Symbol hovern und eine neue Position auswählen.
+                            </p>
+                            <p>
+                                Wenn das Werkbank-Symbol nicht angezeigt wird, aktiviere es über das Zahnrad-Symbol beim Hovern.
+                            </p>
+                        </div>
+
+                        <div className="relative w-full md:w-1/2 h-80 rounded-xl overflow-hidden">
+                            <Image
+                                src="/minecraft/winterprojekt/2025/wiki/rei/rei_searchbar_pos.png"
+                                alt="Suchleiste Positionieren"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Suchfunktionen */}
+                    <h3 className="text-2xl font-semibold mb-4 text-teal-400">Suchfunktionen</h3>
+                    <p className="text-gray-300 mb-6">
+                        REI besitzt verschiedene Suchmodi:
+                        du kannst nach dem Item-Namen suchen (z. B. <code>Chest</code>),
+                        nach einer Mod mit <code>@modname</code> (z. B. <code>@applied</code>),
+                        oder beides kombinieren (z. B. <code>@applied chest</code>).
+                        Mit dem Filter <code>$</code> kannst du nach Item-Typen suchen (z. B. <code>$crops</code> für alle anpflanzbaren Dinge).
                     </p>
-                    <p className="text-gray-300 mb-4">
-                        Wenn du wissen möchtest, <strong>wie man ein Item herstellt</strong>, bewege den Mauszeiger darüber und drücke <strong>R</strong> (für „Recipe“).
-                        Um herauszufinden, <strong>wo ein Item verwendet wird</strong>, drücke <strong>U</strong> (für „Uses“).
-                        REI zeigt dir dann übersichtlich alle passenden Herstellungs- oder Verwendungsrezepte an.
-                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                        <div className="flex flex-col items-center text-center">
+                            <div className="relative w-40 h-72 rounded-xl overflow-hidden mb-2">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/rei/rei_searchName.png"
+                                    alt="Suche nach Name"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <p className="text-gray-300 text-sm">
+                                🔎 <strong>Name:</strong> Suche nach dem Item-Namen.
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col items-center text-center">
+                            <div className="relative w-40 h-72 rounded-xl overflow-hidden mb-2">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/rei/rei_searchMod.png"
+                                    alt="Suche nach Mod"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <p className="text-gray-300 text-sm">
+                                🧩 <strong>Mod:</strong> Suche nach Items einer Mod mit <code>@modname</code>.
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col items-center text-center">
+                            <div className="relative w-40 h-72 rounded-xl overflow-hidden mb-2">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/rei/rei_searchModAndName.png"
+                                    alt="Suche nach Mod und Name"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <p className="text-gray-300 text-sm">
+                                ⚙️ <strong>Kombiniert:</strong> Mod + Itemname (z. B. <code>@applied chest</code>).
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col items-center text-center">
+                            <div className="relative w-40 h-72 rounded-xl overflow-hidden mb-2">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/rei/rei_searchTag.png"
+                                    alt="Suche nach Tag"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <p className="text-gray-300 text-sm">
+                                🌱 <strong>Tag-Suche:</strong> Nach Item-Typen suchen, z. B. <code>$crops</code>.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Rezepte & Uses */}
+                    <h3 className="text-2xl font-semibold mb-4 text-teal-400">Rezepte & Verwendung</h3>
+                    <div className="text-gray-300 mb-8 leading-relaxed">
+                        <p className="mb-3">
+                            Um zu sehen, <strong>wie man ein Item herstellt</strong>, bewege den Mauszeiger darüber und drücke <kbd>R</kbd> („Recipe“).
+                        </p>
+                        <p className="mb-3">
+                            Um herauszufinden, <strong>wo oder wie ein Item verwendet wird</strong>, drücke <kbd>U</kbd> („Uses“).
+                        </p>
+                        <p>
+                            Items können favorisiert werden mit <kbd>A</kbd>. Favorisierte Items erscheinen auf der linken Seite und lassen sich jederzeit wieder entfernen.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
+                        <div className="relative w-full md:w-1/2 h-72 rounded-xl overflow-hidden">
+                            <Image
+                                src="/minecraft/winterprojekt/2025/wiki/rei/rei_recipe.png"
+                                alt="REI Rezeptansicht"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                        <div className="relative w-full md:w-1/2 h-72 rounded-xl overflow-hidden">
+                            <Image
+                                src="/minecraft/winterprojekt/2025/wiki/rei/rei_use.png"
+                                alt="REI Uses Ansicht"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Tipp Box */}
+                    <div className="my-8 p-5 rounded-xl border border-teal-500/50 bg-gradient-to-r from-gray-800/70 via-gray-900/70 to-gray-800/70 shadow-lg flex items-start gap-3">
+                        <div className="flex-shrink-0 text-teal-400 mt-0.5">💡</div>
+                        <div>
+                            <p className="text-teal-300 font-semibold">Tipp:</p>
+                            <p className="text-gray-300">
+                                Mit einem Klick auf das Werkbank-Icon kannst du nur Rezepte sehen, die du mit den Materialien in deinem Inventar craften kannst.
+                                Dies funktioniert auch in Kombination mit der Suchfunktion.
+                            </p>
+                        </div>
+                    </div>
                 </section>
+
 
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods */}
                 {/* Mods - Applied Energistics 2 */}
-                <section id="mod-ae2" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Applied Energistics 2 (AE2)</h2>
+                <section id="mods-ae2" className="scroll-mt-24 max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-bold text-teal-400">Applied Energistics 2 (AE2)</h2>
+                        <span className="text-sm text-gray-400 italic">Digitales Lager & Logistik</span>
+                    </header>
 
                     {/* Einleitung */}
                     <p className="text-gray-300 mb-6">
@@ -494,8 +776,11 @@ export default function Winterprojekt2025Wiki() {
 
 
                 {/* Mods - Sophisticated Backpacks */}
-                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Sophisticated Backpacks</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-bold text-teal-400">Sophisticated Backpacks</h2>
+                        <span className="text-sm text-gray-400 italic">Rucksäcke</span>
+                    </header>
 
                     {/* Einleitung */}
                     <p className="text-gray-300 mb-8">
@@ -586,8 +871,11 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Amendments */}
-                <section id="mod-amendments" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Amendments</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-bold text-teal-400">Amendments</h2>
+                        <span className="text-sm text-gray-400 italic">Vanilla+</span>
+                    </header>
 
                     <p className="text-gray-300 mb-6">
                         <strong>Amendments</strong> ist eine der Mods, die man erst gar nicht bemerkt – und dann nie wieder missen möchte.
@@ -720,8 +1008,11 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Supplementaries */}
-                <section id="mod-supplementaries" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Supplementaries</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-bold text-teal-400">Supplemanteries</h2>
+                        <span className="text-sm text-gray-400 italic">Alles Mögliche</span>
+                    </header>
 
                     <p className="text-gray-300 mb-8">
                         Supplementaries erweitert Minecraft mit vielen kleinen, cleveren Features.
@@ -790,8 +1081,11 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Another Simple Elevator */}
-                <section id="mod-elevator" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Another Simple Elevator</h2>
+                <section id="mods-elevator" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-bold text-teal-400">Another Simple Elevator</h2>
+                        <span className="text-sm text-gray-400 italic">Aufzüge</span>
+                    </header>
 
                     <p className="text-gray-300 mb-8">
                         Another Simple Elevator ist eine kleine, aber super praktische Mod, die es dir erlaubt, dich vertikal in deinem Bau zu bewegen, ohne komplizierte Redstone-Aufzüge zu bauen.
@@ -830,8 +1124,11 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Fishing Crates */}
-                <section id="mod-fishing-crates" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Fishing Crates</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-bold text-teal-400">Fishing Crates</h2>
+                        <span className="text-sm text-gray-400 italic">Neue Loot-Boxen</span>
+                    </header>
 
                     <div className="relative w-full h-64 md:h-80 mb-8 rounded-xl overflow-hidden">
                         <Image src="/minecraft/winterprojekt/2025/wiki/fishingCrates/loot_table_example.png" alt="Beispiel Loot-Table" fill className="object-cover" />
@@ -869,8 +1166,11 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Wand of Better Building */}
-                <section id="mod-wand-of-better-building" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Wand of Better Building</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-bold text-teal-400">Wand of Better Building</h2>
+                        <span className="text-sm text-gray-400 italic">Schnelleres Bauen</span>
+                    </header>
 
                     <p className="text-gray-300 mb-8">
                         Die Wand of Better Building Mod fügt zwei nützliche Zauberstäbe hinzu, die dir das Bauen erheblich erleichtern.
@@ -921,8 +1221,11 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Storage Drawers */}
-                <section id="mod-storage-drawers" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Storage Drawers</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-bold text-teal-400">Storage Drawers</h2>
+                        <span className="text-sm text-gray-400 italic">Lager</span>
+                    </header>
 
                     <p className="text-gray-300 mb-8">
                         Storage Drawers ist eine super praktische Mod für Lagersysteme, vorallem bevor du ein ME-System hast.. Statt Haufen von Kisten zu bauen, kannst du Items ordentlich stapeln, sehen, wie viel noch drin ist, und alles schnell erreichen. Ideal für Basislager und große Projekte!
@@ -997,8 +1300,11 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Waystones */}
-                <section id="mod-waystones" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Waystones</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-bold text-teal-400">Waystones</h2>
+                        <span className="text-sm text-gray-400 italic">Teleportation</span>
+                    </header>
 
                     <p className="text-gray-300 mb-8">
                         Waystones sind super praktisch, um schnell zwischen Orten zu reisen. Du kannst Waystones überall platzieren, sie miteinander verbinden und sogar über Dimensionen hinweg nutzen. Ideal für Spieler, die viel unterwegs sind oder große Basen haben!
@@ -1076,8 +1382,12 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Plushie Mod */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Plushie Mod</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-bold text-teal-400">Plushie Mod</h2>
+                        <span className="text-sm text-gray-400 italic">Sammelbare Kuscheltiere</span>
+                    </header>
+
                     <p className="text-gray-300 mb-8">
                         Die <span className="text-teal-300 font-semibold">Plushie Mod</span> bringt eine
                         Extraportion Gemütlichkeit in dein Zuhause! Von Creepern über Axolotl bis hin zu Endermen – von nahezu jedem bekannten
@@ -1117,23 +1427,53 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Chimes */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Chimes</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/chimes/chimes_logo.png"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Chimes</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Dekoration</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
+
                     <p className="text-gray-300 mb-8">
-                        Mit dieser Mod erhalten wir 4 verschiedene Windspiele, welche passende ruhige Töne abspielen.
+                        Mit dieser Mod werden 6 verschiedene Windspiele hinzugefügt, welche passende beruhigende Töne abspielen.
+                        Zudem verjagen sie Phantome, sind also perfekt für Nachtaktive!
                     </p>
+
+                    <div className="my-6 p-4 rounded-xl border border-teal-500/50 bg-gradient-to-r from-gray-800/70 via-gray-900/70 to-gray-800/70 shadow-lg flex items-start gap-3 animate-fade-in">
+                        <div className="flex-shrink-0 text-teal-400 mt-0.5">
+                            💡
+                        </div>
+                        <div>
+                            <p className="text-teal-300 font-semibold">Tipp:</p>
+                            <p className="text-gray-300">
+                                Du kannst mit Shift+Rechtsklick auf einen Chime, diesen stummstellen und auch wieder freischalten.
+                            </p>
+                        </div>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         {[
-                            { src: "emeraldTools_sword.png", title: "Chime 1", desc: "Ein Schwert aus Smaragd" },
-                            { src: "emeraldTools_pickaxe.png", title: "Chime 1", desc: "Eine Spitzhacke aus Smaragd" },
-                            { src: "emeraldTools_axe.png", title: "Chime 1", desc: "Eine Axt aus Smaragd" },
-                            { src: "emeraldTools_shovel.png", title: "Chime 1", desc: "Eine Schaufel aus Smaragd" },
+                            { src: "chimes_bamboo.png", title: "Bamboo Wind Chime", desc: "Kann nach dem platzieren mit einer Axt gestripped werden, um den Sound zu verändern." },
+                            { src: "chimes_copper.png", title: "Copper Wind Chime", desc: "Mein persönlicher Favorit!" },
+                            { src: "chimes_iron.png", title: "Iron Wind Chime", desc: "Etwas höhere Töne als der Copper-Chime." },
+                            { src: "chimes_amethyst.png", title: "Amethyst Wind Chime", desc: "Hat einen Vibe von Glitzer." },
+                            { src: "chimes_glass.png", title: "Glass Wind Bell", desc: "Eine japanisch angehauchte Glassglocke, welcher auch gefärbt werden kann." },
+                            { src: "chimes_glass_dying.png", title: "Glass Wind Bell färben", desc: "Die obere Farbe wird das Glas färben und die untere den Banner." },
                         ].map(({ src, title, desc }) => (
                             <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
                                 <div className="relative w-40 h-40 flex-shrink-0">
                                     <Image
-                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        src={`/minecraft/winterprojekt/2025/wiki/chimes/${src}`}
                                         alt={title}
                                         fill
                                         className="object-contain"
@@ -1151,25 +1491,51 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Gravestones */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Gravestones</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/graves/graves_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Gravestones</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Grabsteine</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
+
+                    <div className="relative w-full h-64 md:h-80 mb-6 rounded-xl overflow-hidden">
+                        <Image
+                            src="/minecraft/winterprojekt/2025/wiki/graves/graves_banner.png"
+                            alt="Meteor Kompass"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
+
                     <p className="text-gray-300 mb-8">
                         Wer hat es nicht schonmal erlebt, beim farmen von Zombies in die Ecke gedrängt, in eine Schlucht gefallen, den Sprung falsch eingeschätzt und BAMM, alle Items weg!
                         Mit Gravestone hast du die Chance deine Items wieder zu bekommen, egal wann und wo du stirbst. An deinem Todespunkt erscheint ein Grab welches nur von dir mit einem Rechtsklick wieder aufgehoben werden kann.
+                    </p>
+                    <p className="text-gray-300 mb-8">
                         Du kannst die verschiedenen Grabsteine auch für Dekorationszwecke craften:
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         {[
-                            { src: "emeraldTools_sword.png", title: "Chime 1", desc: "Ein Schwert aus Smaragd" },
-                            { src: "emeraldTools_pickaxe.png", title: "Chime 1", desc: "Eine Spitzhacke aus Smaragd" },
-                            { src: "emeraldTools_axe.png", title: "Chime 1", desc: "Eine Axt aus Smaragd" },
-                            { src: "emeraldTools_shovel.png", title: "Chime 1", desc: "Eine Schaufel aus Smaragd" },
+                            { src: "graves_crafting.png", title: "Grabstein", desc: "Du kannst auf Grabsteine auch schreiben, wie auf Schildern!" },
+                            { src: "graves_crafting_1.png", title: "Verwitterter Grabstein", desc: "Brenne einen Grabstein im Ofen" },
+                            { src: "graves_crafting_2.png", title: "Kaputter Grabstein", desc: "Brenne einen Verwitterten Grabstein im Ofen" },
                         ].map(({ src, title, desc }) => (
                             <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
                                 <div className="relative w-40 h-40 flex-shrink-0">
                                     <Image
-                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        src={`/minecraft/winterprojekt/2025/wiki/graves/${src}`}
                                         alt={title}
                                         fill
                                         className="object-contain"
@@ -1187,8 +1553,22 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Snow! Real Magic! */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Snow! Real Magic! ⛄</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Snow! Real Magic! ⛄</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Schnee Utility</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
                     <div className="relative w-full h-64 md:h-80 mb-6 rounded-xl overflow-hidden">
                         <Image
                             src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_banner.png"
@@ -1199,17 +1579,32 @@ export default function Winterprojekt2025Wiki() {
                         />
                     </div>
                     <p className="text-gray-300 mb-8">
-                        Snow! Real Magic! fügt einige kleine Tweaks bezüglich Schnee hinzu.
+                        <strong>Snow! Real Magic!</strong> fügt einige kleine Tweaks bezüglich Schnee hinzu.
                         Zum einen kann Schnee jetzt auf verschiedene Blöcke platziert werden, um diese in eine Schneevariante zu ändern.
-                        Zum anderen ist Schnee jetzt immer durch andere Blöcke ersetzbar, was das bauen in Schneebiomen sehr verbessert.
+                        Zum anderen ist Schnee jetzt immer durch andere Blöcke ersetzbar, was das bauen in Schneebiomen sehr vereinfacht.
                     </p>
                 </section>
 
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Snowy Spirit */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Snowy Spirit</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Snowy Spirit</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Dekoration</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
+
                     <p className="text-gray-300 mb-8">
                         Snowy Spirit fügt einige winterliche Items hinzu, darunter eine neue Music Disc, einige Deko-Elemente und Schlitten!
                     </p>
@@ -1252,15 +1647,30 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Winterly */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Winterly</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/winterly/winterly_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Winterly</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Dekoration</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
+
                     <p className="text-gray-300 mb-8">
                         Mit dieser Mod erhalten wir Zuckerstangen, neue winterliche Mützen und Schals, ein komplett neues Material mit dem Wekzeuge gecraftet werden können, sowie Geschenke und einige neue Blöcke!
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         {[
-                            { src: "emeraldTools_pickaxe.png", title: "Candy Canes", desc: "Tausche einfach den Dye um Rote, grüne oder Blaue Stangen zu bekommen." },
+                            { src: "winterly_candy.png", title: "Candy Canes", desc: "Tausche einfach den Dye um Rote, grüne oder Blaue Stangen zu bekommen." },
                             { src: "emeraldTools_axe.png", title: "Garland Lights", desc: "-" },
                             { src: "emeraldTools_shovel.png", title: "Rainy Garland Lights", desc: "-" },
                             { src: "emeraldTools_shovel.png", title: "Schneemann", desc: "-" },
@@ -1268,7 +1678,7 @@ export default function Winterprojekt2025Wiki() {
                             <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
                                 <div className="relative w-40 h-40 flex-shrink-0">
                                     <Image
-                                        src={`/minecraft/winterprojekt/2025/wiki/emeraldTools/${src}`}
+                                        src={`/minecraft/winterprojekt/2025/wiki/winterly/${src}`}
                                         alt={title}
                                         fill
                                         className="object-contain"
@@ -1286,8 +1696,23 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Macaws Lights and Lamps */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Macaws Lights & Lamps</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Macaws Lights and Lamps</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Dekoration</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
+
                     <p className="text-gray-300 mb-8">
                         Wolltest du schon immer mehr Optionen für Licht in Minecraft haben? Dann ist diese Mod perfekt für dich!
                         Wir erhalten viele verschiedene Lampen, Laternen und sogar Ventilatoren mit denen wir unsere Builds ausleuchten können.
@@ -1326,8 +1751,22 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Nether Chest */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Nether Chest</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Nether Chest</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Öffentliche Truhe</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
                     <p className="text-gray-300 mb-8">
                         Diese Mod ist basically ein Briefkasten.
                     </p>
@@ -1336,8 +1775,23 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Tinkers Construct */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Tinkers Construct</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Tinkers Construct</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Schmiede</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
+
                     <p className="text-gray-300 mb-8">
                         Bitte wenden Sie sich für weitere Informationen bei irwa_. Vielen Dank!
                     </p>
@@ -1346,8 +1800,23 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Extra Generators */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Extra Generators</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Extra Generators</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Stromgeneratoren</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
+
                     <p className="text-gray-300 mb-8">
                         Extra Generators fügt 18 neue Generatoren hinzu, welche Strom für Applied Energistics 2 generieren können.
                         Es gibt viele verschiedene Varianten von Generatoren.
@@ -1772,50 +2241,137 @@ export default function Winterprojekt2025Wiki() {
 
                 {/* Mods - [Lets Do]-Reihe */}
                 <h2 className="text-3xl font-semibold mb-4 text-teal-400">[Lets Do]-Reihe</h2>
+                <p className="text-gray-300 mb-8">
+                    Die [Lets Do]-Reihe ist eine Reihe an Farm und Essensmods, welche neue Crops, neues Essen und vieles mehr hinzufügt.
+                </p>
 
                 {/* Mods - Farm & Charm */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Farm & Charm</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Farm & Charm</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Farming</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
                     <p className="text-gray-300 mb-8">
                         Mod-Beschreibung.
                     </p>
                 </section>
 
                 {/* Mods - Bakery */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Bakery</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Bakery</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Bäckerei</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
                     <p className="text-gray-300 mb-8">
                         Mod-Beschreibung.
                     </p>
                 </section>
 
                 {/* Mods - Candlelight */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Candlelight</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Candlelight</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Mahlzeiten & Dekorationen</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
                     <p className="text-gray-300 mb-8">
                         Mod-Beschreibung.
                     </p>
                 </section>
 
                 {/* Mods - Herbal Brews */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Herbal Brews</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Herbal Brews</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Tee</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
                     <p className="text-gray-300 mb-8">
                         Mod-Beschreibung.
                     </p>
                 </section>
 
                 {/* Mods - Vinery */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Vinery</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Vinery</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Wein</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
                     <p className="text-gray-300 mb-8">
                         Mod-Beschreibung.
                     </p>
                 </section>
 
                 {/* Mods - Beachparty */}
-                <section id="plushie-mod" className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Beachparty</h2>
+                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    <header className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
+                                    alt="Chimes Icon"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Beachparty</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Strand</span>
+                    </header>
+                    <hr className="border-t border-gray-700 my-4" />
                     <p className="text-gray-300 mb-8">
                         Mod-Beschreibung.
                     </p>

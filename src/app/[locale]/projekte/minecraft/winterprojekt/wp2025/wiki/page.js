@@ -244,9 +244,8 @@ export default function Winterprojekt2025Wiki() {
                 </section>
 
                 {/* REI */}
-                {/* REI */}
                 <section
-                    id="mods-emerald"
+                    id="mods-rei"
                     className="max-w-6xl mx-auto mb-16 p-8 bg-emerald-500/30 rounded-2xl border border-emerald-700 hover:border-emerald-500 transition-all duration-300"
                 >
                     {/* Header */}
@@ -1082,26 +1081,42 @@ export default function Winterprojekt2025Wiki() {
 
                 {/* Mods - Another Simple Elevator */}
                 <section id="mods-elevator" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    {/* Header */}
                     <header className="flex items-center justify-between mb-6">
-                        <h2 className="text-3xl font-bold text-teal-400">Another Simple Elevator</h2>
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/elevator/elevator_logo.webp"
+                                    alt="Another Simple Elevator Logo"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Another Simple Elevator</h2>
+                        </div>
                         <span className="text-sm text-gray-400 italic">Aufzüge</span>
                     </header>
+                    <hr className="border-t border-gray-700 my-4" />
 
                     <p className="text-gray-300 mb-8">
-                        Another Simple Elevator ist eine kleine, aber super praktische Mod, die es dir erlaubt, dich vertikal in deinem Bau zu bewegen, ohne komplizierte Redstone-Aufzüge zu bauen.
-                        Springe nach oben oder drücke Shift, um nach unten zu gehen – vorausgesetzt, es ist ein weiterer Elevator-Block vorhanden.
+                        Another Simple Elevator ist eine kleine, aber super praktische Mod, die es dir erlaubt, dich vertikal zu bewegen, ohne komplizierte Redstone-Aufzüge bauen zu müssen.
                     </p>
+                    <p className="text-gray-300 mb-8">
+                        Stehe auf einem Elevator-Block und drücke <strong>Jump</strong>, um dich nach oben zu teleportieren, oder <strong>Sneak</strong>, um nach unten zu gehen.
+                        Du kannst beliebig viele Elevator-Blöcke übereinander stapeln, um mehrere Stockwerke schnell und bequem zu verbinden.
+                    </p>
+
 
                     {/* Crafting Rezepte */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         {[
-                            { src: "elevator_block.png", title: "Elevator Block", desc: "Das Grundrezept: Wolle + Enderperle. Nutze ihn, um zwischen Stockwerken zu teleportieren." },
-                            { src: "colored_elevator_block.png", title: "Gefärbter Elevator Block", desc: "Du kannst den Elevator Block einfärben, um ihn farblich an dein Bauwerk anzupassen." },
+                            { src: "elevator_white.png", title: "Elevator Block", desc: "Das Grundrezept: Wolle + Enderperle. Nutze ihn, um zwischen Stockwerken zu teleportieren." },
+                            { src: "elevator_colored.png", title: "Gefärbter Elevator Block", desc: "Du kannst den Elevator Block einfärben, um ihn farblich an dein Bauwerk anzupassen." },
                         ].map(({ src, title, desc }) => (
                             <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
                                 <div className="relative w-40 h-40 flex-shrink-0">
                                     <Image
-                                        src={`/minecraft/winterprojekt/2025/wiki/anotherSimpleElevator/${src}`}
+                                        src={`/minecraft/winterprojekt/2025/wiki/elevator/${src}`}
                                         alt={title}
                                         fill
                                         className="object-contain"
@@ -1116,102 +1131,146 @@ export default function Winterprojekt2025Wiki() {
                     </div>
 
                     <p className="text-gray-300 mb-6">
-                        Stehe auf einem Elevator-Block und drücke <strong>Jump</strong>, um nach oben zu teleportieren, oder <strong>Shift</strong>, um nach unten zu gehen.
-                        Du kannst beliebig viele Elevator-Blöcke übereinander stapeln, um mehrere Stockwerke schnell und bequem zu verbinden.
+                        Du kannst Elevator-Blöcke auch färben, indem du sie in einen farbigen Cauldron tauchst.
+                        Dafür musst du zuerst Wasser und dann die gewünschte Farbe in einen Kessel machen und mit einem weißen Elevator-Block darauf rechtsklicken.
                     </p>
+                    <div className="relative w-full h-64 md:h-80 mb-6 rounded-xl overflow-hidden">
+                        <Image
+                            src="/minecraft/winterprojekt/2025/wiki/elevator/elevator_cauldron.png"
+                            alt="Colored Cauldron for coloring Elevator Blocks"
+                            fill
+                            className="object-cover object-bottom"
+                            priority
+                        />
+                    </div>
                 </section>
 
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Fishing Crates */}
                 <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    {/* Header */}
                     <header className="flex items-center justify-between mb-6">
-                        <h2 className="text-3xl font-bold text-teal-400">Fishing Crates</h2>
-                        <span className="text-sm text-gray-400 italic">Neue Loot-Boxen</span>
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/fishingcrates/fishingcrates_logo.webp"
+                                    alt="Fishing Crates Logo"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Fishing Crates</h2>
+                        </div>
+                        <span className="text-sm text-gray-400 italic">Loot-Boxen</span>
                     </header>
-
-                    <div className="relative w-full h-64 md:h-80 mb-8 rounded-xl overflow-hidden">
-                        <Image src="/minecraft/winterprojekt/2025/wiki/fishingCrates/loot_table_example.png" alt="Beispiel Loot-Table" fill className="object-cover" />
-                    </div>
+                    <hr className="border-t border-gray-700 my-4" />
 
                     <p className="text-gray-300 mb-8">
                         Fishing Crates fügt drei neue Loot-Crates hinzu, die beim Angeln gefangen werden können. Jede Crate hat ihre eigene Seltenheit und Loot.
                     </p>
 
-                    {/* Wood Loot */}
-                    <div className="mb-6">
-                        <h4 className="text-xl font-semibold mb-2 text-teal-300">Wooden Crate</h4>
-                        <p className="text-gray-300 mb-2">
-                            Enthält hauptsächlich Fisch, Seagrass, Eisen- und Goldbarren, Pfeile, XP-Flaschen und vereinzelt Diamanten oder kleine verzauberte Bücher. Perfekt für den Einstieg beim Angeln.
-                        </p>
-                    </div>
 
-                    {/* Iron Loot */}
-                    <div className="mb-6">
-                        <h4 className="text-xl font-semibold mb-2 text-teal-300">Iron Crate</h4>
-                        <p className="text-gray-300 mb-2">
-                            Bessere Items als die Wooden Crate: mehr XP-Flaschen, Eisen, Gold, Diamanten, Tridents, Wassertränke, Prismarine-Shards und -Crystals sowie gelegentlich verzauberte Bücher.
-                        </p>
-                    </div>
+                    {/* Loot Crates */}
+                    {[
+                        {
+                            title: "Wooden Crate",
+                            desc: "Enthält hauptsächlich Fisch, Seagrass, Eisen- und Goldbarren, Pfeile, XP-Flaschen und vereinzelt Diamanten oder kleine verzauberte Bücher. Perfekt für den Einstieg beim Angeln.",
+                            img: "/minecraft/winterprojekt/2025/wiki/fishingcrates/fishingcrate_wooden.png"
+                        },
+                        {
+                            title: "Iron Crate",
+                            desc: "Bessere Items als die Wooden Crate: mehr XP-Flaschen, Eisen, Gold, Diamanten, Tridents, Wassertränke, Prismarine-Shards und -Crystals sowie gelegentlich verzauberte Bücher.",
+                            img: "/minecraft/winterprojekt/2025/wiki/fishingcrates/fishingcrate_iron.png"
+                        },
+                        {
+                            title: "Gold Crate",
+                            desc: "Die seltenste Crate mit hochwertigen Belohnungen: verzauberte Angelruten, Nautilus-Schalen, Herz des Meeres, Lapis, Amethyst, XP-Flaschen, Prismarine, Tridents, Gold- & Eisenblöcke, Diamond und sogar Ancient Debris.",
+                            img: "/minecraft/winterprojekt/2025/wiki/fishingcrates/fishingcrate_gold.png"
+                        },
+                    ].map(({ title, desc, img }) => (
+                        <div key={title} className="flex items-center gap-6 mb-6">
+                            {/* Bild links */}
+                            <div className="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden border border-white/10">
+                                <Image
+                                    src={img}
+                                    alt={title}
+                                    fill
+                                    style={{ transform: "scale(2) translateY(-15%)", transformOrigin: "center" }}
+                                    className="object-cover"
+                                />
+                            </div>
 
-                    {/* Gold Loot */}
-                    <div className="mb-6">
-                        <h4 className="text-xl font-semibold mb-2 text-teal-300">Gold Crate</h4>
-                        <p className="text-gray-300 mb-2">
-                            Die seltenste Crate mit hochwertigen Belohnungen: verzauberte Angelruten, Nautilus-Schalen, Herz des Meeres, Lapis, Amethyst, XP-Flaschen, Prismarine, Tridents, Gold- & Eisenblöcke, Diamond und sogar Ancient Debris.
-                        </p>
-                    </div>
+                            {/* Text rechts, vertikal mittig */}
+                            <div className="flex-1">
+                                <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                <p className="text-gray-300">{desc}</p>
+                            </div>
+                        </div>
+                    ))}
                 </section>
 
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Wand of Better Building */}
                 <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    {/* Header */}
                     <header className="flex items-center justify-between mb-6">
-                        <h2 className="text-3xl font-bold text-teal-400">Wand of Better Building</h2>
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/wands/wands_logo.webp"
+                                    alt="Wand of Better Building Logo"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Wand of Better Building</h2>
+                        </div>
                         <span className="text-sm text-gray-400 italic">Schnelleres Bauen</span>
                     </header>
+                    <hr className="border-t border-gray-700 my-4" />
 
                     <p className="text-gray-300 mb-8">
                         Die Wand of Better Building Mod fügt zwei nützliche Zauberstäbe hinzu, die dir das Bauen erheblich erleichtern.
                         Mit dem einen kannst du Wandflächen „extrahieren“ (z.B. ganze Wände kopieren) und mit dem anderen kannst du sie mit nur einem Klick verändern – zum Beispiel von Holz zu Steinziegeln. Einfach, schnell und super praktisch!
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="mb-8">
+                        <div className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                            <div className="relative w-40 h-40 flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/wands/wands_star.png"
+                                    alt="Grabstein"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <div className="p-4">
+                                <h4 className="text-xl font-semibold text-teal-300 mb-2">Star</h4>
+                                <p className="text-gray-300">
+                                    Um den Wand of Better Building zu craften, benötigst du zuerst diesen Building Star.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         {[
-                            {
-                                src: "wand_face_extractor.png",
-                                title: "Face Extractor",
-                                desc: "Mit dem Face Extractor kannst du komplette Flächen von Blöcken auswählen und kopieren. Super praktisch, wenn du z.B. Wände oder große Muster übernehmen willst.",
-                                crafting: "/minecraft/winterprojekt/2025/wiki/wandOfBetterBuilding/face_extractor_crafting.png"
-                            },
-                            {
-                                src: "wand_face_changer.png",
-                                title: "Face Changer",
-                                desc: "Der Face Changer erlaubt es dir, kopierte oder vorhandene Flächen mit nur einem Klick in einen anderen Blocktyp zu verwandeln, z.B. Holz zu Steinziegeln. Ideal für schnelle Änderungen am Bauprojekt.",
-                                crafting: "/minecraft/winterprojekt/2025/wiki/wandOfBetterBuilding/face_changer_crafting.png"
-                            },
-                        ].map(({ src, title, desc, crafting }) => (
-                            <div key={title} className="flex flex-col md:flex-row items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
-                                <div className="relative w-40 h-40 flex-shrink-0 m-4">
+                            { src: "wands_builderswand.png", title: "Builders Wand", desc: "Der Builders Wand lässt dich Block-Flächen mit einem Klick expandieren." },
+                            { src: "wands_changing.png", title: "Changing Wand", desc: "Der Changing Wand kann die Blöcke einer Fläche mit einem Klick ändern." },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
                                     <Image
-                                        src={`/minecraft/winterprojekt/2025/wiki/wandOfBetterBuilding/${src}`}
+                                        src={`/minecraft/winterprojekt/2025/wiki/wands/${src}`}
                                         alt={title}
                                         fill
                                         className="object-contain"
                                     />
                                 </div>
-                                <div className="p-4 flex-1">
+                                <div className="p-4">
                                     <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
-                                    <p className="text-gray-300 mb-4">{desc}</p>
-                                    <div className="relative w-full h-40 md:h-32 rounded-xl overflow-hidden">
-                                        <Image
-                                            src={crafting}
-                                            alt={`${title} Crafting`}
-                                            fill
-                                            className="object-contain"
-                                        />
-                                    </div>
+                                    <p className="text-gray-300">{desc}</p>
                                 </div>
                             </div>
                         ))}
@@ -1300,11 +1359,23 @@ export default function Winterprojekt2025Wiki() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Mods - Waystones */}
-                <section id="mods-emerald" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                <section id="mods-waystones" className="max-w-6xl mx-auto mb-16 p-6 bg-gray-900/50 rounded-2xl border border-gray-700 hover:border-teal-500 transition-all duration-300">
+                    {/* Header */}
                     <header className="flex items-center justify-between mb-6">
-                        <h2 className="text-3xl font-bold text-teal-400">Waystones</h2>
+                        <div className="flex items-center gap-4">
+                            <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/waystones/waystones_logo.webp"
+                                    alt="Waystones Logo"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <h2 className="text-3xl font-bold text-teal-400">Waystones</h2>
+                        </div>
                         <span className="text-sm text-gray-400 italic">Teleportation</span>
                     </header>
+                    <hr className="border-t border-gray-700 my-4" />
 
                     <p className="text-gray-300 mb-8">
                         Waystones sind super praktisch, um schnell zwischen Orten zu reisen. Du kannst Waystones überall platzieren, sie miteinander verbinden und sogar über Dimensionen hinweg nutzen. Ideal für Spieler, die viel unterwegs sind oder große Basen haben!
@@ -1313,12 +1384,12 @@ export default function Winterprojekt2025Wiki() {
                     {/* Waystones vs Shared Waystones */}
                     <h3 className="text-2xl font-semibold mb-4 text-teal-400">Waystones & Shared Waystones</h3>
                     <p className="text-gray-300 mb-6">
-                        Ein **normaler Waystone** ist nur für dich oder Spieler deiner Nähe zugänglich. Ein **Shared Waystone** kann mit allen Spielern geteilt werden – jeder kann sich dahin teleportieren, solange er aktiviert ist. Beide können über Crafting hergestellt werden und können später auch über Dimensionen hinweg genutzt werden.
+                        Ein <strong>Waystone</strong> ist nur für dich oder Spieler deiner Nähe zugänglich. Ein <strong>Shared Waystone</strong> kann mit allen Spielern geteilt werden – jeder kann sich mit einem weiteren Sharestone zu ihm teleportieren.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         {[
-                            { src: "waystone.png", title: "Waystone", desc: "Der klassische Waystone – teleportiere dich zu ihm oder von ihm weg. Perfekt, um Orte schnell zu erreichen." },
-                            { src: "shared_waystone.png", title: "Shared Waystone", desc: "Kann von allen Spielern genutzt werden. Super praktisch für öffentliche Basen oder Gemeinschaftsprojekte." },
+                            { src: "waystones_waystone.png", title: "Waystone", desc: "Der klassische Waystone – teleportiere dich zu ihm oder von ihm weg. Perfekt, um Orte schnell zu erreichen." },
+                            { src: "waystones_sharestone.png", title: "Shared Waystone", desc: "Kann von allen Spielern genutzt werden. Super praktisch für öffentliche Basen oder Gemeinschaftsprojekte." },
                         ].map(({ src, title, desc }) => (
                             <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
                                 <div className="relative w-40 h-40 flex-shrink-0">
@@ -1340,14 +1411,57 @@ export default function Winterprojekt2025Wiki() {
                     {/* Warpstone */}
                     <h3 className="text-2xl font-semibold mb-4 text-teal-400">Warpstone</h3>
                     <p className="text-gray-300 mb-6">
-                        Der **Warpstone** ist etwas anders: Du kannst dich **von ihm weg teleportieren**, aber nicht direkt zu ihm hin. Ideal, um Fluchtpunkte oder strategische Ausgangspunkte zu bauen.
+                        Der <strong>Warpstone</strong> ist etwas anders: Du kannst dich <strong>von ihm weg teleportieren</strong>, aber nicht wieder zu ihm hin.
                     </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "waystones_warpstone.png", title: "Warpstone", desc: "Der klassische Waystone – teleportiere dich zu ihm oder von ihm weg. Perfekt, um Orte schnell zu erreichen." },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/waystones/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
 
                     {/* Warp Plates */}
                     <h3 className="text-2xl font-semibold mb-4 text-teal-400">Warp Plates</h3>
                     <p className="text-gray-300 mb-6">
-                        Mit **Warp Plates** kannst du zwei Punkte miteinander verbinden. Beim Platzieren bekommst du einen kleinen Stein, mit dem du die Verbindung herstellst. Super, um feste Wege zwischen Basen oder wichtigen Orten zu bauen. Warp Plates funktionieren auch über Dimensionen hinweg!
+                        Mit <strong>Warp Plates</strong> kannst du zwei Punkte miteinander verbinden. Beim Platzieren bekommst du einen kleinen Stein, mit dem du die Verbindung herstellst.
                     </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        {[
+                            { src: "waystone.png", title: "Waystone", desc: "Der klassische Waystone – teleportiere dich zu ihm oder von ihm weg. Perfekt, um Orte schnell zu erreichen." },
+                            { src: "shared_waystone.png", title: "Shared Waystone", desc: "Kann von allen Spielern genutzt werden. Super praktisch für öffentliche Basen oder Gemeinschaftsprojekte." },
+                        ].map(({ src, title, desc }) => (
+                            <div key={title} className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                                <div className="relative w-40 h-40 flex-shrink-0">
+                                    <Image
+                                        src={`/minecraft/winterprojekt/2025/wiki/waystones/${src}`}
+                                        alt={title}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <div className="p-4">
+                                    <h4 className="text-xl font-semibold text-teal-300 mb-2">{title}</h4>
+                                    <p className="text-gray-300">{desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
 
                     {/* Scrolls */}
                     <h3 className="text-2xl font-semibold mb-4 text-teal-400">Scrolls</h3>
@@ -1433,7 +1547,7 @@ export default function Winterprojekt2025Wiki() {
                             <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
                                 <Image
                                     src="/minecraft/winterprojekt/2025/wiki/chimes/chimes_logo.png"
-                                    alt="Chimes Icon"
+                                    alt="Chimes Logo"
                                     fill
                                     className="object-cover"
                                 />
@@ -1525,10 +1639,26 @@ export default function Winterprojekt2025Wiki() {
                     <p className="text-gray-300 mb-8">
                         Du kannst die verschiedenen Grabsteine auch für Dekorationszwecke craften:
                     </p>
-
+                    <div className="mb-8">
+                        <div className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                            <div className="relative w-40 h-40 flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/graves/graves_crafting.png"
+                                    alt="Grabstein"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <div className="p-4">
+                                <h4 className="text-xl font-semibold text-teal-300 mb-2">Grabstein</h4>
+                                <p className="text-gray-300">
+                                    Du kannst auf Grabsteine auch schreiben, wie auf Schildern!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         {[
-                            { src: "graves_crafting.png", title: "Grabstein", desc: "Du kannst auf Grabsteine auch schreiben, wie auf Schildern!" },
                             { src: "graves_crafting_1.png", title: "Verwitterter Grabstein", desc: "Brenne einen Grabstein im Ofen" },
                             { src: "graves_crafting_2.png", title: "Kaputter Grabstein", desc: "Brenne einen Verwitterten Grabstein im Ofen" },
                         ].map(({ src, title, desc }) => (
@@ -1559,7 +1689,7 @@ export default function Winterprojekt2025Wiki() {
                             <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
                                 <Image
                                     src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
-                                    alt="Chimes Icon"
+                                    alt="Snow! Real Magic! Icon"
                                     fill
                                     className="object-cover"
                                 />
@@ -1756,20 +1886,60 @@ export default function Winterprojekt2025Wiki() {
                         <div className="flex items-center gap-4">
                             <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
                                 <Image
-                                    src="/minecraft/winterprojekt/2025/wiki/realmagic/realmagic_logo.webp"
-                                    alt="Chimes Icon"
+                                    src="/minecraft/winterprojekt/2025/wiki/netherchest/netherchest_logo.webp"
+                                    alt="Nether Chest Icon"
                                     fill
                                     className="object-cover"
                                 />
                             </div>
                             <h2 className="text-3xl font-bold text-teal-400">Nether Chest</h2>
                         </div>
-                        <span className="text-sm text-gray-400 italic">Öffentliche Truhe</span>
+                        <span className="text-sm text-gray-400 italic">Öffentliche Kiste</span>
                     </header>
                     <hr className="border-t border-gray-700 my-4" />
+
+                    <div className="relative w-full max-w-md h-64 mx-auto mb-8">
+                        <Image
+                            src="/minecraft/winterprojekt/2025/wiki/netherchest/netherchest_key.png"
+                            alt="Nether Chest Key Items"
+                            fill
+                            className="object-contain rounded-xl"
+                        />
+                    </div>
+
                     <p className="text-gray-300 mb-8">
-                        Diese Mod ist basically ein Briefkasten.
+                        Die <strong>Nether Chest</strong> ist eine spezielle Kiste mit mehreren öffentlichen Inventaren.
+                        Jedes Inventar wird über einen sogenannten Key gesteuert.
+                        Wenn du zum Beispiel 5 Karotten in den Key-Slot legst, kann nur jemand auf die Items zugreifen,
+                        der ebenfalls 5 Karotten in seinen Key-Slot gelegt hat.
                     </p>
+                    <p className="text-gray-300 mb-8">
+                        Auf diese Weise lassen sich mehrere Inventare einfach teilen – ähnlich wie bei einer Enderchest,
+                        auf die jeder mit dem richtigen Key Zugriff hat.
+                    </p>
+
+                    <p className="text-gray-300 mb-8">
+                        Die Kiste kann aber auch ohne Key verwendet werden, sodass alle Spieler mit einer Nether Chest auf die Items zugreifen können.
+                    </p>
+
+                    <div className="mb-8">
+                        <div className="flex items-center bg-gray-800 rounded-xl shadow-lg border border-white/10 overflow-hidden">
+                            <div className="relative w-40 h-40 flex-shrink-0">
+                                <Image
+                                    src="/minecraft/winterprojekt/2025/wiki/netherchest/netherchest_crafting.png"
+                                    alt="Netherchest Crafting"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <div className="p-4">
+                                <h4 className="text-xl font-semibold text-teal-300 mb-2">Nether Chest</h4>
+                                <p className="text-gray-300">
+                                    Die Nether Chest wird mit einem Nether Star gecraftet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <hr className="border-t border-gray-700 my-12" />

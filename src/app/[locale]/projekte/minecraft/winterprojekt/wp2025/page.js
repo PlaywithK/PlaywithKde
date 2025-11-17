@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ServerStatusCard from "../../../../components/serverstatus";
 import { updates, galleryImages } from "../../../../components/winterprojekt24Data";
 
 export default function Winterprojekt2024() {
@@ -21,7 +22,6 @@ export default function Winterprojekt2024() {
                     <p className="text-gray-300 max-w-2xl mx-auto mb-6">
                         Das Winterprojekt 2025 wird zum zweiten Mal mit einem Modpack gespielt.
                     </p>
-
                     {/* Download */}
                     <a
                         href="https://modrinth.com/modpack/winterprojekt2025"
@@ -35,7 +35,33 @@ export default function Winterprojekt2024() {
                             className="mx-auto mb-4 hover:scale-105 transition-transform duration-200"
                         />
                     </a>
+
+                    <ServerStatusCard />
+
                 </section>
+
+                <hr className="border-t border-gray-700 my-12" />
+
+                <section className="max-w-6xl mx-auto text-center">
+                    <h3 className="text-2xl sm:text-2xl font-bold mb-6 text-teal-400">Regeln</h3>
+                    <ol className="list-decimal text-left mx-auto w-fit">
+                        <li>Geht respektvoll miteinander um.</li>
+                        <li>Keine Cheats, Mods mit unfairen Vorteilen oder X-Ray, Duping ist nicht Verboten, aber auch nicht gerne gesehen.</li>
+                        <li>Es darf gestreamt werden, solange Privates von anderen Teilnehmern respektiert wird.</li>
+                        <li>Großes Griefen ist verboten.</li>
+                    </ol>
+
+                    <div className="my-8 p-5 rounded-xl border border-teal-500/50 bg-gradient-to-r from-gray-800/70 via-gray-900/70 to-gray-800/70 shadow-lg flex items-start gap-3">
+                        <div>
+                            <p className="text-teal-300 font-semibold">Grundlegend gilt:</p>
+                            <p className="text-gray-300">
+                                Das Projekt stellt den Spielspaß jedes einzelnen Spielers in den Mittelpunkt, was bedeutet, dass PvP, Trolls und weiteres im Rahmen dessen bleiben sollten, sodass jeder daran Spaß hat.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr className="border-t border-gray-700 my-12" />
 
                 {/* Gallery */}
                 {/*<section>

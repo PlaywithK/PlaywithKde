@@ -19,21 +19,25 @@ export default function Winterprojekt() {
   }, [locale]);
 
   const winterProjects = [
-    { href: "/projekte/minecraft/winterprojekt/wp2024", src: "/minecraft/winterprojekt/wp2021_Title.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2024" },
-    { href: "/projekte/minecraft/winterprojekt/wp2020", src: "/minecraft/winterprojekt/wp2020_Title.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2020" },
-    { href: "/projekte/minecraft/winterprojekt/wp2017", src: "/minecraft/winterprojekt/wp2017_Title.png", alt: "Winterprojekt Titelbild", title: "Winterprojekt 2017" },
+    { href: "/projekte/minecraft/winterprojekt/wp2024", src: "/minecraft/winterprojekt/wp2024_Title.png", alt: "Winterprojekt Titelbild 2024", title: "Winterprojekt 2024" },
+    { href: "/projekte/minecraft/winterprojekt/wp2023", src: "/minecraft/winterprojekt/wp2023_Title.png", alt: "Winterprojekt Titelbild 2023", title: "Winterprojekt 2023" },
+    { href: "/projekte/minecraft/winterprojekt/wp2022", src: "/minecraft/winterprojekt/wp2017_Title.png", alt: "Winterprojekt Titelbild 2022", title: "Winterprojekt 2022" },
+    { href: "/projekte/minecraft/winterprojekt/wp2021", src: "/minecraft/winterprojekt/wp2021_Title.png", alt: "Winterprojekt Titelbild 2021", title: "Winterprojekt 2021" },
+    { href: "/projekte/minecraft/winterprojekt/wp2020", src: "/minecraft/winterprojekt/wp2020_Title.png", alt: "Winterprojekt Titelbild 2020", title: "Winterprojekt 2020" },
+    { href: "/projekte/minecraft/winterprojekt/wp2017", src: "/minecraft/winterprojekt/wp2017_Title.png", alt: "Winterprojekt Titelbild 2017", title: "Winterprojekt 2017" },
   ];
 
   return (
     <>
       <Hero title={t("title")} subtitle={t("subtitle")} />
 
-      {/*
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-teal-400 mb-6 drop-shadow">Das Winterprojekt</h1>
+      {/* Beschreibung */}
+      <section className="max-w-4xl mx-auto text-center">
         <p className="text-gray-300 mb-8">
           Das Winterprojekt ist eines meiner liebsten Minecraft-Projekte, bei dem ich eine verschneite Landschaft mit detailreichen Bauten erschaffen habe.
           Ziel war es, eine gemütliche Winterwelt mit vielen kleinen Details zu gestalten.
-        </p>*/}
+        </p>
+      </section>
 
       {/* Hauptbild */}
       <section className="max-w-4xl mx-auto text-center">
@@ -45,13 +49,12 @@ export default function Winterprojekt() {
               fill
               className="object-cover transition-transform duration-500 ease-in-out hover:scale-105"
             />
-          </div>
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <span className="text-white text-6xl sm:text-6xl font-semibold text-center drop-shadow-lg pointer-events-none">
+            <span className="absolute inset-0 flex items-center justify-center text-white text-6xl sm:text-6xl font-semibold drop-shadow-lg pointer-events-none">
               2025
             </span>
           </div>
         </Link>
+
 
         {/* Jahresgrid */}
         <section className="max-w-full mx-auto mt-16">
@@ -81,7 +84,7 @@ export default function Winterprojekt() {
           </div>
         </section>
 
-        <Link href="./../../projekte" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all mt-12">
+        <Link href="./../../projekte" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all mt-12 mb-12">
           Zurück zur Projektübersicht
         </Link>
       </section>

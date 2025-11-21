@@ -198,6 +198,8 @@ const galleryImages = [
     { src: "/minecraft/winterprojekt/2024/wp24-pwk-laurastuhl.png", alt: "Laura vor PWKs Haus", caption: "Laura vor PWKs Haus - PlaywithK" },
     { src: "/minecraft/winterprojekt/2024/wp24-pwk-allafk.png", alt: "Ganzer Server einfach AFK", caption: "Ganzer Server einfach AFK - PlaywithK" },
     { src: "/minecraft/winterprojekt/2024/wp24-pwk-bloodyterraform.png", alt: "Bloodys Berg ist endlich weg", caption: "Bloodys Berg ist endlich weg - PlaywithK" },
+    { src: "/minecraft/winterprojekt/2024/wp24_irwaBase.png", alt: "Irwas Eisdorf", caption: "Irwas Eisdorf - PlaywithK" },
+    { src: "/minecraft/winterprojekt/2024/wp24_melawCoolerCreeper.png", alt: "Melaw ist ein cooler Creeper", caption: "Melaw ist ein cooler Creeper - PlaywithK" },
 ];
 
 export { updates, typeColors, galleryImages };

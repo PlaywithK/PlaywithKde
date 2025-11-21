@@ -4,6 +4,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { updates, galleryImages } from "../../../../components/winterprojekt24Data";
+import Gallery from "../../../../components/gallery";
+
 
 export default function Winterprojekt2024() {
     const typeColors = {
@@ -36,34 +38,29 @@ export default function Winterprojekt2024() {
                     >
                         Map herunterladen 🡇
                     </a>
+
+                    <p className="text-gray-300 mb-6 max-w-prose mx-auto">
+                        Auch die Lobby kannst du herunterladen und erkunden!
+                    </p>
+                    <a
+                        href="https://github.com/PlaywithK/PlaywithKde/releases/download/Test/Winterprojekt2024_Map.zip"
+                        download
+                        className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-6 py-3 rounded-full shadow-lg transition-all"
+                    >
+                        Lobby herunterladen 🡇
+                    </a>
                 </section>
 
                 {/* Gallery */}
-                <section>
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Community Galerie</h2>
-                    <p className="mb-8 max-w-prose">
-                        In der Community-Galerie findest du Bilder und Clips aus der Community! Du hast auch einen Moment der es verdient hat hier zu landen? Schicke ihn PlaywithK auf Discord!
-                    </p>
+                <Gallery
+                    title="Community Galerie"
+                    description="In der Community-Galerie findest du Bilder und Clips aus der Community! Du hast auch einen Moment der es verdient hat hier zu landen? Schicke ihn PlaywithK auf Discord!"
+                    images={galleryImages}
+                />
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                        {galleryImages.map(({ src, alt, caption }, i) => (
-                            <div key={i} className="overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group">
-                                <div className="relative w-full h-64 sm:h-72 md:h-80">
-                                    <Image
-                                        src={src}
-                                        alt={alt}
-                                        fill
-                                        className="object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-                                    />
-                                </div>
-                                <div className="bg-gray-700 p-3 text-sm text-gray-300">{caption}</div>
-                            </div>
-                        ))}
-                    </div>
-                </section>
 
                 {/* Updates */}
-                <section className="mb-8">
+                <section className="mb-8 mt-12">
                     <h2 className="text-3xl font-semibold mb-6 text-teal-400">Updates</h2>
 
                     {updates.slice(0, 3).map(({ version, changes }) => (

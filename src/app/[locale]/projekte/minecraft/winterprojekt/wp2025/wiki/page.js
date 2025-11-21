@@ -93,7 +93,7 @@ export default function Winterprojekt2025Wiki() {
                         </div>
                     </div>
 
-                    <h2 className="text-xl font-semibold mb-4 text-teal-400">PWK's Winterprojekt 2025</h2>
+                    <h2 className="text-xl font-semibold mb-4 text-teal-400">PWKs Winterprojekt 2025</h2>
 
                     <div className="flex gap-4 mb-8">
                         {/* Modrinth Button */}
@@ -130,7 +130,7 @@ export default function Winterprojekt2025Wiki() {
                         </a>
                     </div>
 
-                    <h2 className="text-xl font-semibold mb-4 text-teal-400">PWK's Enhanced Winterprojekt 2025</h2>
+                    <h2 className="text-xl font-semibold mb-4 text-teal-400">PWKs Enhanced Winterprojekt 2025</h2>
 
                     <div className="flex gap-4 mb-8">
                         {/* Modrinth Button */}

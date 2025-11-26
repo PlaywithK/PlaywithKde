@@ -3,8 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { galleryImages } from "../../../../components/winterprojekt21Data";
-import Gallery from "../../../../components/gallery";
 
 export default function Winterprojekt2022() {
     const typeColors = {
@@ -31,23 +29,16 @@ export default function Winterprojekt2022() {
                         Das Winterprojekt 2022 war das erste Modprojekt der Reihe und fand in der 1.19.2 statt.
                         Dank Mineceater gab es in diesem Projekt auch das beliebte Durst-System.
                     </p>
+
+                    <div className="my-8 p-5 rounded-xl border border-teal-500/50 bg-gradient-to-r from-gray-800/70 via-gray-900/70 to-gray-800/70 shadow-lg flex flex-col items-center text-center gap-3">
+                        <div>
+                            <p className="text-teal-300 font-semibold">Info:</p>
+                            <p className="text-gray-300">
+                                Diese Seite befindet sich noch im Aufbau, da es nicht viele Medien und Aufnahmen des WP22 gibt.
+                            </p>
+                        </div>
+                    </div>
                 </section>
-
-                {/* Gallery */}
-                <Gallery
-                    title="Community Galerie"
-                    description="In der Community-Galerie findest du Bilder und Clips aus der Community! Du hast auch einen Moment der es verdient hat hier zu landen? Schicke ihn PlaywithK auf Discord!"
-                    images={galleryImages}
-                />
-
-                {/* Download */}
-                <section className="mb-16 max-w-6xl mx-auto text-center">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Download</h2>
-                    <p className="text-gray-300 mb-6 max-w-prose mx-auto">
-                        Leider kann ich für dieses Projekt keinen Download anbieten, da einige Spieler unschöne Dinge auf dem Server gebaut haben.
-                    </p>
-                </section>
-
             </div>
         </main >
     );

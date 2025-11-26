@@ -42,13 +42,15 @@
     },
     "appDevelopment": {
       "title": "App Development",
-      "desc": "It always bothered me to have 20 apps for every single function on my phone. So I decided to create my own app, combining all functions in one place. Chorez was born.",
+      "desc": "I started developing apps because I wanted to create a powerful app, that does all I need in my daily life.",
+      "tag1": "Flutter",
+      "tag2": "Dart",
       "linkText": "More about App Development",
       "imageAlt": "Laptop with Code"
     },
     "chorez": {
       "title": "Chorez App",
-      "desc": "An app that bundles various everyday functions and helps you bring clarity and simplicity to your daily life.",
+      "desc": "It always bothered me to have 20 apps for every single function on my phone. So I decided to create my own app, combining all functions in one place. Chorez was born.",
       "tag1": "All-in-One",
       "tag2": "To-Dos",
       "tag3": "Shopping Lists",
@@ -59,12 +61,29 @@
     "gameDev": {
       "title": "Game Development",
       "desc": "For years, I wanted to develop my own games, and ideas constantly overflow in my mind. Here you can learn everything about my dev journey and current game projects.",
+      "tag1": "Unity",
+      "tag2": "C#",
       "linkText": "To Game Development",
       "imageAlt": "Unity Editor"
+    },
+    "itch": {
+      "title": "Itch.io",
+      "desc": "My itch.io page has all of my games I made so far."
+    },
+    "elysia": {
+      "title": "Adventure of Elysia",
+      "desc": "This game is the first game I ever had in my head and is actually the reason I started with game dev."
+    },
+    "minari": {
+      "title": "Minari - Working Title",
+      "desc": "Minari is my try on a Tomodachi Life-like game. It could be called my dream game and I am really trying to make this my best game."
     },
     "webDev": {
       "title": "Web Development",
       "desc": "This section is still WIP!",
+      "tag1": "HTML",
+      "tag2": "CSS",
+      "tag3": "Javascript",
       "linkText": "To Web Development",
       "imageAlt": "Unity Editor"
     },

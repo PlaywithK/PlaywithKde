@@ -45,7 +45,7 @@ export default function Gallery({
                             />
                         </div>
 
-                        <div className="bg-gray-700 p-3 text-sm text-gray-300">
+                        <div className="bg-gray-700 p-3 text-sm text-gray-300 flex items-center min-h-16">
                             {caption}
                         </div>
                     </div>

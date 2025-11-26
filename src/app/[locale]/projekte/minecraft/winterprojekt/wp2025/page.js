@@ -4,7 +4,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ServerStatusCard from "../../../../components/serverstatus";
-import { updates, galleryImages } from "../../../../components/winterprojekt24Data";
+import { updates, galleryImages } from "../../../../components/winterprojekt25Data";
+import Gallery from "../../../../components/gallery";
 
 export default function Winterprojekt2024() {
     const typeColors = {
@@ -64,28 +65,11 @@ export default function Winterprojekt2024() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 {/* Gallery */}
-                {/*<section>
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Community Galerie</h2>
-                    <p className="mb-8 max-w-prose">
-                        In der Community-Galerie findest du Bilder und Clips aus der Community! Du hast auch einen Moment der es verdient hat hier zu landen? Schicke ihn PlaywithK auf Discord!
-                    </p>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                        {galleryImages.map(({ src, alt, caption }, i) => (
-                            <div key={i} className="overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group">
-                                <div className="relative w-full h-64 sm:h-72 md:h-80">
-                                    <Image
-                                        src={src}
-                                        alt={alt}
-                                        fill
-                                        className="object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-                                    />
-                                </div>
-                                <div className="bg-gray-700 p-3 text-sm text-gray-300">{caption}</div>
-                            </div>
-                        ))}
-                    </div>
-                </section>*/}
+                <Gallery
+                    title="Community Galerie"
+                    description="In der Community-Galerie findest du Bilder und Clips aus der Community! Du hast auch einen Moment der es verdient hat hier zu landen? Schicke ihn PlaywithK auf Discord!"
+                    images={galleryImages}
+                />
 
                 {/* Wiki */}
                 <section className="text-center bg-gray-800/60 p-10 rounded-2xl shadow-xl border border-white border-opacity-10">

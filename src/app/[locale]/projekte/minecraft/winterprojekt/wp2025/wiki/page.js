@@ -16,54 +16,134 @@ export default function Winterprojekt2025Wiki() {
                     </p>
                 </section>
 
-                {/* Inhaltsangabe */}
-                <section className="max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-6 text-teal-400">Inhaltsangabe</h2>
+                {/* Start Sektion (Modliste & Inhalt Side-by-Side) */}
+                <div className="max-w-6xl mx-auto mb-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="lg:col-span-2">
+                        {/* Modliste */}
+                        <section id="modlist" className="scroll-mt-24 max-w-6xl mx-auto mb-16">
+                            <h2 className="text-3xl font-semibold mb-4 text-teal-400">Modliste</h2>
+                            <p className="text-gray-300 mb-6">
+                                In diesem Abschnitt findest du eine vollständige Liste aller enthaltenen Mods, ausgenommen von Libaries und Dependencies.
+                            </p>
 
-                    <div className="mb-6">
-                        <h3 className="text-2xl font-semibold mb-2 text-teal-400">Technisches</h3>
-                        <ul className="list-decimal list-inside text-gray-300 space-y-2">
-                            <li><Link href="#installation" className="hover:underline">Installation & Setup</Link></li>
-                            <li><Link href="#modlist" className="hover:underline">Modliste</Link></li>
-                            <li><Link href="#rei" className="hover:underline">Roughly Enough Items</Link></li>
-                        </ul>
+                            {/* Kategorien */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                                {/* Main Mods */}
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2 text-teal-300">Hauptmods</h3>
+                                    <ul className="list-disc list-inside text-gray-300 space-y-1">
+                                        <li>Applied Energistics 2 (AE2)</li>
+                                        <li>Sophisticated Backpacks</li>
+                                        <li>Simple Emerald Armor and Tools</li>
+                                        <li>Extra Generators</li>
+                                        <li>Untitled Duck Mod</li>
+                                        <li>Storage Drawers</li>
+                                        <li>Fishing Crates</li>
+                                        <li>Lets Do Farm & Charm, Bakery, Vinery, HerbalBrews</li>
+                                        <li>Tinkers Construct (Hephaestus)</li>
+                                    </ul>
+                                </div>
+
+                                {/* Strukturen */}
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2 text-teal-300">Strukturen</h3>
+                                    <ul className="list-disc list-inside text-gray-300 space-y-1">
+                                        <li>WilliamWithers Overhauled Overworld</li>
+                                        <li>ChoiceTheorem’s Overhauled Village</li>
+                                        <li>YUNG’s Better Desert Temples, Nether Fortresses, Ocean Monuments & Witch Huts</li>
+                                        <li>DnT Pillager Outpost Overhaul</li>
+                                        <li>Tidal Towns</li>
+                                    </ul>
+                                </div>
+
+                                {/* Dekoration */}
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2 text-teal-300">Deko</h3>
+                                    <ul className="list-disc list-inside text-gray-300 space-y-1">
+                                        <li>Snowy Spirit</li>
+                                        <li>Winterly</li>
+                                        <li>Macaws Lights and Lamps</li>
+                                        <li>Chimes</li>
+                                        <li>Supplementaries</li>
+                                        <li>Decorative Food</li>
+                                        <li>Plushie Mod</li>
+                                    </ul>
+                                </div>
+
+                                {/* Quality of Life */}
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2 text-teal-300">Quality of Life</h3>
+                                    <ul className="list-disc list-inside text-gray-300 space-y-1">
+                                        <li>Waystones</li>
+                                        <li>Gravestones</li>
+                                        <li>Nether Chest</li>
+                                        <li>Snow! Real Magic!</li>
+                                        <li>FallingTree</li>
+                                        <li>Wand of Better Building</li>
+                                        <li>Simple Voice Chat</li>
+                                        <li>Sound Physics Remastered</li>
+                                        <li>Roughly Enough Items & Jade</li>
+                                        <li>ModMenu</li>
+                                        <li>AnotherSimpleElevator</li>
+                                        <li>Amendments</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
                     </div>
 
-                    <div className="mb-6">
-                        <h3 className="text-2xl font-semibold mb-2 text-teal-400">Einleitungen in Mods</h3>
-                        <ul className="list-disc list-inside text-gray-300 space-y-1">
-                            <li><Link href="#mods-ae2" className="hover:underline">Applied Energistics 2 (AE2)</Link></li>
-                            <li><Link href="#mods-amendments" className="hover:underline">Amendments</Link></li>
-                            <li><Link href="#mods-elevator" className="hover:underline">Another Simple Elevator</Link></li>
-                            <li><Link href="#mods-chimes" className="hover:underline">Chimes</Link></li>
-                            <li><Link href="#mods-generators" className="hover:underline">Extra Generators</Link></li>
-                            <li><Link href="#mods-fishing-crates" className="hover:underline">Fishing Crates</Link></li>
-                            <li><Link href="#mods-graves" className="hover:underline">Gravestones</Link></li>
-                            <li><Link href="#mods-macaw" className="hover:underline">Macaws Lights & Lamps</Link></li>
-                            <li><Link href="#mods-netherchest" className="hover:underline">Nether Chest</Link></li>
-                            <li><Link href="#mods-plushies" className="hover:underline">Plushie Mod</Link></li>
-                            <li><Link href="#mods-realmagic" className="hover:underline">Snow! Real Magic!</Link></li>
-                            <li><Link href="#mods-snowyspirit" className="hover:underline">Snowy Spirit</Link></li>
-                            <li><Link href="#mods-backpacks" className="hover:underline">Sophisticated Backpacks</Link></li>
-                            <li><Link href="#mods-drawers" className="hover:underline">Storage Drawers</Link></li>
-                            <li><Link href="#mods-supplementaries" className="hover:underline">Supplementaries</Link></li>
-                            <li><Link href="#mods-tinkers" className="hover:underline">Tinkers Construct</Link></li>
-                            <li><Link href="#mods-waystones" className="hover:underline">Waystones</Link></li>
-                            <li><Link href="#mods-buidling-wands" className="hover:underline">Wand of Better Building</Link></li>
-                            <li><Link href="#mods-winterly" className="hover:underline">Winterly</Link></li>
-                        </ul>
+                    {/* Inhaltsangabe */}
+                    <aside className="hidden lg:block">
+                        <div className="sticky top-24 bg-gray-800/70 backdrop-blur-sm border border-gray-700 rounded-xl p-5 shadow-lg">
+                            <section className="max-w-6xl mx-auto mb-16">
+                                <h2 className="text-3xl font-semibold mb-6 text-teal-400">Schnell-Links</h2>
 
-                        <h3 className="text-xl font-semibold mb-2 text-teal-400">[Lets Do]-Reihe</h3>
-                        <ul className="list-disc list-inside text-gray-300 space-y-1">
-                            <li><Link href="#mods-do-farm" className="hover:underline">[Lets Do] Farm & Charm</Link></li>
-                            <li><Link href="#mods-do-bakery" className="hover:underline">[Lets Do] Bakery</Link></li>
-                            <li><Link href="#mods-do-candle" className="hover:underline">[Lets Do] Candlelight</Link></li>
-                            <li><Link href="#mods-do-herbal" className="hover:underline">[Lets Do] Herbal Brews</Link></li>
-                            <li><Link href="#mods-do-vinery" className="hover:underline">[Lets Do] Vinery</Link></li>
-                            <li><Link href="#mods-do-beach" className="hover:underline">[Lets Do] Beachparty</Link></li>
-                        </ul>
-                    </div>
-                </section>
+                                <div className="mb-6">
+                                    <h3 className="text-2xl font-semibold mb-2 text-teal-400">Technisches</h3>
+                                    <ul className="list-decimal list-inside text-gray-300 space-y-2">
+                                        <li><Link href="#installation" className="hover:underline">Installation & Setup</Link></li>
+                                        <li><Link href="#rei" className="hover:underline">Roughly Enough Items</Link></li>
+                                    </ul>
+                                </div>
+
+                                <div className="mb-6">
+                                    <h3 className="text-2xl font-semibold mb-2 text-teal-400">Einleitungen in Mods</h3>
+                                    <ul className="list-disc list-inside text-gray-300 space-y-1">
+                                        <li><Link href="#mods-ae2" className="hover:underline">Applied Energistics 2 (AE2)</Link></li>
+                                        <li><Link href="#mods-amendments" className="hover:underline">Amendments</Link></li>
+                                        <li><Link href="#mods-elevator" className="hover:underline">Another Simple Elevator</Link></li>
+                                        <li><Link href="#mods-chimes" className="hover:underline">Chimes</Link></li>
+                                        <li><Link href="#mods-generators" className="hover:underline">Extra Generators</Link></li>
+                                        <li><Link href="#mods-fishing-crates" className="hover:underline">Fishing Crates</Link></li>
+                                        <li><Link href="#mods-graves" className="hover:underline">Gravestones</Link></li>
+                                        <li><Link href="#mods-macaw" className="hover:underline">Macaws Lights & Lamps</Link></li>
+                                        <li><Link href="#mods-netherchest" className="hover:underline">Nether Chest</Link></li>
+                                        <li><Link href="#mods-plushies" className="hover:underline">Plushie Mod</Link></li>
+                                        <li><Link href="#mods-realmagic" className="hover:underline">Snow! Real Magic!</Link></li>
+                                        <li><Link href="#mods-snowyspirit" className="hover:underline">Snowy Spirit</Link></li>
+                                        <li><Link href="#mods-backpacks" className="hover:underline">Sophisticated Backpacks</Link></li>
+                                        <li><Link href="#mods-drawers" className="hover:underline">Storage Drawers</Link></li>
+                                        <li><Link href="#mods-supplementaries" className="hover:underline">Supplementaries</Link></li>
+                                        <li><Link href="#mods-tinkers" className="hover:underline">Tinkers Construct</Link></li>
+                                        <li><Link href="#mods-waystones" className="hover:underline">Waystones</Link></li>
+                                        <li><Link href="#mods-buidling-wands" className="hover:underline">Wand of Better Building</Link></li>
+                                        <li><Link href="#mods-winterly" className="hover:underline">Winterly</Link></li>
+                                    </ul>
+
+                                    <h3 className="text-xl font-semibold mb-2 text-teal-400">[Lets Do]-Reihe</h3>
+                                    <ul className="list-disc list-inside text-gray-300 space-y-1">
+                                        <li><Link href="#mods-do-farm" className="hover:underline">[Lets Do] Farm & Charm</Link></li>
+                                        <li><Link href="#mods-do-bakery" className="hover:underline">[Lets Do] Bakery</Link></li>
+                                        <li><Link href="#mods-do-candle" className="hover:underline">[Lets Do] Candlelight</Link></li>
+                                        <li><Link href="#mods-do-herbal" className="hover:underline">[Lets Do] Herbal Brews</Link></li>
+                                        <li><Link href="#mods-do-vinery" className="hover:underline">[Lets Do] Vinery</Link></li>
+                                        <li><Link href="#mods-do-beach" className="hover:underline">[Lets Do] Beachparty</Link></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </aside>
+                </div>
 
                 {/* Installation */}
                 <section id="installation" className="scroll-mt-24 max-w-6xl mx-auto mb-16">
@@ -168,86 +248,8 @@ export default function Winterprojekt2025Wiki() {
                     </div>
                 </section>
 
-                {/* Modliste */}
-                <section id="modlist" className="scroll-mt-24 max-w-6xl mx-auto mb-16">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Modliste</h2>
-                    <p className="text-gray-300 mb-6">
-                        In diesem Abschnitt findest du eine vollständige Liste aller enthaltenen Mods, ausgenommen von Libaries und Dependencies.
-                    </p>
-
-                    {/* Kategorien */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                        {/* Main Mods */}
-                        <div>
-                            <h3 className="text-xl font-semibold mb-2 text-teal-300">Hauptmods</h3>
-                            <ul className="list-disc list-inside text-gray-300 space-y-1">
-                                <li>Applied Energistics 2 (AE2)</li>
-                                <li>Sophisticated Backpacks</li>
-                                <li>Simple Emerald Armor and Tools</li>
-                                <li>Extra Generators</li>
-                                <li>Untitled Duck Mod</li>
-                                <li>Storage Drawers</li>
-                                <li>Fishing Crates</li>
-                                <li>Lets Do Farm & Charm, Bakery, Vinery, HerbalBrews (und evtl. Brewery)</li>
-                                <li>Tinkers Construct</li>
-                            </ul>
-                        </div>
-
-                        {/* Strukturen */}
-                        <div>
-                            <h3 className="text-xl font-semibold mb-2 text-teal-300">Strukturen</h3>
-                            <ul className="list-disc list-inside text-gray-300 space-y-1">
-                                <li>Tectonic (Biome Gen)</li>
-                                <li>WilliamWithers Overhauled Overworld</li>
-                                <li>ChoiceTheorem’s Overhauled Village</li>
-                                <li>Structory</li>
-                                <li>YUNG’s Better Desert Temples, Nether Fortresses, Ocean Monuments & Witch Huts</li>
-                                <li>DnT Pillager Outpost Overhaul</li>
-                                <li>Tidal Towns</li>
-                            </ul>
-                        </div>
-
-                        {/* Dekoration */}
-                        <div>
-                            <h3 className="text-xl font-semibold mb-2 text-teal-300">Deko</h3>
-                            <ul className="list-disc list-inside text-gray-300 space-y-1">
-                                <li>Snowy Spirit</li>
-                                <li>Winterly</li>
-                                <li>Macaw’s Lights and Lamps</li>
-                                <li>Chimes</li>
-                                <li>Supplementaries (Restricted)</li>
-                                <li>Decorative Food</li>
-                                <li>Plushie Mod</li>
-                            </ul>
-                        </div>
-
-                        {/* Quality of Life */}
-                        <div>
-                            <h3 className="text-xl font-semibold mb-2 text-teal-300">Quality of Life</h3>
-                            <ul className="list-disc list-inside text-gray-300 space-y-1">
-                                <li>Waystones</li>
-                                <li>Gravestones</li>
-                                <li>Nether Chest</li>
-                                <li>Snow! Real Magic!</li>
-                                <li>FallingTree</li>
-                                <li>Wand of Better Building</li>
-                                <li>Simple Voice Chat</li>
-                                <li>Sound Physics Remastered</li>
-                                <li>REI & Jade</li>
-                                <li>ModMenu</li>
-                                <li>PWKUtils</li>
-                                <li>AnotherSimpleElevator</li>
-                                <li>Amendments</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
                 {/* REI */}
-                <section
-                    id="mods-rei"
-                    className="max-w-6xl mx-auto mb-16 p-8 bg-emerald-500/30 rounded-2xl border border-emerald-700 hover:border-emerald-500 transition-all duration-300"
-                >
+                <section id="rei" className="max-w-6xl mx-auto mb-16 p-8 bg-emerald-500/30 rounded-2xl border border-emerald-700 hover:border-emerald-500 transition-all duration-300">
                     {/* Header */}
                     <header className="flex items-center justify-between mb-6">
                         <div className="flex items-center gap-4">
@@ -2548,6 +2550,6 @@ export default function Winterprojekt2025Wiki() {
                 </section>
 
             </div>
-        </main>
+        </main >
     );
 }

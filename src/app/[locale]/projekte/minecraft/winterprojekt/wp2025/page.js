@@ -23,21 +23,17 @@ export default function Winterprojekt2024() {
                     <p className="text-gray-300 max-w-2xl mx-auto mb-6">
                         Das Winterprojekt 2025 wird zum zweiten Mal mit einem Modpack gespielt.
                     </p>
-                    {/* Download */}
-                    <a
-                        href="https://modrinth.com/modpack/winterprojekt2025"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block"
-                    >
-                        <img
-                            src="https://raw.githubusercontent.com/krystejj/anothersimpleelevator/1.21/assets/available-on-modrinth.png"
-                            alt="Available on Modrinth"
-                            className="mx-auto mb-4 hover:scale-105 transition-transform duration-200"
-                        />
-                    </a>
 
                     <ServerStatusCard />
+
+                    <div className="flex justify-center mt-12 mb-12">
+                        <Link
+                            href="./wp2025/wiki"
+                            className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 px-6 py-3 text-white font-semibold rounded-full transition-all"
+                        >
+                            Zum Download & Wiki <span>→</span>
+                        </Link>
+                    </div>
 
                 </section>
 
@@ -70,21 +66,6 @@ export default function Winterprojekt2024() {
                     description="In der Community-Galerie findest du Bilder und Clips aus der Community! Du hast auch einen Moment der es verdient hat hier zu landen? Schicke ihn PlaywithK auf Discord!"
                     images={galleryImages}
                 />
-
-                {/* Wiki */}
-                <section className="text-center bg-gray-800/60 p-10 rounded-2xl shadow-xl border border-white border-opacity-10">
-                    <h2 className="text-3xl font-semibold text-teal-400 mb-4">Mehr Infos</h2>
-                    <p className="text-gray-300 mb-6">
-                        Entdecke alle Mods, Features und Tipps zum diesjährigen Modpack in unserem eigenen Wiki.
-                    </p>
-                    <Link
-                        href="./wp2025/wiki"
-                        className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 px-6 py-3 text-white font-semibold rounded-full transition-all"
-                    >
-                        Zum Wiki <span>→</span>
-                    </Link>
-                </section>
-
             </div>
         </main >
     );

@@ -45,25 +45,6 @@ export default function Winterprojekt2017() {
                     description="In der Community-Galerie findest du Bilder und Clips aus der Community! Du hast auch einen Moment der es verdient hat hier zu landen? Schicke ihn PlaywithK auf Discord!"
                     images={galleryImages}
                 />
-
-                <hr className="border-t border-gray-700 my-12" />
-
-
-                {/* Download */}
-                <section className="mb-16 max-w-6xl mx-auto text-center">
-                    <h2 className="text-3xl font-semibold mb-4 text-teal-400">Download</h2>
-                    <p className="text-gray-300 mb-6 max-w-prose mx-auto">
-                        Lade dir die originale Winterprojekt-Map herunter und sieh sie dir an!
-                    </p>
-                    <a
-                        href="https://github.com/PlaywithK/PlaywithKde/releases/download/Test/Winterprojekt2024_Map.zip"
-                        download
-                        className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-6 py-3 rounded-full shadow-lg transition-all"
-                    >
-                        Map herunterladen 🡇
-                    </a>
-                </section>
-
             </div>
         </main >
     );

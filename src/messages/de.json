@@ -42,13 +42,27 @@
     },
     "appDevelopment": {
       "title": "App-Entwicklung",
-      "desc": "Es hat mich schon immer gestört 20 Apps für jede einzelne Funktion auf meinem Handy zu haben. Also entschloss ich mich irgendwann meine eigene App zu kreieren, bei der alle Funktionen an einem Ort gebündelt sind. Chorez war geboren.",
+      "desc": "Ich habe angefangen Apps zu entwickeln, weil ich eine App haben wollte, die alle meine Anforderungen für den Alltag erfüllt.",
+      "tag1": "Flutter",
+      "tag2": "Dart",
       "linkText": "Mehr zur App-Entwicklung",
       "imageAlt": "Laptop mit Code"
     },
+    "itch": {
+      "title": "Itch.io",
+      "desc": "Meine Itch.io-Seite enthält alle Spiele, die ich bisher erstellt habe."
+    },
+    "elysia": {
+      "title": "Adventure of Elysia",
+      "desc": "Dieses Spiel war das erste, das ich im Kopf hatte, und ist eigentlich der Grund, warum ich mit der Spieleentwicklung angefangen habe."
+    },
+    "minari": {
+      "title": "Minari - Working Title",
+      "desc": "Minari ist mein Versuch, ein Tomodachi Life-ähnliches Spiel zu entwickeln. Man könnte es als mein Drean Game bezeichnen und ich gebe wirklich alles um es zu meinem Besten Spiel zu machen."
+    },
     "chorez": {
       "title": "Chorez App",
-      "desc": "Eine App, die verschiedene Alltagsfunktionen bündelt und dir hilft, Klarheit und Einfachheit in deinen Alltag zu bringen.",
+      "desc": "Es hat mich schon immer gestört 20 Apps für jede einzelne Funktion auf meinem Handy zu haben. Also entschloss ich mich irgendwann meine eigene App zu kreieren, bei der alle Funktionen an einem Ort gebündelt sind. Chorez war geboren.",
       "tag1": "All-in-One",
       "tag2": "To-Dos",
       "tag3": "Einkaufslisten",
@@ -59,12 +73,17 @@
     "gameDev": {
       "title": "Spieleentwicklung",
       "desc": "Schon seit Jahren wollte ich eigene Spiele entwickeln und die Ideen in meinem Kopf sprudeln quasi über. Hier erfährst du alles zu meiner Dev-Journey und meinen momentanen Spiele-Projekten.",
+      "tag1": "Unity",
+      "tag2": "C#",
       "linkText": "Zur Spieleentwicklung",
       "imageAlt": "Unity Editor"
     },
     "webDev": {
       "title": "Web-Entwicklung",
       "desc": "Diese Sektion ist noch WIP!",
+            "tag1": "HTML",
+      "tag2": "CSS",
+      "tag3": "Javascript",
       "linkText": "Zur Web-Entwicklung",
       "imageAlt": "Unity Editor"
     },

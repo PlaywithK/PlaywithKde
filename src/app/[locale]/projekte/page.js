@@ -17,164 +17,217 @@ export default function Projekte() {
   const params = useParams();
   const locale = params.locale;
 
+  // Hilfs-Komponente
+  const ProjectCard = ({ image, title, desc, tags = [], link, reverse = false, children }) => (
+    <section
+      className={`bg-gray-800 rounded-xl shadow-xl border border-white/10 p-6 ${reverse ? "md:flex-row-reverse" : ""
+        }`}
+    >
+      <div className={`grid md:grid-cols-2 gap-8 items-center`}>
+        <div className="relative w-full h-64 md:h-80">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="rounded-xl shadow-lg border border-white/10 object-cover"
+          />
+        </div>
+        <div className="text-center md:text-left">
+          <h2 className="text-2xl font-bold text-teal-400 mb-3">{title}</h2>
+          <p className="text-gray-300 mb-4">{desc}</p>
+          {tags.length > 0 && (
+            <div className="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
+              {tags.map((tag, i) => (
+                <span
+                  key={i}
+                  className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+          <Link
+            href={link}
+            className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
+          >
+            Mehr erfahren ➔
+          </Link>
+        </div>
+      </div>
+      {children && <div className="mt-6">{children}</div>}
+    </section>
+  );
+
+
   return (
     <>
       <Hero title={t("title")} subtitle={t("desc")} />
 
-      <div className="space-y-20 max-w-5xl mx-auto">
+      <p className="text-center">Alle Projekte von PlaywithK, von App-Entwicklung bis hin zu Minecraft!</p>
+
+      <hr className="border-t border-gray-700 my-12" />
+
+      <div className="space-y-12 max-w-5xl mx-auto">
         {/* Web-Spiele */}
-        <section className="bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-10 p-6">
-          <div className="text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <span className="text-3xl">🎮</span>
-              <h2 className="text-2xl font-bold text-teal-400">{t("webGames.title")}</h2>
-            </div>
-            <p className="text-gray-300 mb-4 max-w-2xl mx-auto">{t("webGames.desc")}</p>
-
-            <div className="flex flex-wrap gap-2 mb-4 justify-center">
-              {["tag1", "tag2", "tag3", "tag4", "tag5"].map((key) => (
-                <span key={key} className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">
-                  {t(`webGames.${key}`)}
-                </span>
-              ))}
-            </div>
-
-            <Link
-              href={`/${locale}/projekte/webgames`}
-              className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
-            >
-              {t("webGames.linkText")}
-            </Link>
-          </div>
-        </section>
+        <ProjectCard
+          image="/canva_coding.jpg"
+          title={t("webGames.title")}
+          desc={t("webGames.desc")}
+          tags={[t("webGames.tag1"), t("webGames.tag2"), t("webGames.tag3")]}
+          link={`/${locale}/projekte/webgames`}
+        />
 
         {/* App-Entwicklung */}
-        <section className="grid md:grid-cols-2 gap-10 items-center md:flex-row-reverse">
-          <div className="relative w-full h-64 md:h-80">
-            <Image
-              src="/canva_coding.jpg"
-              alt={t("appDevelopment.imageAlt")}
-              fill
-              className="rounded-xl shadow-lg border border-white border-opacity-10 object-cover"
-            />
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold text-teal-400 mb-4">{t("appDevelopment.title")}</h2>
-            <p className="text-gray-300 mb-6">{t("appDevelopment.desc")}</p>
-            <Link
-              href={`/${locale}/projekte/app-entwicklung`}
-              className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
-            >
-              {t("appDevelopment.linkText")}
-            </Link>
-          </div>
-        </section>
+        <ProjectCard
+          image="/canva_coding.jpg"
+          title={t("appDevelopment.title")}
+          desc={t("appDevelopment.desc")}
+          tags={[t("appDevelopment.tag1"), t("appDevelopment.tag2")]}
+          link={`/${locale}/projekte/app-entwicklung`}
+        >
 
-        {/* Chorez-App */}
-        <section className="grid md:grid-cols-2 gap-10 items-center bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-10 p-6">
-          <div className="relative w-full h-64 md:h-[500px]">
-            <Image
-              src="/chorez_placeholder.png"
-              alt={t("chorez.imageAlt")}
-              fill
-              className="rounded-xl shadow border border-white/10 object-cover"
-            />
-          </div>
-          <div className="text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-              <span className="text-3xl">📱</span>
-              <h2 className="text-2xl font-bold text-teal-400">{t("chorez.title")}</h2>
+          {/* Chorez-Child */}
+          <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
+            <div className="w-32 h-20 relative">
+              <Image
+                src="/chorez_placeholder.png"
+                alt={t("chorez.title")}
+                fill
+                className="object-cover rounded-lg"
+              />
             </div>
-            <p className="text-gray-300 mb-4">{t("chorez.desc")}</p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {["tag1", "tag2", "tag3", "tag4"].map((key) => (
-                <span key={key} className="bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-sm">
-                  {t(`chorez.${key}`)}
-                </span>
-              ))}
+            <div>
+              <h3 className="text-teal-400 font-semibold">{t("chorez.title")}</h3>
+              <p className="text-gray-300 text-sm">{t("chorez.desc")}</p>
+              <Link
+                href={`/${locale}/projekte/app-entwicklung`}
+                className="text-teal-300 text-sm underline"
+              >
+                Mehr erfahren →
+              </Link>
             </div>
-            <Link
-              href="/projekte/app-entwicklung"
-              className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
-            >
-              {t("chorez.linkText")}
-            </Link>
           </div>
-        </section>
+        </ProjectCard>
 
         {/* Spieleentwicklung */}
-        <section className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="relative w-full h-64 md:h-80">
-            <Image
-              src="/unity_dev_placeholder.png"
-              alt={t("gameDev.imageAlt")}
-              fill
-              className="rounded-xl shadow-lg border border-white border-opacity-10 object-cover"
-            />
+        <ProjectCard
+          image="/unity_dev_placeholder.png"
+          title={t("gameDev.title")}
+          desc={t("gameDev.desc")}
+          tags={[t("gameDev.tag1"), t("gameDev.tag2")]}
+          link={`/${locale}/projekte/spieleentwicklung`}
+          reverse
+        >
+
+          {/* Itch.io-Child */}
+          <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
+            <div className="w-32 h-20 relative">
+              <Image
+                src="/chorez_placeholder.png"
+                alt={t("itch.title")}
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+            <div>
+              <h3 className="text-teal-400 font-semibold">{t("itch.title")}</h3>
+              <p className="text-gray-300 text-sm">{t("itch.desc")}</p>
+              <Link
+                href={`/${locale}/projekte/app-entwicklung`}
+                className="text-teal-300 text-sm underline"
+              >
+                Mehr erfahren →
+              </Link>
+            </div>
           </div>
-          <div>
-            <h2 className="text-2xl font-bold text-teal-400 mb-4">{t("gameDev.title")}</h2>
-            <p className="text-gray-300 mb-6">{t("gameDev.desc")}</p>
-            <Link
-              href={`/${locale}/projekte/spieleentwicklung`}
-              className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
-            >
-              {t("gameDev.linkText")}
-            </Link>
+
+          {/* AoE-Child */}
+          <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
+            <div className="w-32 h-20 relative">
+              <Image
+                src="/chorez_placeholder.png"
+                alt={t("elysia.title")}
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+            <div>
+              <h3 className="text-teal-400 font-semibold">{t("elysia.title")}</h3>
+              <p className="text-gray-300 text-sm">{t("elysia.desc")}</p>
+              <Link
+                href={`/${locale}/projekte/app-entwicklung`}
+                className="text-teal-300 text-sm underline"
+              >
+                Mehr erfahren →
+              </Link>
+            </div>
           </div>
-        </section>
+
+          {/* Minari-Child */}
+          <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
+            <div className="w-32 h-20 relative">
+              <Image
+                src="/chorez_placeholder.png"
+                alt={t("minari.title")}
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+            <div>
+              <h3 className="text-teal-400 font-semibold">{t("minari.title")}</h3>
+              <p className="text-gray-300 text-sm">{t("minari.desc")}</p>
+              <Link
+                href={`/${locale}/projekte/app-entwicklung`}
+                className="text-teal-300 text-sm underline"
+              >
+                Mehr erfahren →
+              </Link>
+            </div>
+          </div>
+        </ProjectCard>
 
         {/* Web-Entwicklung */}
-        <section className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="relative w-full h-64 md:h-80">
-            <Image
-              src="/unity_dev_placeholder.png"
-              alt={t("webDev.imageAlt")}
-              fill
-              className="rounded-xl shadow-lg border border-white border-opacity-10 object-cover"
-            />
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold text-teal-400 mb-4">{t("webDev.title")}</h2>
-            <p className="text-gray-300 mb-6">{t("webDev.desc")}</p>
-            <Link
-              href="/projekte/spieleentwicklung"
-              className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
-            >
-              {t("webDev.linkText")}
-            </Link>
-          </div>
-        </section>
-
-        {/* Minecraft Projekte */}
-        <section className="max-w-6xl mx-auto mt-32 px-4 sm:px-8 sm:pb-8">
-          <h2 className="text-4xl font-bold text-teal-400 mb-10 text-center">{t("minecraftProjects.title")}</h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {["item1", "item2", "item3"].map((key) => (
-              <Link
-                key={key}
-                href={`/de${germanPaths[key]}`}
-                className="relative block overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group"
-              >
-                <div className="relative w-full h-64 sm:h-72 md:h-80">
-                  <Image
-                    src={t(`minecraftProjects.${key}.src`)}
-                    alt={t(`minecraftProjects.${key}.alt`)}
-                    fill
-                    className="object-cover filter blur-sm transition-filter transition-transform duration-500 ease-in-out group-hover:blur-none group-hover:scale-110"
-                  />
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-white text-3xl sm:text-4xl font-semibold text-center drop-shadow-lg pointer-events-none">
-                    {t(`minecraftProjects.${key}.title`)}
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
+        <ProjectCard
+          image="/canva_coding.jpg"
+          title={t("webDev.title")}
+          desc={t("webDev.desc")}
+          tags={[t("webDev.tag1"), t("webDev.tag2"), t("webDev.tag3")]}
+          link={`/${locale}/projekte/web-entwicklung`}
+        />
       </div>
+
+      <hr className="border-t border-gray-700 my-12" />
+
+      {/* Minecraft Projekte */}
+      <section className="max-w-6xl mx-auto mt-32 px-4 sm:px-8 sm:pb-8">
+        <h2 className="text-4xl font-bold text-teal-400 mb-10 text-center">{t("minecraftProjects.title")}</h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {["item1", "item2", "item3"].map((key) => (
+            <Link
+              key={key}
+              href={`/de${germanPaths[key]}`}
+              className="relative block overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group"
+            >
+              <div className="relative w-full h-64 sm:h-72 md:h-80">
+                <Image
+                  src={t(`minecraftProjects.${key}.src`)}
+                  alt={t(`minecraftProjects.${key}.alt`)}
+                  fill
+                  className="object-cover filter blur-sm transition-filter transition-transform duration-500 ease-in-out group-hover:blur-none group-hover:scale-110"
+                />
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-white text-3xl sm:text-4xl font-semibold text-center drop-shadow-lg pointer-events-none">
+                  {t(`minecraftProjects.${key}.title`)}
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
     </>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "./../components/hero";
+import { H1, H2, H3, P, PLarge} from "./../components/design";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -63,8 +64,6 @@ export default function Projekte() {
   return (
     <>
       <Hero title={t("title")} subtitle={t("desc")} />
-
-      <p className="text-center">Alle Projekte von PlaywithK, von App-Entwicklung bis hin zu Minecraft!</p>
 
       <hr className="border-t border-gray-700 my-12" />
 
@@ -201,7 +200,7 @@ export default function Projekte() {
 
       {/* Minecraft Projekte */}
       <section className="max-w-6xl mx-auto mt-32 px-4 sm:px-8 sm:pb-8">
-        <h2 className="text-4xl font-bold text-teal-400 mb-10 text-center">{t("minecraftProjects.title")}</h2>
+        <H2 className="text-4xl font-bold text-teal-400 mb-10 text-center">{t("minecraftProjects.title")}</H2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {["item1", "item2", "item3"].map((key) => (

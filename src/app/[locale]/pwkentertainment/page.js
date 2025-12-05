@@ -1,5 +1,7 @@
 "use client";
 
+import { H1, H2, H3, P, PLarge } from "./../components/design";
+import Hero from "./../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
@@ -47,7 +49,7 @@ function StarIcon() {
 }
 
 export default function PWKEntertainment() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("PWKEntertainment");
   const params = useParams();
   const locale = params.locale;
 
@@ -58,25 +60,23 @@ export default function PWKEntertainment() {
   }, [locale]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 flex flex-col items-center px-8 py-16">
-      <div className="w-full max-w-5xl p-10 flex flex-col gap-12">
-        <h1 className="text-6xl font-extrabold text-teal-400 tracking-wide drop-shadow-lg">
-          PWK Entertainment
-        </h1>
+    <>
+      <Hero title="PWK Entertainment" />
 
+      <div className="w-full max-w-5xl p-10 flex flex-col gap-12 mx-auto">
         <section>
-          <h2 className="text-4xl font-semibold mb-6 text-teal-300 tracking-wide">
+          <H2 className="">
             Über PWK Entertainment
-          </h2>
+          </H2>
           <p className="text-gray-300 text-lg leading-relaxed max-w-3xl">
             PWK Entertainment war eine von PlaywithK gegründete Firma, welche sich hauptsächlich um Videoschnitt und Grafikdesign für Social-Media Kanäle kümmerte. Dabei wurden sowohl Shortformat als auch Longformat Videos angenommen, aber auch Designs für Twitch, YouTube oder andere Soziale Kanäle.
           </p>
         </section>
 
         <section>
-          <h2 className="text-4xl font-semibold mb-6 text-teal-300 tracking-wide">
+          <H2 className="">
             Werdegang & Erfahrungen
-          </h2>
+          </H2>
           <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mb-4">
             PWK Entertainment wurde im September 2020 als E-Commerce-Unternehmen gegründet. Schon kurz nach dem Start gab es erste Interessenten, und das Projekt nahm schnell an Fahrt auf. Obwohl vieles Neuland war, von steuerlichen Pflichten über Rechnungsstellung bis hin zur individuellen Kundenbetreuung, entwickelte sich mit der Zeit eine zuverlässige Arbeitsroutine.
           </p>
@@ -89,9 +89,9 @@ export default function PWKEntertainment() {
         </section>
 
         <section>
-          <h2 className="text-4xl font-semibold mb-8 text-teal-300 tracking-wide text-center">
+          <H2 className="text-center">
             Kunden
-          </h2>
+          </H2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {projects.map(({ title, description, image, link }) => (
               <a
@@ -118,9 +118,9 @@ export default function PWKEntertainment() {
         </section>
 
         <section>
-          <h2 className="text-4xl font-semibold mb-8 text-teal-300 tracking-wide text-center">
+          <H2 className="text-center">
             Bewertungen
-          </h2>
+          </H2>
           <div className="flex flex-col gap-8 max-w-4xl mx-auto">
             {customers.map(({ name, feedback }) => (
               <blockquote
@@ -141,6 +141,6 @@ export default function PWKEntertainment() {
           </div>
         </section>
       </div>
-    </main>
+    </>
   );
 }

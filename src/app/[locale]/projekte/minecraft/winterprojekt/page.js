@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "./../../../components/hero";
+import { H1, H2, H3, P, PLarge} from "./../../../components/design";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
@@ -33,13 +34,13 @@ export default function Winterprojekt() {
 
       {/* Beschreibung */}
       <section className="max-w-4xl mx-auto text-center">
-        <p className="text-gray-300 mb-8">
+        <P className="mb-8">
           Das Winterprojekt ist eines meiner liebsten Minecraft-Projekte, bei dem ich eine verschneite Landschaft mit detailreichen Bauten erschaffen habe.
           Ziel war es, eine gemütliche Winterwelt mit vielen kleinen Details zu gestalten.
-        </p>
+        </P>
       </section>
 
-      {/* Hauptbild */}
+      {/* Hauptbild -- Noch nicht ganz mittig?? */}
       <section className="max-w-4xl mx-auto text-center">
         <Link href={`/${locale}/projekte/minecraft/winterprojekt/wp2025`}>
           <div className="relative w-full h-64 sm:h-80 md:h-96 mb-8 rounded-xl shadow-lg border border-white border-opacity-10 overflow-hidden cursor-pointer">
@@ -58,7 +59,7 @@ export default function Winterprojekt() {
 
         {/* Jahresgrid */}
         <section className="max-w-full mx-auto mt-16">
-          <h2 className="text-3xl font-semibold mb-6 text-teal-400">Vergangene Projekte</h2>
+          <H2 className="text-3xl font-semibold mb-6 text-teal-400">Vergangene Projekte</H2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {winterProjects.map(({ href, src, alt, title }) => (
               <Link

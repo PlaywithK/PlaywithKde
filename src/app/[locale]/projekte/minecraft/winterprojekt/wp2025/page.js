@@ -1,11 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import Hero from "../../../../components/hero";
+import { H1, H2, H3, P, PLarge } from "../../../../components/design";
 import ServerStatusCard from "../../../../components/serverstatus";
 import { updates, galleryImages } from "../../../../components/winterprojekt25Data";
 import Gallery from "../../../../components/gallery";
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Winterprojekt2024() {
     const typeColors = {
@@ -15,14 +17,12 @@ export default function Winterprojekt2024() {
     };
 
     return (
-        <main className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 py-16">
+        <main className="min-h-screen flex flex-col justify-center items-center ">
             <div className="w-full max-w-5xl">
                 {/* Projektbeschreibung */}
                 <section className="max-w-6xl mx-auto text-center">
-                    <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-teal-400">Winterprojekt 2025</h1>
-                    <p className="text-gray-300 max-w-2xl mx-auto mb-6">
-                        Das Winterprojekt 2025 wird zum zweiten Mal mit einem Modpack gespielt.
-                    </p>
+                    {/* <Hero title={t("title")} subtitle={t("desc")} /> */}
+                    <Hero title="Winterprojekt 2025" subtitle="Das Winterprojekt 2025 wird zum zweiten Mal mit einem Modpack gespielt." />
 
                     <ServerStatusCard />
 
@@ -40,7 +40,7 @@ export default function Winterprojekt2024() {
                 <hr className="border-t border-gray-700 my-12" />
 
                 <section className="max-w-6xl mx-auto text-center">
-                    <h3 className="text-2xl sm:text-2xl font-bold mb-6 text-teal-400">Regeln</h3>
+                    <H2 className="mb-6">Regeln</H2>
                     <ol className="list-decimal text-left mx-auto w-fit">
                         <li>Geht respektvoll miteinander um.</li>
                         <li>Keine Cheats, Mods mit unfairen Vorteilen oder X-Ray, Duping ist nicht Verboten, aber auch nicht gerne gesehen.</li>

@@ -4,6 +4,11 @@
       "title": "Willkommen auf PlaywithK.de",
       "subtitle": "Programmierer · Gamer · Video Creator"
     },
+            "about": {
+      "title": "Über mich",
+      "text": "Hey! Ich bin PlaywithK, der Ersteller dieser Webseite.",
+      "more": "Mehr von PlaywithK"
+    },
     "projects": {
       "title": "Meine Projekte",
       "webgames": {
@@ -37,7 +42,7 @@
       "tag3": "HighCard",
       "tag4": "Mini Games",
       "tag5": "HTML/CSS/JS",
-      "linkText": "Zu den Web-Spielen",
+      "linkText": "Web-Spiele spielen",
       "imageAlt": "Web-Spiele"
     },
     "appDevelopment": {
@@ -45,7 +50,6 @@
       "desc": "Ich habe angefangen Apps zu entwickeln, weil ich eine App haben wollte, die alle meine Anforderungen für den Alltag erfüllt.",
       "tag1": "Flutter",
       "tag2": "Dart",
-      "linkText": "Mehr zur App-Entwicklung",
       "imageAlt": "Laptop mit Code"
     },
     "itch": {
@@ -67,7 +71,6 @@
       "tag2": "To-Dos",
       "tag3": "Einkaufslisten",
       "tag4": "Termine",
-      "linkText": "Mehr zu Chorez",
       "imageAlt": "Chorez App"
     },
     "gameDev": {
@@ -75,7 +78,6 @@
       "desc": "Schon seit Jahren wollte ich eigene Spiele entwickeln und die Ideen in meinem Kopf sprudeln quasi über. Hier erfährst du alles zu meiner Dev-Journey und meinen momentanen Spiele-Projekten.",
       "tag1": "Unity",
       "tag2": "C#",
-      "linkText": "Zur Spieleentwicklung",
       "imageAlt": "Unity Editor"
     },
     "webDev": {
@@ -84,8 +86,14 @@
             "tag1": "HTML",
       "tag2": "CSS",
       "tag3": "Javascript",
-      "linkText": "Zur Web-Entwicklung",
       "imageAlt": "Unity Editor"
+    },
+            "mcModding": {
+      "title": "Minecraft Modding",
+      "desc": "Ich habe erst mit Modding in Minecraft angefangen, weil ich eine bestimmte Mod brauchte und diese nicht finden konnte.",
+      "tag1": "Java",
+      "tag2": "Fabric",
+      "imageAlt": "IntelliJ Code"
     },
     "minecraftProjects": {
       "title": "Minecraft Projekte",

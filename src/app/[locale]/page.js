@@ -52,6 +52,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Über mich */}
+<section className="px-4 sm:px-8 py-20 max-w-6xl mx-auto">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    {/* Text */}
+    <div>
+      <H2 className="mb-4">{t("about.title")}</H2>
+
+      <P className="text-gray-300 mb-6">
+        {t("about.text")}
+      </P>
+
+      <Link
+        href={`/${locale}/playwithk`}
+        className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
+      >
+        {t("about.more")}
+      </Link>
+    </div>
+
+    {/* Bild */}
+    <div className="flex justify-center">
+      <img
+        src="/closed.png"
+        alt="PlaywithK Character"
+        className="w-64 sm:w-80 md:w-full max-w-sm rounded-2xl"
+      />
+    </div>
+
+  </div>
+</section>
+
+
       {/* Projekte */}
       <section id="projects" className="px-4 sm:px-8 py-16 max-w-6xl mx-auto">
         <H2 className="text-center"> {t("projects.title")} </H2>

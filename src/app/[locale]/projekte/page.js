@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "./../components/hero";
-import { H1, H2, H3, P, PLarge} from "./../components/design";
+import { H1, H2, H3, P, PLarge } from "./../components/design";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -67,6 +67,15 @@ export default function Projekte() {
       <hr className="border-t border-gray-700 my-12" />
 
       <div className="space-y-12 max-w-5xl mx-auto">
+        {/* Web-Entwicklung */}
+        <ProjectCard
+          image="/canva_coding.jpg"
+          title={t("webDev.title")}
+          desc={t("webDev.desc")}
+          tags={[t("webDev.tag1"), t("webDev.tag2"), t("webDev.tag3")]}
+          link={`/${locale}/projekte/web-entwicklung`}
+        />
+
         {/* Web-Spiele */}
         <ProjectCard
           image="/canva_coding.jpg"
@@ -75,38 +84,6 @@ export default function Projekte() {
           tags={[t("webGames.tag1"), t("webGames.tag2"), t("webGames.tag3")]}
           link={`/${locale}/projekte/webgames`}
         />
-
-        {/* App-Entwicklung */}
-        <ProjectCard
-          image="/canva_coding.jpg"
-          title={t("appDevelopment.title")}
-          desc={t("appDevelopment.desc")}
-          tags={[t("appDevelopment.tag1"), t("appDevelopment.tag2")]}
-          link={`/${locale}/projekte/app-entwicklung`}
-        >
-
-          {/* Chorez-Child */}
-          <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
-            <div className="w-32 h-20 relative">
-              <Image
-                src="/chorez_placeholder.png"
-                alt={t("chorez.title")}
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div>
-              <h3 className="text-teal-400 font-semibold">{t("chorez.title")}</h3>
-              <p className="text-gray-300 text-sm">{t("chorez.desc")}</p>
-              <Link
-                href={`/${locale}/projekte/app-entwicklung`}
-                className="text-teal-300 text-sm underline"
-              >
-                Mehr erfahren →
-              </Link>
-            </div>
-          </div>
-        </ProjectCard>
 
         {/* Spieleentwicklung */}
         <ProjectCard
@@ -185,14 +162,37 @@ export default function Projekte() {
           </div>
         </ProjectCard>
 
-        {/* Web-Entwicklung */}
+        {/* App-Entwicklung */}
         <ProjectCard
           image="/canva_coding.jpg"
-          title={t("webDev.title")}
-          desc={t("webDev.desc")}
-          tags={[t("webDev.tag1"), t("webDev.tag2"), t("webDev.tag3")]}
-          link={`/${locale}/projekte/web-entwicklung`}
-        />
+          title={t("appDevelopment.title")}
+          desc={t("appDevelopment.desc")}
+          tags={[t("appDevelopment.tag1"), t("appDevelopment.tag2")]}
+          link={`/${locale}/projekte/app-entwicklung`}
+        >
+
+          {/* Chorez-Child */}
+          <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
+            <div className="w-32 h-20 relative">
+              <Image
+                src="/chorez_placeholder.png"
+                alt={t("chorez.title")}
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+            <div>
+              <h3 className="text-teal-400 font-semibold">{t("chorez.title")}</h3>
+              <p className="text-gray-300 text-sm">{t("chorez.desc")}</p>
+              <Link
+                href={`/${locale}/projekte/app-entwicklung`}
+                className="text-teal-300 text-sm underline"
+              >
+                Mehr erfahren →
+              </Link>
+            </div>
+          </div>
+        </ProjectCard>
 
         {/* Minecraft Modding */}
         <ProjectCard

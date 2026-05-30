@@ -6,12 +6,7 @@ import { useEffect } from "react";
 import { H1, H2, H3, P } from "./components/design";
 import Link from "next/link";
 
-import LastEdited from "./components/lastedited";
-import { getLastModified } from "./components/git";
-
-const lastModified = getLastModified(
-    "app/about/page.tsx"
-);
+import LastEditedBlock from "./components/lasteditedserverwrapper";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -137,7 +132,7 @@ export default function Home() {
         </div>
       </section>
 
-      <LastEdited date={lastModified} />
+      <LastEditedBlock filePath="src/app/[locale]/page.js" />
     </>
   );
 }

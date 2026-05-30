@@ -4,6 +4,11 @@
       "title": "Welcome to PlaywithK.de",
       "subtitle": "Developer · Gamer · Video Creator"
     },
+        "about": {
+      "title": "About me",
+      "text": "Hey! I am PlaywithK, the creator of this website.",
+      "more": "More about PlaywithK"
+    },
     "projects": {
       "title": "My Projects",
       "webgames": {
@@ -22,13 +27,15 @@
       "all": "View all projects"
     }
   },
+
+
   "Projekte": {
     "meta": {
       "title": "Projects – PlaywithK",
       "desc": "Projects"
     },
     "title": "Projects",
-    "desc": "All projects by PlaywithK",
+    "desc": "All Projects of PlaywithK, from App-Developement to Minecraft!",
     "webGames": {
       "title": "Web Games",
       "desc": "Here you can find some small web games I created as a test using HTML, CSS, and JavaScript. Have fun playing!",
@@ -37,7 +44,7 @@
       "tag3": "HighCard",
       "tag4": "Mini Games",
       "tag5": "HTML/CSS/JS",
-      "linkText": "To the Web Games",
+      "linkText": "Play Games",
       "imageAlt": "Web Games"
     },
     "appDevelopment": {
@@ -45,7 +52,6 @@
       "desc": "I started developing apps because I wanted to create a powerful app, that does all I need in my daily life.",
       "tag1": "Flutter",
       "tag2": "Dart",
-      "linkText": "More about App Development",
       "imageAlt": "Laptop with Code"
     },
     "chorez": {
@@ -55,7 +61,6 @@
       "tag2": "To-Dos",
       "tag3": "Shopping Lists",
       "tag4": "Appointments",
-      "linkText": "More about Chorez",
       "imageAlt": "Chorez App"
     },
     "gameDev": {
@@ -63,7 +68,6 @@
       "desc": "For years, I wanted to develop my own games, and ideas constantly overflow in my mind. Here you can learn everything about my dev journey and current game projects.",
       "tag1": "Unity",
       "tag2": "C#",
-      "linkText": "To Game Development",
       "imageAlt": "Unity Editor"
     },
     "itch": {
@@ -84,8 +88,14 @@
       "tag1": "HTML",
       "tag2": "CSS",
       "tag3": "Javascript",
-      "linkText": "To Web Development",
       "imageAlt": "Unity Editor"
+    },
+        "mcModding": {
+      "title": "Minecraft Modding",
+      "desc": "I just startet with Minecraft Modding because I needed a specific mod and couldnt find anything.",
+      "tag1": "Java",
+      "tag2": "Fabric",
+      "imageAlt": "IntelliJ Code"
     },
     "minecraftProjects": {
       "title": "Minecraft Projects",
@@ -108,6 +118,8 @@
     "more": "Learn More",
     "all": "To All Projects"
   },
+
+
   "Webgames": {
     "hero": {
       "title": "Welcome to Webgames!",
@@ -132,6 +144,8 @@
     "buttonPlay": "Play now",
     "buttonBack": "Back to all projects"
   },
+
+
   "AppDev": {
     "title": "App Development",
     "subtitle": "Here I document my personal journey in app development – from the first idea to the finished app.",
@@ -155,9 +169,13 @@
       "ending": "With every commit, I learn something new — whether it’s in UI design, app architecture, or handling user feedback. The journey continues!"
     }
   },
+
+
   "PlaywithK": {
     "title": "Kontakt"
   },
+
+
   "FAQ": {
     "title": "FAQ",
     "desc": "Common questions and answers!",
@@ -172,6 +190,8 @@
     "question5": "How often is the content updated?",
     "answer5": "The information on the website may be outdated as it is created in my free time. The exact last edit date can be seen at the bottom of each page."
   },
+
+
   "Kontakt": {
     "title": "Contact",
     "contact": {
@@ -181,6 +201,8 @@
       "send": "Send"
     }
   },
+
+
   "Impressum": {
     "title": "Imprint",
     "desc": "This website is a purely private, non-commercial project and does not serve any business-related or journalistic-editorial purposes. Therefore, according to Section 5 of the German Telemedia Act (TMG), there is no legal obligation to provide an imprint.",
@@ -195,12 +217,16 @@
       "title": "External Resources"
     }
   },
+
+
   "Navbar": {
     "home": "Home",
     "projects": "Projects",
     "entertainment": "PWK Entertainment",
     "faq": "FAQ"
   },
+
+
   "Footer": {
     "kontakt": "Contact",
     "impressum": "Imprint",

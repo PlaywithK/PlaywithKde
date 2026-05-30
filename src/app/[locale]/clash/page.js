@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Hero from "./../components/hero";
+import { H1, H2, H3, P, PLarge} from "./../components/design";
 
 const lyrics = [
     `"Irgendwann, wenn es klappt, schließt mein Herz hiermit mal ab"\n– Ghost, Paperblossom`,
@@ -28,7 +29,7 @@ const posts = [
     {
         date: "26.09.2025",
         title: "Was ich möchte...",
-        content: "Ich möchte nicht aufstehen, aber ich möchte auch nicht liegen bleiben. Ich möchte nicht atmen, aber ich möchte auch nicht damit aufhören. Ich möchte ein guter Freund sein, und doch möchte ich alleine sein. Ich möchte leben.Ich möchte dass es mir gut geht, aber ich schaffe es nicht etwa dafür zu tun.Ich fühle mich so leer, so nutzlos, wie eine Zeitverschwendung.Ich fühle mich schwer und träge, antriebslos... Diese Welt erdrückt mich.Ich passe nicht in sie hinein.Es reiht sich Fehler an Fehler an Fehler...und ich frage mich, wird es jemals einen Moment geben, in dem ich wirklich leben kann?",
+        content: "Ich möchte nicht aufstehen, aber ich möchte auch nicht liegen bleiben. Ich möchte nicht atmen, aber ich möchte auch nicht damit aufhören. Ich möchte ein guter Freund sein, und doch möchte ich alleine sein. Ich möchte leben. Ich möchte dass es mir gut geht, aber ich schaffe es nicht etwas dafür zu tun. Ich fühle mich so leer, so nutzlos, wie eine Zeitverschwendung.Ich fühle mich schwer und träge, antriebslos... Diese Welt erdrückt mich. Ich passe nicht in sie hinein. Es reiht sich Fehler an Fehler an Fehler... und ich frage mich, wird es jemals einen Moment geben, in dem ich wirklich leben kann?",
     },
     {
         date: "07.09.2020",
@@ -88,9 +89,9 @@ export default function Clash() {
                     </div>
                 </section>
 
-                <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-teal-400 text-center">
+                <H2 className="text-3xl sm:text-4xl font-bold mb-12 text-teal-400 text-center">
                     Gedanken
-                </h2>
+                </H2>
 
                 <div className="flex flex-col gap-8">
                     {posts.map((post, idx) => (
@@ -99,7 +100,7 @@ export default function Clash() {
                             className="bg-gray-800 border border-white border-opacity-20 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all"
                         >
                             <div className="flex justify-between items-center mb-2">
-                                <h3 className="text-xl sm:text-2xl font-semibold text-teal-400">{post.title}</h3>
+                                <H3 className="text-xl sm:text-2xl font-semibold text-teal-400">{post.title}</H3>
                                 <span className="text-gray-400 text-sm sm:text-base">{post.date}</span>
                             </div>
                             <p className="text-gray-300 text-base sm:text-lg">{post.content}</p>

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
+import { H1, H2, H3, P } from "./components/design";
 import Link from "next/link";
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
 
         <div className="relative z-10 w-full px-4 md:px-8">
           <h1
-            className="text-5xl sm:text-6xl font-extrabold mb-6 drop-shadow-lg opacity-0 translate-y-5 animate-fade-in-up"
+            className="text-5xl sm:text-6xl font-extrabold mb-6 drop-shadow-lg opacity-0 translate-y-5 animate-fade-in-up "
           >
             {t("hero.title")}
           </h1>
@@ -51,11 +52,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Über mich */}
+<section className="px-4 sm:px-8 py-20 max-w-6xl mx-auto">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    {/* Text */}
+    <div>
+      <H2 className="mb-4">{t("about.title")}</H2>
+
+      <P className="text-gray-300 mb-6">
+        {t("about.text")}
+      </P>
+
+      <Link
+        href={`/${locale}/playwithk`}
+        className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
+      >
+        {t("about.more")}
+      </Link>
+    </div>
+
+    {/* Bild */}
+    <div className="flex justify-center">
+      <img
+        src="/closed.png"
+        alt="PlaywithK Character"
+        className="w-64 sm:w-80 md:w-full max-w-sm rounded-2xl"
+      />
+    </div>
+
+  </div>
+</section>
+
+
       {/* Projekte */}
       <section id="projects" className="px-4 sm:px-8 py-16 max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-teal-400 text-center">
-          {t("projects.title")}
-        </h2>
+        <H2 className="text-center"> {t("projects.title")} </H2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
@@ -79,10 +111,10 @@ export default function Home() {
               key={idx}
               className="flex flex-col justify-between bg-gray-800 rounded-xl shadow-lg border border-white border-opacity-20 p-6 hover:shadow-xl transition-all"
             >
-              <h3 className="text-xl font-semibold mb-4 text-teal-400 text-center">{title}</h3>
+              <H3 className="text-xl font-semibold mb-4 text-teal-400 text-center">{title}</H3>
 
               <div className="flex-1 flex items-center justify-center text-center">
-                <p className="text-gray-300 text-sm sm:text-base">{description}</p>
+                <P className="">{description}</P>
               </div>
 
               <div className="mt-6 text-center">

@@ -6,6 +6,13 @@ import { useEffect } from "react";
 import { H1, H2, H3, P } from "./components/design";
 import Link from "next/link";
 
+import LastEdited from "./components/lastedited";
+import { getLastModified } from "./components/git";
+
+const lastModified = getLastModified(
+    "app/about/page.tsx"
+);
+
 export default function Home() {
   const t = useTranslations("HomePage");
   const params = useParams();
@@ -129,6 +136,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <LastEdited date={lastModified} />
     </>
   );
 }

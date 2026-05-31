@@ -6,8 +6,11 @@ import { useEffect } from "react";
 import { H1, H2, H3, P } from "./components/design";
 import Link from "next/link";
 
+<<<<<<< HEAD
 import LastEditedBlock from "./components/lasteditedserverwrapper";
 
+=======
+>>>>>>> parent of 2979fd6 (Last Edited Test 1)
 export default function Home() {
   const t = useTranslations("HomePage");
   const params = useParams();
@@ -131,8 +134,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <LastEditedBlock filePath="src/app/[locale]/page.js" />
     </>
   );
 }

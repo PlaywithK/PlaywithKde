@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import { updates, galleryImages } from "@/components/winterprojekt24Data";
 import LastEdited from "@/components/lastedited";
 import Gallery from "@/components/gallery";
-import LastEdited from "@/components/lastedited";
 
 export default function Winterprojekt2017() {
     const typeColors = {

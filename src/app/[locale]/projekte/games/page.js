@@ -1,12 +1,13 @@
 "use client";
 
-import Hero from "./../../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
+import Hero from "@/components/hero";
+import LastEdited from "@/components/lastedited";
 
 export default function GameEntwicklung() {
-    const t = useTranslations("Games");
+  const t = useTranslations("Games");
   const params = useParams();
   const locale = params.locale;
 
@@ -18,8 +19,8 @@ export default function GameEntwicklung() {
 
   return (
     <>
-    <Hero title={t("title")} subtitle={t("subtitle")} />
-      
+      <Hero title={t("title")} subtitle={t("subtitle")} />
+
       {/*<section className="max-w-6xl mx-auto text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-indigo-400">Game-Entwicklung</h1>
         <p className="text-gray-300 max-w-2xl mx-auto mb-12">
@@ -88,6 +89,8 @@ export default function GameEntwicklung() {
           </p>
         </div>
       </section>
-</>
+
+      <LastEdited date="31.05.2026" />
+    </>
   );
 }

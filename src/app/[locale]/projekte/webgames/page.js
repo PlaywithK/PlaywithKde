@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
+import LastEdited from "@/components/lastedited";
 import Link from 'next/link';
 
 export default function WebgamesOverview() {
@@ -91,6 +92,8 @@ export default function WebgamesOverview() {
           </Link>
         </div>
       </section>
+
+      <LastEdited date="31.05.2026" />
     </main>
   );
 }

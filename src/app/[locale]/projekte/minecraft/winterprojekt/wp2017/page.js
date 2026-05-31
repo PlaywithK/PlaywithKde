@@ -1,11 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import ServerStatusCard from "../../../../components/serverstatus";
-import { updates, galleryImages } from "../../../../components/winterprojekt24Data";
-import Gallery from "../../../../components/gallery";
+import { updates, galleryImages } from "@/components/winterprojekt24Data";
+import LastEdited from "@/components/lastedited";
+import Gallery from "@/components/gallery";
+import LastEdited from "@/components/lastedited";
 
 export default function Winterprojekt2017() {
     const typeColors = {
@@ -46,6 +45,8 @@ export default function Winterprojekt2017() {
                     images={galleryImages}
                 />
             </div>
+
+            <LastEdited date="31.05.2026" />
         </main >
     );
 }

@@ -1,9 +1,11 @@
 "use client";
 
-import Hero from "./../../../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
+import Hero from "@/components/hero";
+import LastEdited from "@/components/lastedited";
+
 import Link from 'next/link';
 import Image from "next/image";
 
@@ -28,6 +30,8 @@ export default function Gimmelcraft() {
                     Gimmelcraft yeah
                 </p>
             </section>
+
+            <LastEdited date="31.05.2026" />
         </>
     );
 }

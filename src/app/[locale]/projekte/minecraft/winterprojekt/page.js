@@ -1,12 +1,15 @@
 "use client";
 
-import Hero from "./../../../components/hero";
-import { H1, H2, H3, P, PLarge} from "./../../../components/design";
+
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
 import Link from 'next/link';
 import Image from "next/image";
+import Hero from "@/components/hero";
+import { H1, H2, H3, P, PLarge} from "@/components/design";
+import LastEdited from "@/components/lastedited";
+
 
 export default function Winterprojekt() {
   const t = useTranslations("winterprojekt");
@@ -89,6 +92,8 @@ export default function Winterprojekt() {
           Zurück zur Projektübersicht
         </Link>
       </section>
+
+      <LastEdited date="31.05.2026" />
     </>
   );
 }

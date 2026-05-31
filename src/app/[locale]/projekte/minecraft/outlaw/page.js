@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import LastEdited from "@/components/lastedited";
 
 export default function Outlaw() {
   const t = useTranslations("Projekte");
@@ -117,6 +118,8 @@ export default function Outlaw() {
           Zurück zur Projektübersicht
         </Link>
       </section>
+
+      <LastEdited date="31.05.2026" />
     </main>
   );
 }

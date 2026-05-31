@@ -1,13 +1,14 @@
 "use client";
 
-import Hero from "../../../../components/hero";
-import { H1, H2, H3, P, PLarge } from "../../../../components/design";
-import ServerStatusCard from "../../../../components/serverstatus";
-import { updates, galleryImages } from "../../../../components/winterprojekt25Data";
-import Gallery from "../../../../components/gallery";
+
+import Gallery from "@/components/gallery";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Hero from "@/components/hero";
+import { H1, H2, H3, P, PLarge } from "@/components/design";
+import ServerStatusCard from "@/components/serverstatus";
+import { updates, galleryImages } from "@/components/winterprojekt25Data";
+import LastEdited from "@/components/lastedited";
 
 export default function Winterprojekt2024() {
     const typeColors = {
@@ -67,6 +68,8 @@ export default function Winterprojekt2024() {
                     images={galleryImages}
                 />
             </div>
+
+            <LastEdited date="31.05.2026" />
         </main >
     );
 }

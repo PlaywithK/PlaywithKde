@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import LastEdited from "@/components/lastedited";
 
 export default function Winterprojekt2025Wiki() {
     return (
@@ -2548,8 +2549,9 @@ export default function Winterprojekt2025Wiki() {
                         Mod-Beschreibung.
                     </p>
                 </section>
-
             </div>
+
+            <LastEdited date="31.05.2026" />
         </main >
     );
 }

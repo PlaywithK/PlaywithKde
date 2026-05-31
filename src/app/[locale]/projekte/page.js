@@ -1,11 +1,12 @@
 "use client";
 
-import Hero from "./../components/hero";
-import { H1, H2, H3, P, PLarge } from "./../components/design";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
+import Hero from "@/components/hero";
+import { H1, H2, H3, P, PLarge } from "@/components/design";
+import LastEdited from "@/components/lastedited";
 
 const germanPaths = {
   item1: "/projekte/minecraft/winterprojekt",
@@ -235,6 +236,7 @@ export default function Projekte() {
         </div>
       </section>
 
+      <LastEdited date="31.05.2026" />
     </>
   );
 }

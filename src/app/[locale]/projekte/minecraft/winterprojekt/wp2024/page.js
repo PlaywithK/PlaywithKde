@@ -2,9 +2,9 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { updates, galleryImages } from "../../../../components/winterprojekt24Data";
-import Gallery from "../../../../components/gallery";
+import { updates, galleryImages } from "@/components/winterprojekt24Data";
+import LastEdited from "@/components/lastedited";
+import Gallery from "@/components/gallery";
 
 
 export default function Winterprojekt2024() {
@@ -95,6 +95,8 @@ export default function Winterprojekt2024() {
                     images={galleryImages}
                 />
             </div>
+
+            <LastEdited date="31.05.2026" />
         </main>
     );
 }

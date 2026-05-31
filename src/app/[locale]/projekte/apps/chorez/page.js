@@ -1,9 +1,10 @@
 "use client";
 
-import Hero from "./../../../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
+import Hero from "@/components/hero";
+import LastEdited from "@/components/lastedited";
 
 export default function Chorez() {
   const t = useTranslations("Chorez");
@@ -30,6 +31,8 @@ export default function Chorez() {
       <div className="space-y-20 max-w-5xl mx-auto">
         <p>Hallo Welt!</p>
       </div>
+
+      <LastEdited date="31.05.2026" />
     </>
   );
 }

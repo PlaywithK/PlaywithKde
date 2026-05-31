@@ -2,7 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import { updates, typeColors } from "../../../../../components/winterprojekt24Data";
+import { updates, typeColors } from "@/components/winterprojekt24Data";
+import LastEdited from "@/components/lastedited";
 
 export default function WinterprojektHistory() {
     return (
@@ -34,6 +35,8 @@ export default function WinterprojektHistory() {
                     </details>
                 ))}
             </div>
+
+            <LastEdited date="31.05.2026" />
         </main>
     );
 }

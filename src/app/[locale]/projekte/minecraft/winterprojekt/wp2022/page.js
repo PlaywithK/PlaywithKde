@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import LastEdited from "@/components/lastedited";
 
 export default function Winterprojekt2022() {
     const typeColors = {
@@ -40,6 +39,8 @@ export default function Winterprojekt2022() {
                     </div>
                 </section>
             </div>
+
+            <LastEdited date="31.05.2026" />
         </main >
     );
 }

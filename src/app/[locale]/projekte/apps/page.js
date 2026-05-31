@@ -1,9 +1,10 @@
 "use client";
 
-import Hero from "./../../components/hero";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
+import Hero from "@/components/hero";
+import LastEdited from "@/components/lastedited";
 
 export default function AppEntwicklung() {
   const t = useTranslations("AppDev");
@@ -72,6 +73,8 @@ export default function AppEntwicklung() {
           </p>
         </div>
       </section>
+
+      <LastEdited date="31.05.2026" />
     </>
   );
 }

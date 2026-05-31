@@ -1,10 +1,12 @@
 "use client";
 
-import Hero from "./../components/hero";
+
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
+import Hero from "@/components/hero";
+import LastEdited from "@/components/lastedited";
 
 export default function LinksPage() {
     const t = useTranslations("Links");
@@ -156,6 +158,8 @@ export default function LinksPage() {
                     ))}
                 </ul>
             </section>
+
+            <LastEdited date="31.05.2026" />
         </>
     );
 }

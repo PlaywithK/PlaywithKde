@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Link from "next/link";
+import LastEdited from "@/components/lastedited";
 
 //export const metadata = {
 //  title: "Webentwicklung – PlaywithK.de",
@@ -144,6 +144,8 @@ export default function Webentwicklung() {
           })}
         </section>
       </div>
+
+      <LastEdited date="31.05.2026" />
     </main>
   );
 }

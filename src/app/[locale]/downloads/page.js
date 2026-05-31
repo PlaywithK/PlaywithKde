@@ -7,8 +7,6 @@ import Link from "next/link";
 import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
 
-
-
 export default function DownloadsPage() {
     const t = useTranslations("Downloads");
     const params = useParams();

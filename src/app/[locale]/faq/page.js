@@ -1,8 +1,9 @@
 "use client";
 
-import Hero from "./../components/hero";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import Hero from "@/components/hero";
+import LastEdited from "@/components/lastedited";
 
 export default function FAQ() {
   const t = useTranslations("FAQ");
@@ -85,6 +86,8 @@ export default function FAQ() {
           );
         })}
       </div>
+
+      <LastEdited date="31.05.2026" />
     </>
   );
 }

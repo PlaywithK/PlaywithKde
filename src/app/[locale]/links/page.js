@@ -1,10 +1,12 @@
 "use client";
 
-import Hero from "./../components/hero";
+
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
+import Hero from "@/components/hero";
+import LastEdited from "@/components/lastedited";
 
 export default function LinksPage() {
     const t = useTranslations("Links");
@@ -36,7 +38,7 @@ export default function LinksPage() {
         },
         {
             name: t("kontakt"),
-            url: `/${locale}/kontakt`,
+            url: `/${locale}/contact`,
             description: t("kontakt.desc"),
         },
         {
@@ -46,87 +48,87 @@ export default function LinksPage() {
         },
         {
             name: t("projekte"),
-            url: `/${locale}/projekte`,
+            url: `/${locale}/projects`,
             description: t("projekte.desc"),
         },
         {
             name: t("apps"),
-            url: `/${locale}/projekte/apps`,
+            url: `/${locale}/projects/apps`,
             description: t("apps.desc"),
         },
         {
             name: t("chorez"),
-            url: `/${locale}/projekte/apps/chorez`,
+            url: `/${locale}/projects/apps/chorez`,
             description: t("chorez.desc"),
         },
         {
             name: t("games"),
-            url: `/${locale}/projekte/games`,
+            url: `/${locale}/projects/games`,
             description: t("games.desc"),
         },
         {
             name: t("web"),
-            url: `/${locale}/projekte/web`,
+            url: `/${locale}/projects/web`,
             description: t("web.desc"),
         },
         {
             name: t("webgames"),
-            url: `/${locale}/projekte/webgames`,
+            url: `/${locale}/projects/webgames`,
             description: t("webgames.desc"),
         },
         {
             name: t("minecraft"),
-            url: `/${locale}/projekte/minecraft`,
+            url: `/${locale}/projects/minecraft`,
             description: t("minecraft.desc"),
         },
         {
             name: t("outlaw"),
-            url: `/${locale}/projekte/minecraft/outlaw`,
+            url: `/${locale}/projects/minecraft/outlaw`,
             description: t("outlaw.desc"),
         },
         {
             name: t("pwkde"),
-            url: `/${locale}/projekte/minecraft/pwkde`,
+            url: `/${locale}/projects/minecraft/pwkde`,
             description: t("pwkde.desc"),
         },
         {
             name: t("winterprojekt"),
-            url: `/${locale}/projekte/minecraft/winterprojekt`,
+            url: `/${locale}/projects/minecraft/winterprojekt`,
             description: t("winterprojekt.desc"),
         },
         {
             name: t("wp2017"),
-            url: `/${locale}/projekte/minecraft/winterprojekt/wp2017`,
+            url: `/${locale}/projects/minecraft/winterprojekt/wp2017`,
             description: t("wp2017.desc"),
         },
         {
             name: t("wp2020"),
-            url: `/${locale}/projekte/minecraft/winterprojekt/wp2020`,
+            url: `/${locale}/projects/minecraft/winterprojekt/wp2020`,
             description: t("wp2020.desc"),
         },
         {
             name: t("wp2021"),
-            url: `/${locale}/projekte/minecraft/winterprojekt/wp2021`,
+            url: `/${locale}/projects/minecraft/winterprojekt/wp2021`,
             description: t("wp2021.desc"),
         },
         {
             name: t("wp2022"),
-            url: `/${locale}/projekte/minecraft/winterprojekt/wp2022`,
+            url: `/${locale}/projects/minecraft/winterprojekt/wp2022`,
             description: t("wp2022.desc"),
         },
         {
             name: t("wp2023"),
-            url: `/${locale}/projekte/minecraft/winterprojekt/wp2023`,
+            url: `/${locale}/projects/minecraft/winterprojekt/wp2023`,
             description: t("wp2023.desc"),
         },
         {
             name: t("wp2024"),
-            url: `/${locale}/projekte/minecraft/winterprojekt/wp2024`,
+            url: `/${locale}/projects/minecraft/winterprojekt/wp2024`,
             description: t("wp2024.desc"),
         },
         {
             name: t("wp2025"),
-            url: `/${locale}/projekte/minecraft/winterprojekt/wp2025`,
+            url: `/${locale}/projects/minecraft/winterprojekt/wp2025`,
             description: t("wp2025.desc"),
         },
                 {
@@ -156,6 +158,9 @@ export default function LinksPage() {
                     ))}
                 </ul>
             </section>
+
+            <LastEdited date="31.05.2026" />
         </>
     );
 }
+

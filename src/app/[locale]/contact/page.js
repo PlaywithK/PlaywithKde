@@ -1,0 +1,66 @@
+"use client";
+
+
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import { useEffect } from "react";
+import Hero from "@/components/hero";
+import LastEdited from "@/components/lastedited";
+
+export default function Kontakt() {
+  const t = useTranslations("Kontakt");
+  const params = useParams();
+  const locale = params.locale;
+
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "Kontakt - PlaywithK.de"
+      : "Contact - PlaywithK.de";
+  }, [locale]);
+
+  return (
+    <>
+     <Hero title={t("title")} subtitle={t("desc")} />
+
+      <div className="max-w-3xl w-full mx-auto">
+        <form className="flex flex-col gap-6 bg-gray-800 p-8 rounded-lg shadow-lg">
+          <label className="flex flex-col text-gray-300">
+            {t("contact.name")}
+            <input
+              type="text"
+              name="name"
+              required
+              className="mt-2 p-3 rounded bg-gray-700 border border-gray-600 focus:border-teal-400 outline-none text-gray-100"
+            />
+          </label>
+          <label className="flex flex-col text-gray-300">
+            {t("contact.mail")}
+            <input
+              type="email"
+              name="email"
+              required
+              className="mt-2 p-3 rounded bg-gray-700 border border-gray-600 focus:border-teal-400 outline-none text-gray-100"
+            />
+          </label>
+          <label className="flex flex-col text-gray-300">
+            {t("contact.message")}
+            <textarea
+              name="message"
+              rows={6}
+              required
+              className="mt-2 p-3 rounded bg-gray-700 border border-gray-600 focus:border-teal-400 outline-none text-gray-100 resize-none"
+            />
+          </label>
+          <button
+            type="submit"
+            className="bg-teal-500 hover:bg-teal-400 transition-colors duration-300 py-3 rounded font-semibold text-gray-900"
+          >
+            {t("contact.send")}
+          </button>
+        </form>
+      </div>
+
+      <LastEdited date="31.05.2026" />
+    </>
+  );
+}

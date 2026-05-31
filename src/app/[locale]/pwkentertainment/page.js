@@ -1,11 +1,14 @@
 "use client";
 
-import { H1, H2, H3, P, PLarge } from "./../components/design";
-import Hero from "./../components/hero";
+
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
 import Image from "next/image";
+import Hero from "@/components/hero";
+import { H1, H2, H3, P, PLarge } from "@/components/design";
+import LastEdited from "@/components/lastedited";
+
 
 const customers = [
   { name: "Anakin Klassen", feedback: "Ich hab mir ein Design für Twitch mit ein paar Panels, einem Offlinescreen und einem Banner bestellt und die Bestellung wurde sehr schnell und genau nach meinen Wünschen bearbeitet!" },
@@ -141,6 +144,8 @@ export default function PWKEntertainment() {
           </div>
         </section>
       </div>
+
+      <LastEdited date="31.05.2026" />
     </>
   );
 }

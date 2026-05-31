@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import "../globals.css";
 
 export default async function LocaleLayout({

@@ -3,7 +3,8 @@
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
-import { H1, H2, H3, P } from "./components/design";
+import { H1, H2, H3, P } from "@/components/design";
+import LastEdited from "@/components/lastedited";
 import Link from "next/link";
 
 export default function Home() {
@@ -43,7 +44,7 @@ export default function Home() {
             className="opacity-0 translate-y-5 animate-fade-in-up animation-delay-400"
           >
             <Link
-              href={`/${locale}/projekte`}
+              href={`/${locale}/projects`}
               className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
             >
               {t("projects.all")}
@@ -53,36 +54,36 @@ export default function Home() {
       </section>
 
       {/* Über mich */}
-<section className="px-4 sm:px-8 py-20 max-w-6xl mx-auto">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    
-    {/* Text */}
-    <div>
-      <H2 className="mb-4">{t("about.title")}</H2>
+      <section className="px-4 sm:px-8 py-20 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-      <P className="text-gray-300 mb-6">
-        {t("about.text")}
-      </P>
+          {/* Text */}
+          <div>
+            <H2 className="mb-4">{t("about.title")}</H2>
 
-      <Link
-        href={`/${locale}/playwithk`}
-        className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
-      >
-        {t("about.more")}
-      </Link>
-    </div>
+            <P className="text-gray-300 mb-6">
+              {t("about.text")}
+            </P>
 
-    {/* Bild */}
-    <div className="flex justify-center">
-      <img
-        src="/closed.png"
-        alt="PlaywithK Character"
-        className="w-64 sm:w-80 md:w-full max-w-sm rounded-2xl"
-      />
-    </div>
+            <Link
+              href={`/${locale}/playwithk`}
+              className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
+            >
+              {t("about.more")}
+            </Link>
+          </div>
 
-  </div>
-</section>
+          {/* Bild */}
+          <div className="flex justify-center">
+            <img
+              src="/closed.png"
+              alt="PlaywithK Character"
+              className="w-64 sm:w-80 md:w-full max-w-sm rounded-2xl"
+            />
+          </div>
+
+        </div>
+      </section>
 
 
       {/* Projekte */}
@@ -94,17 +95,17 @@ export default function Home() {
             {
               title: t("projects.webgames.title"),
               description: t("projects.webgames.desc"),
-              link: "projekte/webgames",
+              link: "projects/webgames",
             },
             {
               title: t("projects.apps.title"),
               description: t("projects.apps.desc"),
-              link: "projekte/apps",
+              link: "projects/apps",
             },
             {
               title: t("projects.games.title"),
               description: t("projects.games.desc"),
-              link: "projekte/games",
+              link: "projects/games",
             },
           ].map(({ title, description, link }, idx) => (
             <div
@@ -129,6 +130,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <LastEdited date="31.05.2026" />
     </>
   );
 }
+

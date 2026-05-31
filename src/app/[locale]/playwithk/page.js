@@ -1,11 +1,13 @@
 "use client";
 
-import Hero from "./../components/hero";
+
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Hero from "@/components/hero";
+import LastEdited from "@/components/lastedited";
 
 export default function PlaywithK() {
   const t = useTranslations("PlaywithK");
@@ -191,6 +193,8 @@ export default function PlaywithK() {
           })}
         </div>
       </section>
+
+      <LastEdited date="31.05.2026" />
     </>
   );
 }

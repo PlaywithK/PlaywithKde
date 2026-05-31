@@ -16,7 +16,7 @@ export default function Footer() {
   };
 
   const links = [
-    { href: "/kontakt", label: t("kontakt") },
+    { href: "/contact", label: t("kontakt") },
     { href: "/impressum", label: t("impressum") },
   ];
 

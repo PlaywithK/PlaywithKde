@@ -38,7 +38,7 @@ export default function LinksPage() {
         },
         {
             name: t("kontakt"),
-            url: `/${locale}/kontakt`,
+            url: `/${locale}/contact`,
             description: t("kontakt.desc"),
         },
         {

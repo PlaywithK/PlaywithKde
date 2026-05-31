@@ -44,7 +44,7 @@ export default function Home() {
             className="opacity-0 translate-y-5 animate-fade-in-up animation-delay-400"
           >
             <Link
-              href={`/${locale}/projekte`}
+              href={`/${locale}/projects`}
               className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
             >
               {t("projects.all")}
@@ -95,17 +95,17 @@ export default function Home() {
             {
               title: t("projects.webgames.title"),
               description: t("projects.webgames.desc"),
-              link: "projekte/webgames",
+              link: "projects/webgames",
             },
             {
               title: t("projects.apps.title"),
               description: t("projects.apps.desc"),
-              link: "projekte/apps",
+              link: "projects/apps",
             },
             {
               title: t("projects.games.title"),
               description: t("projects.games.desc"),
-              link: "projekte/games",
+              link: "projects/games",
             },
           ].map(({ title, description, link }, idx) => (
             <div
@@ -135,3 +135,4 @@ export default function Home() {
     </>
   );
 }
+

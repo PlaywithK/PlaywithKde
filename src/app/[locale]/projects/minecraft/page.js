@@ -29,7 +29,7 @@ export default function Minecraft() {
                     Ziel war es, eine gemütliche Winterwelt mit vielen kleinen Details zu gestalten.
                 </p>
 
-                <Link href="./../../projekte" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all mt-12 mb-12">
+                <Link href="./../../projects" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all mt-12 mb-12">
                     Zurück zur Projektübersicht
                 </Link>
             </section>
@@ -38,3 +38,4 @@ export default function Minecraft() {
         </>
     );
 }
+

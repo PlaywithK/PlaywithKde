@@ -112,7 +112,7 @@ export default function Outlaw() {
 
         {/* Zurück-Link */}
         <Link
-          href="/projekte"
+          href="/projects"
           className="inline-block bg-yellow-700 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-full border-2 border-yellow-900 shadow transition-all"
         >
           Zurück zur Projektübersicht
@@ -123,3 +123,4 @@ export default function Outlaw() {
     </main>
   );
 }
+

@@ -23,12 +23,12 @@ export default function Winterprojekt() {
   }, [locale]);
 
   const winterProjects = [
-    { href: "/projekte/minecraft/winterprojekt/wp2024", src: "/minecraft/winterprojekt/wp2024_Title.png", alt: "Winterprojekt Titelbild 2024", title: "Winterprojekt 2024" },
-    { href: "/projekte/minecraft/winterprojekt/wp2023", src: "/minecraft/winterprojekt/wp2023_Title.png", alt: "Winterprojekt Titelbild 2023", title: "Winterprojekt 2023" },
-    { href: "/projekte/minecraft/winterprojekt/wp2022", src: "/minecraft/winterprojekt/wp2017_Title.png", alt: "Winterprojekt Titelbild 2022", title: "Winterprojekt 2022" },
-    { href: "/projekte/minecraft/winterprojekt/wp2021", src: "/minecraft/winterprojekt/wp2021_Title.png", alt: "Winterprojekt Titelbild 2021", title: "Winterprojekt 2021" },
-    { href: "/projekte/minecraft/winterprojekt/wp2020", src: "/minecraft/winterprojekt/wp2020_Title.png", alt: "Winterprojekt Titelbild 2020", title: "Winterprojekt 2020" },
-    { href: "/projekte/minecraft/winterprojekt/wp2017", src: "/minecraft/winterprojekt/wp2017_Title.png", alt: "Winterprojekt Titelbild 2017", title: "Winterprojekt 2017" },
+    { href: "/projects/minecraft/winterprojekt/wp2024", src: "/minecraft/winterprojekt/wp2024_Title.png", alt: "Winterprojekt Titelbild 2024", title: "Winterprojekt 2024" },
+    { href: "/projects/minecraft/winterprojekt/wp2023", src: "/minecraft/winterprojekt/wp2023_Title.png", alt: "Winterprojekt Titelbild 2023", title: "Winterprojekt 2023" },
+    { href: "/projects/minecraft/winterprojekt/wp2022", src: "/minecraft/winterprojekt/wp2017_Title.png", alt: "Winterprojekt Titelbild 2022", title: "Winterprojekt 2022" },
+    { href: "/projects/minecraft/winterprojekt/wp2021", src: "/minecraft/winterprojekt/wp2021_Title.png", alt: "Winterprojekt Titelbild 2021", title: "Winterprojekt 2021" },
+    { href: "/projects/minecraft/winterprojekt/wp2020", src: "/minecraft/winterprojekt/wp2020_Title.png", alt: "Winterprojekt Titelbild 2020", title: "Winterprojekt 2020" },
+    { href: "/projects/minecraft/winterprojekt/wp2017", src: "/minecraft/winterprojekt/wp2017_Title.png", alt: "Winterprojekt Titelbild 2017", title: "Winterprojekt 2017" },
   ];
 
   return (
@@ -45,7 +45,7 @@ export default function Winterprojekt() {
 
       {/* Hauptbild -- Noch nicht ganz mittig?? */}
       <section className="max-w-4xl mx-auto text-center">
-        <Link href={`/${locale}/projekte/minecraft/winterprojekt/wp2025`}>
+        <Link href={`/${locale}/projects/minecraft/winterprojekt/wp2025`}>
           <div className="relative w-full h-64 sm:h-80 md:h-96 mb-8 rounded-xl shadow-lg border border-white border-opacity-10 overflow-hidden cursor-pointer">
             <Image
               src="/Winterprojekt_Front.png"
@@ -88,7 +88,7 @@ export default function Winterprojekt() {
           </div>
         </section>
 
-        <Link href="./../../projekte" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all mt-12 mb-12">
+        <Link href="./../../projects" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all mt-12 mb-12">
           Zurück zur Projektübersicht
         </Link>
       </section>
@@ -97,3 +97,4 @@ export default function Winterprojekt() {
     </>
   );
 }
+

@@ -9,9 +9,9 @@ import { H1, H2, H3, P, PLarge } from "@/components/design";
 import LastEdited from "@/components/lastedited";
 
 const germanPaths = {
-  item1: "/projekte/minecraft/winterprojekt",
-  item2: "/projekte/minecraft/pwkde",
-  item3: "/projekte/minecraft/outlaw",
+  item1: "/projects/minecraft/winterprojekt",
+  item2: "/projects/minecraft/pwkde",
+  item3: "/projects/minecraft/outlaw",
 };
 
 export default function Projekte() {
@@ -74,7 +74,7 @@ export default function Projekte() {
           title={t("webDev.title")}
           desc={t("webDev.desc")}
           tags={[t("webDev.tag1"), t("webDev.tag2"), t("webDev.tag3")]}
-          link={`/${locale}/projekte/web-entwicklung`}
+          link={`/${locale}/projects/web-entwicklung`}
         />
 
         {/* Web-Spiele */}
@@ -83,7 +83,7 @@ export default function Projekte() {
           title={t("webGames.title")}
           desc={t("webGames.desc")}
           tags={[t("webGames.tag1"), t("webGames.tag2"), t("webGames.tag3")]}
-          link={`/${locale}/projekte/webgames`}
+          link={`/${locale}/projects/webgames`}
         />
 
         {/* Spieleentwicklung */}
@@ -92,7 +92,7 @@ export default function Projekte() {
           title={t("gameDev.title")}
           desc={t("gameDev.desc")}
           tags={[t("gameDev.tag1"), t("gameDev.tag2")]}
-          link={`/${locale}/projekte/spieleentwicklung`}
+          link={`/${locale}/projects/spieleentwicklung`}
           reverse
         >
 
@@ -110,7 +110,7 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("itch.title")}</h3>
               <p className="text-gray-300 text-sm">{t("itch.desc")}</p>
               <Link
-                href={`/${locale}/projekte/app-entwicklung`}
+                href={`/${locale}/projects/app-entwicklung`}
                 className="text-teal-300 text-sm underline"
               >
                 Mehr erfahren →
@@ -132,7 +132,7 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("elysia.title")}</h3>
               <p className="text-gray-300 text-sm">{t("elysia.desc")}</p>
               <Link
-                href={`/${locale}/projekte/app-entwicklung`}
+                href={`/${locale}/projects/app-entwicklung`}
                 className="text-teal-300 text-sm underline"
               >
                 Mehr erfahren →
@@ -154,7 +154,7 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("minari.title")}</h3>
               <p className="text-gray-300 text-sm">{t("minari.desc")}</p>
               <Link
-                href={`/${locale}/projekte/app-entwicklung`}
+                href={`/${locale}/projects/app-entwicklung`}
                 className="text-teal-300 text-sm underline"
               >
                 Mehr erfahren →
@@ -169,7 +169,7 @@ export default function Projekte() {
           title={t("appDevelopment.title")}
           desc={t("appDevelopment.desc")}
           tags={[t("appDevelopment.tag1"), t("appDevelopment.tag2")]}
-          link={`/${locale}/projekte/app-entwicklung`}
+          link={`/${locale}/projects/app-entwicklung`}
         >
 
           {/* Chorez-Child */}
@@ -186,7 +186,7 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("chorez.title")}</h3>
               <p className="text-gray-300 text-sm">{t("chorez.desc")}</p>
               <Link
-                href={`/${locale}/projekte/app-entwicklung`}
+                href={`/${locale}/projects/app-entwicklung`}
                 className="text-teal-300 text-sm underline"
               >
                 Mehr erfahren →
@@ -201,7 +201,7 @@ export default function Projekte() {
           title={t("mcModding.title")}
           desc={t("mcModding.desc")}
           tags={[t("mcModding.tag1"), t("mcModding.tag2")]}
-          link={`/${locale}/projekte/mc-modding`}
+          link={`/${locale}/projects/mc-modding`}
         />
       </div>
 

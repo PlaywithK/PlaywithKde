@@ -44,7 +44,7 @@ export default function PWKde() {
           <li>Komplette Beleuchtung und Atmosphäre mit Redstone-Mechanismen.</li>
         </ul>
 
-        <Link href="/projekte" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all">
+        <Link href="/projects" className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all">
           Zurück zur Projektübersicht
         </Link>
       </section>

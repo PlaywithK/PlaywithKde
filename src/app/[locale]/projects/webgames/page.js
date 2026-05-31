@@ -44,19 +44,19 @@ export default function WebgamesOverview() {
             {
               title: t("games.oracle.title"),
               description: t("games.oracle.desc"),
-              link: "/projekte/webgames/pwkorakel",
+              link: "/projects/webgames/pwkorakel",
               color: "from-teal-500 to-purple-500",
             },
             {
               title: t("games.highstakes.title"),
               description: t("games.highstakes.desc"),
-              link: "/projekte/webgames/highcard",
+              link: "/projects/webgames/highcard",
               color: "from-pink-500 to-yellow-500",
             },
             {
               title: t("games.lyricquiz.title"),
               description: t("games.lyricquiz.desc"),
-              link: "/projekte/webgames/lyricquiz",
+              link: "/projects/webgames/lyricquiz",
               color: "from-indigo-500 to-cyan-500",
             },
           ].map(({ title, description, link, color }, idx) => (
@@ -85,7 +85,7 @@ export default function WebgamesOverview() {
 
         <div className="mt-16 text-center">
           <Link
-            href="/projekte"
+            href="/projects"
             className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
           >
             {t("buttonBack")}

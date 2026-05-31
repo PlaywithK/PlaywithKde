@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Hero from "./../components/hero";
-import { H1, H2, H3, P, PLarge} from "./../components/design";
+import Hero from "@/components/hero";
+import { H1, H2, H3, P, PLarge} from "@/components/design";
 
 const lyrics = [
     `"Irgendwann, wenn es klappt, schließt mein Herz hiermit mal ab"\n– Ghost, Paperblossom`,

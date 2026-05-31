@@ -6,11 +6,6 @@ import { useEffect } from "react";
 import { H1, H2, H3, P } from "./components/design";
 import Link from "next/link";
 
-<<<<<<< HEAD
-import LastEditedBlock from "./components/lasteditedserverwrapper";
-
-=======
->>>>>>> parent of 2979fd6 (Last Edited Test 1)
 export default function Home() {
   const t = useTranslations("HomePage");
   const params = useParams();
@@ -58,36 +53,36 @@ export default function Home() {
       </section>
 
       {/* Über mich */}
-<section className="px-4 sm:px-8 py-20 max-w-6xl mx-auto">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    
-    {/* Text */}
-    <div>
-      <H2 className="mb-4">{t("about.title")}</H2>
+      <section className="px-4 sm:px-8 py-20 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-      <P className="text-gray-300 mb-6">
-        {t("about.text")}
-      </P>
+          {/* Text */}
+          <div>
+            <H2 className="mb-4">{t("about.title")}</H2>
 
-      <Link
-        href={`/${locale}/playwithk`}
-        className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
-      >
-        {t("about.more")}
-      </Link>
-    </div>
+            <P className="text-gray-300 mb-6">
+              {t("about.text")}
+            </P>
 
-    {/* Bild */}
-    <div className="flex justify-center">
-      <img
-        src="/closed.png"
-        alt="PlaywithK Character"
-        className="w-64 sm:w-80 md:w-full max-w-sm rounded-2xl"
-      />
-    </div>
+            <Link
+              href={`/${locale}/playwithk`}
+              className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
+            >
+              {t("about.more")}
+            </Link>
+          </div>
 
-  </div>
-</section>
+          {/* Bild */}
+          <div className="flex justify-center">
+            <img
+              src="/closed.png"
+              alt="PlaywithK Character"
+              className="w-64 sm:w-80 md:w-full max-w-sm rounded-2xl"
+            />
+          </div>
+
+        </div>
+      </section>
 
 
       {/* Projekte */}

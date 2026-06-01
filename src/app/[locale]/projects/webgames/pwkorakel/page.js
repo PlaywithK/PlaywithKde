@@ -108,10 +108,10 @@ export default function MagicChibi() {
             <section className="max-w-4xl mx-auto text-center">
                 <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">PWK Orakel</h1>
                 <p className="text-gray-300 mb-10 max-w-xl mx-auto">
-                    Stelle Ja-Nein Fragen und das Orakel wird dir eine Antwort geben!
+                    Stelle dem Orakel Ja/Nein Fragen und es wird dir eine Antwort geben!
                 </p>
 
-                <div className="bg-gray-800 rounded-lg p-6 border border-white border-opacity-20 shadow-lg">
+                <div className="max-w-2xl mx-auto bg-gray-800 rounded-lg p-6 border border-white border-opacity-20 shadow-lg">
                     <h1 className="text-3xl sm:text-4xl font-bold text-teal-400 mb-8">✨ Befrage das Orakel! ✨</h1>
 
                     <div className="relative inline-block">

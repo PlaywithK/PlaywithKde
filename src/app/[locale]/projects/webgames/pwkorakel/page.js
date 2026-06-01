@@ -91,62 +91,67 @@ export default function MagicChibi() {
     }, [chibiSrc]);
 
     return (
-            <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-6 py-20 flex flex-col items-center justify-center">
-                <section className="max-w-xl w-full bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-20 p-8 text-center relative">
-                    <h1 className="text-3xl sm:text-4xl font-bold text-teal-400 mb-8">✨ PWK Orakel ✨</h1>
+        <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-6 py-20 flex flex-col items-center justify-center">
+            <section className="max-w-xl w-full bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-20 p-8 text-center relative">
+                <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">PWK Orakel</h1>
+                <p className="text-gray-300 mb-10 max-w-xl mx-auto">
+                    Stelle Ja-Nein Fragen und das Orakel wird dir eine Antwort geben!
+                </p>
 
-                    <div className="relative inline-block">
-                        <Image
-                            src={chibiSrc}
-                            alt="Magischer PlaywithK Chibi"
-                            width={300}
-                            height={300}
-                            onClick={chibiTalk}
-                            ref={chibiRef}
-                            className="cursor-pointer select-none transition-transform duration-300"
-                            draggable={false}
-                        />
+                <h1 className="text-3xl sm:text-4xl font-bold text-teal-400 mb-8">✨ Befrage das Orakel! ✨</h1>
 
-                        {/* Sprechblase */}
-                        {speech && speech !== '' && (
-                            <div
-                                className="absolute right-full top-1/3 transform -translate-y-1/2 bg-gray-100 text-black rounded-lg p-3 w-52 shadow-lg opacity-90"
-                                style={{ pointerEvents: 'none' }}
-                            >
-                                {speech}
-                                <div
-                                    className="absolute top-1/2 right-0 w-0 h-0 border-t-6 border-b-6 border-l-6 border-t-transparent border-b-transparent border-l-gray-100 transform -translate-y-1/2"
-                                    style={{ right: '-6px' }}
-                                ></div>
-                            </div>
-                        )}
-                    </div>
-
-                    <input
-                        type="text"
-                        placeholder="Stell deine Frage..."
-                        value={userQuestion}
-                        onChange={(e) => setUserQuestion(e.target.value)}
-                        className="mt-8 w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                <div className="relative inline-block">
+                    <Image
+                        src={chibiSrc}
+                        alt="Magischer PlaywithK Chibi"
+                        width={300}
+                        height={300}
+                        onClick={chibiTalk}
+                        ref={chibiRef}
+                        className="cursor-pointer select-none transition-transform duration-300"
+                        draggable={false}
                     />
 
-                    <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4">
-                        <button
-                            onClick={askShell}
-                            className="bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow transition-all"
+                    {/* Sprechblase */}
+                    {speech && speech !== '' && (
+                        <div
+                            className="absolute right-full top-1/3 transform -translate-y-1/2 bg-gray-100 text-black rounded-lg p-3 w-52 shadow-lg opacity-90"
+                            style={{ pointerEvents: 'none' }}
                         >
-                            Fragen!
-                        </button>
-                    </div>
-                </section>
-                <div className="mt-6">
-                    <Link
-                        href="/projects/webgames"
-                        className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
-                    >
-                        Zurück zur Übersicht
-                    </Link>
+                            {speech}
+                            <div
+                                className="absolute top-1/2 right-0 w-0 h-0 border-t-6 border-b-6 border-l-6 border-t-transparent border-b-transparent border-l-gray-100 transform -translate-y-1/2"
+                                style={{ right: '-6px' }}
+                            ></div>
+                        </div>
+                    )}
                 </div>
-            </main>
+
+                <input
+                    type="text"
+                    placeholder="Stell deine Frage..."
+                    value={userQuestion}
+                    onChange={(e) => setUserQuestion(e.target.value)}
+                    className="mt-8 w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                />
+
+                <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4">
+                    <button
+                        onClick={askShell}
+                        className="bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow transition-all"
+                    >
+                        Fragen!
+                    </button>
+                </div>
+            </section>
+            <div className="mt-6">
+                <Link
+                    href={`/${locale}/projects/webgames`}
+                    className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
+                >
+                    Zurück zur Übersicht
+                </Link>
+            </div>
+        </main>
     );
 }

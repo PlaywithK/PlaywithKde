@@ -1,5 +1,6 @@
 'use client';
-import { useEffect, useState } from 'react';
+
+import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 
 const suits = ['♥', '♦', '♣', '♠'];

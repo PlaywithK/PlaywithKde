@@ -1,4 +1,6 @@
 'use client';
+
+import { useTranslations } from "next-intl";
 import { useState, useEffect, useRef } from 'react';
 import Link from "next/link";
 import Image from "next/image";
@@ -16,6 +18,16 @@ const chibiTalkLines = [
 ];
 
 export default function MagicChibi() {
+    const t = useTranslations("Webgames");
+    const params = useParams();
+    const locale = params.locale;
+
+    useEffect(() => {
+        document.title = locale === "de"
+            ? "PWK Orakel - PlaywithK.de"
+            : "Magic Oracle - PlaywithK.de";
+    }, [locale]);
+
     const [speech, setSpeech] = useState('...');
     const [chibiSrc, setChibiSrc] = useState('/closed.png');
     const [userQuestion, setUserQuestion] = useState('');

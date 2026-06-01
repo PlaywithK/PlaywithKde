@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from "next-intl";
 import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 
@@ -7,6 +8,16 @@ const suits = ['♥', '♦', '♣', '♠'];
 const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
 
 export default function HighStakesPage() {
+  const t = useTranslations("Webgames");
+  const params = useParams();
+  const locale = params.locale;
+
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "High Stakes - PlaywithK.de"
+      : "High Stakes - PlaywithK.de";
+  }, [locale]);
+
   const [deck, setDeck] = useState([]);
   const [playerHand, setPlayerHand] = useState([]);
   const [dealerHand, setDealerHand] = useState([]);

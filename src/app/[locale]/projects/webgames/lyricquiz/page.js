@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from "next-intl";
 import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 
@@ -11,6 +12,16 @@ const lyrics = [
 ];
 
 export default function LyricQuiz() {
+  const t = useTranslations("Webgames");
+  const params = useParams();
+  const locale = params.locale;
+
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "YKKE Lyrics-Quiz - PlaywithK.de"
+      : "YKKE Lyrics-Quiz - PlaywithK.de";
+  }, [locale]);
+
   const [currentLyric, setCurrentLyric] = useState(null);
   const [userInput, setUserInput] = useState('');
   const [result, setResult] = useState('');

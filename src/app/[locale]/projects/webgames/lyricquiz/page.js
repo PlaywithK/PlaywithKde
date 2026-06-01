@@ -1,5 +1,9 @@
 'use client';
-import { useState, useEffect } from 'react';
+
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import React, { useState, useEffect, useCallback } from "react";
+import LastEdited from "@/components/lastedited";
 import Link from "next/link";
 
 const lyrics = [
@@ -10,6 +14,16 @@ const lyrics = [
 ];
 
 export default function LyricQuiz() {
+  const t = useTranslations("Webgames");
+  const params = useParams();
+  const locale = params.locale;
+
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "YKKE Lyrics-Quiz - PlaywithK.de"
+      : "YKKE Lyrics-Quiz - PlaywithK.de";
+  }, [locale]);
+
   const [currentLyric, setCurrentLyric] = useState(null);
   const [userInput, setUserInput] = useState('');
   const [result, setResult] = useState('');
@@ -20,15 +34,15 @@ export default function LyricQuiz() {
     return lyrics[randomIndex];
   };
 
-const startQuiz = useCallback(() => {
-  const randomIndex = Math.floor(Math.random() * lyrics.length);
-  const lyric = lyrics[randomIndex];
+  const startQuiz = useCallback(() => {
+    const randomIndex = Math.floor(Math.random() * lyrics.length);
+    const lyric = lyrics[randomIndex];
 
-  setCurrentLyric(lyric);
-  setUserInput('');
-  setResult('');
-  setAnswered(false);
-}, []);
+    setCurrentLyric(lyric);
+    setUserInput('');
+    setResult('');
+    setAnswered(false);
+  }, []);
 
 
   const checkAnswer = () => {
@@ -50,9 +64,15 @@ const startQuiz = useCallback(() => {
   }, [startQuiz]);
 
   return (
-      <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center justify-center">
-        <section className="max-w-xl w-full bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-20 p-8 space-y-6 text-center">
-          <h1 className="text-3xl sm:text-4xl font-bold text-teal-400">🎤 YKKE Lyrics-Quiz</h1>
+    <>
+      <section className="max-w-4xl mx-auto text-center py-8">
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">YKKE Lyrics-Quiz</h1>
+        <p className="text-gray-300 mb-10 max-w-xl mx-auto">
+          Errate den YKKE-Song, dessen Text du siehst!
+        </p>
+
+        <div className="bg-gray-800 rounded-lg p-6 border border-white border-opacity-20 shadow-lg">
+          <h1 className="text-3xl sm:text-4xl font-bold text-teal-400">🎤 Errate den Song</h1>
 
           {currentLyric && (
             <p className="text-xl font-semibold text-white">{`„${currentLyric.line}“`}</p>
@@ -90,16 +110,20 @@ const startQuiz = useCallback(() => {
               {result}
             </p>
           )}
-        </section>
-        
+        </div>
+
+
         <div className="mt-6">
           <Link
-            href="/projects/webgames"
+            href={`/${locale}/projects/webgames`}
             className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
           >
             Zurück zur Übersicht
           </Link>
         </div>
-      </main>
+      </section>
+
+      <LastEdited date="01.06.2026" />
+    </>
   );
 }

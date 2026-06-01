@@ -1,11 +1,25 @@
 'use client';
-import { useEffect, useState } from 'react';
+
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import LastEdited from "@/components/lastedited";
 
 const suits = ['♥', '♦', '♣', '♠'];
 const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
 
 export default function HighStakesPage() {
+  const t = useTranslations("Webgames");
+  const params = useParams();
+  const locale = params.locale;
+
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "High Stakes - PlaywithK.de"
+      : "High Stakes - PlaywithK.de";
+  }, [locale]);
+
   const [deck, setDeck] = useState([]);
   const [playerHand, setPlayerHand] = useState([]);
   const [dealerHand, setDealerHand] = useState([]);
@@ -113,8 +127,8 @@ export default function HighStakesPage() {
   );
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8 py-16">
-      <section className="max-w-4xl mx-auto text-center">
+    <>
+      <section className="max-w-4xl mx-auto text-center py-8">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">High Stakes</h1>
         <p className="text-gray-300 mb-10 max-w-xl mx-auto">
           Ziehe Karten, besiege den Dealer – wie viel Risiko gehst du ein? Ziel ist es, mit deinen Karten so nah wie möglich an 21 Punkte zu kommen, ohne darüber zu liegen. Der Dealer zieht automatisch, wenn du passt. Wer näher an 21 ist, gewinnt!
@@ -149,12 +163,14 @@ export default function HighStakesPage() {
         </div>
 
         <div className="mt-10">
-          <Link href="/projects/webgames" className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md">
+          <Link href={`/${locale}/projects/webgames`} className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md">
             Zurück zur Übersicht
           </Link>
         </div>
       </section>
-    </main>
+
+      <LastEdited date="01.06.2026" />
+    </>
   );
 }
 

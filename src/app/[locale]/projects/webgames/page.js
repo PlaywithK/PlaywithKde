@@ -7,7 +7,7 @@ import LastEdited from "@/components/lastedited";
 import Link from 'next/link';
 
 export default function WebgamesOverview() {
-    const t = useTranslations("Webgames");
+  const t = useTranslations("Webgames");
   const params = useParams();
   const locale = params.locale;
 
@@ -18,8 +18,7 @@ export default function WebgamesOverview() {
   }, [locale]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-8 py-16">
-
+    <>
       <section className="relative text-center py-24 px-6 sm:px-12 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden rounded-xl shadow-inner">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-[-100px] left-[-100px] w-72 h-72 bg-teal-500 opacity-20 rounded-full blur-3xl animate-pulse" />
@@ -72,7 +71,7 @@ export default function WebgamesOverview() {
               <p className="text-sm text-center opacity-90 mb-6">{description}</p>
               <div className="text-center">
                 <Link
-                  href={link}
+                  href={`/${locale}/${link}`}
                   className="inline-block bg-white text-gray-900 font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition"
                 >
                   {t("buttonPlay")}
@@ -85,7 +84,7 @@ export default function WebgamesOverview() {
 
         <div className="mt-16 text-center">
           <Link
-            href="/projects"
+            href={`/${locale}/projects`}
             className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
           >
             {t("buttonBack")}
@@ -93,7 +92,7 @@ export default function WebgamesOverview() {
         </div>
       </section>
 
-      <LastEdited date="31.05.2026" />
-    </main>
+      <LastEdited date="01.06.2026" />
+    </>
   );
 }

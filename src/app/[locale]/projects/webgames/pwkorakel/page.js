@@ -1,5 +1,9 @@
 'use client';
+
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import { useState, useEffect, useRef } from 'react';
+import LastEdited from "@/components/lastedited";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,6 +20,16 @@ const chibiTalkLines = [
 ];
 
 export default function MagicChibi() {
+    const t = useTranslations("Webgames");
+    const params = useParams();
+    const locale = params.locale;
+
+    useEffect(() => {
+        document.title = locale === "de"
+            ? "PWK Orakel - PlaywithK.de"
+            : "Magic Oracle - PlaywithK.de";
+    }, [locale]);
+
     const [speech, setSpeech] = useState('...');
     const [chibiSrc, setChibiSrc] = useState('/closed.png');
     const [userQuestion, setUserQuestion] = useState('');
@@ -91,9 +105,15 @@ export default function MagicChibi() {
     }, [chibiSrc]);
 
     return (
-            <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-6 py-20 flex flex-col items-center justify-center">
-                <section className="max-w-xl w-full bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-20 p-8 text-center relative">
-                    <h1 className="text-3xl sm:text-4xl font-bold text-teal-400 mb-8">✨ PWK Orakel ✨</h1>
+        <>
+            <section className="max-w-4xl mx-auto text-center py-8">
+                <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">PWK Orakel</h1>
+                <p className="text-gray-300 mb-10 max-w-xl mx-auto">
+                    Stelle dem Orakel Ja/Nein Fragen und es wird dir eine Antwort geben!
+                </p>
+
+                <div className="max-w-3xl mx-auto bg-gray-800 rounded-lg p-6 border border-white border-opacity-20 shadow-lg">
+                    <h1 className="text-3xl sm:text-4xl font-bold text-teal-400 mb-8">✨ Befrage das Orakel! ✨</h1>
 
                     <div className="relative inline-block">
                         <Image
@@ -138,15 +158,19 @@ export default function MagicChibi() {
                             Fragen!
                         </button>
                     </div>
-                </section>
+                </div>
+
                 <div className="mt-6">
                     <Link
-                        href="/projects/webgames"
+                        href={`/${locale}/projects/webgames`}
                         className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
                     >
                         Zurück zur Übersicht
                     </Link>
                 </div>
-            </main>
+            </section>
+
+            <LastEdited date="01.06.2026" />
+        </>
     );
 }

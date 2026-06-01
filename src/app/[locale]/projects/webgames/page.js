@@ -7,7 +7,7 @@ import LastEdited from "@/components/lastedited";
 import Link from 'next/link';
 
 export default function WebgamesOverview() {
-    const t = useTranslations("Webgames");
+  const t = useTranslations("Webgames");
   const params = useParams();
   const locale = params.locale;
 

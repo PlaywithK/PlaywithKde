@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import React, { useState, useEffect, useCallback } from "react";
+import LastEdited from "@/components/lastedited";
 import Link from "next/link";
 
 const lyrics = [
@@ -64,7 +65,7 @@ export default function LyricQuiz() {
 
   return (
     <>
-      <section className="max-w-4xl mx-auto text-center">
+      <section className="max-w-4xl mx-auto text-center py-8">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">YKKE Lyrics-Quiz</h1>
         <p className="text-gray-300 mb-10 max-w-xl mx-auto">
           Errate den YKKE-Song, dessen Text du siehst!
@@ -121,6 +122,8 @@ export default function LyricQuiz() {
           </Link>
         </div>
       </section>
+
+      <LastEdited date="01.06.2026" />
     </>
   );
 }

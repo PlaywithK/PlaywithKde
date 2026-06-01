@@ -92,7 +92,7 @@ export default function WebgamesOverview() {
         </div>
       </section>
 
-      <LastEdited date="31.05.2026" />
+      <LastEdited date="01.06.2026" />
     </>
   );
 }

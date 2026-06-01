@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import LastEdited from "@/components/lastedited";
 
 const suits = ['♥', '♦', '♣', '♠'];
 const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
@@ -127,7 +128,7 @@ export default function HighStakesPage() {
 
   return (
     <>
-      <section className="max-w-4xl mx-auto text-center">
+      <section className="max-w-4xl mx-auto text-center py-8">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">High Stakes</h1>
         <p className="text-gray-300 mb-10 max-w-xl mx-auto">
           Ziehe Karten, besiege den Dealer – wie viel Risiko gehst du ein? Ziel ist es, mit deinen Karten so nah wie möglich an 21 Punkte zu kommen, ohne darüber zu liegen. Der Dealer zieht automatisch, wenn du passt. Wer näher an 21 ist, gewinnt!
@@ -167,6 +168,8 @@ export default function HighStakesPage() {
           </Link>
         </div>
       </section>
+
+      <LastEdited date="01.06.2026" />
     </>
   );
 }

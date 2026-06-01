@@ -126,7 +126,7 @@ export default function HighStakesPage() {
   );
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8 py-16">
+    <>
       <section className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">High Stakes</h1>
         <p className="text-gray-300 mb-10 max-w-xl mx-auto">
@@ -167,7 +167,7 @@ export default function HighStakesPage() {
           </Link>
         </div>
       </section>
-    </main>
+    </>
   );
 }
 

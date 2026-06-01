@@ -63,61 +63,64 @@ export default function LyricQuiz() {
   }, [startQuiz]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center justify-center">
-      <section className="max-w-xl w-full bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-20 p-8 space-y-6 text-center">
+    <>
+      <section className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-teal-400">YKKE Lyrics-Quiz</h1>
         <p className="text-gray-300 mb-10 max-w-xl mx-auto">
           Errate den YKKE-Song, dessen Text du siehst!
         </p>
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-teal-400">🎤 Errate den Song</h1>
+        <div className="bg-gray-800 rounded-lg p-6 border border-white border-opacity-20 shadow-lg">
+          <h1 className="text-3xl sm:text-4xl font-bold text-teal-400">🎤 Errate den Song</h1>
 
-        {currentLyric && (
-          <p className="text-xl font-semibold text-white">{`„${currentLyric.line}“`}</p>
-        )}
+          {currentLyric && (
+            <p className="text-xl font-semibold text-white">{`„${currentLyric.line}“`}</p>
+          )}
 
-        <input
-          type="text"
-          className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
-          placeholder="Gib den Songtitel ein"
-          value={userInput}
-          onChange={(e) => setUserInput(e.target.value)}
-          disabled={answered}
-        />
-
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button
-            onClick={checkAnswer}
+          <input
+            type="text"
+            className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            placeholder="Gib den Songtitel ein"
+            value={userInput}
+            onChange={(e) => setUserInput(e.target.value)}
             disabled={answered}
-            className="bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-2 rounded-full shadow transition-all disabled:opacity-50"
-          >
-            Überprüfen
-          </button>
-          {answered && (
+          />
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button
-              onClick={startQuiz}
-              className="bg-white text-gray-900 font-semibold px-6 py-2 rounded-full shadow hover:bg-teal-400 hover:text-white transition-all"
+              onClick={checkAnswer}
+              disabled={answered}
+              className="bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-2 rounded-full shadow transition-all disabled:opacity-50"
             >
-              Nochmal versuchen
+              Überprüfen
             </button>
+            {answered && (
+              <button
+                onClick={startQuiz}
+                className="bg-white text-gray-900 font-semibold px-6 py-2 rounded-full shadow hover:bg-teal-400 hover:text-white transition-all"
+              >
+                Nochmal versuchen
+              </button>
+            )}
+          </div>
+
+          {result && (
+            <p className={`text-lg font-medium ${result.startsWith('Richtig') ? 'text-green-400' : 'text-red-400'}`}>
+              {result}
+            </p>
           )}
         </div>
 
-        {result && (
-          <p className={`text-lg font-medium ${result.startsWith('Richtig') ? 'text-green-400' : 'text-red-400'}`}>
-            {result}
-          </p>
-        )}
-      </section>
 
-      <div className="mt-6">
-        <Link
-          href={`/${locale}/projects/webgames`}
-          className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
-        >
-          Zurück zur Übersicht
-        </Link>
-      </div>
-    </main>
+        <div className="mt-6">
+          <Link
+            href={`/${locale}/projects/webgames`}
+            className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
+          >
+            Zurück zur Übersicht
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }

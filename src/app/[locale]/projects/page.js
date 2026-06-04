@@ -100,7 +100,7 @@ export default function Projekte() {
           <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
             <div className="w-32 h-20 relative">
               <Image
-                src="/chorez_placeholder.png"
+                src="/itchio.webp"
                 alt={t("itch.title")}
                 fill
                 className="object-cover rounded-lg"
@@ -110,10 +110,10 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("itch.title")}</h3>
               <p className="text-gray-300 text-sm">{t("itch.desc")}</p>
               <Link
-                href={`/${locale}/projects/games`}
+                href="https://playwithk.itch.io/"
                 className="text-teal-300 text-sm underline"
               >
-                Mehr erfahren →
+                Zu Itch.io →
               </Link>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function Projekte() {
           <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
             <div className="w-32 h-20 relative">
               <Image
-                src="/chorez_placeholder.png"
+                src="/AoE_Shopseite_Titelbereichskapsel.png"
                 alt={t("elysia.title")}
                 fill
                 className="object-cover rounded-lg"
@@ -186,7 +186,7 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("chorez.title")}</h3>
               <p className="text-gray-300 text-sm">{t("chorez.desc")}</p>
               <Link
-                href={`/${locale}/projects/apps`}
+                href={`/${locale}/projects/apps/chorez`}
                 className="text-teal-300 text-sm underline"
               >
                 Mehr erfahren →

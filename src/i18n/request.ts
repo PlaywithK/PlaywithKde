@@ -5,7 +5,7 @@ async function loadMessage(locale: string, file: string) {
     return (await import(`../messages/${locale}/${file}.json`)).default;
   } catch (err) {
     throw new Error(
-      `Missing translation file: messages/${locale}/${file}.json`
+      `Test Missing translation file: messages/${locale}/${file}.json`
     );
   }
 }

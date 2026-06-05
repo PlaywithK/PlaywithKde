@@ -1,0 +1,26 @@
+{
+  "title": "FAQ",
+  "desc": "Übliche Fragen und Antworten.",
+  "items": [
+    {
+      "question": "Wer betreibt diese Webseite?",
+      "answer": "Diese Webseite wird ausschließlich von PlaywithK betrieben. Bei weiteren Fragen zu diesem Thema, schauen Sie im Tab 'Webentwicklung' vorbei."
+    },
+    {
+      "question": "Was ist der Zweck der Webseite?",
+      "answer": "PlaywithK.de dient dazu, über Projekte von und mit PlaywithK zu informieren, sowie Neues zu entdecken!"
+    },
+    {
+      "question": "Ist diese Seite privat oder kommerziell?",
+      "answer": "Die Webseite wird ausschließlich privat verwendet und hat keinerlei kommerziellen Nutzen."
+    },
+    {
+      "question": "Darf ich Inhalte von der Webseite weiterverwenden?",
+      "answer": "Alle Inhalte von PlaywithK.de dürfen, mit einer Verlinkung auf die Webseite, frei verwendet werden."
+    },
+    {
+      "question": "Wie oft werden Inhalte aktualisiert?",
+      "answer": "Die Informationen der Webseite können veraltet sein, da diese in meiner Freizeit entsteht. Das genaue letzte Bearbeitungsdatum kann auf der jeweiligen Seite ganz unten angesehen werden."
+    }
+  ]
+}

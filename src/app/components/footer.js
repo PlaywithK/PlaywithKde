@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const pathname = usePathname();
-  const t = useTranslations("Footer");
+  const t = useTranslations("footer");
 
   const switchLocalePath = (targetLocale) => {
     const parts = pathname.split("/").filter(Boolean);

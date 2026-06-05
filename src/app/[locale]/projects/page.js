@@ -74,7 +74,7 @@ export default function Projekte() {
           title={t("webDev.title")}
           desc={t("webDev.desc")}
           tags={[t("webDev.tag1"), t("webDev.tag2"), t("webDev.tag3")]}
-          link={`/${locale}/projects/web-entwicklung`}
+          link={`/${locale}/projects/web`}
         />
 
         {/* Web-Spiele */}
@@ -92,7 +92,7 @@ export default function Projekte() {
           title={t("gameDev.title")}
           desc={t("gameDev.desc")}
           tags={[t("gameDev.tag1"), t("gameDev.tag2")]}
-          link={`/${locale}/projects/spieleentwicklung`}
+          link={`/${locale}/projects/games`}
           reverse
         >
 
@@ -100,7 +100,7 @@ export default function Projekte() {
           <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
             <div className="w-32 h-20 relative">
               <Image
-                src="/chorez_placeholder.png"
+                src="/itchio.webp"
                 alt={t("itch.title")}
                 fill
                 className="object-cover rounded-lg"
@@ -110,10 +110,10 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("itch.title")}</h3>
               <p className="text-gray-300 text-sm">{t("itch.desc")}</p>
               <Link
-                href={`/${locale}/projects/app-entwicklung`}
+                href="https://playwithk.itch.io/"
                 className="text-teal-300 text-sm underline"
               >
-                Mehr erfahren →
+                Zu Itch.io →
               </Link>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function Projekte() {
           <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
             <div className="w-32 h-20 relative">
               <Image
-                src="/chorez_placeholder.png"
+                src="/AoE_Shopseite_Titelbereichskapsel.png"
                 alt={t("elysia.title")}
                 fill
                 className="object-cover rounded-lg"
@@ -132,7 +132,7 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("elysia.title")}</h3>
               <p className="text-gray-300 text-sm">{t("elysia.desc")}</p>
               <Link
-                href={`/${locale}/projects/app-entwicklung`}
+                href={`/${locale}/projects/games`}
                 className="text-teal-300 text-sm underline"
               >
                 Mehr erfahren →
@@ -154,7 +154,7 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("minari.title")}</h3>
               <p className="text-gray-300 text-sm">{t("minari.desc")}</p>
               <Link
-                href={`/${locale}/projects/app-entwicklung`}
+                href={`/${locale}/projects/games`}
                 className="text-teal-300 text-sm underline"
               >
                 Mehr erfahren →
@@ -169,7 +169,7 @@ export default function Projekte() {
           title={t("appDevelopment.title")}
           desc={t("appDevelopment.desc")}
           tags={[t("appDevelopment.tag1"), t("appDevelopment.tag2")]}
-          link={`/${locale}/projects/app-entwicklung`}
+          link={`/${locale}/projects/apps`}
         >
 
           {/* Chorez-Child */}
@@ -186,7 +186,7 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("chorez.title")}</h3>
               <p className="text-gray-300 text-sm">{t("chorez.desc")}</p>
               <Link
-                href={`/${locale}/projects/app-entwicklung`}
+                href={`/${locale}/projects/apps/chorez`}
                 className="text-teal-300 text-sm underline"
               >
                 Mehr erfahren →
@@ -201,7 +201,7 @@ export default function Projekte() {
           title={t("mcModding.title")}
           desc={t("mcModding.desc")}
           tags={[t("mcModding.tag1"), t("mcModding.tag2")]}
-          link={`/${locale}/projects/mc-modding`}
+          link={`/${locale}/projects/minecraft/modding`}
         />
       </div>
 
@@ -236,7 +236,7 @@ export default function Projekte() {
         </div>
       </section>
 
-      <LastEdited date="31.05.2026" />
+      <LastEdited date="04.06.2026" />
     </>
   );
 }

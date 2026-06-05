@@ -1,0 +1,14 @@
+{
+  "title": "Imprint",
+  "desc": "Legal information and contact.",
+  "contact": {
+    "title": "Contact"
+  },
+  "nutzungsrecht": {
+    "title": "Usage rights",
+    "description": "All content on this website is protected by copyright. Any use beyond personal reference requires the author’s permission."
+  },
+  "quellen": {
+    "title": "Sources"
+  }
+}

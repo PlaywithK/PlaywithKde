@@ -1,26 +1,26 @@
 {
   "title": "FAQ",
-  "desc": "Übliche Fragen und Antworten.",
+  "desc": "Common questions and answers.",
   "items": [
     {
-      "question": "Wer betreibt diese Webseite?",
-      "answer": "Diese Webseite wird ausschließlich von PlaywithK betrieben. Bei weiteren Fragen zu diesem Thema, schauen Sie im Tab 'Webentwicklung' vorbei."
+      "question": "Who runs this website?",
+      "answer": "This website is run exclusively by PlaywithK. For more questions on this topic, check out the 'Web Development' tab."
     },
     {
-      "question": "Was ist der Zweck der Webseite?",
-      "answer": "PlaywithK.de dient dazu, über Projekte von und mit PlaywithK zu informieren, sowie Neues zu entdecken!"
+      "question": "What is the purpose of the website?",
+      "answer": "PlaywithK.de is meant to inform about projects by and with PlaywithK, and to help discover new things!"
     },
     {
-      "question": "Ist diese Seite privat oder kommerziell?",
-      "answer": "Die Webseite wird ausschließlich privat verwendet und hat keinerlei kommerziellen Nutzen."
+      "question": "Is this site private or commercial?",
+      "answer": "This website is used exclusively for private purposes and has no commercial intent."
     },
     {
-      "question": "Darf ich Inhalte von der Webseite weiterverwenden?",
-      "answer": "Alle Inhalte von PlaywithK.de dürfen, mit einer Verlinkung auf die Webseite, frei verwendet werden."
+      "question": "May I reuse content from the website?",
+      "answer": "All content from PlaywithK.de may be freely reused with a link back to the website."
     },
     {
-      "question": "Wie oft werden Inhalte aktualisiert?",
-      "answer": "Die Informationen der Webseite können veraltet sein, da diese in meiner Freizeit entsteht. Das genaue letzte Bearbeitungsdatum kann auf der jeweiligen Seite ganz unten angesehen werden."
+      "question": "How often are contents updated?",
+      "answer": "The website information may be outdated because it is created in my free time. The exact last edit date can be seen at the bottom of each page."
     }
   ]
 }

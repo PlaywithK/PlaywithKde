@@ -10,7 +10,7 @@ import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
 
 export default function PlaywithK() {
-  const t = useTranslations("PlaywithK");
+  const t = useTranslations("playwithK");
   const params = useParams();
   const locale = params.locale;
 
@@ -194,7 +194,7 @@ export default function PlaywithK() {
         </div>
       </section>
 
-      <LastEdited date="31.05.2026" />
+      <LastEdited date="05.06.2026" />
     </>
   );
 }

@@ -52,14 +52,14 @@ function StarIcon() {
 }
 
 export default function PWKEntertainment() {
-  const t = useTranslations("PWKEntertainment");
+  const t = useTranslations("pwkentertainment");
   const params = useParams();
   const locale = params.locale;
 
   useEffect(() => {
     document.title = locale === "de"
-      ? "Startseite - PlaywithK.de"
-      : "Home - PlaywithK.de";
+      ? "PWK Entertainment - PlaywithK.de"
+      : "PWK Entertainment - PlaywithK.de";
   }, [locale]);
 
   return (
@@ -145,7 +145,7 @@ export default function PWKEntertainment() {
         </section>
       </div>
 
-      <LastEdited date="31.05.2026" />
+      <LastEdited date="05.06.2026" />
     </>
   );
 }

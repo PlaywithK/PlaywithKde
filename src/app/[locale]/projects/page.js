@@ -15,7 +15,7 @@ const germanPaths = {
 };
 
 export default function Projekte() {
-  const t = useTranslations("Projekte");
+  const t = useTranslations("projects");
   const params = useParams();
   const locale = params.locale;
 

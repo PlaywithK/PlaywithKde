@@ -1,5 +1,5 @@
 export async function loadLocaleMessages(locale: string) {
-  const [common, faq, footer, home, minecraft, navbar, projects] = await Promise.all([
+  const [common, faq, footer, home, minecraft, navbar, projects, kontakt, imprint, playwithk, pwkentertainment] = await Promise.all([
     import(`../messages/${locale}/common.json`),
     import(`../messages/${locale}/faq.json`),
     import(`../messages/${locale}/footer.json`),
@@ -7,6 +7,10 @@ export async function loadLocaleMessages(locale: string) {
     import(`../messages/${locale}/minecraft.json`),
     import(`../messages/${locale}/navbar.json`),
     import(`../messages/${locale}/projects.json`),
+    import(`../messages/${locale}/contact.json`),
+    import(`../messages/${locale}/imprint.json`),
+    import(`../messages/${locale}/playwithk.json`),
+    import(`../messages/${locale}/pwkentertainment.json`),
   ]);
 
   return {
@@ -17,5 +21,9 @@ export async function loadLocaleMessages(locale: string) {
     minecraft: minecraft.default,
     navbar: navbar.default,
     projects: projects.default,
+    contact: kontakt.default,
+    imprint: imprint.default,
+    playwithk: playwithk.default,
+    pwkentertainment: pwkentertainment.default,
   };
 }

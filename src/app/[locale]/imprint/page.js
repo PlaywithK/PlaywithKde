@@ -6,8 +6,8 @@ import { useEffect } from "react";
 import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
 
-export default function Impressum() {
-  const t = useTranslations("Impressum");
+export default function Imprint() {
+  const t = useTranslations("imprint");
   const params = useParams();
   const locale = params.locale;
 
@@ -41,7 +41,7 @@ export default function Impressum() {
         </section>
       </div>
 
-      <LastEdited date="31.05.2026" />
+      <LastEdited date="05.06.2026" />
     </>
   );
 }

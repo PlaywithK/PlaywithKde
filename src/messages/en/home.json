@@ -1,26 +1,26 @@
 {
   "hero": {
-    "title": "Willkommen auf PlaywithK.de",
-    "subtitle": "Programmierer · Gamer · Video Creator"
+    "title": "Welcome to PlaywithK.de",
+    "subtitle": "Programmer · Gamer · Video Creator"
   },
   "about": {
-    "title": "Über mich",
-    "text": "Hey! Ich bin PlaywithK, der Ersteller dieser Webseite.",
-    "more": "Mehr zu PlaywithK"
+    "title": "About me",
+    "text": "Hey! I'm PlaywithK, the creator of this website.",
+    "more": "More about PlaywithK"
   },
   "projects": {
-    "title": "Meine Projekte",
+    "title": "My projects",
     "webgames": {
-      "title": "Web-Spiele",
-      "desc": "Hier findest du einige kleine Web-Spiele, welche ich als kleinen Test mit HTML, CSS und Javascript erstellt habe. Viel Spaß beim Spielen!"
+      "title": "Web games",
+      "desc": "Here you can find some small web games I built as little tests with HTML, CSS and JavaScript. Have fun playing!"
     },
     "apps": {
-      "title": "App-Entwicklung",
-      "desc": "Es hat mich schon immer gestört 20 Apps für jede einzelne Funktion auf meinem Handy zu haben. Also entschloss ich mich irgendwann meine eigene App zu kreieren, bei der alle Funktionen an einem Ort gebündelt sind. Chorez war geboren."
+      "title": "App development",
+      "desc": "It always bothered me to have 20 apps on my phone for every single feature. So I decided to create my own app that brings all functions together in one place. Chorez was born."
     },
     "games": {
-      "title": "Spieleentwicklung",
-      "desc": "Schon seit Jahren wollte ich eigene Spiele entwickeln und die Ideen in meinem Kopf sprudeln quasi über. Hier erfährst du alles zu meiner Dev-Journey und meinen momentanen Spiele-Projekten."
+      "title": "Game development",
+      "desc": "I've wanted to develop my own games for years, and the ideas in my head have been constantly overflowing. Here you'll find everything about my dev journey and my current game projects."
     }
   }
 }

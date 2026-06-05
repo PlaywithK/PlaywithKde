@@ -1,0 +1,14 @@
+{
+  "title": "Impressum",
+  "desc": "Rechtliche Informationen und Kontakt.",
+  "contact": {
+    "title": "Kontakt"
+  },
+  "nutzungsrecht": {
+    "title": "Nutzungsrecht",
+    "description": "Alle Inhalte dieser Webseite sind urheberrechtlich geschützt. Jede Nutzung über die reine persönliche Betrachtung hinaus benötigt die Zustimmung des Autors."
+  },
+  "quellen": {
+    "title": "Quellen"
+  }
+}

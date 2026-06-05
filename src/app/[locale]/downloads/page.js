@@ -8,7 +8,7 @@ import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
 
 export default function DownloadsPage() {
-    const t = useTranslations("Downloads");
+    const t = useTranslations("downloads");
     const params = useParams();
     const locale = params.locale;
 

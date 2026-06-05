@@ -18,18 +18,18 @@ export default function FAQ() {
     answer: string;
   }[];
 
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "FAQ - PlaywithK.de"
+      : "FAQ - PlaywithK.de";
+  }, [locale]);
+
   const toggleIndex = (index: number) => {
     setOpenIndexes((prev) =>
       prev.includes(index)
         ? prev.filter((i) => i !== index)
         : [...prev, index]
     );
-
-    useEffect(() => {
-      document.title = locale === "de"
-        ? "FAQ - PlaywithK.de"
-        : "FAQ - PlaywithK.de";
-    }, [locale]);
   };
 
   return (

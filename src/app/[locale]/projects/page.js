@@ -67,7 +67,7 @@ export default function Projekte() {
             href={link}
             className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
           >
-            {common("buttons.learnMore")} →
+            {common("buttons.learnMore")} ➔
           </Link>
         </div>
       </div>
@@ -85,7 +85,7 @@ export default function Projekte() {
       <div className="space-y-12 max-w-5xl mx-auto">
         {/* Web-Entwicklung */}
         <ProjectCard
-          image="/canva_coding.jpg"
+          image="/html.jpeg"
           title={t("webdev.title")}
           desc={t("webdev.desc")}
           tags={getTags("webdev.tags")}
@@ -94,7 +94,7 @@ export default function Projekte() {
 
         {/* Web-Spiele */}
         <ProjectCard
-          image="/canva_coding.jpg"
+          image="/webgames.png"
           title={t("webGames.title")}
           desc={t("webGames.desc")}
           tags={getTags("webGames.tags")}
@@ -150,7 +150,7 @@ export default function Projekte() {
                 href={`/${locale}/projects/games`}
                 className="text-teal-300 text-sm underline"
               >
-                {common("buttons.learnMore")} →
+                {common("buttons.learnMore")} ➔
               </Link>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function Projekte() {
           <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
             <div className="w-32 h-20 relative">
               <Image
-                src="/chorez_placeholder.png"
+                src="/minari_wip.png"
                 alt={t("minari.title")}
                 fill
                 className="object-cover rounded-lg"
@@ -172,7 +172,7 @@ export default function Projekte() {
                 href={`/${locale}/projects/games`}
                 className="text-teal-300 text-sm underline"
               >
-                {common("buttons.learnMore")} →
+                {common("buttons.learnMore")} ➔
               </Link>
             </div>
           </div>
@@ -204,7 +204,7 @@ export default function Projekte() {
                 href={`/${locale}/projects/apps/chorez`}
                 className="text-teal-300 text-sm underline"
               >
-                {common("buttons.learnMore")} →
+                {common("buttons.learnMore")} ➔
               </Link>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default function Projekte() {
 
         {/* Minecraft Modding */}
         <ProjectCard
-          image="/canva_coding.jpg"
+          image="/modrinth.png"
           title={t("mcmodding.title")}
           desc={t("mcmodding.desc")}
           tags={getTags("mcmodding.tags")}

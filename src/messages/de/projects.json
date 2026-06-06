@@ -5,7 +5,7 @@
     "title": "Web-Spiele",
     "desc": "Hier findest du einige kleine Web-Spiele, welche ich als kleinen Test mit HTML, CSS und Javascript erstellt habe. Viel Spaß beim Spielen!",
     "tags": [
-      "PWK Orakel",
+      "Minispiele",
       "Lyric Quiz",
       "HTML/CSS/JS"
     ],
@@ -55,7 +55,7 @@
   },
   "webdev": {
     "title": "Web-Entwicklung",
-    "desc": "Diese Sektion ist noch WIP!",
+    "desc": "Von HTML bis hin zu komplexeren Web-Projekten mit React, NexJS und auch Webservern findest du hier.",
     "tags": [
       "HTML",
       "CSS",
@@ -75,17 +75,14 @@
   "mcprojects": {
     "title": "Minecraft Projekte",
     "item1": {
-      "src": "/Winterprojekt_Front.png",
       "alt": "Winterprojekt Titelbild",
       "title": "Winterprojekt"
     },
     "item2": {
-      "src": "/PWKDE_Front.png",
       "alt": "PlaywithK.de Bild",
       "title": "PlaywithK.de"
     },
     "item3": {
-      "src": "/Outlaw_Front.png",
       "alt": "Outlaw Bild",
       "title": "Outlaw"
     }

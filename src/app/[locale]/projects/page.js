@@ -14,8 +14,15 @@ const paths = {
   item3: "/projects/minecraft/outlaw",
 };
 
+const mcImages = {
+  item1: "/Winterprojekt_Front.png",
+  item2: "/PWKDE_Front.png",
+  item3: "/Outlaw_Front.png",
+};
+
 export default function Projekte() {
   const t = useTranslations("projects");
+  const common = useTranslations("common");
   const params = useParams();
   const locale = params.locale;
 
@@ -60,7 +67,7 @@ export default function Projekte() {
             href={link}
             className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
           >
-            Mehr erfahren ➔
+            {common("buttons.learnMore")} →
           </Link>
         </div>
       </div>
@@ -143,7 +150,7 @@ export default function Projekte() {
                 href={`/${locale}/projects/games`}
                 className="text-teal-300 text-sm underline"
               >
-                Mehr erfahren →
+                {common("buttons.learnMore")} →
               </Link>
             </div>
           </div>
@@ -165,7 +172,7 @@ export default function Projekte() {
                 href={`/${locale}/projects/games`}
                 className="text-teal-300 text-sm underline"
               >
-                Mehr erfahren →
+                {common("buttons.learnMore")} →
               </Link>
             </div>
           </div>
@@ -197,7 +204,7 @@ export default function Projekte() {
                 href={`/${locale}/projects/apps/chorez`}
                 className="text-teal-300 text-sm underline"
               >
-                Mehr erfahren →
+                {common("buttons.learnMore")} →
               </Link>
             </div>
           </div>
@@ -228,7 +235,7 @@ export default function Projekte() {
             >
               <div className="relative w-full h-64 sm:h-72 md:h-80">
                 <Image
-                  src={t(`mcprojects.${key}.src`)}
+                  src={mcImages[key]}
                   alt={t(`mcprojects.${key}.alt`)}
                   fill
                   className="object-cover filter blur-sm transition-filter transition-transform duration-500 ease-in-out group-hover:blur-none group-hover:scale-110"

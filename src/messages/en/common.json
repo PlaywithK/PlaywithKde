@@ -8,6 +8,6 @@
     "backToProjects": "Back to all projects"
   },
   "meta": {
-    "lastUpdated": "Last edited:"
+    "lastEdited": "Last edited: {date}"
   }
 }

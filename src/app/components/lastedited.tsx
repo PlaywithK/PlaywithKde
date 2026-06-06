@@ -7,7 +7,7 @@ export default function LastEdited({ date }: { date: string }) {
 
     return (
         <div className="mt-12 text-right text-sm text-gray-500">
-            {t ? `${t("lastEdited")}: ${date}` : `Last Edited: ${date}`}
+            {t ? `${t("meta.lastUpdated")} ${date}` : `Last Edited: ${date}`}
         </div>
     );
 }

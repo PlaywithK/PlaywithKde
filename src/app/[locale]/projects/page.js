@@ -20,8 +20,11 @@ export default function Projekte() {
   const locale = params.locale;
 
   const getTags = (key) => {
-    const value = t(key);
-    return Array.isArray(value) ? value : [];
+    if (typeof t.raw === "function") {
+      const value = t.raw(key);
+      return Array.isArray(value) ? value : [];
+    }
+    return [];
   };
 
   const ProjectCard = ({ image, title, desc, tags = [], link, reverse = false, children }) => (

@@ -1,12 +1,85 @@
 {
-  "buttons": {
-    "learnMore": "Learn more",
-    "back": "Back",
-    "playNow": "Play now",
-    "send": "Send",
-    "backToProjects": "Back to all projects"
+  "title": "Projects",
+  "desc": "All Projects of PlaywithK, from App-Developement to Minecraft!",
+  "webGames": {
+    "title": "Web Games",
+    "desc": "Here you can find some small web games I created as a test using HTML, CSS, and JavaScript. Have fun playing!",
+    "tag1": "PWK Oracle",
+    "tag2": "Lyric Quiz",
+    "tag3": "HighCard",
+    "tag4": "Mini Games",
+    "tag5": "HTML/CSS/JS",
+    "linkText": "Play Games",
+    "imageAlt": "Web Games"
   },
-  "meta": {
-    "lastUpdated": "Zuletzt aktualisiert:"
-  }
+  "appDevelopment": {
+    "title": "App Development",
+    "desc": "I started developing apps because I wanted to create a powerful app, that does all I need in my daily life.",
+    "tag1": "Flutter",
+    "tag2": "Dart",
+    "imageAlt": "Laptop with Code"
+  },
+  "chorez": {
+    "title": "Chorez App",
+    "desc": "It always bothered me to have 20 apps for every single function on my phone. So I decided to create my own app, combining all functions in one place. Chorez was born.",
+    "tag1": "All-in-One",
+    "tag2": "To-Dos",
+    "tag3": "Shopping Lists",
+    "tag4": "Appointments",
+    "imageAlt": "Chorez App"
+  },
+  "gameDev": {
+    "title": "Game Development",
+    "desc": "For years, I wanted to develop my own games, and ideas constantly overflow in my mind. Here you can learn everything about my dev journey and current game projects.",
+    "tag1": "Unity",
+    "tag2": "C#",
+    "imageAlt": "Unity Editor"
+  },
+  "itch": {
+    "title": "Itch.io",
+    "desc": "My itch.io page has all of my games I made so far."
+  },
+  "elysia": {
+    "title": "Adventure of Elysia",
+    "desc": "This game is the first game I ever had in my head and is actually the reason I started with game dev."
+  },
+  "minari": {
+    "title": "Minari - Working Title",
+    "desc": "Minari is my try on a Tomodachi Life-like game. It could be called my dream game and I am really trying to make this my best game."
+  },
+  "webDev": {
+    "title": "Web Development",
+    "desc": "This section is still WIP!",
+    "tag1": "HTML",
+    "tag2": "CSS",
+    "tag3": "Javascript",
+    "imageAlt": "Unity Editor"
+  },
+  "mcModding": {
+    "title": "Minecraft Modding",
+    "desc": "I just startet with Minecraft Modding because I needed a specific mod and couldnt find anything.",
+    "tag1": "Java",
+    "tag2": "Fabric",
+    "imageAlt": "IntelliJ Code"
+  },
+  "minecraftProjects": {
+    "title": "Minecraft Projects",
+    "item1": {
+      "src": "/Winterprojekt_Front.png",
+      "alt": "Winter Project Cover",
+      "title": "Winterproject"
+    },
+    "item2": {
+      "src": "/PWKDE_Front.png",
+      "alt": "PlaywithK.de Image",
+      "title": "PlaywithK.de"
+    },
+    "item3": {
+      "src": "/Outlaw_Front.png",
+      "alt": "Outlaw Image",
+      "title": "Outlaw"
+    }
+  },
+  "more": "Learn More",
+  "all": "To All Projects"
 }

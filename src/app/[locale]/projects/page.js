@@ -8,7 +8,7 @@ import Hero from "@/components/hero";
 import { H1, H2, H3, P, PLarge } from "@/components/design";
 import LastEdited from "@/components/lastedited";
 
-const germanPaths = {
+const paths = {
   item1: "/projects/minecraft/winterprojekt",
   item2: "/projects/minecraft/pwkde",
   item3: "/projects/minecraft/outlaw",
@@ -71,27 +71,27 @@ export default function Projekte() {
         {/* Web-Entwicklung */}
         <ProjectCard
           image="/canva_coding.jpg"
-          title={t("webDev.title")}
-          desc={t("webDev.desc")}
-          tags={[t("webDev.tag1"), t("webDev.tag2"), t("webDev.tag3")]}
+          title={t("webdev.title")}
+          desc={t("webdev.desc")}
+          tags={[t("webdev.tags").map((tag) => t(tag))]}
           link={`/${locale}/projects/web`}
         />
 
         {/* Web-Spiele */}
         <ProjectCard
           image="/canva_coding.jpg"
-          title={t("webGames.title")}
-          desc={t("webGames.desc")}
-          tags={[t("webGames.tag1"), t("webGames.tag2"), t("webGames.tag3")]}
+          title={t("webgames.title")}
+          desc={t("webgames.desc")}
+          tags={[t("webgames.tags").map((tag) => t(tag))]}
           link={`/${locale}/projects/webgames`}
         />
 
         {/* Spieleentwicklung */}
         <ProjectCard
           image="/unity_dev_placeholder.png"
-          title={t("gameDev.title")}
-          desc={t("gameDev.desc")}
-          tags={[t("gameDev.tag1"), t("gameDev.tag2")]}
+          title={t("gamedev.title")}
+          desc={t("gamedev.desc")}
+          tags={[t("gamedev.tags").map((tag) => t(tag))]}
           link={`/${locale}/projects/games`}
           reverse
         >
@@ -166,9 +166,9 @@ export default function Projekte() {
         {/* App-Entwicklung */}
         <ProjectCard
           image="/canva_coding.jpg"
-          title={t("appDevelopment.title")}
-          desc={t("appDevelopment.desc")}
-          tags={[t("appDevelopment.tag1"), t("appDevelopment.tag2")]}
+          title={t("appdev.title")}
+          desc={t("appdev.desc")}
+          tags={[t("appdev.tags").map((tag) => t(tag))]}
           link={`/${locale}/projects/apps`}
         >
 
@@ -198,9 +198,9 @@ export default function Projekte() {
         {/* Minecraft Modding */}
         <ProjectCard
           image="/canva_coding.jpg"
-          title={t("mcModding.title")}
-          desc={t("mcModding.desc")}
-          tags={[t("mcModding.tag1"), t("mcModding.tag2")]}
+          title={t("mcmodding.title")}
+          desc={t("mcmodding.desc")}
+          tags={[t("mcmodding.tags").map((tag) => t(tag))]}
           link={`/${locale}/projects/minecraft/modding`}
         />
       </div>
@@ -209,26 +209,26 @@ export default function Projekte() {
 
       {/* Minecraft Projekte */}
       <section className="max-w-6xl mx-auto mt-16 px-4 sm:px-8 sm:pb-8">
-        <H2 className="text-4xl font-bold text-teal-400 mb-10 text-center">{t("minecraftProjects.title")}</H2>
+        <H2 className="text-4xl font-bold text-teal-400 mb-10 text-center">{t("mcprojects.title")}</H2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {["item1", "item2", "item3"].map((key) => (
             <Link
               key={key}
-              href={`/de${germanPaths[key]}`}
+              href={`/de${paths[key]}`}
               className="relative block overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group"
             >
               <div className="relative w-full h-64 sm:h-72 md:h-80">
                 <Image
-                  src={t(`minecraftProjects.${key}.src`)}
-                  alt={t(`minecraftProjects.${key}.alt`)}
+                  src={t(`mcprojects.${key}.src`)}
+                  alt={t(`mcprojects.${key}.alt`)}
                   fill
                   className="object-cover filter blur-sm transition-filter transition-transform duration-500 ease-in-out group-hover:blur-none group-hover:scale-110"
                 />
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-white text-3xl sm:text-4xl font-semibold text-center drop-shadow-lg pointer-events-none">
-                  {t(`minecraftProjects.${key}.title`)}
+                  {t(`mcprojects.${key}.title`)}
                 </span>
               </div>
             </Link>
@@ -236,7 +236,7 @@ export default function Projekte() {
         </div>
       </section>
 
-      <LastEdited date="04.06.2026" />
+      <LastEdited date="06.06.2026" />
     </>
   );
 }

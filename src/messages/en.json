@@ -149,24 +149,33 @@
   "AppDev": {
     "title": "App Development",
     "subtitle": "Here I document my personal journey in app development – from the first idea to the finished app.",
+    "introTitle": "Why I started app development",
+    "intro": "I had wanted to build my own app for a long time. I find app development fascinating, and I wanted one app that brings everyday tools together instead of 20 separate apps.",
     "chorez": {
-      "desc-p1": "Chorez is my first app project. I started it because I wanted an app that combines everything: to-do lists, shopping lists, appointments, and more. Instead of using five different apps, I wanted to build my own central solution.",
-      "desc-p2": {
-        "p1": "Chorez is developed with",
-        "p2": ". I mainly work with",
-        "p3": "but also with",
-        "p4": "– depending on what fits best at the moment."
-      },
-      "desc-p3": "The goal: a beautiful, intuitive app for everyday use, focused on clarity and practicality."
+      "title": "Chorez",
+      "sectionTitle": "My everyday app",
+      "desc-p1": "Chorez is my first app project. I started it because I wanted a single app that combines to-do lists, shopping lists, and food and drink tracking. Instead of using many different apps, I wanted to build one central everyday helper.",
+      "featuresTitle": "What Chorez can do",
+      "feature1": "Shopping list for planning and tracking",
+      "feature2": "Food and drink tracker for a better daily overview",
+      "feature3": "Built-in to-do list and task manager",
+      "desc-p2": "Chorez is developed with Flutter and Dart. I use Android Studio mainly for simulations and emulators.",
+      "desc-p3": "My goal is a clean, intuitive app that is genuinely useful in everyday life."
     },
     "makingof": {
-      "intro": "The development of Chorez has been (and still is) an exciting learning journey for me. Here, I document the tools, frameworks, and experiences that have accompanied me along the way.",
-      "flutter": "A cross-platform framework that allows me to build one app for both Android and iOS simultaneously.",
-      "vscode": "My preferred editor for quick iterations — especially because of its Flutter extensions and overall performance.",
-      "androidstudio": "I use it for UI previews, emulators, and occasionally for debugging.",
-      "testing": "My first steps with widget and integration testing.",
-      "deployment": "The goal is to eventually publish the app on the Play Store, and maybe later on the App Store as well.",
-      "ending": "With every commit, I learn something new — whether it’s in UI design, app architecture, or handling user feedback. The journey continues!"
+      "title": "How I develop the app",
+      "intro": "Developing Chorez has been (and still is) an exciting learning journey for me. Here I document the tools, frameworks, and experiences that have accompanied me along the way.",
+      "flutterTitle": "Flutter & Dart",
+      "flutter": "A cross-platform framework and language that let me build one app for multiple devices.",
+      "dartTitle": "Dart",
+      "dart": "The programming language behind the app logic, enabling clean code and fast iteration.",
+      "androidstudioTitle": "Android Studio",
+      "androidstudio": "My tool for simulators, UI previews, and hands-on debugging.",
+      "testingTitle": "Testing & simulation",
+      "testing": "I check UI, feature behavior, and emulator performance before moving forward.",
+      "deploymentTitle": "Looking ahead",
+      "deployment": "The goal is to eventually publish Chorez on the Play Store; right now the focus is on stable features and a great user experience.",
+      "ending": "Every commit teaches me something new about app architecture, design, and everyday usefulness. The journey continues."
     }
   },
 

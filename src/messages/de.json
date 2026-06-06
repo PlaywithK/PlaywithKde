@@ -4,7 +4,7 @@
       "title": "Willkommen auf PlaywithK.de",
       "subtitle": "Programmierer · Gamer · Video Creator"
     },
-            "about": {
+    "about": {
       "title": "Über mich",
       "text": "Hey! Ich bin PlaywithK, der Ersteller dieser Webseite.",
       "more": "Mehr von PlaywithK"
@@ -83,12 +83,12 @@
     "webDev": {
       "title": "Web-Entwicklung",
       "desc": "Diese Sektion ist noch WIP!",
-            "tag1": "HTML",
+      "tag1": "HTML",
       "tag2": "CSS",
       "tag3": "Javascript",
       "imageAlt": "Unity Editor"
     },
-            "mcModding": {
+    "mcModding": {
       "title": "Minecraft Modding",
       "desc": "Ich habe erst mit Modding in Minecraft angefangen, weil ich eine bestimmte Mod brauchte und diese nicht finden konnte.",
       "tag1": "Java",
@@ -143,24 +143,33 @@
   "AppDev": {
     "title": "App-Entwicklung",
     "subtitle": "Hier dokumentiere ich meine persönliche Reise in der App-Entwicklung – von der ersten Idee bis hin zur fertigen App.",
+    "introTitle": "Warum ich mit der App-Entwicklung begonnen habe",
+    "intro": "Ich wollte schon länger meine eigene App entwickeln. Mich faszinierte die Idee, einen digitalen Alltagspartner zu bauen, der viele Funktionen vereint – statt 20 einzelner Apps für jede Kleinigkeit.",
     "chorez": {
-      "desc-p1": "Chorez ist mein erstes App-Projekt. Ich habe damit angefangen, weil ich eine App wollte, die alles vereint: To-Do-Liste, Einkaufslisten, Termine und mehr. Statt fünf verschiedene Apps zu nutzen, wollte ich meine eigene zentrale Lösung bauen.",
-      "desc-p2": {
-        "p1": "Entwickelt wird Chorez mit",
-        "p2": ". Ich arbeite hauptsächlich mit",
-        "p3": "aber auch mit",
-        "p4": "– je nachdem, was gerade besser passt."
-      },
-      "desc-p3": "Das Ziel: eine schöne, intuitive App für den Alltag, mit Fokus auf Übersichtlichkeit und Nützlichkeit."
+      "title": "Chorez",
+      "sectionTitle": "Meine App für den Alltag",
+      "desc-p1": "Chorez ist mein erstes App-Projekt. Ich habe damit angefangen, weil ich eine App wollte, die alles vereint: To-Do-Liste, Einkaufslisten, Essens- und Trink-Tracker und mehr. Statt viele verschiedene Apps zu nutzen, wollte ich eine zentrale Alltagshilfe bauen.",
+      "featuresTitle": "Was Chorez kann",
+      "feature1": "Einkaufsliste zum Planen und Nachhalten",
+      "feature2": "Essens- und Trink-Tracker für bessere Übersicht",
+      "feature3": "To-Do-Liste und Aufgabenverwaltung",
+      "desc-p2": "Entwickelt wird Chorez mit Flutter und Dart. Android Studio nutze ich vor allem für Simulationen und Emulatoren.",
+      "desc-p3": "Das Ziel ist eine einfache, intuitive App, die im Alltag wirklich hilft."
     },
     "makingof": {
+      "title": "Wie ich die App entwickle",
       "intro": "Die Entwicklung von Chorez war (und ist) für mich ein spannender Lernprozess. Hier dokumentiere ich die Tools, Frameworks und Erfahrungen, die mich begleitet haben.",
-      "flutter": "Cross-Plattform Framework, das mir erlaubt, eine App für Android und iOS gleichzeitig zu bauen.",
-      "vscode": "Mein bevorzugter Editor für schnelle Iterationen, vor allem wegen der Flutter-Extensions und Performance.",
-      "androidstudio": "Nutze ich für UI-Previews, Emulatoren und manchmal fürs Debugging.",
-      "testing": "Erste Gehversuche mit Widget- und Integration-Tests.",
-      "deployment": "Ziel ist es, die App irgendwann im Play Store und später vielleicht auch im App Store zu veröffentlichen.",
-      "ending": "Ich lerne mit jedem Commit etwas Neues – sei es im UI-Design, bei der Architektur oder im Umgang mit Nutzer-Feedback. Die Reise geht weiter!"
+      "flutterTitle": "Flutter & Dart",
+      "flutter": "Cross-Plattform-Framework und Sprache, mit denen ich eine App für verschiedene Geräte gleichzeitig bauen kann.",
+      "dartTitle": "Dart",
+      "dart": "Die Programmiersprache hinter der App-Logik, die mir sauberen Code und schnelle Iterationen ermöglicht.",
+      "androidstudioTitle": "Android Studio",
+      "androidstudio": "Mein Werkzeug für Simulationen, UI-Previews und praktisches Debugging.",
+      "testingTitle": "Tests & Simulationen",
+      "testing": "Ich prüfe UI, Funktionen und Verhalten im Emulator, bevor ich weiterentwickle.",
+      "deploymentTitle": "Ausblick",
+      "deployment": "Später soll Chorez im Play Store erscheinen, doch aktuell liegt der Fokus auf stabilen Funktionen und gutem Nutzergefühl.",
+      "ending": "Mit jedem Schritt lerne ich mehr über App-Architektur, Design und Alltagsnutzen. Die Reise geht weiter."
     }
   },
   "PlaywithK": {

@@ -20,21 +20,57 @@ export default function PlaywithK() {
       : "PlaywithK - PlaywithK.de";
   }, [locale]);
 
+  const timelineEntries = [
+    {
+      date: "30.03.2015",
+      title: t("timeline.entries.0.title"),
+      description: t("timeline.entries.0.description"),
+    },
+    {
+      date: "12.01.2016",
+      title: t("timeline.entries.1.title"),
+      description: t("timeline.entries.1.description"),
+    },
+    {
+      date: "13.04.2016",
+      title: t("timeline.entries.2.title"),
+      description: t("timeline.entries.2.description"),
+    },
+    {
+      date: "23.07.2017",
+      title: t("timeline.entries.3.title"),
+      description: t("timeline.entries.3.description"),
+    },
+    {
+      date: "01.09.2023",
+      title: t("timeline.entries.4.title"),
+      description: t("timeline.entries.4.description"),
+    },
+    {
+      date: "01.02.2024",
+      title: t("timeline.entries.5.title"),
+      description: t("timeline.entries.5.description"),
+    },
+    {
+      date: "01.06.2024",
+      title: t("timeline.entries.6.title"),
+      description: t("timeline.entries.6.description"),
+    },
+  ];
+
   return (
     <>
-      <Hero title="PlaywithK" subtitle="Hier findest du alles, was mich auch abseits von Projekten begeistert." />
+      <Hero title="PlaywithK" subtitle={t("hero.subtitle")} />
 
       {/* About */}
       <section
         id="profile"
-        className="max-w-5xl mx-auto px-6 sm:px-8 py-12 sm:py-16 flex flex-col md:flex-row items-center gap-12 md:gap-16 bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-30"
-      >
+        className="max-w-5xl mx-auto px-6 sm:px-8 py-12 sm:py-16 flex flex-col md:flex-row items-center gap-12 md:gap-16 bg-gray-800 rounded-xl shadow-xl border border-white border-opacity-30">
         <div className="flex flex-col items-center md:items-start md:w-1/3">
           <Image
             src="/PWK_Profilbild_round.png"
             alt="Profilbild Kev"
-            className="rounded-full w-40 h-40 sm:w-52 sm:h-52 object-cover mb-6 sm:mb-8 shadow-lg transition-transform duration-300 hover:scale-105"
-          />
+            className="rounded-full w-40 h-40 sm:w-52 sm:h-52 object-cover mb-6 sm:mb-8 shadow-lg transition-transform duration-300 hover:scale-105" />
           <div className="flex gap-6 mt-2 sm:mt-4">
             {[
               {
@@ -59,8 +95,7 @@ export default function PlaywithK() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="rounded-full bg-teal-600 p-2.5 sm:p-3 shadow-md hover:bg-teal-400 hover:shadow-lg transition-all duration-300 flex items-center justify-center"
-              >
+                className="rounded-full bg-teal-600 p-2.5 sm:p-3 shadow-md hover:bg-teal-400 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
                 <Image
                   src={iconSrc}
                   alt={label}
@@ -72,96 +107,31 @@ export default function PlaywithK() {
               </a>
             ))}
           </div>
-
         </div>
 
         <div className="md:w-2/3 text-gray-300 space-y-6 font-sans text-sm sm:text-base">
           <p className="text-xl font-semibold text-teal-400 leading-relaxed">
-            Hey, ich bin Kev - besser bekannt als PlaywithK!
+            {t("about.heading")}
           </p>
           <p className="leading-relaxed">
-            Seit 2014 bin ich auf YouTube aktiv gewesen. Damals habe ich kleinere
-            Videoprojekte und Vlogs zusammen mit meinem besten Freund hochgeladen.
-            2017 war ein Wendepunkt für mich: Ich gründete meinen Kanal
-            „PlaywithK“, der sich vor allem auf Gaming konzentrierte. Unter diesem
-            Namen war ich auf vielen Plattformen aktiv – von YouTube über Twitch
-            bis hin zu Twitter, Instagram und TikTok. Dort habe ich eine kleine
-            Community aufgebaut, welche mir sogar einen 1-monatigen Livestream im
-            Februar 2024 ermöglichte.
+            {t("about.p1")}
           </p>
           <p className="leading-relaxed">
-            Anfang 2025 habe ich all diese Social Media Plattformen allerdings
-            hinter mir gelassen. Dies war keine leichte Entscheidung, allerdings hat
-            sich seit 2014 einigen an der Social-Media-Welt verändert und ich konnte
-            mich damit nicht mehr richtig identifizieren. Zudem habe ich so mehr Zeit
-            mich auf andere Bereiche zu konzentrieren. Alle weiteren Infos zu
-            kommenden Projekten und allem bezüglich PlaywithK gibt es nun auf
-            dieser Webseite. Schau dich gerne um!
+            {t("about.p2")}
           </p>
-          <div className="mt-6">
-            <Link
-              href="/playwithk"
-              className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all">
-              Mehr von PlaywithK entdecken
-            </Link>
-          </div>
-
         </div>
       </section>
 
       {/* Timeline */}
       <section
         id="timeline"
-        className="max-w-5xl mx-auto px-0 pt-0 relative"
-      >
+        className="max-w-5xl mx-auto px-0 pt-0 relative">
+
         {/* Vertikale Linie: auf Desktop mittig, auf Mobil links */}
         <div className="absolute top-0 left-1/2 sm:left-1/2 left-4 -translate-x-1/2 sm:-translate-x-1/2 translate-x-0 w-1 bg-teal-600 h-full"></div>
 
         <div className="pt-12 relative">
-          {[
-            {
-              date: "30.03.2015",
-              title: "Mein erster Kanal",
-              description:
-                "Hier beginnt meine Reise auf YouTube. Mit gerademal 14 Jahren drehte ich mit meinem Nintendo 3DS und einem Freund kleine Vlogs und Filmchen, welche ich mit Windows Movie Maker Schnitt und hochlud. Von YouTube erfahren hatte ich von einer Freundin und meine ersten geschauten Videos waren Let's Plays zu Nintendo Games und Minecraft, vorallem das von Gronkh.",
-            },
-            {
-              date: "12.01.2016",
-              title: "Der erste Gaming-Kanal",
-              description:
-                "Ich schloss Ende 2015 meinen ersten Kanal und erstellte einen neuen um Gaming-Videos, großteils von Minecraft, hochzuladen. Der kanal war stark inspiriert von NebelNiek, welcher zu der Zeit stark an Beliebtheit gewann.",
-            },
-            {
-              date: "13.04.2016",
-              title: "Eröffnung eines neuen Kanals",
-              description:
-                "Schon nach kurzer Zeit wechselte ich den Kanal und den Namen und lud hier nicht nur Minecraft sondern auch Let's Plays zu anderen Spielen hoch. Zudem begann ich mich mehr an dem YouTuber 'Herr Bergmann' zu inspireren und erstellte auch meine erste eigene Minecraft-Kurzfiilm-Serie.",
-            },
-            {
-              date: "23.07.2017",
-              title: "Gründung von PlaywithK",
-              description:
-                "2017 wechselte ich dann ein letztes Mal den Kanal und den Namen zum jetzigen 'PlaywithK'. Hier lud ich seitdem mehr oder weniger regelmäßig Videos hoch und begann unter selbigen Namen auch auf Twitch zu streamen.",
-            },
-            {
-              date: "01.09.2023",
-              title: "Gründung von PWK Entertainment",
-              description:
-                "Nach mehreren Monaten Planung, Seminaren und unendlich viel Papierkram gründete ich ende 2023 meine eigene Videoschnitt und Design-Firma 'PWK Entertainment'. Unter diesem Namen arbeitete ich für unteranderem Davidson, Bloodyhorrorkid, Zetsuheiko und einige weitere.",
-            },
-            {
-              date: "01.02.2024",
-              title: "1-monatiger Subathon",
-              description:
-                "Der Anfangs auf ein paar Tage geschätzte Subathon begann zu eskalieren, als einige Zuschauer über 300€ da ließen. Fast genau einen Monat waren wir dauerhaft live und haben einiges erlebt! Vielen Dank an jeden der gespendet hat und beim Stream dabei war! Das war eine Hammer Zeit!",
-            },
-            {
-              date: "01.06.2024",
-              title: "Auflösung von PWK Entertainment",
-              description:
-                "Leider musste ich mich dazu entscheiden PWK Entertainment schweren Herzens aufzugeben. Die Firma war Teil meines Traumes, allerdings habe ich es leider nicht geschafft diese ordentlich zu managen und die Einnahmen konstant zu halten, weshalb ich diese vorerst wieder in den Boden stampfen musste. Aber wer weiß was die Zukunft noch bringt.",
-            },
-          ].map(({ date, title, description }, index) => {
+          {timelineEntries.map(({ date, title, description }, index) => {
             const isLeft = index % 2 === 0;
 
             return (
@@ -171,15 +141,13 @@ export default function PlaywithK() {
             mb-12 flex items-center w-full relative
             flex-col sm:flex-row
             ${isLeft ? "sm:flex-row justify-between" : "sm:flex-row-reverse justify-between"}
-          `}
-              >
+          `}>
                 <div
                   className={`
               w-full sm:w-6/13 p-6 bg-gray-700 rounded-lg shadow-lg border border-white border-opacity-20 z-10
               ${isLeft ? "sm:mr-6" : "sm:ml-6"}
               sm:text-left text-left
-            `}
-                >
+            `}>
                   <time className="block mb-2 text-sm font-semibold text-teal-400">{date}</time>
                   <h3 className="text-lg font-bold text-white mb-1">{title}</h3>
                   <p className="text-gray-300 text-sm">{description}</p>
@@ -194,7 +162,7 @@ export default function PlaywithK() {
         </div>
       </section>
 
-      <LastEdited date="05.06.2026" />
+      <LastEdited date="06.06.2026" />
     </>
   );
 }

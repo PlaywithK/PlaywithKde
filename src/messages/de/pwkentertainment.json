@@ -1,10 +1,41 @@
-{
+﻿{
   "title": "PWK Entertainment",
   "desc": "Ein Blick auf mein ehemaliges Design- und Videoschnitt-Unternehmen.",
+  "meta": {
+    "title": "PWK Entertainment - PlaywithK.de"
+  },
   "sections": {
     "about": "Über PWK Entertainment",
     "experience": "Werdegang & Erfahrungen",
     "clients": "Kunden",
     "reviews": "Bewertungen"
+  },
+  "about": {
+    "p1": "PWK Entertainment war eine von PlaywithK gegründete Firma, welche sich hauptsächlich um Videoschnitt und Grafikdesign für Social-Media-Kanäle kümmerte.",
+    "p2": "Dabei wurden sowohl Shortformat als auch Longformat Videos angenommen, aber auch Designs für Twitch, YouTube oder andere soziale Kanäle."
+  },
+  "experience": {
+    "p1": "PWK Entertainment wurde im September 2020 als E-Commerce-Unternehmen gegründet. Schon kurz nach dem Start gab es erste Interessenten, und das Projekt nahm schnell an Fahrt auf.",
+    "p2": "Obwohl vieles Neuland war, von steuerlichen Pflichten über Rechnungsstellung bis hin zur individuellen Kundenbetreuung, entwickelte sich mit der Zeit eine zuverlässige Arbeitsroutine.",
+    "p3": "Zum Einsatz kamen dabei vor allem Programme wie Filmora 12, DaVinci Resolve, Affinity Photo und Affinity Designer. Die Designs und Projekte wurden stets in enger Absprache mit den Kunden entwickelt und, falls notwendig, gemeinsam überarbeitet – bis das Ergebnis wirklich passte. Trotz des vielversprechenden Starts geriet die Firma nach etwa einem Jahr ins Stocken. Die Aufträge wurden seltener, und ein größerer geplanter Deal platzte. In der Folge wurde es finanziell schwierig, und letztlich musste ich mich aus persönlichen und wirtschaftlichen Gründen dazu entscheiden, PWK Entertainment zu beenden. Die gesammelten Erfahrungen und das kreative Wachstum in dieser Zeit bleiben mir jedoch als wertvolle Grundlage für meinen weiteren Weg erhalten."
+  },
+  "projects": {
+    "zetshueikko": {
+      "title": "Twitch-Design für Zetshueikko",
+      "description": "Individuelle Twitch-Panels, Banner und Offline-Screen für Zetshueikko."
+    },
+    "horrorblubb": {
+      "title": "Twitch-Design für Horrorblubb",
+      "description": "Individuelle und stimmige Designs für Horrorblubbs Twitch-Kanal."
+    },
+    "davidson": {
+      "title": "Videobearbeitung für Davidson",
+      "description": "Längere Videoschnittarbeiten, Erstellung von Thumbnails und Kanaldesigns."
+    }
+  },
+  "customers": {
+    "feedbackAnakin": "Ich hab mir ein Design für Twitch mit ein paar Panels, einem Offlinescreen und einem Banner bestellt und die Bestellung wurde sehr schnell und genau nach meinen Wünschen bearbeitet!",
+    "feedbackWaifu": "Ein sehr seriöser und professioneller Unternehmer!",
+    "feedbackChris": "Die Videos aus der PWK Entertainment Produktion sind qualitativ sehr anspruchsvoll gestaltet und beweisen, dass jedem Projekt ein besonderes Maß an Individualismus und Kreativität gegeben wird."
   }
 }

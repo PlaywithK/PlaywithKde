@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
@@ -10,7 +9,7 @@ import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
 
 export default function PlaywithK() {
-  const t = useTranslations("playwithK");
+  const t = useTranslations("playwithk");
   const params = useParams();
   const locale = params.locale;
 

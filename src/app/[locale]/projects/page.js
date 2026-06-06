@@ -73,16 +73,16 @@ export default function Projekte() {
           image="/canva_coding.jpg"
           title={t("webdev.title")}
           desc={t("webdev.desc")}
-          tags={[t("webdev.tags").map((tag) => t(tag))]}
+          tags={t("webdev.tags")}
           link={`/${locale}/projects/web`}
         />
 
         {/* Web-Spiele */}
         <ProjectCard
           image="/canva_coding.jpg"
-          title={t("webgames.title")}
-          desc={t("webgames.desc")}
-          tags={[t("webgames.tags").map((tag) => t(tag))]}
+          title={t("webGames.title")}
+          desc={t("webGames.desc")}
+          tags={t("webGames.tags")}
           link={`/${locale}/projects/webgames`}
         />
 
@@ -91,7 +91,7 @@ export default function Projekte() {
           image="/unity_dev_placeholder.png"
           title={t("gamedev.title")}
           desc={t("gamedev.desc")}
-          tags={[t("gamedev.tags").map((tag) => t(tag))]}
+          tags={t("gamedev.tags")}
           link={`/${locale}/projects/games`}
           reverse
         >
@@ -168,7 +168,7 @@ export default function Projekte() {
           image="/canva_coding.jpg"
           title={t("appdev.title")}
           desc={t("appdev.desc")}
-          tags={[t("appdev.tags").map((tag) => t(tag))]}
+          tags={t("appdev.tags")}
           link={`/${locale}/projects/apps`}
         >
 
@@ -200,7 +200,7 @@ export default function Projekte() {
           image="/canva_coding.jpg"
           title={t("mcmodding.title")}
           desc={t("mcmodding.desc")}
-          tags={[t("mcmodding.tags").map((tag) => t(tag))]}
+          tags={t("mcmodding.tags")}
           link={`/${locale}/projects/minecraft/modding`}
         />
       </div>
@@ -215,7 +215,7 @@ export default function Projekte() {
           {["item1", "item2", "item3"].map((key) => (
             <Link
               key={key}
-              href={`/de${paths[key]}`}
+              href={`/${locale}${paths[key]}`}
               className="relative block overflow-hidden rounded-xl shadow-lg border border-white border-opacity-10 group"
             >
               <div className="relative w-full h-64 sm:h-72 md:h-80">

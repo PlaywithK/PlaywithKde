@@ -1,7 +1,7 @@
 {
   "title": "Projekte",
   "desc": "Alle Projekte von PlaywithK, von App-Entwicklung bis hin zu Minecraft!",
-  "webgames": {
+  "webGames": {
     "title": "Web-Spiele",
     "desc": "Hier findest du einige kleine Web-Spiele, welche ich als kleinen Test mit HTML, CSS und Javascript erstellt habe. Viel Spaß beim Spielen!",
     "tags": [
@@ -75,14 +75,17 @@
   "mcprojects": {
     "title": "Minecraft Projekte",
     "item1": {
+      "src": "/Winterprojekt_Front.png",
       "alt": "Winterprojekt Titelbild",
       "title": "Winterprojekt"
     },
     "item2": {
+      "src": "/PWKDE_Front.png",
       "alt": "PlaywithK.de Bild",
       "title": "PlaywithK.de"
     },
     "item3": {
+      "src": "/Outlaw_Front.png",
       "alt": "Outlaw Bild",
       "title": "Outlaw"
     }

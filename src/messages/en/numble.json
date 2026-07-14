@@ -1,0 +1,37 @@
+{
+    "hero": {
+        "subtitle": "Crack secret number codes in this Wordle-inspired logic game.",
+        "wishlistCta": "Wishlist on Steam",
+        "releaseBadge": "Planned Release: Q3 2026"
+    },
+    "about": {
+        "title": "About the Game",
+        "paragraph": "Numble takes the classic concept of Wordle and gives it a twist: instead of letters, it's about numbers. Become a master codebreaker and crack secret access codes! After each guess, the colors of the numbers you entered provide clues to the correct code."
+    },
+    "features": {
+        "title": "Features",
+        "list": [
+            "Crack secret number codes using logic",
+            "Multiple game modes",
+            "Endless mode with increasing difficulty",
+            "Fully customizable rules",
+            "Unlock colorful themes",
+            "Mouse, keyboard and controller support"
+        ]
+    },
+    "modes": {
+        "title": "Multiple Game Modes",
+        "paragraph": "Challenge yourself with a variety of game modes! Solve classic number puzzles with different code lengths, test your skills in an endless mode that gets progressively harder, or take on speedrun challenges where every second counts."
+    },
+    "custom": {
+        "title": "Customize Your Rules",
+        "paragraph": "Use Custom Mode to tailor the rules to your liking: code length, allowed digits, attempts, time, and more."
+    },
+    "themes": {
+        "title": "Crack Codes in Style",
+        "paragraph": "Unlock new color themes by solving codes and give your game a fresh new look!"
+    },
+    "bottomCta": {
+        "text": "Interested? Add Numble to your wishlist and get notified when it becomes available."
+    }
+}

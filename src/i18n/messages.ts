@@ -1,5 +1,5 @@
 export async function loadLocaleMessages(locale: string) {
-  const [common, faq, footer, home, minecraft, navbar, projects, kontakt, imprint, playwithk, pwkentertainment, appdev] = await Promise.all([
+  const [common, faq, footer, home, minecraft, navbar, projects, numble, kontakt, imprint, playwithk, pwkentertainment, appdev, privacypolicy] = await Promise.all([
     import(`../messages/${locale}/common.json`),
     import(`../messages/${locale}/faq.json`),
     import(`../messages/${locale}/footer.json`),
@@ -7,11 +7,13 @@ export async function loadLocaleMessages(locale: string) {
     import(`../messages/${locale}/minecraft.json`),
     import(`../messages/${locale}/navbar.json`),
     import(`../messages/${locale}/projects.json`),
+    import(`../messages/${locale}/numble.json`),
     import(`../messages/${locale}/contact.json`),
     import(`../messages/${locale}/imprint.json`),
     import(`../messages/${locale}/playwithk.json`),
     import(`../messages/${locale}/pwkentertainment.json`),
     import(`../messages/${locale}/appdev.json`),
+    import(`../messages/${locale}/privacypolicy.json`),
   ]);
 
   return {
@@ -22,10 +24,12 @@ export async function loadLocaleMessages(locale: string) {
     minecraft: minecraft.default,
     navbar: navbar.default,
     projects: projects.default,
+    numble: numble.default,
     contact: kontakt.default,
     imprint: imprint.default,
     playwithk: playwithk.default,
     pwkentertainment: pwkentertainment.default,
     appdev: appdev.default,
+    privacypolicy: privacypolicy.default,
   };
 }

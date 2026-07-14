@@ -83,23 +83,6 @@ export default function Projekte() {
       <hr className="border-t border-gray-700 my-12" />
 
       <div className="space-y-12 max-w-5xl mx-auto">
-        {/* Web-Entwicklung */}
-        <ProjectCard
-          image="/html.jpeg"
-          title={t("webdev.title")}
-          desc={t("webdev.desc")}
-          tags={getTags("webdev.tags")}
-          link={`/${locale}/projects/web`}
-        />
-
-        {/* Web-Spiele */}
-        <ProjectCard
-          image="/webgames.png"
-          title={t("webGames.title")}
-          desc={t("webGames.desc")}
-          tags={getTags("webGames.tags")}
-          link={`/${locale}/projects/webgames`}
-        />
 
         {/* Spieleentwicklung */}
         <ProjectCard
@@ -155,19 +138,19 @@ export default function Projekte() {
             </div>
           </div>
 
-          {/* Minari-Child */}
+          {/* Numble-Child */}
           <div className="mt-6 p-4 bg-gray-700 rounded-xl text-gray-300 flex items-center gap-4">
             <div className="w-32 h-20 relative">
               <Image
-                src="/minari_wip.png"
-                alt={t("minari.title")}
+                src="/numble/Numble_Steam_MainCapsule.png"
+                alt={t("numble.title")}
                 fill
                 className="object-cover rounded-lg"
               />
             </div>
             <div>
-              <h3 className="text-teal-400 font-semibold">{t("minari.title")}</h3>
-              <p className="text-gray-300 text-sm">{t("minari.desc")}</p>
+              <h3 className="text-teal-400 font-semibold">{t("numble.title")}</h3>
+              <p className="text-gray-300 text-sm">{t("numble.desc")}</p>
               <Link
                 href={`/${locale}/projects/games`}
                 className="text-teal-300 text-sm underline"
@@ -177,6 +160,24 @@ export default function Projekte() {
             </div>
           </div>
         </ProjectCard>
+
+        {/* Web-Entwicklung */}
+        <ProjectCard
+          image="/html.jpeg"
+          title={t("webdev.title")}
+          desc={t("webdev.desc")}
+          tags={getTags("webdev.tags")}
+          link={`/${locale}/projects/web`}
+        />
+
+        {/* Web-Spiele */}
+        <ProjectCard
+          image="/webgames.png"
+          title={t("webGames.title")}
+          desc={t("webGames.desc")}
+          tags={getTags("webGames.tags")}
+          link={`/${locale}/projects/webgames`}
+        />
 
         {/* App-Entwicklung */}
         <ProjectCard

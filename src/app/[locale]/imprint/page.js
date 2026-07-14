@@ -19,7 +19,7 @@ export default function Imprint() {
 
   return (
     <>
-      <Hero title={t("title")} subtitle={t("desc")} />
+      <Hero title={t("title")} />
 
       <div className="max-w-3xl mx-auto">
         <section className="mb-8">

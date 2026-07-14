@@ -1,0 +1,103 @@
+{
+    "hero": {
+        "title": "Privacy Policy",
+        "subtitle": "How I handle your data — short, clear, and without the fine print."
+    },
+    "policy": {
+        "lastUpdated": "Last updated: 14.07.2026",
+        "introduction": "This Privacy Policy explains how I, PlaywithK, a sole proprietor based in Germany, process personal data when you visit this website or interact with my games (e.g., via Steam, itch.io). I'm a solo, independent developer and collect as little data as possible.",
+        "responsible": {
+            "title": "1. Data Controller",
+            "paragraph": "PlaywithK, Email: info@playwithk.de"
+        },
+        "collection": {
+            "title": "2. What Information I Collect",
+            "voluntary": {
+                "title": "2.1 Information You Provide Voluntarily",
+                "paragraph": "If you contact me via the contact form or email, I collect:",
+                "list": [
+                    "Your name (if provided)",
+                    "Your email address",
+                    "The content of your message"
+                ],
+                "note": "I use this only to respond to you — no mailing list, no marketing."
+            },
+            "automatic": {
+                "title": "2.2 Information Collected Automatically (Hosting)",
+                "paragraph": "This site is hosted on Vercel. Visiting the site automatically processes technical information, including:",
+                "list": [
+                    "IP address",
+                    "Browser type and version",
+                    "Referring URL",
+                    "Date and time of access"
+                ],
+                "note": "This data is used to deliver the site reliably and securely, and is handled according to Vercel's privacy policy."
+            },
+            "cookies": {
+                "title": "2.3 Cookies",
+                "paragraph": "This site does not set marketing or tracking cookies. Any cookies used are strictly necessary for basic functionality."
+            }
+        },
+        "legalBasis": {
+            "title": "3. Legal Basis for Processing",
+            "paragraph": "Processing is based on:",
+            "list": [
+                "Art. 6(1)(b) GDPR — to respond to your inquiries",
+                "Art. 6(1)(f) GDPR — legitimate interest in secure website operation"
+            ]
+        },
+        "sharing": {
+            "title": "4. Sharing of Information",
+            "paragraph": "I do not sell your data. I share data only with:",
+            "list": [
+                "Vercel, as my hosting provider, to the extent technically necessary",
+                "Authorities, only where legally required"
+            ]
+        },
+        "thirdPartyPlatforms": {
+            "title": "5. Third-Party Platforms (Steam, itch.io)",
+            "paragraph": "My games are distributed through third-party platforms. Your data is processed there under their own privacy policies:",
+            "steamLink": "Steam Privacy Policy",
+            "itchLink": "itch.io Privacy Policy"
+        },
+        "retention": {
+            "title": "6. Data Retention",
+            "paragraph": "I retain correspondence only as long as necessary or required by law (e.g., German tax/commercial retention obligations of up to 6–10 years). Server logs are retained only as long as Vercel's default retention allows."
+        },
+        "rights": {
+            "title": "7. Your Rights",
+            "paragraph": "You have the right to:",
+            "list": [
+                "Access (Art. 15 GDPR)",
+                "Rectification (Art. 16 GDPR)",
+                "Erasure (Art. 17 GDPR)",
+                "Restriction of processing (Art. 18 GDPR)",
+                "Objection (Art. 21 GDPR)",
+                "Data portability (Art. 20 GDPR)",
+                "Lodge a complaint with a data protection supervisory authority"
+            ],
+            "contactNote": "To exercise any of these rights, contact me at support@playwithk.de."
+        },
+        "children": {
+            "title": "8. Children's Privacy",
+            "paragraph": "This site is not specifically directed at children under 16. I do not knowingly collect data from children."
+        },
+        "internationalTransfers": {
+            "title": "9. International Data Transfers",
+            "paragraph": "Where data is processed outside the EU (e.g., by Vercel in the US), this occurs only under an appropriate safeguard such as the EU Standard Contractual Clauses."
+        },
+        "externalLinks": {
+            "title": "10. External Links",
+            "paragraph": "This site may link to external sites. I am not responsible for their privacy practices."
+        },
+        "changes": {
+            "title": "11. Changes to This Policy",
+            "paragraph": "I may update this policy occasionally. Continued use of the site after changes constitutes acceptance."
+        },
+        "contact": {
+            "title": "12. Contact",
+            "paragraph": "Questions about this Privacy Policy?",
+            "email": "Email: support@playwithk.de"
+        }
+    }
+}

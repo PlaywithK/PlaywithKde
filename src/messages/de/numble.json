@@ -1,0 +1,37 @@
+{
+    "hero": {
+        "subtitle": "Knacke geheime Zahlencodes in diesem Wordle-inspirierten Logikspiel.",
+        "wishlistCta": "Auf Steam wishlisten",
+        "releaseBadge": "Geplanter Release: Q3 2026"
+    },
+    "about": {
+        "title": "Über das Spiel",
+        "paragraph": "Numble nimmt das klassische Konzept von Wordle und gibt ihm eine Wendung: Statt Buchstaben geht es um Zahlen. Werde zum Codeknacker und errate geheime Zugangscodes! Nach jedem Versuch geben dir die Farben der eingegebenen Zahlen Hinweise auf den richtigen Code."
+    },
+    "features": {
+        "title": "Features",
+        "list": [
+            "Geheime Zahlencodes mit Logik knacken",
+            "Mehrere Spielmodi",
+            "Endlos-Modus mit steigendem Schwierigkeitsgrad",
+            "Vollständig anpassbare Regeln",
+            "Bunte Themes freischalten",
+            "Maus-, Tastatur- und Controller-Unterstützung"
+        ]
+    },
+    "modes": {
+        "title": "Mehrere Spielmodi",
+        "paragraph": "Stelle dich einer Vielzahl von Spielmodi! Löse klassische Zahlenrätsel mit unterschiedlichen Codelängen, teste dein Können im Endlos-Modus mit steigendem Schwierigkeitsgrad oder wage dich an Speedrun-Herausforderungen, bei denen jede Sekunde zählt."
+    },
+    "custom": {
+        "title": "Passe die Regeln an",
+        "paragraph": "Nutze den Custom-Modus, um die Regeln nach deinem Geschmack anzupassen: Codelänge, erlaubte Ziffern, Versuche, Zeit und mehr."
+    },
+    "themes": {
+        "title": "Codes im eigenen Stil knacken",
+        "paragraph": "Schalte neue Farb-Themes frei, indem du Codes löst, und gib deinem Spiel einen frischen neuen Look!"
+    },
+    "bottomCta": {
+        "text": "Interessiert? Füge Numble zu deiner Wishlist hinzu und werde benachrichtigt, sobald es verfügbar ist."
+    }
+}

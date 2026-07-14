@@ -8,7 +8,8 @@ import LastEdited from "@/components/lastedited";
 import Link from "next/link";
 
 export default function Home() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("home");
+  const common = useTranslations("common");
   const params = useParams();
   const locale = params.locale;
 
@@ -23,7 +24,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-24 sm:pt-40 sm:pb-32 text-center text-white -mx-4 sm:-mx-6 lg:-mx-8">
         <div className="absolute inset-0 bg-gradient-to-br from-teal-500 via-purple-600 to-pink-500 opacity-90" />
-        <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-20 mix-blend-overlay" />
+        {/* <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-20 mix-blend-overlay" /> */}
 
         <div className="relative z-10 w-full px-4 md:px-8">
           <h1
@@ -32,13 +33,11 @@ export default function Home() {
             {t("hero.title")}
           </h1>
 
-          {t("hero.subtitle") && (
             <p
               className="text-lg sm:text-xl text-gray-100 max-w-2xl mx-auto mb-10 opacity-0 translate-y-5 animate-fade-in-up animation-delay-200"
             >
               {t("hero.subtitle")}
             </p>
-          )}
 
           <div
             className="opacity-0 translate-y-5 animate-fade-in-up animation-delay-400"
@@ -47,7 +46,7 @@ export default function Home() {
               href={`/${locale}/projects`}
               className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-teal-400 hover:text-white transition-all shadow-md"
             >
-              {t("projects.all")}
+              {common("buttons.toProjects")}
             </Link>
           </div>
         </div>
@@ -123,7 +122,7 @@ export default function Home() {
                   href={`/${locale}/${link}`}
                   className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all"
                 >
-                  {t("projects.more")}
+                  {common("buttons.learnMore")}
                 </Link>
               </div>
             </div>
@@ -131,7 +130,7 @@ export default function Home() {
         </div>
       </section>
 
-      <LastEdited date="31.05.2026" />
+      <LastEdited date="06.06.2026" />
     </>
   );
 }

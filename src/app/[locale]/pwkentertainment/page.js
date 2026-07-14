@@ -1,41 +1,11 @@
-"use client";
-
+﻿"use client";
 
 import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
 import { useEffect } from "react";
+import { useParams } from "next/navigation";
 import Image from "next/image";
 import Hero from "@/components/hero";
-import { H1, H2, H3, P, PLarge } from "@/components/design";
 import LastEdited from "@/components/lastedited";
-
-
-const customers = [
-  { name: "Anakin Klassen", feedback: "Ich hab mir ein Design für Twitch mit ein paar Panels, einem Offlinescreen und einem Banner bestellt und die Bestellung wurde sehr schnell und genau nach meinen Wünschen bearbeitet!" },
-  { name: "kxnkywaifu", feedback: "Ein sehr seriöser und professioneller Unternehmer!" },
-  { name: "Christopher Metzler", feedback: "Die Videos aus der PWK Entertainment Produktion sind qualitativ sehr anspruchsvoll gestaltet und beweisen, dass jedem Projekt ein besonderes Maß an Individualismus und Kreativität gegeben wird." },
-];
-
-const projects = [
-  {
-    title: "Twitch-Design für Zetshueikko",
-    description: "Individuelle Twitch Panels, Banner und Offline-Screen für Zetshueikko.",
-    image: "/Zetshueikko-TwitchOffline_V1.png",
-    link: "https://www.twitch.tv/zetshueikko",
-  },
-  {
-    title: "Twitch-Design für Horrorblubb",
-    description: "Individuelle und stimmige Designs für Horrorblubb's Twitch-Kanal.",
-    image: "/bloodypb.png",
-    link: "https://www.twitch.tv/horrorblubb",
-  },
-  {
-    title: "Videobearbeitung für Davidson",
-    description: "Längere Videoschnittarbeiten, Erstellung von Thumbnails und Kanaldesigns.",
-    image: "/david_banner.jpg",
-    link: "https://www.youtube.com/@DavidsonTv_",
-  },
-];
 
 function StarIcon() {
   return (
@@ -52,49 +22,86 @@ function StarIcon() {
 }
 
 export default function PWKEntertainment() {
-  const t = useTranslations("PWKEntertainment");
+  const t = useTranslations("pwkentertainment");
   const params = useParams();
   const locale = params.locale;
 
+  const aboutParagraphs = [
+    t("about.p1"),
+    t("about.p2"),
+  ];
+
+  const experienceParagraphs = [
+    t("experience.p1"),
+    t("experience.p2"),
+    t("experience.p3"),
+  ];
+
+  const projects = [
+    {
+      title: t("projects.zetshueikko.title"),
+      description: t("projects.zetshueikko.description"),
+      image: "/Zetshueikko-TwitchOffline_V1.png",
+      link: "https://www.twitch.tv/zetshueikko",
+    },
+    {
+      title: t("projects.horrorblubb.title"),
+      description: t("projects.horrorblubb.description"),
+      image: "/bloodypb.png",
+      link: "https://www.twitch.tv/horrorblubb",
+    },
+    {
+      title: t("projects.davidson.title"),
+      description: t("projects.davidson.description"),
+      image: "/david_banner.jpg",
+      link: "https://www.youtube.com/@DavidsonTv_",
+    },
+  ];
+
+  const customers = [
+    {
+      name: "Anakin Klassen",
+      feedback: t("customers.feedbackAnakin"),
+    },
+    {
+      name: "kxnkywaifu",
+      feedback: t("customers.feedbackWaifu"),
+    },
+    {
+      name: "Christopher Metzler",
+      feedback: t("customers.feedbackChris"),
+    },
+  ];
+
   useEffect(() => {
-    document.title = locale === "de"
-      ? "Startseite - PlaywithK.de"
-      : "Home - PlaywithK.de";
-  }, [locale]);
+    document.title = t("meta.title");
+  }, [t, locale]);
 
   return (
     <>
-      <Hero title="PWK Entertainment" />
+      <Hero title={t("title")} subtitle={t("desc")} />
 
       <div className="w-full max-w-5xl p-10 flex flex-col gap-12 mx-auto">
         <section>
-          <H2 className="">
-            Über PWK Entertainment
-          </H2>
-          <p className="text-gray-300 text-lg leading-relaxed max-w-3xl">
-            PWK Entertainment war eine von PlaywithK gegründete Firma, welche sich hauptsächlich um Videoschnitt und Grafikdesign für Social-Media Kanäle kümmerte. Dabei wurden sowohl Shortformat als auch Longformat Videos angenommen, aber auch Designs für Twitch, YouTube oder andere Soziale Kanäle.
-          </p>
+          <h2 className="text-3xl font-semibold text-teal-400 mb-4">{t("sections.about")}</h2>
+          {aboutParagraphs.map((text, index) => (
+            <p key={index} className="text-gray-300 text-lg leading-relaxed max-w-3xl mb-4">
+              {text}
+            </p>
+          ))}
         </section>
 
         <section>
-          <H2 className="">
-            Werdegang & Erfahrungen
-          </H2>
-          <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mb-4">
-            PWK Entertainment wurde im September 2020 als E-Commerce-Unternehmen gegründet. Schon kurz nach dem Start gab es erste Interessenten, und das Projekt nahm schnell an Fahrt auf. Obwohl vieles Neuland war, von steuerlichen Pflichten über Rechnungsstellung bis hin zur individuellen Kundenbetreuung, entwickelte sich mit der Zeit eine zuverlässige Arbeitsroutine.
-          </p>
-          <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mb-4">
-            Zum Einsatz kamen dabei vor allem Programme wie <strong>Filmora 12</strong>, <strong>DaVinci Resolve</strong>, <strong>Affinity Photo</strong> und <strong>Affinity Designer</strong>. Die Designs und Projekte wurden stets in enger Absprache mit den Kunden entwickelt und, falls notwendig, gemeinsam überarbeitet – bis das Ergebnis wirklich passte.
-          </p>
-          <p className="text-gray-300 text-lg leading-relaxed max-w-3xl">
-            Trotz des vielversprechenden Starts geriet die Firma nach etwa einem Jahr ins Stocken. Die Aufträge wurden seltener, und ein größerer geplanter Deal, in den viel Zeit und Energie geflossen war, platzte. In der Folge wurde es finanziell schwierig, und letztlich musste ich mich aus persönlichen und wirtschaftlichen Gründen dazu entscheiden, PWK Entertainment zu beenden. Die gesammelten Erfahrungen und das kreative Wachstum in dieser Zeit bleiben mir jedoch als wertvolle Grundlage für meinen weiteren Weg erhalten.
-          </p>
+          <h2 className="text-3xl font-semibold text-teal-400 mb-4">{t("sections.experience")}</h2>
+          {experienceParagraphs.map((text, index) => (
+            <p key={index} className="text-gray-300 text-lg leading-relaxed max-w-3xl mb-4">
+              {text}
+            </p>
+          ))}
         </section>
 
         <section>
-          <H2 className="text-center">
-            Kunden
-          </H2>
+          <h2 className="text-center text-3xl font-semibold text-teal-400 mb-8">{t("sections.clients")}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {projects.map(({ title, description, image, link }) => (
               <a
@@ -121,9 +128,7 @@ export default function PWKEntertainment() {
         </section>
 
         <section>
-          <H2 className="text-center">
-            Bewertungen
-          </H2>
+          <h2 className="text-center text-3xl font-semibold text-teal-400 mb-8">{t("sections.reviews")}</h2>
           <div className="flex flex-col gap-8 max-w-4xl mx-auto">
             {customers.map(({ name, feedback }) => (
               <blockquote
@@ -145,7 +150,7 @@ export default function PWKEntertainment() {
         </section>
       </div>
 
-      <LastEdited date="31.05.2026" />
+      <LastEdited date="06.06.2026" />
     </>
   );
 }

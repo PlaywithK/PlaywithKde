@@ -1,0 +1,26 @@
+{
+  "title": "FAQ",
+  "desc": "Common questions and answers.",
+  "items": [
+    {
+      "question": "Who runs this website?",
+      "answer": "This website is run exclusively by PlaywithK. For more questions on this topic, check out the 'Web Development' tab."
+    },
+    {
+      "question": "What is the purpose of the website?",
+      "answer": "PlaywithK.de is meant to inform about projects by and with PlaywithK, and to help discover new things!"
+    },
+    {
+      "question": "Is this site private or commercial?",
+      "answer": "This website is used exclusively for private purposes and has no commercial intent."
+    },
+    {
+      "question": "May I reuse content from the website?",
+      "answer": "All content from PlaywithK.de may be freely reused with a link back to the website."
+    },
+    {
+      "question": "How often are contents updated?",
+      "answer": "The website information may be outdated because it is created in my free time. The exact last edit date can be seen at the bottom of each page."
+    }
+  ]
+}

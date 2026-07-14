@@ -25,6 +25,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Remove default browser body margin to allow full-bleed sections */
+body {
+  margin: 0;
+}
+
 @layer utilities {
   @keyframes fade-in-up {
     0% {

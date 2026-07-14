@@ -1,0 +1,14 @@
+{
+  "title": "Impressum",
+  "desc": "Diese Webseite ist ein rein privates, nicht kommerzielles Angebot und dient keinerlei geschäftsmäßigen oder journalistisch-redaktionellen Zwecken. Gemäß §5 Telemediengesetz (TMG) besteht daher keine Impressumspflicht.",
+  "contact": {
+    "title": "Kontakt"
+  },
+  "nutzungsrecht": {
+    "title": "Nutzungsrecht",
+    "description": "Alle Inhalte dieser Webseite sind urheberrechtlich geschützt. Jede Nutzung über die reine persönliche Betrachtung hinaus benötigt die Zustimmung des Autors."
+  },
+  "quellen": {
+    "title": "Quellen"
+  }
+}

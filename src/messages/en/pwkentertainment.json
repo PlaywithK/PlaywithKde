@@ -1,0 +1,41 @@
+﻿{
+  "title": "PWK Entertainment",
+  "desc": "A look at my former design and video-editing company.",
+  "meta": {
+    "title": "PWK Entertainment - PlaywithK.de"
+  },
+  "sections": {
+    "about": "About PWK Entertainment",
+    "experience": "History & experience",
+    "clients": "Clients",
+    "reviews": "Reviews"
+  },
+  "about": {
+    "p1": "PWK Entertainment was a company founded by PlaywithK, focused on video editing and graphic design for social media channels.",
+    "p2": "The business handled both short-form and long-form video work, as well as custom design for Twitch, YouTube, and other social channels."
+  },
+  "experience": {
+    "p1": "PWK Entertainment was founded in September 2020 as an e-commerce business. Interest grew quickly after launch, and the project gained momentum.",
+    "p2": "Although many aspects were new territory—from tax obligations to invoicing and customer support—a reliable work routine developed over time.",
+    "p3": "Tools like Filmora 12, DaVinci Resolve, Affinity Photo and Affinity Designer were used. Designs and projects were developed closely with clients and refined together until the result fit. Despite the promising start, the company slowed after about a year. Orders became less frequent, and a larger deal that had required significant time and energy fell through. This made things financially difficult, and ultimately I decided to end PWK Entertainment for personal and economic reasons. The experience and creative growth from that time remain a valuable foundation for my future path."
+  },
+  "projects": {
+    "zetshueikko": {
+      "title": "Twitch design for Zetshueikko",
+      "description": "Custom Twitch panels, banners and offline screen for Zetshueikko."
+    },
+    "horrorblubb": {
+      "title": "Twitch design for Horrorblubb",
+      "description": "Custom and cohesive designs for Horrorblubb's Twitch channel."
+    },
+    "davidson": {
+      "title": "Video editing for Davidson",
+      "description": "Longer video edits, thumbnail creation and channel design."
+    }
+  },
+  "customers": {
+    "feedbackAnakin": "I ordered a Twitch design including panels, an offline screen, and a banner, and the order was completed quickly and exactly according to my wishes!",
+    "feedbackWaifu": "A very serious and professional entrepreneur!",
+    "feedbackChris": "The videos from PWK Entertainment production are of high quality and show that every project receives a special level of individualism and creativity."
+  }
+}

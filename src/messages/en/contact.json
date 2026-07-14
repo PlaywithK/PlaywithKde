@@ -1,0 +1,10 @@
+{
+  "title": "Contact",
+  "desc": "Send me a message or use the form.",
+  "form": {
+    "name": "Name",
+    "mail": "Mail address",
+    "message": "Message",
+    "send": "Send message"
+  }
+}

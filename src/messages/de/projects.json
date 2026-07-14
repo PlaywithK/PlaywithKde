@@ -1,0 +1,90 @@
+{
+  "title": "Projekte",
+  "desc": "Alle Projekte von PlaywithK, von App-Entwicklung bis hin zu Minecraft!",
+  "webGames": {
+    "title": "Web-Spiele",
+    "desc": "Hier findest du einige kleine Web-Spiele, welche ich als kleinen Test mit HTML, CSS und Javascript erstellt habe. Viel Spaß beim Spielen!",
+    "tags": [
+      "Minispiele",
+      "Lyric Quiz",
+      "HTML/CSS/JS"
+    ],
+    "linkText": "Web-Spiele spielen",
+    "imageAlt": "Web-Spiele"
+  },
+  "appdev": {
+    "title": "App-Entwicklung",
+    "desc": "Ich habe angefangen Apps zu entwickeln, weil ich eine App haben wollte, die alle meine Anforderungen für den Alltag erfüllt.",
+    "tags": [
+      "Flutter",
+      "Dart"
+    ],
+    "imageAlt": "Laptop mit Code"
+  },
+  "itch": {
+    "title": "Itch.io",
+    "desc": "Meine Itch.io-Seite enthält alle Spiele, die ich bisher erstellt habe."
+  },
+  "elysia": {
+    "title": "Adventure of Elysia",
+    "desc": "Dieses Spiel war das erste, das ich im Kopf hatte, und ist eigentlich der Grund, warum ich mit der Spieleentwicklung angefangen habe."
+  },
+  "numble": {
+    "title": "Numble",
+    "desc": "Numble ist mein erstes richtig fertiges Spiel. Wishlist now!"
+  },
+  "chorez": {
+    "title": "Chorez App",
+    "desc": "Es hat mich schon immer gestört 20 Apps für jede einzelne Funktion auf meinem Handy zu haben. Also entschloss ich mich irgendwann meine eigene App zu kreieren, bei der alle Funktionen an einem Ort gebündelt sind. Chorez war geboren.",
+    "tags": [
+      "All-in-One",
+      "To-Dos",
+      "Einkaufslisten",
+      "Termine"
+    ],
+    "imageAlt": "Chorez App"
+  },
+  "gamedev": {
+    "title": "Spieleentwicklung",
+    "desc": "Schon seit Jahren wollte ich eigene Spiele entwickeln und die Ideen in meinem Kopf sprudeln quasi über. Hier erfährst du alles zu meiner Dev-Journey und meinen momentanen Spiele-Projekten.",
+    "tags": [
+      "Unity",
+      "C#"
+    ],
+    "imageAlt": "Unity Editor"
+  },
+  "webdev": {
+    "title": "Web-Entwicklung",
+    "desc": "Von HTML bis hin zu komplexeren Web-Projekten mit React, NexJS und auch Webservern findest du hier.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ],
+    "imageAlt": "Unity Editor"
+  },
+  "mcmodding": {
+    "title": "Minecraft Modding",
+    "desc": "Ich habe erst mit Modding in Minecraft angefangen, weil ich eine bestimmte Mod brauchte und diese nicht finden konnte.",
+    "tags": [
+      "Java",
+      "Fabric"
+    ],
+    "imageAlt": "IntelliJ Code"
+  },
+  "mcprojects": {
+    "title": "Minecraft Projekte",
+    "item1": {
+      "alt": "Winterprojekt Titelbild",
+      "title": "Winterprojekt"
+    },
+    "item2": {
+      "alt": "PlaywithK.de Bild",
+      "title": "PlaywithK.de"
+    },
+    "item3": {
+      "alt": "Outlaw Bild",
+      "title": "Outlaw"
+    }
+  }
+}

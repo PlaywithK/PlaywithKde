@@ -1,0 +1,13 @@
+{
+  "buttons": {
+    "learnMore": "Learn more",
+    "back": "Back",
+    "playNow": "Play now",
+    "send": "Send",
+    "toProjects": "To all projects",
+    "backToProjects": "Back to all projects"
+  },
+  "meta": {
+    "lastEdited": "Last edited: {date}"
+  }
+}

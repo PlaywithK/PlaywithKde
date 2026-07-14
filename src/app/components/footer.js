@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const pathname = usePathname();
-  const t = useTranslations("Footer");
+  const t = useTranslations("footer");
+  const common = useTranslations("common");
+  const params = useParams();
+  const locale = params.locale;
 
   const switchLocalePath = (targetLocale) => {
     const parts = pathname.split("/").filter(Boolean);
@@ -16,8 +19,9 @@ export default function Footer() {
   };
 
   const links = [
-    { href: "/contact", label: t("kontakt") },
-    { href: "/impressum", label: t("impressum") },
+    { href: "/contact", label: t("contact") },
+    { href: "/imprint", label: t("imprint") },
+    { href: "/privacypolicy", label: t("privacy") },
   ];
 
   return (
@@ -33,12 +37,12 @@ export default function Footer() {
               {label}
               <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-teal-400 transition-all duration-300 ease-in-out group-hover:w-full"></span>
             </Link>
-            {index === 0 && <span className="mx-2 select-none text-xl">·</span>}
+            {index < links.length - 1 && <span className="mx-2 select-none text-xl">·</span>}
           </span>
         ))}
       </div>
 
-      {/* Sprache */}
+      {/* Language */}
       <div className="flex gap-4 mt-2">
         <Link href={switchLocalePath("de")} className="hover:text-teal-400">🇩🇪 DE</Link>
         <Link href={switchLocalePath("en")} className="hover:text-teal-400">🇬🇧 EN</Link>

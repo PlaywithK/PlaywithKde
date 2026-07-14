@@ -9,7 +9,7 @@ import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
 
 export default function LinksPage() {
-    const t = useTranslations("Links");
+    const t = useTranslations("links");
     const params = useParams();
     const locale = params.locale;
 
@@ -33,7 +33,7 @@ export default function LinksPage() {
         },
         {
             name: t("impressum"),
-            url: `/${locale}/impressum`,
+            url: `/${locale}/imprint`,
             description: t("impressum.desc"),
         },
         {

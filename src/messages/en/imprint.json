@@ -1,0 +1,14 @@
+{
+  "title": "Imprint",
+  "desc": "This website is a purely private, non-commercial undertaking and serves no business or journalistic-editorial purposes. Consequently, there is no obligation to provide a legal notice (Impressum) under Section 5 of the German Telemedia Act (TMG).",
+  "contact": {
+    "title": "Contact"
+  },
+  "nutzungsrecht": {
+    "title": "Usage rights",
+    "description": "All content on this website is protected by copyright. Any use beyond personal reference requires the author’s permission."
+  },
+  "quellen": {
+    "title": "Sources"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "desc": "Here you can find everything about my channel, my ideas, and projects outside of software.",
+  "hero": {
+    "subtitle": "Here you can find everything that excites me beyond projects."
+  },
+  "about": {
+    "heading": "Hey, I am Kev - better known as PlaywithK!",
+    "p1": "Since 2014 I have been active on YouTube. Back then I uploaded smaller video projects and vlogs together with my best friend. 2017 was a turning point for me: I created my channel “PlaywithK”, which focused mainly on gaming. Under this name I was active on many platforms — from YouTube to Twitch to Twitter, Instagram and TikTok. There I built a small community that even enabled me to do a one-month livestream in February 2024.",
+    "p2": "At the beginning of 2025, I left all those social media platforms behind. It was not an easy decision, but the social media world had changed a lot since 2014 and I could no longer identify with it. I also gained more time to focus on other areas. All further information about upcoming projects and everything related to PlaywithK is now available on this website. Feel free to look around!"
+  },
+  "timeline": {
+    "entries": [
+      {
+        "title": "My first channel",
+        "description": "This is where my YouTube journey begins. At just 14 years old, I filmed small vlogs and clips with my Nintendo 3DS and a friend, which I edited and uploaded with Windows Movie Maker. I learned about YouTube from a friend, and my first watched videos were Let's Plays of Nintendo games and Minecraft, especially the one from Gronkh."
+      },
+      {
+        "title": "The first gaming channel",
+        "description": "At the end of 2015, I closed my first channel and created a new one to upload gaming videos, mostly Minecraft. The channel was strongly inspired by NebelNiek, who was gaining popularity at the time."
+      },
+      {
+        "title": "Launching a new channel",
+        "description": "After a short time I changed the channel and the name, and uploaded not only Minecraft but also Let's Plays of other games. I also started taking inspiration from the YouTuber 'Herr Bergmann' and created my first own Minecraft short film series."
+      },
+      {
+        "title": "Founding PlaywithK",
+        "description": "In 2017 I changed the channel and name one last time to the current 'PlaywithK'. Since then, I uploaded videos more or less regularly and also started streaming on Twitch under the same name."
+      },
+      {
+        "title": "Founding PWK Entertainment",
+        "description": "After several months of planning, seminars and endless paperwork, I founded my own video editing and design company 'PWK Entertainment' in late 2023. Under this name I worked for, among others, Davidson, Bloodyhorrorkid, Zetsuheiko and several others."
+      },
+      {
+        "title": "One-month Subathon",
+        "description": "What was originally estimated to last a few days escalated when some viewers donated over €300. For almost exactly one month we were live continuously and experienced a lot! Thank you to everyone who donated and was part of the stream! It was an amazing time!"
+      },
+      {
+        "title": "Dissolving PWK Entertainment",
+        "description": "Unfortunately, I had to decide to give up PWK Entertainment with a heavy heart. The company was part of my dream, but I was not able to manage it properly and keep the income stable, so I had to temporarily shut it down again. But who knows what the future will bring."
+      }
+    ]
+  }
+}

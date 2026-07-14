@@ -1,0 +1,90 @@
+{
+  "title": "Projects",
+  "desc": "All Projects of PlaywithK, from App-Developement to Minecraft!",
+  "webGames": {
+    "title": "Web Games",
+    "desc": "Here you can find some small web games I created as a test using HTML, CSS, and JavaScript. Have fun playing!",
+    "tags": [
+      "Minigames",
+      "Lyric Quiz",
+      "HTML/CSS/JS"
+    ],
+    "linkText": "Play Games",
+    "imageAlt": "Web Games"
+  },
+  "appdev": {
+    "title": "App Development",
+    "desc": "I started developing apps because I wanted to create a powerful app, that does all I need in my daily life.",
+    "tags": [
+      "Flutter",
+      "Dart"
+    ],
+    "imageAlt": "Laptop with Code"
+  },
+  "chorez": {
+    "title": "Chorez App",
+    "desc": "It always bothered me to have 20 apps for every single function on my phone. So I decided to create my own app, combining all functions in one place. Chorez was born.",
+    "tags": [
+      "All-in-One",
+      "To-Dos",
+      "Shopping Lists",
+      "Appointments"
+    ],
+    "imageAlt": "Chorez App"
+  },
+  "gamedev": {
+    "title": "Game Development",
+    "desc": "For years, I wanted to develop my own games, and ideas constantly overflow in my mind. Here you can learn everything about my dev journey and current game projects.",
+    "tags": [
+      "Unity",
+      "C#"
+    ],
+    "imageAlt": "Unity Editor"
+  },
+  "itch": {
+    "title": "Itch.io",
+    "desc": "My itch.io page has all of my games I made so far."
+  },
+  "elysia": {
+    "title": "Adventure of Elysia",
+    "desc": "This game is the first game I ever had in my head and is actually the reason I started with game dev."
+  },
+  "numble": {
+    "title": "Numble",
+    "desc": "Numble is my first really finished game. Wishlist now!"
+  },
+  "webdev": {
+    "title": "Web Development",
+    "desc": "Ranging from HTML to more complex web projects with React, NexJS and also webservers, you can find it here.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ],
+    "imageAlt": "Unity Editor"
+  },
+  "mcmodding": {
+    "title": "Minecraft Modding",
+    "desc": "I just startet with Minecraft Modding because I needed a specific mod and couldnt find anything.",
+    "tags": [
+      "Java",
+      "Fabric"
+    ],
+    "imageAlt": "IntelliJ Code"
+  },
+  "mcprojects": {
+    "title": "Minecraft Projects",
+    "item1": {
+      "alt": "Winter Project Cover",
+      "title": "Winterproject"
+    },
+    "item2": {
+      "alt": "PlaywithK.de Image",
+      "title": "PlaywithK.de"
+    },
+    "item3": {
+      "alt": "Outlaw Image",
+      "title": "Outlaw"
+    }
+  }
+}

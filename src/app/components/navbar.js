@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-  const t = useTranslations("Navbar");
+  const t = useTranslations("navbar");
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 

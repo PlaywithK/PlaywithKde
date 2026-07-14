@@ -1,0 +1,103 @@
+{
+    "hero": {
+        "title": "Datenschutzerklärung",
+        "subtitle": "Wie ich mit deinen Daten umgehe – kurz, klar und ohne Kleingedrucktes."
+    },
+    "policy": {
+        "lastUpdated": "Letzte Aktualisierung: 14.07.2026",
+        "introduction": "Diese Datenschutzerklärung erläutert, wie ich, PlaywithK, als Einzelunternehmer mit Sitz in Deutschland, personenbezogene Daten verarbeite, wenn du diese Website besuchst oder mit meinen Spielen (z. B. über Steam, itch.io) interagierst. Ich bin ein einzelner, unabhängiger Entwickler und erhebe so wenig Daten wie möglich.",
+        "responsible": {
+            "title": "1. Verantwortlicher",
+            "paragraph": "PlaywithK, E-Mail: info@playwithk.de"
+        },
+        "collection": {
+            "title": "2. Welche Daten ich erhebe",
+            "voluntary": {
+                "title": "2.1 Daten, die du freiwillig angibst",
+                "paragraph": "Wenn du mich über das Kontaktformular oder per E-Mail kontaktierst, erhebe ich:",
+                "list": [
+                    "Deinen Namen (falls angegeben)",
+                    "Deine E-Mail-Adresse",
+                    "Den Inhalt deiner Nachricht"
+                ],
+                "note": "Diese Daten nutze ich ausschließlich zur Beantwortung deiner Anfrage – kein Newsletter, keine Werbung."
+            },
+            "automatic": {
+                "title": "2.2 Automatisch erhobene Daten (Hosting)",
+                "paragraph": "Diese Website wird bei Vercel gehostet. Beim Besuch werden automatisch technische Informationen verarbeitet, u. a.:",
+                "list": [
+                    "IP-Adresse",
+                    "Browsertyp und -version",
+                    "Verweisende URL",
+                    "Datum und Uhrzeit des Zugriffs"
+                ],
+                "note": "Diese Daten dienen dem sicheren und zuverlässigen Betrieb der Website und werden gemäß der Datenschutzerklärung von Vercel verarbeitet."
+            },
+            "cookies": {
+                "title": "2.3 Cookies",
+                "paragraph": "Diese Website setzt keine Marketing- oder Tracking-Cookies. Falls Cookies eingesetzt werden, sind sie für Grundfunktionen technisch notwendig."
+            }
+        },
+        "legalBasis": {
+            "title": "3. Rechtsgrundlage der Verarbeitung",
+            "paragraph": "Die Verarbeitung erfolgt auf Grundlage von:",
+            "list": [
+                "Art. 6 Abs. 1 lit. b DSGVO – zur Beantwortung deiner Anfragen",
+                "Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse am sicheren Betrieb der Website"
+            ]
+        },
+        "sharing": {
+            "title": "4. Weitergabe von Daten",
+            "paragraph": "Ich verkaufe deine Daten nicht. Eine Weitergabe erfolgt nur an:",
+            "list": [
+                "Vercel als Hosting-Anbieter, soweit technisch erforderlich",
+                "Behörden, sofern gesetzlich vorgeschrieben"
+            ]
+        },
+        "thirdPartyPlatforms": {
+            "title": "5. Drittplattformen (Steam, itch.io)",
+            "paragraph": "Meine Spiele werden über Drittplattformen vertrieben. Deine Daten werden dort nach deren eigenen Datenschutzerklärungen verarbeitet:",
+            "steamLink": "Steam-Datenschutzerklärung",
+            "itchLink": "itch.io-Datenschutzerklärung"
+        },
+        "retention": {
+            "title": "6. Speicherdauer",
+            "paragraph": "Korrespondenz speichere ich nur so lange wie nötig oder gesetzlich vorgeschrieben (z. B. handels-/steuerrechtliche Fristen von bis zu 6–10 Jahren). Server-Logs werden nur im Rahmen der Standard-Speicherfristen von Vercel vorgehalten."
+        },
+        "rights": {
+            "title": "7. Deine Rechte",
+            "paragraph": "Du hast das Recht auf:",
+            "list": [
+                "Auskunft (Art. 15 DSGVO)",
+                "Berichtigung (Art. 16 DSGVO)",
+                "Löschung (Art. 17 DSGVO)",
+                "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+                "Widerspruch (Art. 21 DSGVO)",
+                "Datenübertragbarkeit (Art. 20 DSGVO)",
+                "Beschwerde bei einer Datenschutzaufsichtsbehörde"
+            ],
+            "contactNote": "Zur Ausübung dieser Rechte kontaktiere mich unter support@playwithk.de."
+        },
+        "children": {
+            "title": "8. Datenschutz für Kinder",
+            "paragraph": "Diese Website richtet sich nicht gezielt an Kinder unter 16 Jahren. Ich erhebe wissentlich keine Daten von Kindern."
+        },
+        "internationalTransfers": {
+            "title": "9. Internationale Datenübermittlung",
+            "paragraph": "Sofern Daten außerhalb der EU verarbeitet werden (z. B. durch Vercel in den USA), geschieht dies nur unter Einsatz geeigneter Garantien wie den EU-Standardvertragsklauseln."
+        },
+        "externalLinks": {
+            "title": "10. Externe Links",
+            "paragraph": "Diese Website kann Links zu externen Seiten enthalten. Für deren Datenschutzpraktiken übernehme ich keine Verantwortung."
+        },
+        "changes": {
+            "title": "11. Änderungen dieser Erklärung",
+            "paragraph": "Ich kann diese Erklärung gelegentlich aktualisieren. Die fortgesetzte Nutzung der Website nach einer Änderung gilt als Zustimmung."
+        },
+        "contact": {
+            "title": "12. Kontakt",
+            "paragraph": "Fragen zu dieser Datenschutzerklärung?",
+            "email": "E-Mail: support@playwithk.de"
+        }
+    }
+}

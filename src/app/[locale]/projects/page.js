@@ -152,7 +152,7 @@ export default function Projekte() {
               <h3 className="text-teal-400 font-semibold">{t("numble.title")}</h3>
               <p className="text-gray-300 text-sm">{t("numble.desc")}</p>
               <Link
-                href={`/${locale}/projects/games`}
+                href={`/${locale}/projects/games/numble`}
                 className="text-teal-300 text-sm underline"
               >
                 {common("buttons.learnMore")} ➔

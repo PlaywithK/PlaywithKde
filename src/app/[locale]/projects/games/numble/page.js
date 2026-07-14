@@ -52,6 +52,12 @@ export default function Numble() {
   const params = useParams();
   const locale = params.locale;
 
+  useEffect(() => {
+    document.title = locale === "de"
+      ? "Numble - PlaywithK.de"
+      : "Numble - PlaywithK.de";
+  }, [locale]);
+
   const getList = (key) => {
     const value = t.raw(key);
     return Array.isArray(value) ? value : [];

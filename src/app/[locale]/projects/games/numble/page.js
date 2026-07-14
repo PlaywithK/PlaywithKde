@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { H2, H3, P } from "@/components/design";

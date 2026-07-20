@@ -1,14 +1,31 @@
 {
+  "pageTitle": "Impressum",
   "title": "Impressum",
-  "desc": "Diese Webseite ist ein rein privates, nicht kommerzielles Angebot und dient keinerlei geschäftsmäßigen oder journalistisch-redaktionellen Zwecken. Gemäß §5 Telemediengesetz (TMG) besteht daher keine Impressumspflicht.",
-  "contact": {
-    "title": "Kontakt"
+  "desc": "Alle Pflichtangaben, Verwendungszwecke und Ähnliches.",
+  "provider": {
+    "title": "Anbieter",
+    "name": "Kevin Schmidt",
+    "address": "Diese Angaben sind in kürze Verfügbar!"
   },
-  "nutzungsrecht": {
+  "contact": {
+    "title": "Kontakt",
+    "viaForm": "Oder über das",
+    "formLink": "Kontaktformular"
+  },
+  "vat": {
+    "title": "Umsatzsteuer",
+    "text": "Gemäß § 19 UStG wird keine Umsatzsteuer ausgewiesen (Kleinunternehmerregelung)."
+  },
+  "usageRights": {
     "title": "Nutzungsrecht",
     "description": "Alle Inhalte dieser Webseite sind urheberrechtlich geschützt. Jede Nutzung über die reine persönliche Betrachtung hinaus benötigt die Zustimmung des Autors."
   },
-  "quellen": {
+  "sources": {
     "title": "Quellen"
+  },
+  "liability": {
+    "title": "Haftungsausschluss",
+    "content": "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.",
+    "links": "Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte kein Einfluss besteht. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich."
   }
 }

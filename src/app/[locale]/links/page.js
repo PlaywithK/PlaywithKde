@@ -1,30 +1,18 @@
 "use client";
 
-
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
 import Link from "next/link";
 import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
+import {usePageBasics} from "@/components/pageBasics";
 
 export default function LinksPage() {
-    const t = useTranslations("links");
-    const params = useParams();
-    const locale = params.locale;
-
-    useEffect(() => {
-        document.title =
-            locale === "de"
-                ? "Alle Links - PlaywithK.de"
-                : "All Links - PlaywithK.de";
-    }, [locale]);
+    const {t, common, locale} = usePageBasics("links");
 
     const pages = [
         {
-            name: t("home"),
+            name: t("links.home.name"),
             url: `/${locale}`,
-            description: t("home.desc"),
+            description: t("links.home.desc"),
         },
         {
             name: t("faq"),
@@ -62,9 +50,9 @@ export default function LinksPage() {
             description: t("chorez.desc"),
         },
         {
-            name: t("games"),
+            name: t("gamedev"),
             url: `/${locale}/projects/games`,
-            description: t("games.desc"),
+            description: t("gamedev.desc"),
         },
         {
             name: t("web"),
@@ -138,10 +126,9 @@ export default function LinksPage() {
         },
     ];
 
-
     return (
         <>
-            <Hero title={t("title")} subtitle={t("subtitle")} />
+            <Hero title={t("title")} subtitle={t("desc")} />
 
             <section className="max-w-2xl mx-auto mb-12 mt-12">
                 <ul className="space-y-2">
@@ -159,7 +146,7 @@ export default function LinksPage() {
                 </ul>
             </section>
 
-            <LastEdited date="31.05.2026" />
+            <LastEdited date="19.07.2026" />
         </>
     );
 }

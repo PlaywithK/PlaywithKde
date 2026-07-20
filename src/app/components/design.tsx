@@ -1,9 +1,9 @@
 import React from "react";
 
 export function H1({
-    children,
-    className = "",
-}: {
+                       children,
+                       className = "",
+                   }: {
     children: React.ReactNode;
     className?: string;
 }) {
@@ -15,29 +15,29 @@ export function H1({
 }
 
 export function H2({
-  children,
-  className = "",
-}: {
-  children: React.ReactNode;
-  className?: string;
+                       children,
+                       className = "",
+                   }: {
+    children: React.ReactNode;
+    className?: string;
 }) {
-  return (
-    <h2
-      className={
-        "text-4xl font-semibold tracking-wide mb-6 leading-tight bg-gradient-to-b from-teal-400 from-40% to-teal-800 to-100% text-transparent bg-clip-text " +
-        className
-      }
-    >
-      {children}
-    </h2>
-  );
+    return (
+        <h2
+            className={
+                "text-4xl font-semibold tracking-wide mb-6 leading-tight bg-gradient-to-b from-teal-400 from-40% to-teal-800 to-100% text-transparent bg-clip-text " +
+                className
+            }
+        >
+            {children}
+        </h2>
+    );
 }
 
 
 export function H3({
-    children,
-    className = "",
-}: {
+                       children,
+                       className = "",
+                   }: {
     children: React.ReactNode;
     className?: string;
 }) {
@@ -50,55 +50,73 @@ export function H3({
 }
 
 export function P({
-  children,
-  className = "",
-}: {
-  children: React.ReactNode;
-  className?: string;
+                      children,
+                      className = "",
+                  }: {
+    children: React.ReactNode;
+    className?: string;
 }) {
-  return (
-    <p
-      className={
-        "text-gray-300 text-lg leading-relaxed max-w-3xl " + className
-      }
-    >
-      {children}
-    </p>
-  );
+    return (
+        <p
+            className={
+                "text-gray-300 text-lg leading-relaxed " + className
+            }
+        >
+            {children}
+        </p>
+    );
 }
 
 export function PSmall({
-  children,
-  className = "",
-}: {
-  children: React.ReactNode;
-  className?: string;
+                           children,
+                           className = "",
+                       }: {
+    children: React.ReactNode;
+    className?: string;
 }) {
-  return (
-    <p
-      className={
-        "text-gray-400 text-sm leading-relaxed max-w-3xl " + className
-      }
-    >
-      {children}
-    </p>
-  );
+    return (
+        <p
+            className={
+                "text-gray-400 text-sm leading-relaxed " + className
+            }
+        >
+            {children}
+        </p>
+    );
 }
 
 export function PLarge({
-  children,
-  className = "",
-}: {
-  children: React.ReactNode;
-  className?: string;
+                           children,
+                           className = "",
+                       }: {
+    children: React.ReactNode;
+    className?: string;
 }) {
-  return (
-    <p
-      className={
-        "text-gray-100 text-xl leading-relaxed max-w-3xl " + className
-      }
-    >
-      {children}
-    </p>
-  );
+    return (
+        <p
+            className={
+                "text-gray-100 text-xl leading-relaxed " + className
+            }
+        >
+            {children}
+        </p>
+    );
+}
+
+export function Section({
+                            children,
+                            className = "",
+                        }: {
+    children: React.ReactNode;
+    className?: string;
+}) {
+    return (
+        <section
+            className={
+                "max-w-4xl mx-auto py-8 " + className
+            }
+        >
+            {children}
+        </section>
+    );
 }

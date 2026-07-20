@@ -1,0 +1,109 @@
+{
+  "pageTitle": "Game Development",
+  "title": "Game Development",
+  "desc": "Gaming yeah.",
+  "beginner": {
+    "title": "Tips for Beginners",
+    "text": [
+      "WIP"
+    ]
+  },
+  "documentation": {
+    "title": "Documentation",
+    "text": [
+      "I'm the kind of person who struggles to remember things, so for years I've been writing down almost everything in countless notes. Recently, I started organizing and rewriting all of them into a more structured format, and I decided to share some of them here.",
+      "You'll find everything from explanations of data types, variables, and code formatting to writing clean, readable code and Unity-specific topics. I think these notes will be especially helpful for beginners, so feel free to take a look.",
+      "If you spot a mistake or think something could be explained or implemented better, I'd really appreciate hearing from you through my contact page. I'm still learning myself, and this is simply my way of sharing the knowledge and experience I've gained so far."
+    ],
+    "link": "View Notes"
+  },
+  "engines": {
+    "title": "Game Engines",
+    "text": [
+      "Since I started making games, I've worked with most of the well-known game engines, including Unity, Unreal Engine, Godot, and GameMaker. Each of them has its own strengths, weaknesses, and unique workflow. In the end, though, I always found myself coming back to Unity. In this section, I'll explain why I ultimately chose Unity, what I learned from the other engines, and hopefully help you decide which engine might be the best fit for you.",
+      "Before we begin, here's one piece of advice: whichever engine you choose, stick with it for a while. Trying different engines can certainly be valuable, but especially as a beginner, it's much more important to learn one engine well instead of constantly switching. It may feel challenging at first, but every engine has its own learning curve. Once you've built a solid foundation, moving to another engine becomes much easier because many core concepts are shared between them."
+    ],
+    "unity": {
+      "title": "Unity",
+      "text": [
+        "Unity supports both 2D and 3D game development, making it a great all-around engine. Its primary programming language is C#, although it also offers a visual scripting system for those who prefer a code-free workflow."
+      ]
+    },
+    "otherEngines": {
+      "unreal": {
+        "name": "Unreal Engine",
+        "text": [
+          "I created my first larger prototypes with Unreal Engine. One of its biggest strengths is Blueprint, a powerful visual scripting system that's deeply integrated into the engine. Almost everything can be built with Blueprints, allowing you to create complex gameplay without writing a single line of code, making it a great option for beginners as well.",
+          "In my opinion, Unreal Engine really shines when it comes to 3D games. It includes an impressive set of professional tools, but getting the most out of them requires a good understanding of optimization and performance.",
+          "For 2D games, however, Unreal never really clicked for me. While Paper2D exists, it feels much less polished and beginner-friendly than the 2D workflows offered by other engines, and there are relatively few tutorials available."
+        ]
+      },
+      "gamemaker": {
+        "name": "GameMaker",
+        "text": [
+          "After playing Undertale and learning that Toby Fox developed it with GameMaker Studio, I had to give the engine a try. GameMaker is a dedicated 2D engine with a beginner-friendly scripting language that feels similar to C++, along with a clean and intuitive interface. If you don't want to code right away, you can also use its drag-and-drop system. While it has its limitations, you can build surprisingly complex projects without writing any code at all. One important thing to keep in mind is that, unlike the other engines mentioned here, GameMaker requires a paid license for commercial projects."
+        ]
+      },
+      "godot": {
+        "name": "Godot",
+        "text": [
+          "After spending some time with Unity, I also started exploring Godot. Godot is a free and open-source game engine that's continuously improved by its community. Its built-in language, GDScript, is easy to learn and has a syntax similar to Python, but if you're coming from Unity, you can also use C#. Overall, Godot feels very similar to Unity in many ways, although it uses Nodes instead of GameObjects. Over the years, Godot has grown into a mature and capable engine that can compete with Unity in many areas. Because of its simplicity and accessibility, I'd especially recommend it to complete beginners."
+        ]
+      }
+    }
+  },
+  "programs": {
+    "title": "Software",
+    "text": [
+      "An introduction to the software I use for game development."
+    ],
+    "vsc": {
+      "name": "Visual Studio Code",
+      "desc": "Description"
+    },
+    "vs": {
+      "name": "Visual Studio",
+      "desc": "Description"
+    },
+    "rider": {
+      "name": "JetBrains Rider",
+      "desc": "Description"
+    },
+    "ase": {
+      "name": "Aseprite",
+      "desc": "Description"
+    },
+    "afphoto": {
+      "name": "Affinity Photo",
+      "desc": "Description"
+    },
+    "afdesigner": {
+      "name": "Affinity Designer",
+      "desc": "Description"
+    },
+    "blockbench": {
+      "name": "Blockbench",
+      "desc": "Description"
+    },
+    "magicavoxel": {
+      "name": "MagicaVoxel",
+      "desc": "Description"
+    },
+    "blender": {
+      "name": "Blender",
+      "desc": "Description"
+    },
+    "githubprojects": {
+      "name": "GitHub Projects",
+      "desc": "Description"
+    },
+    "obsidian": {
+      "name": "Obsidian",
+      "desc": "Description"
+    },
+    "github": {
+      "name": "GitHub Desktop",
+      "desc": "Description"
+    }
+  }
+}

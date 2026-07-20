@@ -1,21 +1,11 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
 import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
+import {usePageBasics} from "@/components/pageBasics";
 
 export default function Chorez() {
-  const t = useTranslations("Chorez");
-  const params = useParams();
-  const locale = params.locale;
-
-  useEffect(() => {
-    document.title = locale === "de"
-      ? "Chorez - PlaywithK.de"
-      : "Chorez - PlaywithK.de";
-  }, [locale]);
+    const {t, common, locale} = usePageBasics("chorez");
 
   return (
     <>

@@ -1,11 +1,10 @@
 'use client';
 
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
-import { useState, useEffect, useRef } from 'react';
-import LastEdited from "@/components/lastedited";
 import Link from "next/link";
 import Image from "next/image";
+import {useState, useEffect, useRef} from 'react';
+import {usePageBasics} from "@/components/pageBasics";
+import LastEdited from "@/components/lastedited";
 
 const responses = ["Ja!", "Nein.", "Vielleicht.", "Frag später!", "Auf keinen Fall!", "Natürlich!", "Unklar..."];
 const chibiTalkLines = [
@@ -18,23 +17,13 @@ const chibiTalkLines = [
     "Achtung, ich spreche!",
     "Hmm... interessant!"
 ];
-
 export default function MagicChibi() {
-    const t = useTranslations("Webgames");
-    const params = useParams();
-    const locale = params.locale;
-
-    useEffect(() => {
-        document.title = locale === "de"
-            ? "PWK Orakel - PlaywithK.de"
-            : "Magic Oracle - PlaywithK.de";
-    }, [locale]);
+    const {t, common, locale} = usePageBasics("webgames");
 
     const [speech, setSpeech] = useState('...');
     const [chibiSrc, setChibiSrc] = useState('/closed.png');
     const [userQuestion, setUserQuestion] = useState('');
     const speechTimeoutRef = useRef(null);
-
     const showSpeech = (text) => {
         setSpeech(text);
 
@@ -44,7 +33,6 @@ export default function MagicChibi() {
             setSpeech('');
         }, 5000);
     };
-
     const askShell = () => {
         if (!userQuestion.trim()) {
             showSpeech("Bitte stelle zuerst eine Frage!");
@@ -112,7 +100,8 @@ export default function MagicChibi() {
                     Stelle dem Orakel Ja/Nein Fragen und es wird dir eine Antwort geben!
                 </p>
 
-                <div className="max-w-3xl mx-auto bg-gray-800 rounded-lg p-6 border border-white border-opacity-20 shadow-lg">
+                <div
+                    className="max-w-3xl mx-auto bg-gray-800 rounded-lg p-6 border border-white border-opacity-20 shadow-lg">
                     <h1 className="text-3xl sm:text-4xl font-bold text-teal-400 mb-8">✨ Befrage das Orakel! ✨</h1>
 
                     <div className="relative inline-block">
@@ -131,12 +120,12 @@ export default function MagicChibi() {
                         {speech && speech !== '' && (
                             <div
                                 className="absolute right-full top-1/3 transform -translate-y-1/2 bg-gray-100 text-black rounded-lg p-3 w-52 shadow-lg opacity-90"
-                                style={{ pointerEvents: 'none' }}
+                                style={{pointerEvents: 'none'}}
                             >
                                 {speech}
                                 <div
                                     className="absolute top-1/2 right-0 w-0 h-0 border-t-6 border-b-6 border-l-6 border-t-transparent border-b-transparent border-l-gray-100 transform -translate-y-1/2"
-                                    style={{ right: '-6px' }}
+                                    style={{right: '-6px'}}
                                 ></div>
                             </div>
                         )}
@@ -170,7 +159,7 @@ export default function MagicChibi() {
                 </div>
             </section>
 
-            <LastEdited date="01.06.2026" />
+            <LastEdited date="01.06.2026"/>
         </>
     );
 }

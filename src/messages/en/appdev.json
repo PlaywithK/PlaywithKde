@@ -1,32 +1,47 @@
 {
-    "title": "App-Entwicklung",
-    "subtitle": "Hier dokumentiere ich meine persönliche Reise in der App-Entwicklung – von der ersten Idee bis hin zur fertigen App.",
-    "introTitle": "Warum ich eine App entwickle",
-    "intro": "Ich wollte schon länger meine eigene App entwickeln. Nachdem ich ein Video auf YouTube gesehen hatte, in dem jemand seine eigene Wecker-App entickelt und released hatte, begann ich mich etwas zu informieren und meine eigene App zu entwickeln! Mich hatte schon länger genervt, das jede Funktion mittlerweile eine eigene App sein muss, weshalb ich mich entschied meinen eigenen Alltagshelfer zu entwerfen, welcher genau meine Bedürfnisse erfüllt.",
-    "makingof": {
-        "title": "Wie ich die App entwickle",
-        "intro": "Die Entwicklung von Chorez war (und ist) für mich ein spannender Lernprozess. Hier dokumentiere ich die Tools, Frameworks und Erfahrungen, die mich begleitet haben.",
-        "flutterTitle": "Flutter & Dart",
-        "flutter": "Cross-Plattform-Framework und Sprache, mit denen ich eine App für verschiedene Geräte gleichzeitig bauen kann.",
-        "dartTitle": "Dart",
-        "dart": "Die Programmiersprache hinter der App-Logik, die mir sauberen Code und schnelle Iterationen ermöglicht.",
-        "androidstudioTitle": "Android Studio",
-        "androidstudio": "Mein Werkzeug für Simulationen, UI-Previews und praktisches Debugging.",
-        "testingTitle": "Tests & Simulationen",
-        "testing": "Ich prüfe UI, Funktionen und Verhalten im Emulator, bevor ich weiterentwickle.",
-        "deploymentTitle": "Ausblick",
-        "deployment": "Später soll Chorez im Play Store erscheinen, doch aktuell liegt der Fokus auf stabilen Funktionen und gutem Nutzergefühl.",
-        "ending": "Mit jedem Schritt lerne ich mehr über App-Architektur, Design und Alltagsnutzen. Die Reise geht weiter."
+  "pageTitle": "App-Development",
+  "title": "App-Entwicklung",
+  "subtitle": "Hier dokumentiere ich meine persönliche Reise in der App-Entwicklung – von der ersten Idee bis hin zur fertigen App.",
+  "introTitle": "Warum ich eine App entwickle",
+  "intro": "Ich wollte schon länger meine eigene App entwickeln. Nachdem ich ein Video auf YouTube gesehen hatte, in dem jemand seine eigene Wecker-App entickelt und released hatte, begann ich mich etwas zu informieren und meine eigene App zu entwickeln! Mich hatte schon länger genervt, das jede Funktion mittlerweile eine eigene App sein muss, weshalb ich mich entschied meinen eigenen Alltagshelfer zu entwerfen, welcher genau meine Bedürfnisse erfüllt.",
+  "makingof": {
+    "title": "Wie ich die App entwickle",
+    "intro": "Die Entwicklung von Chorez war (und ist) für mich ein spannender Lernprozess. Hier dokumentiere ich die Tools, Frameworks und Erfahrungen, die mich begleitet haben.",
+    "flutterTitle": "Flutter & Dart",
+    "flutter": "Cross-Plattform-Framework und Sprache, mit denen ich eine App für verschiedene Geräte gleichzeitig bauen kann.",
+    "dartTitle": "Dart",
+    "dart": "Die Programmiersprache hinter der App-Logik, die mir sauberen Code und schnelle Iterationen ermöglicht.",
+    "androidstudioTitle": "Android Studio",
+    "androidstudio": "Mein Werkzeug für Simulationen, UI-Previews und praktisches Debugging.",
+    "testingTitle": "Tests & Simulationen",
+    "testing": "Ich prüfe UI, Funktionen und Verhalten im Emulator, bevor ich weiterentwickle.",
+    "deploymentTitle": "Ausblick",
+    "deployment": "Später soll Chorez im Play Store erscheinen, doch aktuell liegt der Fokus auf stabilen Funktionen und gutem Nutzergefühl.",
+    "ending": "Mit jedem Schritt lerne ich mehr über App-Architektur, Design und Alltagsnutzen. Die Reise geht weiter."
+  },
+  "chorez": {
+    "title": "Chorez",
+    "sectionTitle": "Meine App",
+    "desc-p1": "Chorez ist mein erstes App-Projekt. Ich habe damit angefangen, weil ich eine App wollte, die alles vereint: To-Do-Liste, Einkaufslisten, Essens- und Trink-Tracker und mehr. Statt viele verschiedene Apps zu nutzen, wollte ich eine zentrale Alltagshilfe bauen.",
+    "featuresTitle": "Was Chorez kann",
+    "feature1": "Einkaufsliste zum Planen und Nachhalten",
+    "feature2": "Essens- und Trink-Tracker für bessere Übersicht",
+    "feature3": "To-Do-Liste und Aufgabenverwaltung",
+    "desc-p2": "Entwickelt wird Chorez mit Flutter und Dart. Android Studio nutze ich vor allem für Simulationen und Emulatoren.",
+    "desc-p3": "Das Ziel ist eine einfache, intuitive App, die im Alltag wirklich hilft."
+  },
+  "programs": {
+    "title": "Programme",
+    "text": [
+      "Einleitung zu Programmen."
+    ],
+    "androidstudio": {
+      "name": "Android Studio",
+      "desc": "Beschreibung"
     },
-    "chorez": {
-        "title": "Chorez",
-        "sectionTitle": "Meine App",
-        "desc-p1": "Chorez ist mein erstes App-Projekt. Ich habe damit angefangen, weil ich eine App wollte, die alles vereint: To-Do-Liste, Einkaufslisten, Essens- und Trink-Tracker und mehr. Statt viele verschiedene Apps zu nutzen, wollte ich eine zentrale Alltagshilfe bauen.",
-        "featuresTitle": "Was Chorez kann",
-        "feature1": "Einkaufsliste zum Planen und Nachhalten",
-        "feature2": "Essens- und Trink-Tracker für bessere Übersicht",
-        "feature3": "To-Do-Liste und Aufgabenverwaltung",
-        "desc-p2": "Entwickelt wird Chorez mit Flutter und Dart. Android Studio nutze ich vor allem für Simulationen und Emulatoren.",
-        "desc-p3": "Das Ziel ist eine einfache, intuitive App, die im Alltag wirklich hilft."
+    "github": {
+      "name": "GitHub",
+      "desc": "Beschreibung"
     }
+  }
 }

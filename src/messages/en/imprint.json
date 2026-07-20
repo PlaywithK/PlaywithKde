@@ -1,14 +1,31 @@
 {
-  "title": "Imprint",
-  "desc": "This website is a purely private, non-commercial undertaking and serves no business or journalistic-editorial purposes. Consequently, there is no obligation to provide a legal notice (Impressum) under Section 5 of the German Telemedia Act (TMG).",
+  "pageTitle": "Legal Notice",
+  "title": "Legal Notice",
+  "desc": "All mandatory information, intended purposes, and related details.",
+  "provider": {
+    "title": "Provider",
+    "name": "Kevin Schmidt",
+    "address": "These informations will be published soon!"
+  },
   "contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "viaForm": "Or via the",
+    "formLink": "contact form"
   },
-  "nutzungsrecht": {
-    "title": "Usage rights",
-    "description": "All content on this website is protected by copyright. Any use beyond personal reference requires the author’s permission."
+  "vat": {
+    "title": "VAT",
+    "text": "No VAT is charged in accordance with Section 19 of the German VAT Act (small business regulation)."
   },
-  "quellen": {
+  "usageRights": {
+    "title": "Copyright",
+    "description": "All content on this website is protected by copyright. Any use beyond personal viewing requires the author's prior consent."
+  },
+  "sources": {
     "title": "Sources"
+  },
+  "liability": {
+    "title": "Disclaimer",
+    "content": "The content of this website has been created with the greatest possible care. However, no guarantee can be given for the accuracy, completeness, or timeliness of the content.",
+    "links": "This website contains links to external third-party websites over whose content we have no control. The respective provider is always responsible for the content of the linked pages."
   }
 }

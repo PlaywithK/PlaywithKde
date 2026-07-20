@@ -1,0 +1,33 @@
+{
+  "pageTitle": "Webentwicklung",
+  "title": "Webentwicklung",
+  "desc": "Hier dokumentiere ich meine persönliche Reise in der Webentwicklung - von der ersten Webseite bis zu dieser hier.",
+  "beginner": {
+    "title": "Tipps für Beginner",
+    "text": [
+      "WIP"
+    ]
+  },
+  "programs": {
+    "title": "Programme",
+    "text": [
+      "Einleitung zu Programmen."
+    ],
+    "vsc": {
+      "name": "Visual Studio Code",
+      "desc": "Beschreibung"
+    },
+    "webstorm": {
+      "name": "Jetbrains WebStorm",
+      "desc": "Beschreibung"
+    },
+    "github": {
+      "name": "GitHub",
+      "desc": "Beschreibung"
+    },
+    "vercel": {
+      "name": "Vercel",
+      "desc": "Beschreibung"
+    }
+  }
+}

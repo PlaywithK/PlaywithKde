@@ -1,47 +1,92 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
 import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
+import {H1, H2, H3, P, PLarge, PSmall, Section} from "@/components/design";
+import {usePageBasics} from "@/components/pageBasics";
 
 export default function Imprint() {
-  const t = useTranslations("imprint");
-  const params = useParams();
-  const locale = params.locale;
+    const {t, common, locale} = usePageBasics("imprint");
 
-  useEffect(() => {
-    document.title = locale === "de"
-      ? "Impressum - PlaywithK.de"
-      : "Imprint - PlaywithK.de";
-  }, [locale]);
+    return (
+        <>
+            <Hero title={t("title")} subtitle={t("desc")}/>
 
-  return (
-    <>
-      <Hero title={t("title")} />
+            {/* Anbieterkennzeichnung */}
+            <Section>
+                <H2 className="text-2xl font-semibold mb-2 text-teal-400">{t("provider.title")}</H2>
+                <P className="text-gray-300 whitespace-pre-line">
+                    {/* Impressum */}
+                    {t("provider.name")}
+                    {"\n"}
+                    {t("provider.address")}
+                </P>
+            </Section>
 
-      <div className="max-w-3xl mx-auto">
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-2 text-teal-400">{t("contact.title")}</h2>
-          <p className="text-gray-300">E-Mail: <a href="mailto:info@playwithk.de" className="underline hover:text-teal-400">info@playwithk.de</a></p>
-        </section>
+                {/* Kontakt */}
+            <Section>
+                <H2 className="text-2xl font-semibold mb-2 text-teal-400">{t("contact.title")}</H2>
+                <P className="text-gray-300">
+                    E-Mail:{" "}
+                    <a href="mailto:info@playwithk.de" className="underline hover:text-teal-400">
+                        info@playwithk.de
+                    </a>
+                </P>
+                <P className="text-gray-300">
+                    {t("contact.viaForm")}{" "}
+                    <a href={`/${locale}/kontakt`} className="underline hover:text-teal-400">
+                        {t("contact.formLink")}
+                    </a>
+                </P>
+            </Section>
 
-        <section className="mb-8 space-y-4 text-gray-300">
-          <h2 className="text-2xl font-semibold mb-2 text-teal-400">{t("nutzungsrecht.title")}</h2>
-          <p>{t("nutzungsrecht.description")}</p>
+                {/* Umsatzsteuer */}
+            <Section>
+                <H2 className="text-2xl font-semibold">{t("vat.title")}</H2>
+                <P className="text-gray-300">{t("vat.text")}</P>
+            </Section>
 
-          <h2 className="text-2xl font-semibold mb-2 text-teal-400">{t("quellen.title")}</h2>
-          <p>
-            SVG Icons:{' '}
-            <a href="https://www.svgrepo.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-teal-400">
-              https://www.svgrepo.com/
-            </a>
-          </p>
-        </section>
-      </div>
+                {/* Haftungsausschluss */}
+            <Section className="space-y-4 text-gray-300">
+                <H2 className="text-2xl font-semibold">{t("liability.title")}</H2>
+                <P>{t("liability.content")}</P>
+                <P>{t("liability.links")}</P>
+            </Section>
 
-      <LastEdited date="05.06.2026" />
-    </>
-  );
+                {/* Nutzungsrecht */}
+            <Section>
+                <H2 className="text-2xl font-semibold">{t("usageRights.title")}</H2>
+                <P className="mb-4">{t("usageRights.description")}</P>
+
+                <H2 className="text-2xl font-semibold">{t("sources.title")}</H2>
+                <P>
+                    SVG Icons:{" "}
+                    <a
+                        href="https://www.svgrepo.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-teal-400"
+                    >
+                        https://www.svgrepo.com/
+                    </a>
+                </P>
+            </Section>
+
+            {/* SECRET */}
+            <Section>
+                <P className="text-center">
+                    <a
+                        href="/impressumdegato.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-teal-400"
+                    >
+                        CLICK FOR A SECRET
+                    </a>
+                </P>
+            </Section>
+
+            <LastEdited date="20.07.2026"/>
+        </>
+    );
 }

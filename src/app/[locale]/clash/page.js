@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Hero from "@/components/hero";
 import { H1, H2, H3, P, PLarge} from "@/components/design";
+import LastEdited from "@/components/lastedited";
+import {usePageBasics} from "@/components/pageBasics";
 
 const lyrics = [
     `"Irgendwann, wenn es klappt, schließt mein Herz hiermit mal ab"\n– Ghost, Paperblossom`,
@@ -44,12 +46,12 @@ const posts = [
 ];
 
 export default function Clash() {
+    const {t, common, locale} = usePageBasics("clash");
+
     const [currentLyric, setCurrentLyric] = useState(lyrics[0]);
     const [animate, setAnimate] = useState(true);
 
     useEffect(() => {
-        document.title = "/clash - PlaywithK.de";
-
         const interval = setInterval(() => {
             setAnimate(false);
             setTimeout(() => {
@@ -108,6 +110,8 @@ export default function Clash() {
                     ))}
                 </div>
             </section>
+
+            <LastEdited date="19.07.2026"/>
         </>
     );
 }

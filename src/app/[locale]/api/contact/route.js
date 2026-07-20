@@ -1,7 +1,5 @@
 ﻿import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request) {
     try {
         const { name, email, message } = await request.json();
@@ -12,6 +10,16 @@ export async function POST(request) {
                 { status: 400 }
             );
         }
+
+        if (!process.env.RESEND_API_KEY) {
+            console.error("RESEND_API_KEY ist nicht gesetzt.");
+            return Response.json(
+                { error: "Nachricht konnte nicht gesendet werden." },
+                { status: 500 }
+            );
+        }
+
+        const resend = new Resend(process.env.RESEND_API_KEY);
 
         await resend.emails.send({
             from: "Kontaktformular <kontakt@playwithk.de>", // muss verifizierte Domain sein

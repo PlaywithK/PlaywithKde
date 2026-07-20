@@ -1,26 +1,16 @@
 "use client";
 
 
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
 import Link from 'next/link';
 import Image from "next/image";
 import Hero from "@/components/hero";
 import { H1, H2, H3, P, PLarge} from "@/components/design";
 import LastEdited from "@/components/lastedited";
+import {usePageBasics} from "@/components/pageBasics";
 
 
 export default function Winterprojekt() {
-  const t = useTranslations("winterprojekt");
-  const params = useParams();
-  const locale = params.locale;
-
-  useEffect(() => {
-    document.title = locale === "de"
-      ? "Minecraft Modding - PlaywithK.de"
-      : "Minecraft Modding - PlaywithK.de";
-  }, [locale]);
+    const {t, common, locale} = usePageBasics("minecraft");
 
   return (
     <>

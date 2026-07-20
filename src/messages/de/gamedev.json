@@ -1,0 +1,109 @@
+{
+  "pageTitle": "Spiele-Entwicklung",
+  "title": "Spiele Entwicklung",
+  "desc": "Gaming yeah.",
+  "beginner": {
+    "title": "Tipps für Beginner",
+    "text": [
+      "WIP"
+    ]
+  },
+  "documentation": {
+    "title": "Dokumentation",
+    "text": [
+      "Ich bin jemand, der sich Dinge unglaublich schlecht merken kann. Deshalb schreibe ich mir seit Jahren fast alles in etlichen Notizen auf. Vor Kurzem habe ich begonnen diese ganzen Notizen sauber zusammenzufassen und habe mich dazu entschieden diese zum Teil hier zu veröffentlichen.",
+      "Von Erklärungen für Datentypen, Variablen, Code Formatierung, wie man sauberen und lesbaren Code schreibt, bis hin zu Unity-spezifischen Themen findest du hier alles. Ich denke dass diese Notizen vor allem für Beginner nützlich sein könnten. Schaut gerne mal rein.",
+      "Solltest du einen Fehler entdecken oder eine Stelle sehen, die man besser lösen kann freue ich mich sehr über eine Nachricht über meine Kontakt-Seite. Ich bin selbst noch am Anfang und teile hier einfach das Wissen und die Erfahrungen die ich bisher gesammelt habe."
+    ],
+    "link": "Zu den Notizen"
+  },
+  "engines": {
+    "title": "Engines",
+    "text": [
+      "Seitdem ich mit der Spieleentwicklung angefangen habe, habe ich mit eigentlich allen der bekanntesten Game-Engines gearbeitet. Darunter Unity, Unreal Engine, Godot und GameMaker Studio. Jede davon hat ihre eigenen Stärken und Schwächen, sowie Eigenheiten. Am Ende bin ich jedoch immer wieder bei Unity gelandet. Warum ich mich letztendlich für Unity entschieden habe und was ich von den anderen Engines gelernt habe, erzähle ich in dieser Sektion und vielleicht kann ich damit jemandem helfen, eine Engine für sich auszuwählen.",
+      "Bevor wir loslegen aber noch ein kleiner Disclaimer: Egal für welche Engine du dich am Ende entscheidest, ich würde dir raten, bei dieser zu bleiben! Natürlich kann es Vorteile haben mehrere Engines auszuprobieren, doch vor allem als Anfänger ist es besser, bei einer Engine zu bleiben und diese wirklich zu lernen. Das mag am Anfang schwierig sein, aber das sind die anderen Engines auch. Es ist, meiner Meinung nach, deutlich besser, bei der ausgewählten bis zu einem gewissen Level zu bleiben. In vielen Dingen ähneln sich die Engines und wenn man die Grundlegenden Dinge gelernt hat, hat man immer noch die Möglichkeit eine andere Engine auszuprobieren."
+    ],
+    "unity": {
+      "title": "Unity",
+      "text": [
+        "Unity bietet sowohl 2D als auch 3D Entwicklung an. Damit ist es eine gute Allrounder-Engine. Unity nutzt C#, hat mittlerweile allerdings auch eine Visual Scripting Möglichkeit."
+      ]
+    },
+    "otherEngines": {
+      "unreal": {
+        "name": "Unreal Engine 4",
+        "text": [
+          "Meine ersten größeren Prototypen habe ich mit Unreal Engine erstellt. Unreal Engine hat eine sehr gut funktionierendes Visual Scripting-System: Blueprints. Egal was, in Unreal Engine nutzt man eigentlich für alles diese Blueprints. Das ermöglicht sehr viel Funktionalität ohne auch nur eine Zeile Code schreiben zu müssen und ist daher auch für Einsteiger eine sehr gute Variante.",
+          "Unreal Engine ist meiner Meinung nach besonders stark für 3D-Spiele. Die Engine bringt viele leistungsfähige Tools mit sich, allerdings muss man mit diesen auch umgehen können und vor allem auf Performance und Optimierung achten.",
+          "Für 2D-Spiele konnte mich Unreal nicht wirklich überzeugen. Zwar gibt es mit Paper2D ein System dafür, alber im Vergleich mit anderen Engines ist dieses viel weniger zugänglich und leider gibt es auch wenige bis gar keine Tutorials dafür."
+        ]
+      },
+      "gamemaker": {
+        "name": "GameMaker",
+        "text": [
+          "Nachdem ich Undertale gespielt und gehört habe dass Toby Fox, der Entwickler von Undertale, dieses mit GameMaker Studio erstellt hat, musste ich die Engine natürlich direkt ausprobieren! GameMaker ist eine reine 2D Engine, mit einer Einsteigerfreundlichen Programmiersprache, welche C++ ähnelt und einem wunderschönen Interface. Wer nicht coden will oder gerade erst beginnt, hat auch die Option Drag- & Drop zu nutzen. Das hat zwar seine Grenzen, aber man kommt schon ohne eine einzige Zeile Code sehr weit. Allerdings muss man beachten dass GameMaker für kommerzielle Projekte NICHT kostenlos ist, im Gegensatz zu den anderen hier vertretenen Engines."
+        ]
+      },
+      "godot": {
+        "name": "Godot",
+        "text": [
+          "Nachdem ich einige Zeit Unity probiert hatte, versuchte ich auch Godot. Godot ist eine Open-Source Engine die stetig von der Community weiterentwickelt wird. Die Hauseigene Programmiersprache GDScript ist C#-ähnlich, es gibt aber auch die Mäglichkeit direkt C# zu benutzen, falls man z.B. von Unity kommt. Generell ist Godot sehr ähnlich zu Unity aufgebaut, statt GameObjects hat man hier allerdings Nodes. Godot hat sich mit den Jahren immer weiter entwickelt und ist eine solide Option die Unity in nichts nachsteht. Vorallem für komplette Beginner, würde ich daher eher Godot empfehlen."
+        ]
+      }
+    }
+  },
+  "programs": {
+    "title": "Programme",
+    "text": [
+      "Einleitung zu Programmen."
+    ],
+    "vsc": {
+      "name": "Visual Studio Code",
+      "desc": "Habe ich früher als Haupt-Programm genutzt. Jetzt nur noch zum Auslesen von Save-Files."
+    },
+    "vs": {
+      "name": "Visual Studio",
+      "desc": "Bietet #hnliche komplexität wie Rider. Zudem stellt Visual Studio viele der technischen Dependencies."
+    },
+    "rider": {
+      "name": "Jetbrains Rider",
+      "desc": "Mein Haupt-Coding Programm. Es besitzt Code-Unterstützung (ohne KI), ist für Spieleentwicklung optimiert und kann viele Unity-spezifische Dinge anzeigen. Die IDE ist zudem komplett customisierbar."
+    },
+    "ase": {
+      "name": "Aseprite",
+      "desc": "Ein 2D-Pixelart Programm mit dem man einfach Sprites erstellen, animieren und exportieren kann."
+    },
+    "afphoto": {
+      "name": "Affinity Photo",
+      "desc": "Fotobearbeitungsprogramm für Promotional Grafiken, ähnlich zu Photoshop."
+    },
+    "afdesigner": {
+      "name": "Affinity Designer",
+      "desc": "Vector-Grafik Programm. Ich nutze es für 2D-Assets."
+    },
+    "blockbench": {
+      "name": "Blockbench",
+      "desc": "Früher eher bekannt für Minecraft Modding, ist Blockbench heutzutage ein starkes LowPoly-Modelling Programm."
+    },
+    "magicavoxel": {
+      "name": "MagicaVoxel",
+      "desc": "Erstellung von Voxel-Modellen."
+    },
+    "blender": {
+      "name": "Blender",
+      "desc": "Sehr bekanntes und gutes 3D-Modelling Programm. Für mich persönlich allerdings eine sehr steile Lernkurve. Ich nutze es nur für das Cleanup von Meshes und Rigging."
+    },
+    "githubprojects": {
+      "name": "GitHub Projects",
+      "desc": "GitHub Projects ist ein Planning-Tool welches direkt in GitHub eingebettet ist. Es ist sehr customizable."
+    },
+    "obsidian": {
+      "name": "Obsidian",
+      "desc": "Ein Markdown-Programm was wie ein großes Digitales Notizbuch fungiert. Vorallem mit einigen Plugins meiner Meinung nach das beste Planning-Tool!"
+    },
+    "github": {
+      "name": "GitHub (Desktop)",
+      "desc": "Versionskontrolle, Verfolgung von Progress und vieles mehr - GitHub ist wohl das bekannteste dieser Tools und das durchaus zurecht!"
+    }
+  }
+}

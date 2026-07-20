@@ -1,0 +1,11 @@
+{
+  "pageTitle": "Links",
+  "title": "Links",
+  "desc": "All links to all subpages of PlaywithK:de",
+  "links": {
+    "home": {
+      "name": "Home",
+      "desc": "Landing page of PlaywithK.de"
+    }
+  }
+}

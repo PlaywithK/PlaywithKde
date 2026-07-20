@@ -1,4 +1,5 @@
 {
+  "pageTitle": "Home",
   "hero": {
     "title": "Welcome to PlaywithK.de",
     "subtitle": "Programmer · Gamer · Video Creator"
@@ -18,7 +19,7 @@
       "title": "App development",
       "desc": "It always bothered me to have 20 apps on my phone for every single feature. So I decided to create my own app that brings all functions together in one place. Chorez was born."
     },
-    "games": {
+    "gamedev": {
       "title": "Game development",
       "desc": "I've wanted to develop my own games for years, and the ideas in my head have been constantly overflowing. Here you'll find everything about my dev journey and my current game projects."
     }

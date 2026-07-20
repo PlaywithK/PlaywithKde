@@ -30,7 +30,7 @@ export default async function LocaleLayout({
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100">
         <Navbar />
-        <main className="sm:px-6 lg:px-8">
+        <main className="px-2 sm:px-4 lg:px-8">
           {children}
         </main>
         <Footer />

@@ -1,28 +1,15 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
 import Hero from "@/components/hero";
+import {usePageBasics} from "@/components/pageBasics";
 import LastEdited from "@/components/lastedited";
 
-import Link from 'next/link';
-import Image from "next/image";
-
 export default function Gimmelcraft() {
-    const t = useTranslations("Gimmelcraft");
-    const params = useParams();
-    const locale = params.locale;
-
-    useEffect(() => {
-        document.title = locale === "de"
-            ? "Minecraft Gimmelcraft - PlaywithK.de"
-            : "Minecraft Gimmelcraft - PlaywithK.de";
-    }, [locale]);
+    const {t, common, locale} = usePageBasics("minecraft");
 
     return (
         <>
-            <Hero title={t("title")} subtitle={t("subtitle")} />
+            <Hero title={t("title")} subtitle={t("subtitle")}/>
 
             {/* Beschreibung */}
             <section className="max-w-4xl mx-auto text-center">
@@ -31,7 +18,7 @@ export default function Gimmelcraft() {
                 </p>
             </section>
 
-            <LastEdited date="31.05.2026" />
+            <LastEdited date="31.05.2026"/>
         </>
     );
 }

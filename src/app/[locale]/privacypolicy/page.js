@@ -1,21 +1,12 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
 import { H1, H2, H3, P } from "@/components/design";
 import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
+import {usePageBasics} from "@/components/pageBasics";
 
 export default function PrivacyPolicy() {
-  const t = useTranslations("privacypolicy");
-  const params = useParams();
-  const locale = params.locale;
-  useEffect(() => {
-    document.title = locale === "de"
-      ? "Datenschutz - PlaywithK.de"
-      : "Privacy Policy - PlaywithK.de";
-  }, [locale]);
+  const {t, common, locale} = usePageBasics("privacypolicy");
 
   return (
     <>

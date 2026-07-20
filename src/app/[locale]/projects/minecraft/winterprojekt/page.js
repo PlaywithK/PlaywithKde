@@ -9,6 +9,7 @@ import Image from "next/image";
 import Hero from "@/components/hero";
 import { H1, H2, H3, P, PLarge} from "@/components/design";
 import LastEdited from "@/components/lastedited";
+import {useDocumentTitle} from "@/components/documentTitle";
 
 
 export default function Winterprojekt() {
@@ -16,11 +17,7 @@ export default function Winterprojekt() {
   const params = useParams();
   const locale = params.locale;
 
-  useEffect(() => {
-    document.title = locale === "de"
-      ? "Minecraft Winterprojekt - PlaywithK.de"
-      : "Minecraft Winterproject - PlaywithK.de";
-  }, [locale]);
+  useDocumentTitle(t("pageTitle"));
 
   const winterProjects = [
     { href: "/projects/minecraft/winterprojekt/wp2024", src: "/minecraft/winterprojekt/wp2024_Title.png", alt: "Winterprojekt Titelbild 2024", title: "Winterprojekt 2024" },

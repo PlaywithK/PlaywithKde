@@ -2,11 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
 import { H2, H3, P } from "@/components/design";
 import LastEdited from "@/components/lastedited";
+import {usePageBasics} from "@/components/pageBasics";
 
 const STEAM_URL = "https://store.steampowered.com/app/4926400/Numble/";
 const ITCH_URL = "https://playwithk.itch.io/numble";
@@ -49,15 +47,7 @@ function MaskedBox({
 }
 
 export default function Numble() {
-  const t = useTranslations("numble");
-  const params = useParams();
-  const locale = params.locale;
-
-  useEffect(() => {
-    document.title = locale === "de"
-      ? "Numble - PlaywithK.de"
-      : "Numble - PlaywithK.de";
-  }, [locale]);
+  const {t, common, locale} = usePageBasics("numble");
 
   const getList = (key) => {
     const value = t.raw(key);

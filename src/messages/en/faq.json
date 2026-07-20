@@ -1,26 +1,41 @@
 {
+  "pageTitle": "FAQ",
   "title": "FAQ",
   "desc": "Common questions and answers.",
+  "searchPlaceholder": "Search question...",
+  "noResults": "No matching questions found.",
   "items": [
     {
       "question": "Who runs this website?",
-      "answer": "This website is run exclusively by PlaywithK. For more questions on this topic, check out the 'Web Development' tab."
+      "answer": "This website is exclusively operated by PlaywithK. For further questions regarding this topic, please visit the 'Web Development' section."
     },
     {
-      "question": "What is the purpose of the website?",
-      "answer": "PlaywithK.de is meant to inform about projects by and with PlaywithK, and to help discover new things!"
+      "question": "What is the purpose of this website?",
+      "answer": "PlaywithK.de exists to provide information about projects by and with PlaywithK, as well as to showcase new discoveries!"
     },
     {
-      "question": "Is this site private or commercial?",
-      "answer": "This website is used exclusively for private purposes and has no commercial intent."
+      "question": "Is this website private or commercial?",
+      "answer": "This website is operated as a private project and has no commercial purpose."
     },
     {
-      "question": "May I reuse content from the website?",
-      "answer": "All content from PlaywithK.de may be freely reused with a link back to the website."
+      "question": "May I reuse content from this website?",
+      "answer": "All content from PlaywithK.de may be freely reused as long as a link back to the website is provided."
     },
     {
-      "question": "How often are contents updated?",
-      "answer": "The website information may be outdated because it is created in my free time. The exact last edit date can be seen at the bottom of each page."
+      "question": "How often is content updated?",
+      "answer": "Information on this website may become outdated, as it is maintained in my free time. The exact date of the last update can be found at the bottom right of each page."
+    },
+    {
+      "question": "Can I contribute to your projects?",
+      "answer": "If you are interested in collaborating, feel free to send a request through the contact form. However, I usually work on my projects independently."
+    },
+    {
+      "question": "Are cookies or tracking used?",
+      "answer": "Information about the processing of personal data and the use of cookies can be found in the privacy policy."
+    },
+    {
+      "question": "What happened to PWK Entertainment?",
+      "answer": "Unfortunately, PWK Entertainment has been discontinued. Further information can be found on the dedicated subpage."
     }
   ]
 }

@@ -1,35 +1,45 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
 import Link from "next/link";
 import Hero from "@/components/hero";
+import {usePageBasics} from "@/components/pageBasics";
 import LastEdited from "@/components/lastedited";
 
 export default function DownloadsPage() {
-    const t = useTranslations("downloads");
-    const params = useParams();
-    const locale = params.locale;
-
-    useEffect(() => {
-        document.title =
-            locale === "de"
-                ? "Alle Downloads - PlaywithK.de"
-                : "All Downloads - PlaywithK.de";
-    }, [locale]);
+    const {t, common, locale} = usePageBasics("downloads");
 
     const pages = [
+        {
+            name: t("wp25.map"),
+            url: `/downloads/chorez.zip`,
+            description: t("wp25.map.desc"),
+        },
         {
             name: t("wp24.map"),
             url: `/downloads/chorez.zip`,
             description: t("wp24.map.desc"),
         },
+        {
+            name: t("wp23.map"),
+            url: `/downloads/chorez.zip`,
+            description: t("wp23.map.desc"),
+        },
+        {
+            name: t("wp22.map"),
+            url: `/downloads/chorez.zip`,
+            description: t("wp22.map.desc"),
+        },
+        {
+            name: t("wp17.map"),
+            url: `/downloads/chorez.zip`,
+            description: t("wp17.map.desc"),
+        },
+
     ];
 
     return (
         <>
-            <Hero title={t("title")} subtitle={t("subtitle")} />
+            <Hero title={t("title")} subtitle={t("desc")}/>
 
             <section className="max-w-2xl mx-auto mb-12 mt-12">
                 <ul className="space-y-2">
@@ -51,7 +61,7 @@ export default function DownloadsPage() {
                 </ul>
             </section>
 
-            <LastEdited date="31.05.2026" />
+            <LastEdited date="19.07.2026"/>
         </>
     );
 }

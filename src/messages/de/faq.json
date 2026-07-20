@@ -1,6 +1,9 @@
 {
+  "pageTitle": "FAQ",
   "title": "FAQ",
   "desc": "Übliche Fragen und Antworten.",
+  "searchPlaceholder": "Frage suchen...",
+  "noResults": "Keine passenden Fragen gefunden.",
   "items": [
     {
       "question": "Wer betreibt diese Webseite?",
@@ -20,7 +23,19 @@
     },
     {
       "question": "Wie oft werden Inhalte aktualisiert?",
-      "answer": "Die Informationen der Webseite können veraltet sein, da diese in meiner Freizeit entsteht. Das genaue letzte Bearbeitungsdatum kann auf der jeweiligen Seite ganz unten angesehen werden."
+      "answer": "Die Informationen der Webseite können veraltet sein, da diese in meiner Freizeit entsteht. Das genaue letzte Bearbeitungsdatum kann auf der jeweiligen Seite ganz unten rechts angesehen werden."
+    },
+    {
+      "question": "Kann ich bei deinen Projekten mitarbeiten?",
+      "answer": "Falls eine Zusammenarbeit gewünscht ist, kannst du diese gerne im Kontaktformular anfragen! Normalerweise arbeite ich jedoch alleine."
+    },
+    {
+      "question": "Werden Cookies oder Tracking eingesetzt?",
+      "answer": "Informationen zur Verarbeitung personenbezogener Daten sowie zum Einsatz von Cookies finden du in der Datenschutzerklärung."
+    },
+    {
+      "question": "Was ist mit PWK Entertainment passiert?",
+      "answer": "PWK Entertainment wurde leider aufgelöst. Weitere Informationen dazu findest du auf der dazugehörigen Unterseite."
     }
   ]
 }

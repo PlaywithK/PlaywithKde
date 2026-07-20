@@ -1,10 +1,9 @@
 ﻿"use client";
 
-import { useTranslations } from "next-intl";
-import { useEffect } from "react";
-import { useParams } from "next/navigation";
 import Image from "next/image";
+import {usePageBasics} from "@/components/pageBasics";
 import Hero from "@/components/hero";
+import {H1, H2, H3, P, PSmall, PLarge, Section} from "@/components/design";
 import LastEdited from "@/components/lastedited";
 
 function StarIcon() {
@@ -22,37 +21,24 @@ function StarIcon() {
 }
 
 export default function PWKEntertainment() {
-  const t = useTranslations("pwkentertainment");
-  const params = useParams();
-  const locale = params.locale;
-
-  const aboutParagraphs = [
-    t("about.p1"),
-    t("about.p2"),
-  ];
-
-  const experienceParagraphs = [
-    t("experience.p1"),
-    t("experience.p2"),
-    t("experience.p3"),
-  ];
+  const {t, common, locale} = usePageBasics("pwkentertainment");
 
   const projects = [
     {
-      title: t("projects.zetshueikko.title"),
-      description: t("projects.zetshueikko.description"),
+      title: t("sections.clients.zetshu.name"),
+      description: t("sections.clients.zetshu.desc"),
       image: "/Zetshueikko-TwitchOffline_V1.png",
       link: "https://www.twitch.tv/zetshueikko",
     },
     {
-      title: t("projects.horrorblubb.title"),
-      description: t("projects.horrorblubb.description"),
+      title: t("sections.clients.horrorblubb.name"),
+      description: t("sections.clients.horrorblubb.desc"),
       image: "/bloodypb.png",
       link: "https://www.twitch.tv/horrorblubb",
     },
     {
-      title: t("projects.davidson.title"),
-      description: t("projects.davidson.description"),
+      title: t("sections.clients.davidson.name"),
+      description: t("sections.clients.davidson.desc"),
       image: "/david_banner.jpg",
       link: "https://www.youtube.com/@DavidsonTv_",
     },
@@ -61,47 +47,45 @@ export default function PWKEntertainment() {
   const customers = [
     {
       name: "Anakin Klassen",
-      feedback: t("customers.feedbackAnakin"),
+      feedback: t("sections.reviews.r1"),
     },
     {
       name: "kxnkywaifu",
-      feedback: t("customers.feedbackWaifu"),
+      feedback: t("sections.reviews.r2"),
     },
     {
       name: "Christopher Metzler",
-      feedback: t("customers.feedbackChris"),
+      feedback: t("sections.reviews.r3"),
     },
   ];
-
-  useEffect(() => {
-    document.title = t("meta.title");
-  }, [t, locale]);
 
   return (
     <>
       <Hero title={t("title")} subtitle={t("desc")} />
 
-      <div className="w-full max-w-5xl p-10 flex flex-col gap-12 mx-auto">
-        <section>
-          <h2 className="text-3xl font-semibold text-teal-400 mb-4">{t("sections.about")}</h2>
-          {aboutParagraphs.map((text, index) => (
-            <p key={index} className="text-gray-300 text-lg leading-relaxed max-w-3xl mb-4">
-              {text}
-            </p>
-          ))}
-        </section>
+      {/* About */}
+        <Section className="!max-w-4xl">
+          <H2 className="text-3xl mb-4">{t("sections.about.title")}</H2>
+          <div className="space-y-3">
+            {t.raw("sections.about.text").map((paragraph, i) => (
+                <P key={i} className="leading-relaxed">{paragraph}</P>
+            ))}
+          </div>
+        </Section>
 
-        <section>
-          <h2 className="text-3xl font-semibold text-teal-400 mb-4">{t("sections.experience")}</h2>
-          {experienceParagraphs.map((text, index) => (
-            <p key={index} className="text-gray-300 text-lg leading-relaxed max-w-3xl mb-4">
-              {text}
-            </p>
+      {/* History */}
+      <Section className="!max-w-4xl">
+          <H2 className="mb-4">{t("sections.history.title")}</H2>
+        <div className="space-y-3">
+          {t.raw("sections.history.text").map((paragraph, i) => (
+              <P key={i} className="leading-relaxed">{paragraph}</P>
           ))}
-        </section>
+        </div>
+        </Section>
 
-        <section>
-          <h2 className="text-center text-3xl font-semibold text-teal-400 mb-8">{t("sections.clients")}</h2>
+      {/* Clients */}
+        <Section>
+          <H2 className="text-center text-3xl font-semibold text-teal-400 mb-8">{t("sections.clients.title")}</H2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {projects.map(({ title, description, image, link }) => (
               <a
@@ -120,15 +104,16 @@ export default function PWKEntertainment() {
                     loading="lazy"
                   />
                 </div>
-                <h3 className="text-teal-400 text-xl font-semibold mb-2 text-center">{title}</h3>
+                <h3 className="text-xl font-semibold text-teal-400 mb-2 text-center">{title}</h3>
                 <p className="text-gray-300 text-center">{description}</p>
               </a>
             ))}
           </div>
-        </section>
+        </Section>
 
-        <section>
-          <h2 className="text-center text-3xl font-semibold text-teal-400 mb-8">{t("sections.reviews")}</h2>
+      {/* Reviews */}
+      <Section className="!max-w-6xl">
+          <H2 className="text-center text-3xl font-semibold mb-8">{t("sections.reviews.title")}</H2>
           <div className="flex flex-col gap-8 max-w-4xl mx-auto">
             {customers.map(({ name, feedback }) => (
               <blockquote
@@ -147,10 +132,9 @@ export default function PWKEntertainment() {
               </blockquote>
             ))}
           </div>
-        </section>
-      </div>
+        </Section>
 
-      <LastEdited date="06.06.2026" />
+      <LastEdited date="20.07.2026" />
     </>
   );
 }

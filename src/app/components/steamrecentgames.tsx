@@ -25,7 +25,7 @@ export default function SteamRecentGamesXML() {
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(text, "application/xml");
 
-        const gameElements = Array.from(xmlDoc.querySelectorAll("gamesList > games > game"));
+        const gameElements = Array.from(xmlDoc.querySelectorAll("gamesList > gamedev > game"));
 
         const parsedGames = gameElements.map(game => {
           const appID = game.querySelector("appID")?.textContent || "";

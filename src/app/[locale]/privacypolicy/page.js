@@ -115,7 +115,7 @@ export default function PrivacyPolicy() {
         <H3>{t("policy.lastUpdated")}</H3>
       </section>
 
-      <LastEdited date="14.07.2026" />
+      <LastEdited date="20.07.2026" />
     </>
   );
 }

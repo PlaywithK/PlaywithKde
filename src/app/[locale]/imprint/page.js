@@ -14,7 +14,7 @@ export default function Imprint() {
 
             {/* Anbieterkennzeichnung */}
             <Section>
-                <H2 className="text-2xl font-semibold mb-2 text-teal-400">{t("provider.title")}</H2>
+                <H3 className="text-2xl font-semibold mb-2 text-teal-400">{t("provider.title")}</H3>
                 <P className="text-gray-300 whitespace-pre-line">
                     {/* Impressum */}
                     {t("provider.name")}
@@ -25,7 +25,7 @@ export default function Imprint() {
 
                 {/* Kontakt */}
             <Section>
-                <H2 className="text-2xl font-semibold mb-2 text-teal-400">{t("contact.title")}</H2>
+                <H3 className="text-2xl font-semibold mb-2 text-teal-400">{t("contact.title")}</H3>
                 <P className="text-gray-300">
                     E-Mail:{" "}
                     <a href="mailto:info@playwithk.de" className="underline hover:text-teal-400">
@@ -42,20 +42,20 @@ export default function Imprint() {
 
                 {/* Umsatzsteuer */}
             <Section>
-                <H2 className="text-2xl font-semibold">{t("vat.title")}</H2>
+                <H3 className="text-2xl font-semibold">{t("vat.title")}</H3>
                 <P className="text-gray-300">{t("vat.text")}</P>
             </Section>
 
                 {/* Haftungsausschluss */}
             <Section className="space-y-4 text-gray-300">
-                <H2 className="text-2xl font-semibold">{t("liability.title")}</H2>
+                <H3 className="text-2xl font-semibold">{t("liability.title")}</H3>
                 <P>{t("liability.content")}</P>
                 <P>{t("liability.links")}</P>
             </Section>
 
                 {/* Nutzungsrecht */}
             <Section>
-                <H2 className="text-2xl font-semibold">{t("usageRights.title")}</H2>
+                <H3 className="text-2xl font-semibold">{t("usageRights.title")}</H3>
                 <P className="mb-4">{t("usageRights.description")}</P>
 
                 <H2 className="text-2xl font-semibold">{t("sources.title")}</H2>

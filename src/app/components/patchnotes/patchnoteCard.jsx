@@ -1,4 +1,4 @@
-﻿import PatchChangeSection from "./PatchChangeSection";
+﻿import PatchChangeSection from "./patchChangeSection";
 
 export default function PatchNoteCard({patch, latest = false}) {
     return (

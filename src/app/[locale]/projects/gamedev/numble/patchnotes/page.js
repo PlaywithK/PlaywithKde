@@ -7,7 +7,7 @@ import LastEdited from "@/components/lastedited";
 import { usePageBasics } from "@/components/pageBasics";
 import { Section } from "@/components/design";
 
-import PatchNoteCard from "@/components/patchnotes/PatchNoteCard";
+import PatchNoteCard from "@/components/patchnotes/patchnoteCard";
 import patchNotes from "@/components/patchnotes/numblepatchnotes";
 
 export default function PatchNotesPage() {

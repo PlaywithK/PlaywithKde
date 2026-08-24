@@ -155,6 +155,36 @@ export default function GameDev() {
         <>
             <Hero title={t("title")} subtitle={t("desc")}/>
 
+            <Section>
+                <H2 className="text-2xl font-bold text-teal-400 mb-3">{t("intro.title")}</H2>
+                <div className="space-y-3">
+                    {t.raw("intro.text").map((paragraph, i) => (
+                        <P key={i} className="leading-relaxed">{paragraph}</P>
+                    ))}
+                </div>
+                <Link
+                    href={`/${locale}/projects/gamedev/notes`}
+                    className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
+                >
+                    {t("documentation.link")}
+                </Link>
+            </Section>
+
+            <Section>
+                <H2 className="text-2xl font-bold text-teal-400 mb-3">{t("documentation.title")}</H2>
+                <div className="space-y-3">
+                    {t.raw("documentation.text").map((paragraph, i) => (
+                        <P key={i} className="leading-relaxed">{paragraph}</P>
+                    ))}
+                </div>
+                <Link
+                    href={`/${locale}/projects/gamedev/notes`}
+                    className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
+                >
+                    {t("documentation.link")}
+                </Link>
+            </Section>
+
             {/*<Section>
                 <H2 className="text-2xl font-boldmb-3">{t("beginner.title")}</H2>
                 <div className="space-y-3">
@@ -165,9 +195,9 @@ export default function GameDev() {
             </Section>*/}
 
             <Section>
-                <H2 className="text-2xl font-bold text-teal-400 mb-3">{t("documentation.title")}</H2>
+                <H2 className="text-2xl font-bold text-teal-400 mb-3">{t("systems.title")}</H2>
                 <div className="space-y-3">
-                    {t.raw("documentation.text").map((paragraph, i) => (
+                    {t.raw("systems.text").map((paragraph, i) => (
                         <P key={i} className="leading-relaxed">{paragraph}</P>
                     ))}
                 </div>
@@ -268,7 +298,16 @@ export default function GameDev() {
                 </div>
             </Section>
 
-            <LastEdited date="20.07.2026"/>
+            <Section>
+                <H2 className="text-2xl font-bold text-teal-400 mb-3">{t("aidisclosure.title")}</H2>
+                <div className="space-y-3">
+                    {t.raw("aidisclosure.text").map((paragraph, i) => (
+                        <P key={i} className="leading-relaxed">{paragraph}</P>
+                    ))}
+                </div>
+            </Section>
+
+            <LastEdited date="22.07.2026"/>
         </>
     );
 }

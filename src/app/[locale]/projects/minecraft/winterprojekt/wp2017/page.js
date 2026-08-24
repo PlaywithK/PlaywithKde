@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { updates, galleryImages } from "@/components/winterprojekt24Data";
+import { updates, galleryImages } from "@/components/winterprojekt/winterprojekt24Data";
 import LastEdited from "@/components/lastedited";
 import Gallery from "@/components/gallery";
 

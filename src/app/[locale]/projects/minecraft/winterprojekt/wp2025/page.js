@@ -7,7 +7,7 @@ import Link from "next/link";
 import Hero from "@/components/hero";
 import { H1, H2, H3, P, PLarge } from "@/components/design";
 import ServerStatusCard from "@/components/serverstatus";
-import { updates, galleryImages } from "@/components/winterprojekt25Data";
+import { updates, galleryImages } from "@/components/winterprojekt/winterprojekt25Data";
 import LastEdited from "@/components/lastedited";
 
 export default function Winterprojekt2024() {

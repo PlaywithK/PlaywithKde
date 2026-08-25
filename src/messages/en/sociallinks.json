@@ -1,0 +1,90 @@
+{
+  "pageTitle": "Social Links",
+  "title": "Social Links",
+  "desc": "All my links to social media & Co!",
+  "links":
+  {
+    "youtube":
+    {
+      "title": "YouTube",
+      "desc": "My main channel. Videos about Gaming, Developement and more!"
+    },
+    "twitch":
+    {
+      "title": "Twitch",
+      "desc": "Occasional streams, mostly Gaming, Just Chatting or game dev."
+    },
+    "itch":
+    {
+      "title": "Itch.io",
+      "desc": "Find all my games, from minigames, prototypes to GameJams and more!"
+    },
+    "anilist":
+    {
+      "title": "AniList",
+      "desc": "You like anime? Me too! See what i'm currently watching and more."
+    },
+    "twitter":
+    {
+      "title": "Twitter (X)",
+      "desc": "Short dev-insights, thoughts, updates and more!"
+    },
+    "steam":
+    {
+      "title": "Steam",
+      "desc": "This is my Steam Curator-Site. You can see games i reviewed and developed."
+    },
+    "playstore":
+    {
+      "title": "Playstore",
+      "desc": "All my apps on Google Playstore (Android)."
+    },
+    "discord":
+    {
+      "title": "Discord",
+      "desc": "Join the official Discord-Community! The Community mainly is for bug reports, feedback and similar."
+    },
+    "tiktok":
+    {
+      "title": "TikTok",
+      "desc": "Short Clips of Bugs, Gaming and more!"
+    },
+    "reddit":
+    {
+      "title": "Reddit",
+      "desc": "A small devlog-blog where you can see all my progress and whats currently going on."
+    },
+    "bluesky":
+    {
+      "title": "Blsky",
+      "desc": "Short dev-insights, thoughts, updates and more!"
+    },
+    "instagram":
+    {
+      "title": "Instagram",
+      "desc": "Short form videos and images regarding my gamedev journey."
+    }
+  },
+  "support":
+  {
+    "title": "Support me!",
+    "desc": "Here are some ways to support me. Please only do that, if youre capable!",
+    "patreon":
+    {
+      "title": "Patreon",
+      "desc": "Support me with a monthly subscription."
+    },
+    "kofi":
+    {
+      "title": "Ko-Fi",
+      "desc": "If you want to support me, this is probably the easiest way. Thank you so much for considering! <3"
+    },
+    "coffee":
+    {
+      "title": "Buy me a Coffee",
+      "desc": "A simple way to support my work with a small one-time purchase."
+    }
+  },
+  "showMore": "Show More",
+  "showLess": "Show Less"
+}

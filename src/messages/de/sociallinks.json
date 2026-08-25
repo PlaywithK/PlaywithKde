@@ -1,0 +1,90 @@
+{
+  "pageTitle": "Social Links",
+  "title": "Social Links",
+  "desc": "Alle meine Links zu Social Media & Co!",
+  "links":
+  {
+    "youtube":
+    {
+      "title": "YouTube",
+      "desc": "Mein Hauptkanal mit Videos rund ums Gaming, die Spieleentwicklung und mehr!"
+    },
+    "twitch":
+    {
+      "title": "Twitch",
+      "desc": "Gelegentliche Livestreams, hauptsächlich Gaming, Just Chatting oder Spieleentwicklung."
+    },
+    "itch":
+    {
+      "title": "Itch.io",
+      "desc": "Hier findest du all meine Spiele von Minigames und Prototypen bis hin zu Game-Jam-Projekten und mehr!"
+    },
+    "anilist":
+    {
+      "title": "AniList",
+      "desc": "Du magst Anime? Ich auch! Schau dir an was ich aktuell schaue und mehr."
+    },
+    "twitter":
+    {
+      "title": "Twitter (X)",
+      "desc": "Kurze Einblicke in meine Entwicklung, Gedanken, Updates und mehr!"
+    },
+    "steam":
+    {
+      "title": "Steam",
+      "desc": "Das ist meine Steam-Kurator-Seite. Hier findest du Spiele die ich bewertet und selbst entwickelt habe."
+    },
+    "playstore":
+    {
+      "title": "Play Store",
+      "desc": "Hier findest du alle meine Apps im Google Play Store für Android."
+    },
+    "discord":
+    {
+      "title": "Discord",
+      "desc": "Tritt der offiziellen Discord-Community bei! Dort geht es hauptsächlich um Fehlermeldungen, Feedback und ähnliche Themen."
+    },
+    "tiktok":
+    {
+      "title": "TikTok",
+      "desc": "Kurze Clips über Bugs, Gaming und mehr!"
+    },
+    "reddit":
+    {
+      "title": "Reddit",
+      "desc": "Ein kleiner Devlog-Blog, in dem du meine Fortschritte und aktuelle Entwicklungen verfolgen kannst."
+    },
+    "bluesky":
+    {
+      "title": "Bluesky",
+      "desc": "Kurze Einblicke in meine Entwicklung, Gedanken, Updates und mehr!"
+    },
+    "instagram":
+    {
+      "title": "Instagram",
+      "desc": "Kurze Videos und Bilder rund um meine Reise in der Spieleentwicklung."
+    }
+  },
+  "support":
+  {
+    "title": "Unterstütze mich!",
+    "desc": "Hier findest du verschiedene Möglichkeiten, mich zu unterstützen. Bitte tu das nur, wenn du es dir leisten kannst!",
+    "patreon":
+    {
+      "title": "Patreon",
+      "desc": "Unterstütze mich mit einem monatlichen Beitrag."
+    },
+    "kofi":
+    {
+      "title": "Ko-Fi",
+      "desc": "Wenn du mich unterstützen möchtest, ist dies wahrscheinlich der einfachste Weg. Vielen Dank! <3"
+    },
+    "coffee":
+    {
+      "title": "Buy me a Coffee",
+      "desc": "Eine einfache Möglichkeit, meine Arbeit mit einer kleinen einmaligen Spende zu unterstützen."
+    }
+  },
+  "showMore": "Mehr anzeigen",
+  "showLess": "Weniger anzeigen"
+}

@@ -2,7 +2,7 @@
     "pageTitle": "Privacy Policy",
     "hero": {
         "title": "Privacy Policy",
-        "subtitle": "How I handle your data — short, clear, and without the fine print."
+        "subtitle": "How I handle your data - short, clear, and without the fine print."
     },
     "policy": {
         "lastUpdated": "Last updated: 20.07.2026",
@@ -21,7 +21,7 @@
                     "Your email address",
                     "The content of your message"
                 ],
-                "note": "I use this only to respond to you — no mailing list, no marketing."
+                "note": "I use this only to respond to you - no mailing list, no marketing."
             },
             "automatic": {
                 "title": "2.2 Information Collected Automatically (Hosting)",
@@ -43,8 +43,8 @@
             "title": "3. Legal Basis for Processing",
             "paragraph": "Processing is based on:",
             "list": [
-                "Art. 6(1)(b) GDPR — to respond to your inquiries",
-                "Art. 6(1)(f) GDPR — legitimate interest in secure website operation"
+                "Art. 6(1)(b) GDPR - to respond to your inquiries",
+                "Art. 6(1)(f) GDPR - legitimate interest in secure website operation"
             ]
         },
         "sharing": {

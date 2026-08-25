@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import {usePageBasics} from "@/components/pageBasics";
 import LastEdited from "@/components/lastedited";
+import {H2, P, Section} from "@/components/design";
 
 export default function WebgamesOverview() {
     const {t, common, locale} = usePageBasics("webgames");
@@ -75,6 +76,14 @@ export default function WebgamesOverview() {
                     ))}
                 </div>
 
+                <Section>
+                    <H2 className="text-2xl font-bold text-teal-400 mb-3">{t("aidisclosure.title")}</H2>
+                    <div className="space-y-3">
+                        {t.raw("aidisclosure.text").map((paragraph, i) => (
+                            <P key={i} className="leading-relaxed">{paragraph}</P>
+                        ))}
+                    </div>
+                </Section>
 
                 <div className="mt-16 text-center">
                     <Link
@@ -86,7 +95,7 @@ export default function WebgamesOverview() {
                 </div>
             </section>
 
-            <LastEdited date="01.06.2026"/>
+            <LastEdited date="22.07.2026"/>
         </>
     );
 }

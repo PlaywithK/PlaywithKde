@@ -1,19 +1,52 @@
 ﻿const patchNotes = [
     {
+        version: "0.6.4-prerelease",
+        date: "25.08.2026",
+        title: "Playtest - Update 3",
+        description:
+            " ",
+
+        changes: {
+            added: [
+                "Added Custom Cursor Selection",
+                "Added icons to the Custom Game Settings Panel",
+                "Added Controller Vibrations"
+            ],
+
+            improved: [
+                "Some reworks and adjustments in the UI",
+            ],
+
+            fixed: [
+                "Fixed Endless-Round icon showing in other modes",
+                "Fixed Logo showing the wrong color in the Standard Theme"
+            ],
+
+            removed: [],
+        },
+    },
+    {
         version: "0.6.3-prerelease",
-        date: "Upcoming",
+        date: "24.08.2026",
         title: "Playtest - Update 2",
         description:
             " ",
 
         changes: {
             added: [
+                "Added the new and final soundtrack to the game",
                 "Added supporter pack functionality",
                 "Added a tooltip system",
                 "Added an UI-Scaler setting",
                 "Added a custom Cursor",
                 "Added animations for PopUp-Overlays",
+                "Added animations and feedback for Endless rounds",
+                "Added an display for the current endless round",
+                "Added a \"Reset to default\"-button for the settings",
                 "The current round can now get restarted when clicking \"R\" or the north-button on Controller",
+                "Demo and Full version now have their own save files",
+                "Fireworks now have sound",
+                "Added a new bug report icon"
             ],
 
             improved: [
@@ -25,6 +58,8 @@
             ],
 
             fixed: [
+                "Fixed colorblind colors not changing for already typed numbers",
+                "Fixed Fav mode in stats showing name with prefix",
                 "Fixed the Back-System, so its not going through the complete history",
                 "Fixed Sound-Settings now apply in Startup",
                 "Fixed Startup-Audio playing in MainMenuScene when startup is skipped",
@@ -34,7 +69,7 @@
                 "Fixed Timer slider in Custom Mode Settings, it is now disabled when the timer is turned off",
                 "Fixed Mobile now applying settings correctly",
                 "Fixed CustomMode not starting",
-                "Fixed CustomMode Input going back to the mode select screen",
+                "Fixed CustomMode Input going back to the mode select screen"
             ],
 
             removed: [],

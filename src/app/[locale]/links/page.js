@@ -1,153 +1,64 @@
-"use client";
-
+import fs from "node:fs";
+import path from "node:path";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
-import {usePageBasics} from "@/components/pageBasics";
 
-export default function LinksPage() {
-    const {t, common, locale} = usePageBasics("links");
+const APP_DIR = path.join(process.cwd(), "src", "app", "[locale]");
+const IGNORE = new Set(["links", "api"]);
+const KEY_OVERRIDES = { contact: "kontakt", imprint: "impressum" };
 
-    const pages = [
-        {
-            name: t("links.home.name"),
-            url: `/${locale}`,
-            description: t("links.home.desc"),
-        },
-        {
-            name: t("faq"),
-            url: `/${locale}/faq`,
-            description: t("faq.desc"),
-        },
-        {
-            name: t("impressum"),
-            url: `/${locale}/imprint`,
-            description: t("impressum.desc"),
-        },
-        {
-            name: t("kontakt"),
-            url: `/${locale}/contact`,
-            description: t("kontakt.desc"),
-        },
-        {
-            name: t("playwithk"),
-            url: `/${locale}/playwithk`,
-            description: t("playwithk.desc"),
-        },
-        {
-            name: t("projekte"),
-            url: `/${locale}/projects`,
-            description: t("projekte.desc"),
-        },
-        {
-            name: t("apps"),
-            url: `/${locale}/projects/apps`,
-            description: t("apps.desc"),
-        },
-        {
-            name: t("chorez"),
-            url: `/${locale}/projects/apps/chorez`,
-            description: t("chorez.desc"),
-        },
-        {
-            name: t("gamedev"),
-            url: `/${locale}/projects/games`,
-            description: t("gamedev.desc"),
-        },
-        {
-            name: t("web"),
-            url: `/${locale}/projects/web`,
-            description: t("web.desc"),
-        },
-        {
-            name: t("webgames"),
-            url: `/${locale}/projects/webgames`,
-            description: t("webgames.desc"),
-        },
-        {
-            name: t("minecraft"),
-            url: `/${locale}/projects/minecraft`,
-            description: t("minecraft.desc"),
-        },
-        {
-            name: t("outlaw"),
-            url: `/${locale}/projects/minecraft/outlaw`,
-            description: t("outlaw.desc"),
-        },
-        {
-            name: t("pwkde"),
-            url: `/${locale}/projects/minecraft/pwkde`,
-            description: t("pwkde.desc"),
-        },
-        {
-            name: t("winterprojekt"),
-            url: `/${locale}/projects/minecraft/winterprojekt`,
-            description: t("winterprojekt.desc"),
-        },
-        {
-            name: t("wp2017"),
-            url: `/${locale}/projects/minecraft/winterprojekt/wp2017`,
-            description: t("wp2017.desc"),
-        },
-        {
-            name: t("wp2020"),
-            url: `/${locale}/projects/minecraft/winterprojekt/wp2020`,
-            description: t("wp2020.desc"),
-        },
-        {
-            name: t("wp2021"),
-            url: `/${locale}/projects/minecraft/winterprojekt/wp2021`,
-            description: t("wp2021.desc"),
-        },
-        {
-            name: t("wp2022"),
-            url: `/${locale}/projects/minecraft/winterprojekt/wp2022`,
-            description: t("wp2022.desc"),
-        },
-        {
-            name: t("wp2023"),
-            url: `/${locale}/projects/minecraft/winterprojekt/wp2023`,
-            description: t("wp2023.desc"),
-        },
-        {
-            name: t("wp2024"),
-            url: `/${locale}/projects/minecraft/winterprojekt/wp2024`,
-            description: t("wp2024.desc"),
-        },
-        {
-            name: t("wp2025"),
-            url: `/${locale}/projects/minecraft/winterprojekt/wp2025`,
-            description: t("wp2025.desc"),
-        },
-                {
-            name: t("pwkentm"),
-            url: `/${locale}/pwkentertainment`,
-            description: t("pwkentm.desc"),
-        },
-    ];
+function collectPages(dir = APP_DIR, segments = []) {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    let pages = [];
+
+    for (const entry of entries) {
+        if (!entry.isDirectory()) continue;
+        if (entry.name.startsWith("_") || entry.name.startsWith(".") || entry.name.startsWith("[")) continue;
+        if (IGNORE.has(entry.name)) continue;
+
+        const childDir = path.join(dir, entry.name);
+        const childSegments = [...segments, entry.name];
+        const hasPage = ["page.js", "page.jsx", "page.tsx"].some((f) =>
+            fs.existsSync(path.join(childDir, f))
+        );
+
+        if (hasPage) {
+            pages.push({
+                url: "/" + childSegments.join("/"),
+                key: KEY_OVERRIDES[entry.name] ?? entry.name,
+            });
+        }
+        pages = pages.concat(collectPages(childDir, childSegments));
+    }
+    return pages;
+}
+
+export default async function LinksPage({ params }) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "links" });
+    const pages = collectPages();
 
     return (
         <>
             <Hero title={t("title")} subtitle={t("desc")} />
-
             <section className="max-w-2xl mx-auto mb-12 mt-12">
                 <ul className="space-y-2">
-                    {pages.map((page, index) => (
-                        <li key={index}>
+                    {pages.map((page) => (
+                        <li key={page.url}>
                             <Link
-                                href={page.url}
+                                href={`/${locale}${page.url}`}
                                 className="flex items-center justify-between bg-gray-800/60 hover:bg-gray-700/60 transition rounded-lg px-3 py-2 text-sm"
                             >
-                                <span className="text-teal-400 font-medium">{page.name}</span>
-                                <span className="text-gray-300 text-xs">{page.description}</span>
+                                <span className="text-teal-400 font-medium">{t(page.key)}</span>
+                                <span className="text-gray-300 text-xs">{t(`${page.key}.desc`)}</span>
                             </Link>
                         </li>
                     ))}
                 </ul>
             </section>
-
-            <LastEdited date="19.07.2026" />
+            <LastEdited date="26.08.2026" />
         </>
     );
 }
-

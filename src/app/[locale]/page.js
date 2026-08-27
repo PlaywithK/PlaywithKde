@@ -138,4 +138,3 @@ function ProjectsSection({t, common, locale}) {
         </Section>
     );
 }
-

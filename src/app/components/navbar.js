@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Navbar() {
   const t = useTranslations("navbar");
@@ -19,7 +20,16 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 backdrop-blur bg-gray-900 bg-opacity-90 flex justify-between items-center px-6 py-4 border-b border-gray-700">
-      <div className="text-2xl font-bold text-white">PlaywithK.de</div>
+        <Link href="/" className="flex items-center">
+            <Image
+                src="/PlaywithK_Logo_clean.png"
+                alt="PlaywithK"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+            />
+            <span className="text-teal-400 text-2xl font-bold">.de</span>
+        </Link>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-6 list-none">

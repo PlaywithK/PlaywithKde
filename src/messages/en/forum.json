@@ -1,8 +1,24 @@
 {
   "pageTitle": "Forum",
   "title": "Forum",
-  "desc": "Forum für Numble - WORK IN PROGRESS!",
-  "allTags": "Alle",
-  "loading": "Lade Posts...",
-  "empty": "Noch keine Posts vorhanden."
+  "desc": "This forum is for Reporting bugs and giving feedback regarding Numble.",
+  "allTags": "All",
+  "loading": "Loading posts...",
+  "empty": "No posts yet.",
+  "reportsHeading": "Numble Reports",
+  "topicsCount": "posts",
+  "createPostButton": "Create post",
+  "cancelButton": "Cancel",
+  "newTopicHeading": "Create new post",
+  "titlePlaceholder": "Title",
+  "contentPlaceholder": "Describe the bug or your issue…",
+  "selectTagLabel": "Select tag",
+  "submitButton": "Create post",
+  "submittingButton": "Submitting…",
+  "errorTitleContent": "Title and content are required.",
+  "errorTag": "Please select at least one tag.",
+  "errorSubmit": "Post could not be created.",
+  "errorNetwork": "Network error. Please try again.",
+  "sourceLabel": "Discord",
+  "discordButton": "Join the Discord Community!"
 }

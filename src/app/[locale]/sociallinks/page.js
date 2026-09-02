@@ -8,6 +8,19 @@ import {usePageBasics} from "@/components/pageBasics";
 import {H2, H3, P, Section} from "@/components/design";
 import {links} from "@/components/sociallinks";
 
+export default function SocialLinks() {
+    const {t} = usePageBasics("sociallinks");
+
+    return (
+        <>
+            <HeroSection t={t}/>
+            <SocialLinksSection t={t}/>
+            <SupportSection t={t}/>
+            <LastEdited date="16.08.2026"/>
+        </>
+    );
+}
+
 function LinkCard({name, logo, description, href}) {
     return (
         <a
@@ -15,10 +28,10 @@ function LinkCard({name, logo, description, href}) {
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex flex-col rounded-3xl p-7 min-h-[260px]
-                       bg-gradient-to-br from-white/[0.07] via-white/[0.03] to-transparent
-                       border border-white/10 overflow-hidden transition-all duration-300
-                       hover:border-teal-400/50 hover:-translate-y-1.5
-                       hover:shadow-2xl hover:shadow-teal-400/10"
+    bg-gradient-to-br from-white/[0.07] via-white/[0.03] to-transparent
+    border border-white/10 overflow-hidden transition-all duration-300
+    hover:border-teal-400/50 hover:-translate-y-1.5
+    hover:shadow-2xl hover:shadow-teal-400/10"
         >
             {/* Glow */}
             <div
@@ -100,72 +113,66 @@ function LinkGrid({links, visibleCount}) {
     );
 }
 
-export default function SocialLinks() {
-    const {t} = usePageBasics("sociallinks");
+function HeroSection({t}) {
+    return <Hero title={t("title")} subtitle={t("desc")}/>;
+}
 
+function SocialLinksSection({t}) {
     const [showAll, setShowAll] = useState(false);
 
-    const translatedLinks = links.map((link) => ({
-        ...link,
-        name: t(
-            `${link.type === "support" ? "support" : "links"}.${link.id}.title`
-        ),
-        description: t(
-            `${link.type === "support" ? "support" : "links"}.${link.id}.desc`
-        ),
-    }));
-
-    const socialLinks = translatedLinks.filter(
-        (link) => link.type === "social"
-    );
-
-    const supportLinks = translatedLinks.filter(
-        (link) => link.type === "support"
-    );
+    const translatedLinks = links
+        .filter((link) => link.type === "social")
+        .map((link) => ({
+            ...link,
+            name: t(`links.${link.id}.title`),
+            description: t(`links.${link.id}.desc`),
+        }));
 
     const visibleSocialLinks = showAll
-        ? socialLinks
-        : socialLinks.slice(0, 6);
-
-    const visibleSupportLinks = showAll
-        ? supportLinks
-        : supportLinks.slice(0, 3);
+        ? translatedLinks
+        : translatedLinks.slice(0, 6);
 
     return (
-        <>
-            <Hero title={t("title")} subtitle={t("desc")}/>
+        <Section>
+            <LinkGrid links={visibleSocialLinks}/>
+            {translatedLinks.length > 6 && (
+                <div className="flex justify-center mt-8">
+                    <button
+                        type="button"
+                        onClick={() => setShowAll(!showAll)}
+                        className="rounded-full border border-white/10 bg-white/5 px-6 py-3
+                                   text-sm font-medium text-gray-300
+                                   transition-all duration-300
+                                   hover:border-teal-400/50 hover:bg-teal-400/10 hover:text-teal-400"
+                    >
+                        {showAll ? t("showLess") : t("showMore")}
+                    </button>
+                </div>
+            )}
+        </Section>
+    );
+}
 
-            <Section>
-                <LinkGrid links={visibleSocialLinks} />
-                {socialLinks.length > 6 && (
-                    <div className="flex justify-center mt-8">
-                        <button
-                            type="button"
-                            onClick={() => setShowAll(!showAll)}
-                            className="rounded-full border border-white/10 bg-white/5 px-6 py-3
-                       text-sm font-medium text-gray-300
-                       transition-all duration-300
-                       hover:border-teal-400/50 hover:bg-teal-400/10 hover:text-teal-400"
-                        >
-                            {showAll ? t("showLess") : t("showMore")}
-                        </button>
-                    </div>
-                )}
-            </Section>
+function SupportSection({t}) {
+    const translatedLinks = links
+        .filter((link) => link.type === "support")
+        .map((link) => ({
+            ...link,
+            name: t(`support.${link.id}.title`),
+            description: t(`support.${link.id}.desc`),
+        }));
 
-            <Section>
-                <H2 className="text-2xl font-bold text-teal-400 mb-3">
-                    {t("support.title")}
-                </H2>
+    return (
+        <Section>
+            <H2 className="text-2xl font-bold text-teal-400 mb-3">
+                {t("support.title")}
+            </H2>
 
-                <P className="mb-6">
-                    {t("support.desc")}
-                </P>
+            <P className="mb-6">
+                {t("support.desc")}
+            </P>
 
-                <LinkGrid links={supportLinks}/>
-            </Section>
-
-            <LastEdited date="16.08.2026"/>
-        </>
+            <LinkGrid links={translatedLinks} visibleCount={translatedLinks.length}/>
+        </Section>
     );
 }

@@ -24,7 +24,7 @@ export function H2({
     return (
         <h2
             className={
-                "text-4xl font-semibold tracking-wide mb-6 leading-tight bg-gradient-to-b from-teal-400 from-40% to-teal-800 to-100% text-transparent bg-clip-text " +
+                "text-4xl font-extrabold tracking-wide leading-tight bg-gradient-to-b from-teal-400 from-40% to-teal-800 to-100% text-transparent bg-clip-text " +
                 className
             }
         >
@@ -43,7 +43,7 @@ export function H3({
 }) {
     return (
         <h3
-            className={"text-2xl font-semibold text-teal-200 tracking-wide mb-4 leading-tight bg-gradient-to-b from-teal-400 from-50% to-teal-800 to-100% text-transparent bg-clip-text " + className}>
+            className={"text-2xl font-extrabold text-teal-200 tracking-wide leading-tight bg-gradient-to-b from-teal-400 from-50% to-teal-800 to-100% text-transparent bg-clip-text " + className}>
             {children}
         </h3>
     );
@@ -113,7 +113,7 @@ export function Section({
     return (
         <section
             className={
-                "max-w-4xl mx-auto py-8 " + className
+                "max-w-5xl mx-auto py-8 " + className
             }
         >
             {children}

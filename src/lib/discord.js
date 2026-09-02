@@ -20,7 +20,11 @@ async function getAvailableTags() {
 
     const channel = await res.json();
 
-    return channel.available_tags ?? [];
+    return (channel.available_tags ?? []).map((tag) => ({
+        id: tag.id,
+        name: tag.name,
+        adminOnly: tag.moderated ?? false,
+    }));
 }
 
 async function getActiveThreads() {
@@ -178,4 +182,55 @@ export async function getForumPost(threadId) {
 
         tags,
     };
+} // <-- getForumPost endet HIER, nicht am Dateiende
+
+const jsonHeaders = {
+    ...headers,
+    "Content-Type": "application/json",
+};
+
+export async function createForumPost({ title, content, tags = [] }) {
+    const res = await fetch(
+        `${API}/channels/${FORUM_CHANNEL_ID}/threads`,
+        {
+            method: "POST",
+            headers: jsonHeaders,
+            body: JSON.stringify({
+                name: title,
+                message: { content },
+                applied_tags: tags,
+            }),
+        }
+    );
+
+    if (!res.ok) {
+        const errBody = await res.text();
+        throw new Error(`Discord API error: ${res.status} – ${errBody}`);
+    }
+
+    const thread = await res.json();
+
+    return {
+        id: thread.id,
+        title: thread.name,
+        tags: thread.applied_tags ?? [],
+    };
+}
+
+export async function createThreadReply(threadId, content) {
+    const res = await fetch(
+        `${API}/channels/${threadId}/messages`,
+        {
+            method: "POST",
+            headers: jsonHeaders,
+            body: JSON.stringify({ content }),
+        }
+    );
+
+    if (!res.ok) {
+        const errBody = await res.text();
+        throw new Error(`Discord API error: ${res.status} – ${errBody}`);
+    }
+
+    return formatMessage(await res.json());
 }

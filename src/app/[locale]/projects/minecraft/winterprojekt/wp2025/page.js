@@ -10,7 +10,7 @@ import ServerStatusCard from "@/components/serverstatus";
 import { updates, galleryImages } from "@/components/winterprojekt/winterprojekt25Data";
 import LastEdited from "@/components/lastedited";
 
-export default function Winterprojekt2024() {
+export default function Winterprojekt2025() {
     const typeColors = {
         neu: "text-green-500",
         überarbeitet: "text-orange-400",

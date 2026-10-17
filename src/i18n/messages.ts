@@ -1,10 +1,11 @@
 export async function loadLocaleMessages(locale: string) {
-  const [common, faq, footer, home, minecraft, navbar, projects, numble, kontakt, imprint, playwithk, pwkentertainment, webdev, gamedev, forum, gamedevnotes, appdev, sociallinks, downloads, links, changelog, privacypolicy] = await Promise.all([
+  const [common, faq, footer, home, minecraft, winterprojekt, navbar, projects, numble, kontakt, imprint, playwithk, pwkentertainment, webdev, gamedev, forum, gamedevnotes, appdev, sociallinks, stream, downloads, links, changelog, privacypolicy] = await Promise.all([
     import(`../messages/${locale}/common.json`),
     import(`../messages/${locale}/faq.json`),
     import(`../messages/${locale}/footer.json`),
     import(`../messages/${locale}/home.json`),
     import(`../messages/${locale}/minecraft.json`),
+    import(`../messages/${locale}/winterprojekt.json`),
     import(`../messages/${locale}/navbar.json`),
     import(`../messages/${locale}/projects.json`),
     import(`../messages/${locale}/numble.json`),
@@ -18,6 +19,7 @@ export async function loadLocaleMessages(locale: string) {
     import(`../messages/${locale}/gamedevnotes.json`),
     import(`../messages/${locale}/appdev.json`),
     import(`../messages/${locale}/sociallinks.json`),
+    import(`../messages/${locale}/stream.json`),
     import(`../messages/${locale}/downloads.json`),
     import(`../messages/${locale}/links.json`),
     import(`../messages/${locale}/changelog.json`),
@@ -30,6 +32,7 @@ export async function loadLocaleMessages(locale: string) {
     footer: footer.default,
     home: home.default,
     minecraft: minecraft.default,
+    winterprojekt: winterprojekt.default,
     navbar: navbar.default,
     projects: projects.default,
     numble: numble.default,
@@ -43,6 +46,7 @@ export async function loadLocaleMessages(locale: string) {
     gamedevnotes: gamedevnotes.default,
     appdev: appdev.default,
     sociallinks: sociallinks.default,
+    stream: stream.default,
     downloads: downloads.default,
     links: links.default,
     changelog: changelog.default,

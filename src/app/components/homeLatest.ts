@@ -15,4 +15,19 @@ export const latestUpdates: UpdateEntry[] = [
         description: "Kleine Test-Bullshit Beschreibung uwu",
         date: "12.08.2026",
     },
+    {
+        title: "Neues Projekt gestartet",
+        description: "Kleine Test-Bullshit Beschreibung uwu",
+        date: "12.08.2026",
+    },
+    {
+        title: "Neues Projekt gestartet",
+        description: "Kleine Test-Bullshit Beschreibung uwu",
+        date: "12.08.2026",
+    },
+    {
+        title: "Neues Projekt gestartet",
+        description: "Kleine Test-Bullshit Beschreibung uwu",
+        date: "12.08.2026",
+    },
 ];

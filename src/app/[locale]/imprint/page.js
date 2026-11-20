@@ -30,10 +30,12 @@ function ProviderSection({t}) {
         <Section>
             <H3 className="text-2xl font-semibold mb-2 text-teal-400">{t("provider.title")}</H3>
             <P className="text-gray-300 whitespace-pre-line">
-                {/* Impressum */}
                 {t("provider.name")}
                 {"\n"}
                 {t("provider.address")}
+                {"\n"}
+                {"\n"}
+                {t("provider.responsible")}
             </P>
         </Section>
     );
@@ -84,7 +86,7 @@ function UsageRightsSection({t}) {
             <H3 className="text-2xl font-semibold">{t("usageRights.title")}</H3>
             <P className="mb-4">{t("usageRights.description")}</P>
 
-            <H2 className="text-2xl font-semibold">{t("sources.title")}</H2>
+            <H3 className="text-2xl font-semibold">{t("sources.title")}</H3>
             <P>
                 SVG Icons:{" "}
                 <a

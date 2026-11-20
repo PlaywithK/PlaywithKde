@@ -1,55 +1,46 @@
-export async function loadLocaleMessages(locale: string) {
-  const [common, faq, footer, home, minecraft, winterprojekt, navbar, projects, numble, kontakt, imprint, playwithk, pwkentertainment, webdev, gamedev, forum, gamedevnotes, appdev, sociallinks, stream, downloads, links, changelog, privacypolicy] = await Promise.all([
-    import(`../messages/${locale}/common.json`),
-    import(`../messages/${locale}/faq.json`),
-    import(`../messages/${locale}/footer.json`),
-    import(`../messages/${locale}/home.json`),
-    import(`../messages/${locale}/minecraft.json`),
-    import(`../messages/${locale}/winterprojekt.json`),
-    import(`../messages/${locale}/navbar.json`),
-    import(`../messages/${locale}/projects.json`),
-    import(`../messages/${locale}/numble.json`),
-    import(`../messages/${locale}/contact.json`),
-    import(`../messages/${locale}/imprint.json`),
-    import(`../messages/${locale}/playwithk.json`),
-    import(`../messages/${locale}/pwkentertainment.json`),
-    import(`../messages/${locale}/webdev.json`),
-    import(`../messages/${locale}/gamedev.json`),
-    import(`../messages/${locale}/forum.json`),
-    import(`../messages/${locale}/gamedevnotes.json`),
-    import(`../messages/${locale}/appdev.json`),
-    import(`../messages/${locale}/sociallinks.json`),
-    import(`../messages/${locale}/stream.json`),
-    import(`../messages/${locale}/downloads.json`),
-    import(`../messages/${locale}/links.json`),
-    import(`../messages/${locale}/changelog.json`),
-    import(`../messages/${locale}/privacypolicy.json`),
-  ]);
+const namespaces = {
+    common: "shared/common",
+    navbar: "shared/navbar",
+    footer: "shared/footer",
 
-  return {
-    common: common.default,
-    faq: faq.default,
-    footer: footer.default,
-    home: home.default,
-    minecraft: minecraft.default,
-    winterprojekt: winterprojekt.default,
-    navbar: navbar.default,
-    projects: projects.default,
-    numble: numble.default,
-    contact: kontakt.default,
-    imprint: imprint.default,
-    playwithk: playwithk.default,
-    pwkentertainment: pwkentertainment.default,
-    webdev: webdev.default,
-    gamedev: gamedev.default,
-    forum: forum.default,
-    gamedevnotes: gamedevnotes.default,
-    appdev: appdev.default,
-    sociallinks: sociallinks.default,
-    stream: stream.default,
-    downloads: downloads.default,
-    links: links.default,
-    changelog: changelog.default,
-    privacypolicy: privacypolicy.default,
-  };
+    home: "pages/home",
+    faq: "pages/faq",
+    contact: "pages/contact",
+    links: "pages/links",
+    changelog: "pages/changelog",
+    downloads: "pages/downloads",
+    stream: "pages/stream",
+    sociallinks: "pages/sociallinks",
+    forum: "pages/forum",
+    playwithk: "pages/playwithk",
+    pwkentertainment: "pages/pwkentertainment",
+
+    projects: "projects/projects",
+    webdev: "projects/webdev",
+    gamedev: "projects/gamedev",
+    gamedevnotes: "projects/gamedevnotes",
+    appdev: "projects/appdev",
+    numble: "projects/numble",
+
+    minecraft: "minecraft/minecraft",
+    winterprojekt: "minecraft/winterprojekt",
+
+    imprint: "legal/imprint",
+    privacypolicy: "legal/privacypolicy",
+} as const;
+
+export async function loadLocaleMessages(locale: string) {
+    const entries = await Promise.all(
+        Object.entries(namespaces).map(async ([key, path]) => {
+            try {
+                const mod = await import(`../messages/${locale}/${path}.json`);
+                return [key, mod.default] as const;
+            } catch (e) {
+                console.error(`Missing File: src/messages/${locale}/${path}.json`);
+                throw e;
+            }
+        })
+    );
+
+    return Object.fromEntries(entries);
 }

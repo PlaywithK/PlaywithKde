@@ -12,7 +12,7 @@ const allProjects = [
     {
         year: 2026,
         href: "/projects/minecraft/winterprojekt/wp2026",
-        src: "minecraft/Winterprojekt_Front.png",
+        src: "/minecraft/winterprojekt/Winterprojekt_Front.png",
         version: "1.21",
         download: false
     },
@@ -40,7 +40,7 @@ const allProjects = [
     {
         year: 2022,
         href: "/projects/minecraft/winterprojekt/wp2022",
-        src: "minecraft/Winterprojekt_Front.png",
+        src: "/minecraft/winterprojekt/Winterprojekt_Front.png",
         version: "1.19.2",
         download: false
     },
@@ -143,7 +143,6 @@ function PastProjectsSection({locale}) {
         <section className="max-w-6xl mx-auto mt-16 px-4 sm:px-8 sm:pb-8">
             <H2 className="text-3xl font-semibold mb-6 text-teal-400">Vergangene Projekte</H2>
             <ProjectGrid locale={locale}/>
-            <BackToOverviewLink/>
         </section>
     );
 }
@@ -202,16 +201,5 @@ function Badge({children, variant = "neutral"}) {
         >
             {children}
         </span>
-    );
-}
-
-function BackToOverviewLink() {
-    return (
-        <Link
-            href="./../../projects"
-            className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-medium px-5 py-2 rounded-full shadow transition-all mt-12 mb-12"
-        >
-            Zurück zur Projektübersicht
-        </Link>
     );
 }

@@ -47,7 +47,7 @@ export default function AppEntwicklung() {
                     <div className="text-left">
                         <div className="flex flex-col md:flex-row md:items-center md:gap-6">
                             <div className="flex-shrink-0 mb-6 md:mb-0">
-                                <Image src="/flutter-logo.svg" alt="Flutter logo" width={96} height={96}/>
+                                <Image src="/logos/flutter-logo.svg" alt="Flutter logo" width={96} height={96}/>
                             </div>
                             <div>
                                 <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-2">{t("makingof.flutterTitle")}</h2>

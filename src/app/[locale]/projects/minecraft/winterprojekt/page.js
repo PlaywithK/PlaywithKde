@@ -19,7 +19,7 @@ const allProjects = [
     {
         year: 2025,
         href: "/projects/minecraft/winterprojekt/wp2025",
-        src: "/minecraft/winterprojekt/wp2025_Title.png",
+        src: "/minecraft/winterprojekt/2025/wp_25_placeholderIcon.png",
         version: "1.21",
         download: true
     },
@@ -40,7 +40,7 @@ const allProjects = [
     {
         year: 2022,
         href: "/projects/minecraft/winterprojekt/wp2022",
-        src: "/minecraft/winterprojekt/wp2022_Title.png",
+        src: "/Winterprojekt_Front.png",
         version: "1.19.2",
         download: false
     },

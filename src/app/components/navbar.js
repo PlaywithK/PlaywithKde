@@ -13,7 +13,7 @@ export default function Navbar() {
 
   const navItems = [
     { key: "home", href: "/" },
-    { key: "projects", href: "/projects" },
+    // { key: "projects", href: "/projects" },
     { key: "entertainment", href: "/pwkentertainment" },
     { key: "faq", href: "/faq" },
   ];

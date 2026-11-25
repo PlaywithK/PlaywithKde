@@ -27,7 +27,10 @@ const teilnehmer = [
     "JxstLeave",
     "jonaswithj",
     "jakobwithj",
-    "UnluckyBoy"
+    "UnluckyBoy",
+    "Aize777",
+    "Baumarzt",
+    "_Samira_0"
 ];
 
 const modKategorien = [

@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 backdrop-blur bg-gray-900 bg-opacity-90 flex justify-between items-center px-6 py-4 border-b border-gray-700">
         <Link href="/" className="flex items-center">
             <Image
-                src="/PlaywithK_Logo_clean.png"
+                src="/pwk/PlaywithK_Logo_clean.png"
                 alt="PlaywithK"
                 width={120}
                 height={40}

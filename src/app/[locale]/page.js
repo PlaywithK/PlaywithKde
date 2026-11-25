@@ -15,9 +15,9 @@ const mcPaths = {
 };
 
 const mcImages = {
-    item1: "/Winterprojekt_Front.png",
-    item2: "/PWKDE_Front.png",
-    item3: "/Outlaw_Front.png",
+    item1: "/minecraft/Winterprojekt_Front.png",
+    item2: "/minecraft/PWKDE_Front.png",
+    item3: "/minecraft/Outlaw_Front.png",
 };
 
 const subProjects = {
@@ -83,7 +83,7 @@ function AboutSection({t, locale}) {
                 </div>
                 <div className="flex justify-center">
                     <Image
-                        src="/closed.png"
+                        src="/pwk/closed.png"
                         alt={t("about.imageAlt")}
                         width={400}
                         height={400}

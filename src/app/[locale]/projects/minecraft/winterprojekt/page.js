@@ -12,7 +12,7 @@ const allProjects = [
     {
         year: 2026,
         href: "/projects/minecraft/winterprojekt/wp2026",
-        src: "/Winterprojekt_Front.png",
+        src: "minecraft/Winterprojekt_Front.png",
         version: "1.21",
         download: false
     },
@@ -26,42 +26,42 @@ const allProjects = [
     {
         year: 2024,
         href: "/projects/minecraft/winterprojekt/wp2024",
-        src: "/minecraft/winterprojekt/wp2024_Title.png",
+        src: "/minecraft/winterprojekt/2024/wp2024_Title.png",
         version: "1.21",
         download: true
     },
     {
         year: 2023,
         href: "/projects/minecraft/winterprojekt/wp2023",
-        src: "/minecraft/winterprojekt/wp2023_Title.png",
+        src: "/minecraft/winterprojekt/2023/wp2023_Title.png",
         version: "1.21",
         download: true
     },
     {
         year: 2022,
         href: "/projects/minecraft/winterprojekt/wp2022",
-        src: "/Winterprojekt_Front.png",
+        src: "minecraft/Winterprojekt_Front.png",
         version: "1.19.2",
         download: false
     },
     {
         year: 2021,
         href: "/projects/minecraft/winterprojekt/wp2021",
-        src: "/minecraft/winterprojekt/wp2021_Title.png",
+        src: "/minecraft/winterprojekt/2021/wp2021_Title.png",
         version: "1.9",
         download: true
     },
     {
         year: 2020,
         href: "/projects/minecraft/winterprojekt/wp2020",
-        src: "/minecraft/winterprojekt/wp2020_Title.png",
+        src: "/minecraft/winterprojekt/2020/wp2020_Title.png",
         version: "1.9",
         download: true
     },
     {
         year: 2017,
         href: "/projects/minecraft/winterprojekt/wp2017",
-        src: "/minecraft/winterprojekt/wp2017_Title.png",
+        src: "/minecraft/winterprojekt/2017/wp2017_Title.png",
         version: "1.8.8",
         download: true
     },

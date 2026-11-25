@@ -15,9 +15,9 @@ const mcPaths = {
 };
 
 const mcImages = {
-    item1: "/minecraft/Winterprojekt_Front.png",
+    item1: "/minecraft/winterprojekt/Winterprojekt_Front.png",
     item2: "/minecraft/PWKDE_Front.png",
-    item3: "/minecraft/Outlaw_Front.png",
+    item3: "/minecraft/outlaw/Outlaw_Front.png",
 };
 
 const subProjects = {

@@ -129,7 +129,7 @@ function ReviewsSection({t}) {
             feedback: t("sections.reviews.r2"),
         },
         {
-            name: "Christopher Metzler",
+            name: "Anonym",
             feedback: t("sections.reviews.r3"),
         },
     ];

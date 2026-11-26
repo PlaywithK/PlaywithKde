@@ -4,7 +4,7 @@ import Image from "next/image";
 import Hero from "@/components/hero";
 import LastEdited from "@/components/lastedited";
 import {usePageBasics} from "@/components/pageBasics";
-import {H2, P, Section} from "@/components/design";
+import {H2, H3, P, Section} from "@/components/design";
 
 export default function PlaywithK() {
     const {t} = usePageBasics("playwithk");
@@ -18,7 +18,7 @@ export default function PlaywithK() {
             <AnimeSection t={t}/>
             <HarryPotterSection t={t}/>
             <TimelineSection t={t}/>
-            <LastEdited date="20.11.2026"/>
+            <LastEdited date="26.11.2026"/>
         </>
     );
 }
@@ -140,19 +140,41 @@ const gridClasses = "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap
 
 function FavoritesSection({t}) {
     const favoriteGames = [
-        {title: "Satisfactory", coverSrc: "/games/satisfactory_cover.jpg", subtitle: "Genre"},
-        {title: "Celeste", coverSrc: "/games/celeste_cover.jpg", subtitle: "Genre"},
-        {title: "Minecraft", coverSrc: "/games/minecraft_cover.jpg", subtitle: "Genre"},
-        {title: "Cyberpunk 2077", coverSrc: "/games/cyberpunk_cover.jpg", subtitle: "Genre"},
-        {title: "Hogwarts Legacy", coverSrc: "/games/hogwarts_cover.jpg", subtitle: "Genre"},
+        {title: "Satisfactory", coverSrc: "/games/satisfactory_cover.jpg"},
+        {title: "Celeste", coverSrc: "/games/celeste_cover.jpg"},
+        {title: "Minecraft", coverSrc: "/games/minecraft_cover.jpg"},
+        {title: "Cyberpunk 2077", coverSrc: "/games/cyberpunk_cover.jpg"},
+        {title: "Hogwarts Legacy", coverSrc: "/games/hogwarts_cover.jpg"},
+    ];
+
+    const gamingLinks = [
+        {href: "https://steamcommunity.com/id/DEIN_NAME", label: "Steam"},
+        {href: "https://steamhunters.com/profiles/DEINE_STEAM_ID", label: "SteamHunters"},
     ];
 
     return (
         <Section id="gaming">
-            <H2 className="text-center mb-3">{t("gaming.favorites.heading")}</H2>
-            <p className="text-center text-gray-400 max-w-2xl mx-auto mb-10">
+            <H2 className="text-center mb-6">{t("gaming.heading")}</H2>
+
+            <div className="flex flex-wrap justify-center gap-4 mb-14">
+                {gamingLinks.map(({href, label}) => (
+                    <a
+                        key={label}
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-teal-600 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all">
+                        {label}
+                    </a>
+                ))}
+            </div>
+
+            <H3 className="text-center">
+                {t("gaming.favorites.heading")}
+            </H3>
+            <P className="text-center max-w-2xl mx-auto mb-10">
                 {t("gaming.favorites.description")}
-            </p>
+            </P>
 
             <div className={gridClasses}>
                 {favoriteGames.map((game, index) => (
@@ -160,17 +182,17 @@ function FavoritesSection({t}) {
                 ))}
             </div>
         </Section>
-    );
+);
 }
 
 function CompletedSection({t}) {
     const completedGames = [
-        {title: "ARC Raiders", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
-        {title: "Cyberpunk 2077", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
-        {title: "Cyberpunk 2077 - Phantom Liberty", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
-        {title: "LEGO® Harry Potter™ Collection", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
-        {title: "Hogwarts Legacy", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
-        {title: "Waterpark Simulator", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
+        {title: "ARC Raiders", coverSrc: "/games/arcraiders_cover.jpg"},
+        {title: "Cyberpunk 2077", coverSrc: "/games/cyberpunk_cover.jpg"},
+        {title: "Cyberpunk 2077 - Phantom Liberty", coverSrc: "/games/cyberpunk_dlc_cover.jpg"},
+        {title: "LEGO® Harry Potter™ Collection", coverSrc: "/games/legohp_cover.jpg"},
+        {title: "Hogwarts Legacy", coverSrc: "/games/hogwarts_cover.jpg"},
+        {title: "Waterpark Simulator", coverSrc: "/games/placeholder.png"},
     ];
 
     const MAX_VISIBLE_COMPLETED = 5;
@@ -210,7 +232,7 @@ function CompletedSection({t}) {
 }
 
 function GameCard({game}) {
-    const {title, coverSrc, subtitle} = game;
+    const {title, coverSrc} = game;
 
     return (
         <article
@@ -234,7 +256,6 @@ function GameCard({game}) {
                         {title}
                     </h3>
                 </div>
-                {subtitle && <p className="text-xs text-gray-500 mt-0.5 truncate">{subtitle}</p>}
             </div>
         </article>
     );
@@ -242,11 +263,11 @@ function GameCard({game}) {
 
 function AnimeSection({t}) {
     const topAnime = [
-        {title: "Oshi No Ko", coverSrc: "/anime/oshinoko_cover.png", subtitle: "Genre"},
-        {title: "Death Note", coverSrc: "/anime/deathnote_cover.jpg", subtitle: "Genre"},
-        {title: "Attack on Titan", coverSrc: "/anime/aot_cover.jpg", subtitle: "Genre"},
-        {title: "The Irregular at Magic Highschool", coverSrc: "/anime/magic_highschool_cover.jpg", subtitle: "Genre"},
-        {title: "Puella Magi Madoka Magica", coverSrc: "/anime/magimadoka_cover.jpg", subtitle: "Genre"},
+        {title: "Oshi No Ko", coverSrc: "/anime/oshinoko_cover.png"},
+        {title: "Death Note", coverSrc: "/anime/deathnote_cover.jpg"},
+        {title: "Attack on Titan", coverSrc: "/anime/aot_cover.jpg"},
+        {title: "The Irregular at Magic Highschool", coverSrc: "/anime/magic_highschool_cover.jpg"},
+        {title: "Puella Magi Madoka Magica", coverSrc: "/anime/magimadoka_cover.jpg"},
     ];
 
     return (
@@ -276,37 +297,46 @@ function HarryPotterSection({t}) {
     return (
         <Section id="harrypotter">
             <H2 className="text-center mb-3">{t("harrypotter.heading")}</H2>
-            <p className="text-center text-gray-400 max-w-2xl mx-auto mb-10">
+            <p className="text-center text-gray-400 max-w-2xl mx-auto mb-12">
                 {t("harrypotter.description")}
             </p>
 
-            <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto">
-                {harryPotterItems.map(({key, image}) => (
-                    <article
-                        key={key}
-                        className="group bg-gray-800/50 backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden
-                            hover:shadow-xl hover:-translate-y-1 hover:border-teal-400/50 transition-all duration-300">
-                        <div className="relative aspect-square w-full overflow-hidden">
-                            <Image
-                                src={image}
-                                alt={t(`harrypotter.${key}.value`)}
-                                fill
-                                sizes="(max-width: 768px) 50vw, 384px"
-                                className="object-cover transition-transform duration-300 group-hover:scale-105"
-                                loading="lazy"
-                                draggable={false}
-                            />
+            <div className="grid grid-cols-1 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-10 md:gap-14 max-w-5xl mx-auto items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 sm:gap-y-12">
+                    {harryPotterItems.map(({key, image}) => (
+                        <div key={key} className="group flex items-center gap-4">
+                            <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0">
+                                <Image
+                                    src={image}
+                                    alt={t(`harrypotter.${key}.value`)}
+                                    fill
+                                    sizes="80px"
+                                    className="object-contain drop-shadow-lg"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div className="min-w-0">
+                                <p className="text-xs uppercase tracking-wide text-gray-500">
+                                    {t(`harrypotter.${key}.label`)}
+                                </p>
+                                <h3 className="text-lg font-semibold text-teal-400 break-words">
+                                    {t(`harrypotter.${key}.value`)}
+                                </h3>
+                            </div>
                         </div>
-                        <div className="p-4">
-                            <p className="text-xs uppercase tracking-wide text-gray-500">
-                                {t(`harrypotter.${key}.label`)}
-                            </p>
-                            <h3 className="text-lg font-semibold text-teal-400">
-                                {t(`harrypotter.${key}.value`)}
-                            </h3>
-                        </div>
-                    </article>
-                ))}
+                    ))}
+                </div>
+
+                <div className="group relative w-full max-w-xs sm:max-w-sm md:max-w-none mx-auto aspect-[3/4]">
+                    <Image
+                        src="/pwk/hp_kevko.png"
+                        alt="Chibi PlaywithK"
+                        fill
+                        sizes="(max-width: 768px) 80vw, 400px"
+                        className="object-contain drop-shadow-2xl"
+                        loading="lazy"
+                    />
+                </div>
             </div>
         </Section>
     );

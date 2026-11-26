@@ -38,6 +38,7 @@ const teilnehmer = [
 
 const modKategorien = [
     {
+        key: "create",
         titel: "Create Mods",
         mods: [
             { name: "Create", slug: "create" },
@@ -62,6 +63,7 @@ const modKategorien = [
         ],
     },
     {
+        key: "extra",
         titel: "Extra Mods",
         mods: [
             { name: "Simple Voice Chat", slug: "simple-voice-chat" },
@@ -76,6 +78,7 @@ const modKategorien = [
         ],
     },
     {
+        key: "client",
         titel: "Client Mods",
         mods: [
             { name: "Jade", slug: "jade" },
@@ -87,6 +90,7 @@ const modKategorien = [
         ],
     },
     {
+        key: "performance",
         titel: "Performance Mods",
         mods: [
             { name: "Sodium", slug: "sodium" },
@@ -251,7 +255,7 @@ function DownloadSection({ t }) {
                 >
                     <span className="flex items-center justify-between gap-2 text-lg font-semibold text-teal-400">
                         {t("downloads.zipTitle")}
-                        <span aria-hidden="true">↓</span>
+                        <span aria-hidden="true">↗</span>
                     </span>
                     <span className="mt-1 block text-sm text-gray-300">
                         {t("downloads.zipText")}

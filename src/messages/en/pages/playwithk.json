@@ -10,6 +10,7 @@
     "p2": "At the beginning of 2025, I left all those social media platforms behind. It was not an easy decision, but the social media world had changed a lot since 2014 and I could no longer identify with it. I also gained more time to focus on other areas. All further information about upcoming projects and everything related to PlaywithK is now available on this website. Feel free to look around!"
   },
   "timeline": {
+    "title": "My Journey",
     "entries": [
       {
         "title": "My first channel",
@@ -41,23 +42,40 @@
       }
     ]
   },
+  "gaming": {
+    "heading": "Gaming",
+    "favorites": {
+      "heading": "My Favorite Games",
+      "description": "These games have shaped me the most, and I keep coming back to them."
+    },
+    "completed": {
+      "heading": "Completed Games",
+      "description": "A selection of the games I have played through to the credits.",
+      "countLabel": "games completed",
+      "showAll": "Show all"
+    }
+  },
+  "anime": {
+    "heading": "Top Anime",
+    "description": "Besides gaming, I love watching anime. These are my absolute favorites."
+  },
   "harrypotter": {
     "heading": "Wizarding World",
-    "description": "Die Zauberwelt von Harry Potter ist eines meiner Lieblings-Universen. Das hier wäre mein Platz in Hogwarts.",
+    "description": "The wizarding world of Harry Potter is one of my favorite universes. This would be my place at Hogwarts.",
     "house": {
-      "label": "Haus",
+      "label": "House",
       "value": "Ravenclaw"
     },
     "wand": {
-      "label": "Zauberstab",
-      "value": "Spruce Wood, Dragon Core, 12 1/8 Zoll, Slightly Flexible"
+      "label": "Wand",
+      "value": "Spruce Wood, Dragon Core, 12 1/8 inches, Slightly Flexible"
     },
     "patronus": {
       "label": "Patronus",
       "value": "White Stallion"
     },
     "character": {
-      "label": "Lieblings-Charakter",
+      "label": "Favorite Character",
       "value": "Luna Lovegood & Severus Snape"
     }
   }

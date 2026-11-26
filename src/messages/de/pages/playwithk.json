@@ -1,4 +1,3 @@
-
 {
   "pageTitle": "Über mich",
   "desc": "Hier findest du alles zu meinem Kanal, meinen Ideen und Projekten abseits von Software.",
@@ -11,6 +10,7 @@
     "p2": "Anfang 2025 habe ich all diese Social Media Plattformen allerdings hinter mir gelassen. Dies war keine leichte Entscheidung, allerdings hat sich seit 2014 einiges an der Social-Media-Welt verändert und ich konnte mich damit nicht mehr richtig identifizieren. Zudem habe ich so mehr Zeit mich auf andere Bereiche zu konzentrieren. Alle weiteren Infos zu kommenden Projekten und allem bezüglich PlaywithK gibt es nun auf dieser Webseite. Schau dich gerne um!"
   },
   "timeline": {
+    "title": "Meine Reise",
     "entries": [
       {
         "title": "Mein erster Kanal",
@@ -41,6 +41,23 @@
         "description": "Leider musste ich mich dazu entscheiden PWK Entertainment schweren Herzens aufzugeben. Die Firma war Teil meines Traumes, allerdings habe ich es leider nicht geschafft diese ordentlich zu managen und die Einnahmen konstant zu halten, weshalb ich diese vorerst wieder in den Boden stampfen musste. Aber wer weiß was die Zukunft noch bringt."
       }
     ]
+  },
+  "gaming": {
+    "heading": "Gaming",
+    "favorites": {
+      "heading": "Meine Lieblingsspiele",
+      "description": "Diese Spiele haben mich besonders geprägt und ich komme immer wieder gerne zu ihnen zurück."
+    },
+    "completed": {
+      "heading": "Durchgespielte Spiele",
+      "description": "Spiele die ich auf 100% oder alle Achievements gespielt habe.",
+      "countLabel": "Spiele durchgespielt",
+      "showAll": "Alle anzeigen"
+    }
+  },
+  "anime": {
+    "heading": "Top Anime",
+    "description": "Neben Gaming schaue ich unheimlich gerne Anime. Das sind meine absoluten Favoriten."
   },
   "harrypotter": {
     "heading": "Wizarding World",

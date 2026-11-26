@@ -40,5 +40,25 @@
         "description": "Unfortunately, I had to decide to give up PWK Entertainment with a heavy heart. The company was part of my dream, but I was not able to manage it properly and keep the income stable, so I had to temporarily shut it down again. But who knows what the future will bring."
       }
     ]
+  },
+  "harrypotter": {
+    "heading": "Wizarding World",
+    "description": "Die Zauberwelt von Harry Potter ist eines meiner Lieblings-Universen. Das hier wäre mein Platz in Hogwarts.",
+    "house": {
+      "label": "Haus",
+      "value": "Ravenclaw"
+    },
+    "wand": {
+      "label": "Zauberstab",
+      "value": "Spruce Wood, Dragon Core, 12 1/8 Zoll, Slightly Flexible"
+    },
+    "patronus": {
+      "label": "Patronus",
+      "value": "White Stallion"
+    },
+    "character": {
+      "label": "Lieblings-Charakter",
+      "value": "Luna Lovegood & Severus Snape"
+    }
   }
 }

@@ -1,12 +1,8 @@
 "use client";
 
-import Gallery from "@/components/gallery";
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import React from "react";
 import Hero from "@/components/hero";
-import { H1, H2, H3, P, PLarge } from "@/components/design";
-import ServerStatusCard from "@/components/serverstatus";
-import { updates, galleryImages } from "@/components/winterprojekt/winterprojekt25Data";
+import { H3 } from "@/components/design";
 import LastEdited from "@/components/lastedited";
 
 const regeln = [
@@ -31,7 +27,6 @@ const regeln = [
         punkte: [
             "Das Nehmen oder Stehlen von Items ohne Erlaubnis anderer ist verboten, vor allem aus Maschinerien!",
         ],
-        hinweis: "Es wird einen Handelsdistrikt geben, in dem Items verkauft und gekauft werden können!",
     },
     {
         titel: "Cheats und Client-Mods",
@@ -54,59 +49,108 @@ const regeln = [
     },
 ];
 
-export default function Winterprojekt2026() {
+const regelId = (index) => `regel-${index + 1}`;
 
+export default function Winterprojekt2026Regeln() {
     return (
         <>
-            <HeaderSection/>
-            <RegelSection/>
-            <LastEdited date="01.11.2026"/>
+            <HeaderSection />
+            <RegelNavigation />
+            <RegelSection />
+            <LastEdited date="26.11.2026" />
         </>
     );
+}
 
-    function HeaderSection() {
-        return (
-            <section className="max-w-6xl mx-auto text-center">
-                <Hero
-                    title="Winterprojekt 2026 Regelwerk"
-                    subtitle="Dieses Jahr gibt es erstmals ein festes Regelwerk. Ich bitte alle Teilnehmer, sich dieses durchzulesen."
-                />
-            </section>
-        );
-    }
+function HeaderSection() {
+    return (
+        <section className="max-w-6xl mx-auto text-center">
+            <Hero
+                title="Winterprojekt 2026 Regelwerk"
+                subtitle="Dieses Jahr gibt es erstmals ein festes Regelwerk. Ich bitte alle Teilnehmer, sich dieses durchzulesen."
+            />
+        </section>
+    );
+}
 
-    function RegelSection() {
-        return (
-            <section className="max-w-6xl mx-auto px-4 py-8">
-                <div className="mt-6">
-                    {regeln.map((regel, index) => (
-                        <RegelItem key={regel.titel} regel={regel} nummer={index + 1}/>
-                    ))}
-                </div>
-            </section>
-        );
-    }
+function RegelNavigation() {
+    return (
+        <nav
+            aria-label="Regelübersicht"
+            className="max-w-4xl mx-auto px-4 pt-4"
+        >
+            <ul className="flex flex-wrap justify-center gap-2">
+                {regeln.map((regel, index) => (
+                    <li key={regel.titel}>
+                        <a
+                            href={`#${regelId(index)}`}
+                            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-gray-800 px-4 py-2 text-sm text-gray-200 transition-colors hover:border-teal-400 hover:text-teal-400"
+                        >
+                            <span aria-hidden="true">{regel.icon}</span>
+                            <span>
+                                {index + 1}. {regel.titel}
+                            </span>
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+    );
+}
 
-    function RegelItem({regel, nummer}) {
-        const {titel, punkte, hinweis} = regel;
+function RegelSection() {
+    return (
+        <section className="max-w-4xl mx-auto px-4 py-8">
+            <div className="space-y-6">
+                {regeln.map((regel, index) => (
+                    <RegelItem
+                        key={regel.titel}
+                        id={regelId(index)}
+                        regel={regel}
+                        nummer={index + 1}
+                    />
+                ))}
+            </div>
+        </section>
+    );
+}
 
-        return (
-            <details className="mb-4 bg-gray-800 rounded-lg p-4 border border-white/10">
-                <summary className="cursor-pointer font-semibold text-lg text-teal-400 select-none">
-                    {nummer}. {titel.toUpperCase()}
-                </summary>
-                <ul className="mt-3 list-disc list-inside text-gray-300">
+function RegelItem({ id, regel, nummer }) {
+    const { titel, punkte, hinweis } = regel;
+
+    return (
+        <article
+            id={id}
+            className="scroll-mt-24 overflow-hidden rounded-xl border border-white/10 border-l-4 border-l-teal-500
+                bg-gray-800/50 backdrop-blur-sm shadow-lg transition-colors hover:border-teal-400/40 hover:border-l-teal-400"
+        >
+            <header className="flex items-center gap-4 border-b border-white/10 bg-gray-800 px-5 py-4">
+                <span
+                    aria-hidden="true"
+                    className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full
+                        bg-teal-500/20 text-lg font-bold text-teal-300"
+                >
+                    {nummer}
+                </span>
+                <H3 className="flex-1 text-xl font-bold uppercase tracking-wide text-teal-400">
+                    {titel}
+                </H3>
+            </header>
+
+            {/* Punkte */}
+            <div className="px-5 py-5">
+                <ul className="space-y-3">
                     {punkte.map((punkt) => (
-                        <li key={punkt} className="mb-2">
-                            {punkt}
+                        <li key={punkt} className="flex gap-3 text-gray-300">
+                            <span
+                                aria-hidden="true"
+                                className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-teal-400"
+                            />
+                            <span className="leading-relaxed">{punkt}</span>
                         </li>
                     ))}
                 </ul>
-
-                {hinweis && (
-                    <p className="mt-2 text-sm text-gray-400">({hinweis})</p>
-                )}
-            </details>
-        );
-    }
+            </div>
+        </article>
+    );
 }

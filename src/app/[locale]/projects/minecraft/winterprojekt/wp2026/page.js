@@ -1,13 +1,14 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Gallery from "@/components/gallery";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Hero from "@/components/hero";
 import { H1, H2, H3, P, PLarge } from "@/components/design";
-import ServerStatusCard from "@/components/serverstatus";
 import { updates, galleryImages } from "@/components/winterprojekt/winterprojekt25Data";
 import LastEdited from "@/components/lastedited";
+import {usePageBasics} from "@/components/pageBasics";
 
 const beschreibung = [
     "Das Winterprojekt 2026 wird in einem Create-Mod Modpack stattfinden.",
@@ -16,6 +17,8 @@ const beschreibung = [
 ];
 
 const PROJEKTSTART = new Date("2026-11-27T18:00:00+01:00");
+
+const MODRINTH_MODPACK_URL = "https://modrinth.com/modpack/wp26-create";
 
 const teilnehmer = [
     "PlaywithK",
@@ -118,102 +121,56 @@ const tutorialVideos = [
 const CREATE_WIKI_URL = "https://create.fandom.com/wiki/Create_Mod_Wiki";
 
 export default function Winterprojekt2026() {
+    const {t, common, locale} = usePageBasics("winterprojekt.wp2026");
 
     return (
         <>
-            <HeaderSection/>
-            <BeschreibungSection/>
-            <Countdown/>
-            <TeilnehmerSection/>
-            <ModlistSection/>
-            <TutorialSection/>
-            <LastEdited date="01.11.2026"/>
+            <HeaderSection t={t} />
+            <Countdown t={t} />
+            <DescriptionSection t={t} />
+            <RuleSection t={t} locale={locale}/>
+            <DownloadSection t={t} />
+            <TeilnehmerSection t={t} />
+            <ModlistSection t={t} />
+            <TutorialSection t={t} />
+            <LastEdited date="26.11.2026" />
         </>
     );
+}
 
-    function HeaderSection() {
-        return (
-            <section className="max-w-6xl mx-auto text-center">
-                <Hero
-                    title="Winterprojekt 2026"
-                    subtitle="Create. Automate. Explore."
-                />
-            </section>
-        );
-    }
+function HeaderSection({ t }) {
+    return (
+        <section className="max-w-6xl mx-auto text-center">
+            <Hero title={t("title")} subtitle={t("subtitle")} />
+        </section>
+    );
+}
 
-    function BeschreibungSection() {
-        return (
-            <section className="max-w-4xl mx-auto px-4 py-8">
-                <PLarge>{beschreibung[0]}</PLarge>
-                <div className="mt-4 space-y-4">
-                    {beschreibung.slice(1).map((absatz) => (
-                        <P key={absatz}>{absatz}</P>
-                    ))}
-                </div>
-            </section>
-        );
-    }
-
-    function TeilnehmerSection() {
-        const adminListe = teilnehmer.filter((name) => admins.includes(name));
-        const andere = teilnehmer.filter((name) => !admins.includes(name));
-
-        const renderTeilnehmer = (name) => (
-            <li
-                key={name}
-                className="flex items-center gap-4 rounded-lg border p-3"
-            >
-                <img
-                    src={`https://mc-heads.net/avatar/${name}/64`}
-                    alt={`Minecraft-Skin von ${name}`}
-                    width={48}
-                    height={48}
-                    loading="lazy"
-                    className="rounded-sm [image-rendering:pixelated]"
-                />
-                <span className="font-medium">
-    {name}
-                    {admins.includes(name) && (
-                        <span className="ml-1 text-sm opacity-70">(Admin)</span>
-                    )}
-</span>
-            </li>
-        );
-
-        return (
-            <section className="max-w-6xl mx-auto px-4 py-8">
-                <H2>Teilnehmer ({teilnehmer.length})</H2>
-
-                {/* Admins */}
-                <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    {adminListe.map(renderTeilnehmer)}
-                </ul>
-
-                {/* Andere Teilnehmer */}
-                <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    {andere.map(renderTeilnehmer)}
-                </ul>
-            </section>
-        );
-    }
+function DescriptionSection({ t }) {
+    return (
+        <section className="max-w-4xl mx-auto px-4 py-8">
+            <PLarge>{t("description.intro")}</PLarge>
+            <div className="mt-4 space-y-4">
+                <P>{t("description.create")}</P>
+                <P>{t("description.rules")}</P>
+            </div>
+        </section>
+    );
 }
 
 function getTimeLeft() {
     const diff = PROJEKTSTART.getTime() - Date.now();
-
     if (diff <= 0) return null;
 
     return {
-        tage: Math.floor(diff / (1000 * 60 * 60 * 24)),
-        stunden: Math.floor((diff / (1000 * 60 * 60)) % 24),
-        minuten: Math.floor((diff / (1000 * 60)) % 60),
-        sekunden: Math.floor((diff / 1000) % 60),
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((diff / (1000 * 60)) % 60),
+        seconds: Math.floor((diff / 1000) % 60),
     };
 }
 
-function Countdown() {
-    // Startwert undefined, damit Server und Client beim ersten Render übereinstimmen
+function Countdown({ t }) {
     const [timeLeft, setTimeLeft] = useState(undefined);
 
     useEffect(() => {
@@ -230,15 +187,122 @@ function Countdown() {
                 {timeLeft === undefined
                     ? "\u00A0"
                     : timeLeft === null
-                        ? "Das Projekt hat begonnen!"
-                        : `${timeLeft.tage} Tage ${pad(timeLeft.stunden)} Std. ${pad(timeLeft.minuten)} Min. ${pad(timeLeft.sekunden)} Sek.`}
+                        ? t("countdown.started")
+                        : t("countdown.remaining", {
+                            days: timeLeft.days,
+                            hours: pad(timeLeft.hours),
+                            minutes: pad(timeLeft.minutes),
+                            seconds: pad(timeLeft.seconds),
+                        })}
             </H2>
-            <P>bis zum Projektstart am 27.11.2026 um 18:00 Uhr</P>
+            <P>{t("countdown.until")}</P>
         </section>
     );
 }
 
-function ModlistSection() {
+function RuleSection({ t, locale }) {
+    return (
+        <section className="max-w-6xl mx-auto px-4 py-8">
+            <H2>{t("rules.title")}</H2>
+            <P>{t("rules.text")}</P>
+
+            <Link
+                href={`/${locale}/projects/minecraft/winterprojekt/wp2026/rules`}
+                className="mt-6 block rounded-lg border border-white/10 bg-gray-800 p-5 transition-colors hover:border-teal-400 hover:bg-gray-700"
+            >
+                <span className="flex items-center justify-between gap-2 text-lg font-semibold text-teal-400">
+                    {t("rules.linkTitle")}
+                    <span aria-hidden="true">→</span>
+                </span>
+                <span className="mt-1 block text-sm text-gray-300">
+                    {t("rules.linkText")}
+                </span>
+            </Link>
+        </section>
+    );
+}
+
+function DownloadSection({ t }) {
+    return (
+        <section className="max-w-6xl mx-auto px-4 py-8">
+            <H2>{t("downloads.title")}</H2>
+            <P>{t("downloads.text")}</P>
+
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
+                <a
+                    href={MODRINTH_MODPACK_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-lg border border-white/10 bg-gray-800 p-5 transition-colors hover:border-teal-400 hover:bg-gray-700"
+                >
+                    <span className="flex items-center justify-between gap-2 text-lg font-semibold text-teal-400">
+                        {t("downloads.modrinthTitle")}
+                        <span aria-hidden="true">↗</span>
+                    </span>
+                    <span className="mt-1 block text-sm text-gray-300">
+                        {t("downloads.modrinthText")}
+                    </span>
+                </a>
+
+                <a
+                    href={MODRINTH_MODPACK_URL}
+                    download
+                    className="block rounded-lg border border-white/10 bg-gray-800 p-5 transition-colors hover:border-teal-400 hover:bg-gray-700"
+                >
+                    <span className="flex items-center justify-between gap-2 text-lg font-semibold text-teal-400">
+                        {t("downloads.zipTitle")}
+                        <span aria-hidden="true">↓</span>
+                    </span>
+                    <span className="mt-1 block text-sm text-gray-300">
+                        {t("downloads.zipText")}
+                    </span>
+                </a>
+            </div>
+        </section>
+    );
+}
+
+function TeilnehmerSection({ t }) {
+    const adminListe = teilnehmer.filter((name) => admins.includes(name));
+    const andere = teilnehmer.filter((name) => !admins.includes(name));
+
+    const renderTeilnehmer = (name) => (
+        <li key={name} className="flex items-center gap-4 rounded-lg border p-3">
+            <img
+                src={`https://mc-heads.net/avatar/${name}/64`}
+                alt={t("participants.skinAlt", { name })}
+                width={48}
+                height={48}
+                loading="lazy"
+                className="rounded-sm [image-rendering:pixelated]"
+            />
+            <span className="font-medium">
+                {name}
+                {admins.includes(name) && (
+                    <span className="ml-1 text-sm opacity-70">
+                        {t("participants.admin")}
+                    </span>
+                )}
+            </span>
+        </li>
+    );
+
+    return (
+        <section className="max-w-6xl mx-auto px-4 py-8">
+            <H2>{t("participants.title", { count: teilnehmer.length })}</H2>
+
+            <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {adminListe.map(renderTeilnehmer)}
+            </ul>
+
+            <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {andere.map(renderTeilnehmer)}
+            </ul>
+        </section>
+    );
+}
+
+function ModlistSection({ t }) {
     const modLink = ({ name, slug }) =>
         slug
             ? `https://modrinth.com/mod/${slug}`
@@ -246,14 +310,12 @@ function ModlistSection() {
 
     return (
         <section className="max-w-6xl mx-auto px-4 py-8">
-            <H2>Mods</H2>
-            <P>Klicke auf eine Mod, um zur Modrinth-Seite zu gelangen.</P>
+            <H2>{t("mods.title")}</H2>
+            <P>{t("mods.text")}</P>
 
             {modKategorien.map((kategorie) => (
-                <div key={kategorie.titel} className="mt-6">
-                    <H3>
-                        {kategorie.titel}
-                    </H3>
+                <div key={kategorie.key} className="mt-6">
+                    <H3>{t(`mods.categories.${kategorie.key}`)}</H3>
 
                     <ul className="mt-3 flex flex-wrap gap-2">
                         {kategorie.mods.map((mod) => (
@@ -276,16 +338,14 @@ function ModlistSection() {
     );
 }
 
-function TutorialSection() {
+function TutorialSection({ t }) {
     return (
         <section className="max-w-6xl mx-auto px-4 py-8">
-            <H2>Einstieg</H2>
-            <P>
-                Ich habe zum Einstieg in die Create-Mod diese beiden Videos genutzt. Ihr könnt aber auch gerne bei Mineceater nachfragen.
-            </P>
+            <H2>{t("tutorial.title")}</H2>
+            <P>{t("tutorial.text")}</P>
 
             <div className="mt-6 grid gap-6 md:grid-cols-2">
-                {tutorialVideos.map(({ id, titel }) => (
+                {tutorialVideos.map(({ id, titleKey }) => (
                     <div
                         key={id}
                         className="overflow-hidden rounded-lg border border-white/10 bg-gray-800"
@@ -293,7 +353,7 @@ function TutorialSection() {
                         <div className="aspect-video">
                             <iframe
                                 src={`https://www.youtube-nocookie.com/embed/${id}`}
-                                title={titel}
+                                title={t(`tutorial.${titleKey}`)}
                                 loading="lazy"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen
@@ -312,22 +372,22 @@ function TutorialSection() {
                 className="mt-6 block rounded-lg border border-white/10 bg-gray-800 p-5 transition-colors hover:border-teal-400 hover:bg-gray-700"
             >
                 <span className="flex items-center justify-between gap-2 text-lg font-semibold text-teal-400">
-                    Create Mod Wiki
+                    {t("tutorial.wikiTitle")}
                     <span aria-hidden="true">↗</span>
                 </span>
                 <span className="mt-1 block text-sm text-gray-300">
-                    Alle Blöcke, Maschinen und Rezepte der Create-Mod zum Nachschlagen.
+                    {t("tutorial.wikiText")}
                 </span>
             </a>
         </section>
     );
 }
 
-function GallerySection() {
+function GallerySection({ t }) {
     return (
         <Gallery
-            title="Community Galerie"
-            description="In der Community-Galerie findest du Bilder und Clips aus der Community! Du hast auch einen Moment der es verdient hat hier zu landen? Schicke ihn PlaywithK auf Discord!"
+            title={t("gallery.title")}
+            description={t("gallery.description")}
             images={galleryImages}
         />
     );

@@ -1,5 +1,62 @@
 {
   "pageTitle": "Winterprojekt",
   "title": "Winterprojekt",
-  "subtitle": "Minecraft Projekt"
+  "subtitle": "Ein jährliches Minecraft Projekt seit 2017!",
+
+  "wp2026": {
+    "pageTitle": "Winterprojekt 2026",
+    "title": "Winterprojekt 2026",
+    "subtitle": "Create. Automate. Explore.",
+    "description": {
+      "intro": "Das Winterprojekt 2026 wird in einem Create-Mod Modpack stattfinden.",
+      "create": "Create ermöglicht eine völlig neue Art Minecraft zu spielen. Im Grunde dreht sich alles um Rotationsenergie, mit dessen Hilfe wir Maschinen, automatische Crafter, Züge und mehr herstellen können!",
+      "rules": "Es gibt in diesem Jahr erstmals ein festes Regelwerk. Ich bitte alle Teilnehmer, sich dieses vor Projektstart durchzulesen."
+    },
+    "countdown": {
+      "started": "Das Projekt hat begonnen!",
+      "remaining": "{days} Tag(e) {hours} Std. {minutes} Min. {seconds} Sek.",
+      "until": "bis zum Projektstart am 27.11.2026 um 18:00 Uhr"
+    },
+    "rules": {
+      "title": "Regelwerk",
+      "text": "Dieses Jahr gibt es erstmals ein festes Regelwerk. Bitte lest es euch vor Projektstart in Ruhe durch.",
+      "linkTitle": "Zum Regelwerk",
+      "linkText": "Alle Regeln für das Winterprojekt 2026 auf einen Blick."
+    },
+    "downloads": {
+      "title": "Downloads",
+      "text": "Das Modpack kannst du direkt über Modrinth installieren oder als ZIP-Datei von hier herunterladen.",
+      "modrinthTitle": "Modrinth",
+      "modrinthText": "Empfohlen: Installation über die Modrinth App oder einen kompatiblen Launcher.",
+      "zipTitle": "ZIP-Download",
+      "zipText": "Das komplette Modpack als ZIP-Datei zum manuellen Import."
+    },
+    "participants": {
+      "title": "Teilnehmer ({count})",
+      "skinAlt": "Minecraft-Skin von {name}",
+      "admin": "(Admin)"
+    },
+    "mods": {
+      "title": "Mods",
+      "text": "Klicke auf eine Mod, um zur Modrinth-Seite zu gelangen.",
+      "categories": {
+        "create": "Create Mods",
+        "extra": "Extra Mods",
+        "client": "Client Mods",
+        "performance": "Performance Mods"
+      }
+    },
+    "tutorial": {
+      "title": "Einstieg",
+      "text": "Ich habe zum Einstieg in die Create-Mod diese beiden Videos genutzt. Ihr könnt aber auch gerne bei Mineceater nachfragen.",
+      "video1": "Create Mod Tutorial Teil 1",
+      "video2": "Create Mod Tutorial Teil 2",
+      "wikiTitle": "Create Mod Wiki",
+      "wikiText": "Alle Blöcke, Maschinen und Rezepte der Create-Mod zum Nachschlagen."
+    },
+    "gallery": {
+      "title": "Community Galerie",
+      "description": "In der Community-Galerie findest du Bilder und Clips aus der Community! Du hast auch einen Moment, der es verdient hat, hier zu landen? Schicke ihn PlaywithK auf Discord!"
+    }
+  }
 }

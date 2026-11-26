@@ -16,6 +16,7 @@ export default function PlaywithK() {
             <FavoritesSection t={t}/>
             <CompletedSection t={t}/>
             <AnimeSection t={t}/>
+            <HarryPotterSection t={t}/>
             <TimelineSection t={t}/>
             <LastEdited date="20.11.2026"/>
         </>
@@ -139,11 +140,11 @@ const gridClasses = "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap
 
 function FavoritesSection({t}) {
     const favoriteGames = [
-        {title: "Satisfactory", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
-        {title: "Celeste", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
-        {title: "Minecraft", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
-        {title: "Cyberpunk 2077", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
-        {title: "Hogwarts Legacy", coverSrc: "/games/placeholder.png", subtitle: "Genre"},
+        {title: "Satisfactory", coverSrc: "/games/satisfactory_cover.jpg", subtitle: "Genre"},
+        {title: "Celeste", coverSrc: "/games/celeste_cover.jpg", subtitle: "Genre"},
+        {title: "Minecraft", coverSrc: "/games/minecraft_cover.jpg", subtitle: "Genre"},
+        {title: "Cyberpunk 2077", coverSrc: "/games/cyberpunk_cover.jpg", subtitle: "Genre"},
+        {title: "Hogwarts Legacy", coverSrc: "/games/hogwarts_cover.jpg", subtitle: "Genre"},
     ];
 
     return (
@@ -241,11 +242,11 @@ function GameCard({game}) {
 
 function AnimeSection({t}) {
     const topAnime = [
-        {title: "Oshi No Ko", coverSrc: "/anime/placeholder.png", subtitle: "Genre"},
-        {title: "Death Note", coverSrc: "/anime/placeholder.png", subtitle: "Genre"},
-        {title: "Attack on Titan", coverSrc: "/anime/placeholder.png", subtitle: "Genre"},
-        {title: "The Irregular at Magic Highschool", coverSrc: "/anime/placeholder.png", subtitle: "Genre"},
-        {title: "Puella Magi Madoka Magica", coverSrc: "/anime/placeholder.png", subtitle: "Genre"},
+        {title: "Oshi No Ko", coverSrc: "/anime/oshinoko_cover.png", subtitle: "Genre"},
+        {title: "Death Note", coverSrc: "/anime/deathnote_cover.jpg", subtitle: "Genre"},
+        {title: "Attack on Titan", coverSrc: "/anime/aot_cover.jpg", subtitle: "Genre"},
+        {title: "The Irregular at Magic Highschool", coverSrc: "/anime/magic_highschool_cover.jpg", subtitle: "Genre"},
+        {title: "Puella Magi Madoka Magica", coverSrc: "/anime/magimadoka_cover.jpg", subtitle: "Genre"},
     ];
 
     return (
@@ -258,6 +259,53 @@ function AnimeSection({t}) {
             <div className={gridClasses}>
                 {topAnime.map((anime, index) => (
                     <GameCard key={index} game={anime}/>
+                ))}
+            </div>
+        </Section>
+    );
+}
+
+const harryPotterItems = [
+    {key: "house", image: "/wizardingworld/ravenclaw.webp"},
+    {key: "wand", image: "/wizardingworld/pwk_wand.webp"},
+    {key: "patronus", image: "/wizardingworld/patronus.webp"},
+    {key: "character", image: "/wizardingworld/character.png"},
+];
+
+function HarryPotterSection({t}) {
+    return (
+        <Section id="harrypotter">
+            <H2 className="text-center mb-3">{t("harrypotter.heading")}</H2>
+            <p className="text-center text-gray-400 max-w-2xl mx-auto mb-10">
+                {t("harrypotter.description")}
+            </p>
+
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto">
+                {harryPotterItems.map(({key, image}) => (
+                    <article
+                        key={key}
+                        className="group bg-gray-800/50 backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden
+                            hover:shadow-xl hover:-translate-y-1 hover:border-teal-400/50 transition-all duration-300">
+                        <div className="relative aspect-square w-full overflow-hidden">
+                            <Image
+                                src={image}
+                                alt={t(`harrypotter.${key}.value`)}
+                                fill
+                                sizes="(max-width: 768px) 50vw, 384px"
+                                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                loading="lazy"
+                                draggable={false}
+                            />
+                        </div>
+                        <div className="p-4">
+                            <p className="text-xs uppercase tracking-wide text-gray-500">
+                                {t(`harrypotter.${key}.label`)}
+                            </p>
+                            <h3 className="text-lg font-semibold text-teal-400">
+                                {t(`harrypotter.${key}.value`)}
+                            </h3>
+                        </div>
+                    </article>
                 ))}
             </div>
         </Section>

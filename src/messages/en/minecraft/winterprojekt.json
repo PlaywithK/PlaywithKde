@@ -1,5 +1,62 @@
 {
   "pageTitle": "Winterprojekt",
   "title": "Winterprojekt",
-  "subtitle": "Minecraft Project"
+  "subtitle": "A yearly Minecraft Project since 2017!",
+
+  "wp2026": {
+    "pageTitle": "Winterprojekt 2026",
+    "title": "Winterprojekt 2026",
+    "subtitle": "Create. Automate. Explore.",
+    "description": {
+      "intro": "The Winterprojekt 2026 will take place in a Create mod modpack.",
+      "create": "Create offers a completely new way to play Minecraft. Everything revolves around rotational energy, which we can use to build machines, automatic crafters, trains and more!",
+      "rules": "This year, there is a fixed set of rules for the first time. I ask all participants to read them before the project starts."
+    },
+    "countdown": {
+      "started": "The project has started!",
+      "remaining": "{days} day(s) {hours} hrs {minutes} min {seconds} sec",
+      "until": "until the project starts on 27.11.2026 at 6:00 PM (CET)"
+    },
+    "rules": {
+      "title": "Rules",
+      "text": "This year, there is a fixed set of rules for the first time. Please take the time to read them before the project starts.",
+      "linkTitle": "Go to the rules",
+      "linkText": "All rules for the Winterprojekt 2026 at a glance."
+    },
+    "downloads": {
+      "title": "Downloads",
+      "text": "You can install the modpack directly via Modrinth or download it as a ZIP file from here.",
+      "modrinthTitle": "Modrinth",
+      "modrinthText": "Recommended: install via the Modrinth App or a compatible launcher.",
+      "zipTitle": "ZIP download",
+      "zipText": "The complete modpack as a ZIP file for manual import."
+    },
+    "participants": {
+      "title": "Participants ({count})",
+      "skinAlt": "Minecraft skin of {name}",
+      "admin": "(Admin)"
+    },
+    "mods": {
+      "title": "Mods",
+      "text": "Click on a mod to go to its Modrinth page.",
+      "categories": {
+        "create": "Create Mods",
+        "extra": "Extra Mods",
+        "client": "Client Mods",
+        "performance": "Performance Mods"
+      }
+    },
+    "tutorial": {
+      "title": "Getting started",
+      "text": "I used these two videos to get started with the Create mod. You are also welcome to ask Mineceater.",
+      "video1": "Create Mod Tutorial Part 1",
+      "video2": "Create Mod Tutorial Part 2",
+      "wikiTitle": "Create Mod Wiki",
+      "wikiText": "All blocks, machines and recipes of the Create mod for reference."
+    },
+    "gallery": {
+      "title": "Community Gallery",
+      "description": "In the community gallery you will find pictures and clips from the community! Do you have a moment that deserves to be featured here? Send it to PlaywithK on Discord!"
+    }
+  }
 }

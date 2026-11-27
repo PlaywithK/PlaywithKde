@@ -42,9 +42,21 @@ const regeln = [
         ],
     },
     {
-        titel: "Symbolik",
+        titel: "Symboliken",
         punkte: [
             "Politische Andeutungen aller Art sowie Symboliken, Zeichen oder Ähnliches sind nicht gestattet.",
+        ],
+    },
+    {
+        titel: "Performance",
+        punkte: [
+            "Create besitzt die Möglichkeit Minecraft-Blöcke in normalerweise nicht funktionierende Positionen zu bewegen. Bitte achtet darauf Züge, Maschinen oder andere Blöcke wann immer sie nicht gebraucht werden ins Blockraster \"einzurasten\" damit sie nicht mehr als Entitys gelten.",
+        ],
+    },
+    {
+        titel: "Streams",
+        punkte: [
+            "Das Streamen und Aufnehmen des Projektes ist erlaubt, allerdings sollte vor bzw. beim Live gehen oder Aufnehmen im Chat darauf hingewiesen werden. Dies gilt vorallem für den Ingame Voicechat.",
         ],
     },
 ];

@@ -15,6 +15,7 @@ export default function PlaywithK() {
             <ProfileSection t={t}/>
             <FavoritesSection t={t}/>
             <CompletedSection t={t}/>
+            <GachaSection t={t}/>
             <AnimeSection t={t}/>
             <HarryPotterSection t={t}/>
             <TimelineSection t={t}/>
@@ -258,6 +259,130 @@ function GameCard({game}) {
                 </div>
             </div>
         </article>
+    );
+}
+
+const gachaGames = [
+    {
+        key: "genshin",
+        uid: "123456789",
+        profileUrl: "https://enka.network/u/123456789",
+        stats: [
+            {key: "level", value: "60"},
+            {key: "achievements", value: "850"},
+            {key: "abyss", value: "36/36 ★"},
+            {key: "characters", value: "55"},
+        ],
+        showcase: [
+            {name: "Furina", element: "Hydro", level: "90", cons: "C0", imageSrc: "/gacha/genshin_furina.png"},
+            {name: "Nahida", element: "Dendro", level: "90", cons: "C1", imageSrc: "/gacha/genshin_nahida.png"},
+            {name: "Raiden Shogun", element: "Electro", level: "90", cons: "C2", imageSrc: "/gacha/genshin_raiden.png"},
+            {name: "Zhongli", element: "Geo", level: "90", cons: "C0", imageSrc: "/gacha/genshin_zhongli.png"},
+        ],
+    },
+    {
+        key: "zzz",
+        uid: "1000000000",
+        profileUrl: "https://enka.network/zzz/1000000000",
+        stats: [
+            {key: "level", value: "60"},
+            {key: "achievements", value: "400"},
+            {key: "shiyu", value: "Stufe 7"},
+            {key: "agents", value: "25"},
+        ],
+        showcase: [
+            {name: "Ellen Joe", element: "Ice", level: "60", cons: "M0", imageSrc: "/gacha/zzz_ellen.png"},
+            {name: "Zhu Yuan", element: "Ether", level: "60", cons: "M1", imageSrc: "/gacha/zzz_zhuyuan.png"},
+            {name: "Lycaon", element: "Ice", level: "60", cons: "M0", imageSrc: "/gacha/zzz_lycaon.png"},
+            {name: "Miyabi", element: "Frost", level: "60", cons: "M0", imageSrc: "/gacha/zzz_miyabi.png"},
+        ],
+    },
+];
+
+function GachaSection({t}) {
+    return (
+        <Section id="gacha">
+            <H2 className="text-center mb-3">{t("gacha.heading")}</H2>
+            <p className="text-center text-gray-400 max-w-2xl mx-auto mb-14">
+                {t("gacha.description")}
+            </p>
+
+            <div className="space-y-20">
+                {gachaGames.map((game) => (
+                    <GachaProfile key={game.key} game={game} t={t}/>
+                ))}
+            </div>
+        </Section>
+    );
+}
+
+function GachaProfile({game, t}) {
+    const {key, uid, profileUrl, stats, showcase} = game;
+    const base = `gacha.${key}`;
+
+    return (
+        <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
+                <div>
+                    <H3 className="mb-1">{t(`${base}.heading`)}</H3>
+                    <p className="text-sm text-gray-400">
+                        UID: <span className="text-teal-300 font-mono">{uid}</span>
+                    </p>
+                </div>
+                <a
+                    href={profileUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-teal-600 hover:bg-teal-400 text-white text-sm font-semibold px-5 py-2 rounded-full shadow-md transition-all self-start sm:self-auto">
+                    {t("gacha.profileLink")}
+                </a>
+            </div>
+
+            {/* Kennzahlen */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                {stats.map(({key: statKey, value}) => (
+                    <div
+                        key={statKey}
+                        className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-white/10 p-4 text-center
+                            hover:border-teal-400/50 transition-all duration-300">
+                        <p className="text-xs uppercase tracking-wide text-gray-500 mb-1">
+                            {t(`${base}.stats.${statKey}`)}
+                        </p>
+                        <p className="text-xl font-semibold text-teal-400">{value}</p>
+                    </div>
+                ))}
+            </div>
+
+            {/* Showcase */}
+            <p className="text-sm font-semibold text-gray-300 mb-3">{t(`${base}.showcase`)}</p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+                {showcase.map(({name, element, level, cons, imageSrc}) => (
+                    <article
+                        key={name}
+                        className="group bg-gray-800/50 backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden
+                            hover:shadow-xl hover:-translate-y-1 hover:border-teal-400/50 transition-all duration-300">
+                        <div className="relative aspect-[3/4] w-full overflow-hidden">
+                            <Image
+                                src={imageSrc}
+                                alt={name}
+                                fill
+                                sizes="(max-width: 640px) 50vw, 25vw"
+                                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                loading="lazy"
+                                draggable={false}
+                            />
+                            <span className="absolute top-2 right-2 text-xs font-semibold bg-gray-900/80 text-teal-300 rounded-full px-2 py-0.5">
+                                {cons}
+                            </span>
+                        </div>
+                        <div className="p-3">
+                            <h3 className="text-sm font-semibold text-teal-400 truncate">{name}</h3>
+                            <p className="text-xs text-gray-500">{element} · Lv. {level}</p>
+                        </div>
+                    </article>
+                ))}
+            </div>
+        </div>
     );
 }
 
